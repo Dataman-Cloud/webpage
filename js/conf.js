@@ -1,7 +1,7 @@
 CONFIG = {
   environment:"ENVIRONMENT", //dev, demo, prod
   urls: {
-    baseUrl: "DASHBOARD/",
+    baseUrl: "APIURL/",
     redirectUrl: "DASHBOARD/",
     loginUrl: 'api/v2/auth',
     registerUrl: 'api/v2/auth/user/registration',
