@@ -1,0 +1,34 @@
+{
+  "name": "user",
+  "version": "1.0.0",
+  "description": "Omega Cloud frontend, for register and login in.",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dataman-Cloud/Omega/tree/master/user"
+  },
+  "dependencies": {
+    "gulp": "3.9.0",
+    "gulp-concat": "2.6.0",
+    "gulp-clean": "0.3.1",
+    "gulp-minify-css": "1.2.1",
+    "gulp-rev-all": "0.8.18",
+    "gulp-rename": "1.2.2",
+    "gulp-uglify": "1.4.0",
+    "gulp-useref": "1.3.0",
+    "gulp-util": "3.0.6"
+  },
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-clean": "0.3.1",
+    "gulp-concat": "2.6.0",
+    "gulp-if": "1.2.5",
+    "gulp-minify-css": "1.2.1",
+    "gulp-rename": "1.2.2",
+    "gulp-rev-all": "0.8.18",
+    "gulp-rev-hash": "0.0.2",
+    "gulp-uglify": "1.4.0",
+    "gulp-useref": "1.3.0",
+    "gulp-util": "3.0.6"
+  }
+}
