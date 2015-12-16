@@ -1,11 +1,11 @@
 CONFIG = {
   environment:"ENVIRONMENT", //dev, demo, prod
   urls: {
-    baseUrl: "http://ymiao.dataman.io:8888/",
-    redirectUrl: "http://localhost:8000/",
+    baseUrl: "DASHBOARD/",
+    redirectUrl: "DASHBOARD/",
     loginUrl: 'api/v2/auth',
     registerUrl: 'api/v2/auth/user/registration',
-    domainUrl: "",
+    domainUrl: "BODY_DOMAIN",
     resetPasswordUrl: "api/v2/auth/password/reseturl",
     verifyMailAddress: "api/v2/auth/password/$reset_code",
     activeUrl: "api/v2/auth/user/activation/$active_code",
