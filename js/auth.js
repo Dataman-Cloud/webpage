@@ -586,6 +586,12 @@ $(document).ready(function(){
         }
     })();
 
+    (function() {
+        if (window.location.search === '?register=true') {
+            $('#register').modal('show');
+        }
+    })();
+
     $('a[data-toggle=popover]').popover().click(function(e) {
         e.preventDefault();
     });

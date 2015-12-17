@@ -1221,6 +1221,9 @@ header nav a, header nav a:hover, header nav a:active, header nav a:focus {
 .service-terms .modal-body {
     max-height: 450px; 
     overflow-y: scroll;
+    font-size: 14px;
+    text-align: left;
+    line-height: 2;
 }
 .service-terms .modal-body h1 {
     font-size: 24px;
@@ -1231,7 +1234,17 @@ header nav a, header nav a:hover, header nav a:active, header nav a:focus {
     font-weight: 500;
     font-size: 18px;
     text-align: left;
+    padding: 0;
 }
+.service-terms .modal-body ul li {
+    list-style: none;
+}
+
+.service-terms .modal-body ul,
+.service-terms .modal-body ol {
+    margin-left: 2em;
+}
+
 .service-terms .modal-body li,
 .service-terms .modal-body p,
 .service-terms .modal-body h1,
@@ -1239,5 +1252,4 @@ header nav a, header nav a:hover, header nav a:active, header nav a:focus {
 {
     margin-bottom: 15px;
     margin-top: 15px;
-    text-indent: 2em;
 }
