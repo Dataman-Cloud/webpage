@@ -16,7 +16,8 @@ CONFIG = {
       app: "omega-app",
       cluster: "omega-cluster",
       frontend: "omega-frontend",
-      metrics: "omega-metrics"
+      metrics: "omega-metrics",
+      webpage: 'omega-webpage'
     }
   }
 };
