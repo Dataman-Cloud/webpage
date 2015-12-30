@@ -235,6 +235,21 @@ $(document).ready(function(){
             login(url, loginPostData);
         }
     });
+    
+    //demo
+    $('#demoBtn').click(function() {
+        ajaxReq(CONFIG.urls.baseUrl + CONFIG.urls.loginUrl, 'post', {'email': CONFIG.demoUser}).success(function(data) {
+            if (data && data.code === 0) {
+                docCookies.setItem('token', '\"' + data.data.token + '\"', undefined, '/', CONFIG.urls.domainUrl, undefined);
+                window.location.href = CONFIG.urls.redirectUrl;
+            } else {
+                console.log(data);
+                alert("系统忙，请稍后再试");
+            }
+        }).error(function(resp) {
+            alert("系统忙，请稍后再试");
+        });
+    })
 
     function login(url, postData) {
         ajaxReq(url, 'post', postData).success(function(data) {
