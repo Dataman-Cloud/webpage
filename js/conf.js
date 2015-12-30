@@ -19,5 +19,6 @@ CONFIG = {
       metrics: "omega-metrics",
       webpage: 'omega-webpage'
     }
-  }
+  },
+ demoUser: "DEMO_USER"
 };
