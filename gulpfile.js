@@ -29,7 +29,7 @@ gulp.task('copy-fonts', ['copy-pics'], function() {
 gulp.task('html-replace', function() {
     var assets = useref.assets();
     var revAll = new RevAll({dontRenameFile: ['.html'], dontUpdateReference: ['.html']});
-    return gulp.src(['index.html', 'price.html', 'case-miaosha.html'])
+    return gulp.src(['index.html', 'price.html', 'case-miaosha.html', 'company-app.html', 'wordpress.html'])
         .pipe(assets)
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', minifyCss()))
