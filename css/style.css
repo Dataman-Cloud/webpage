@@ -1218,31 +1218,22 @@ header nav a, header nav a:hover, header nav a:active, header nav a:focus {
 .service-terms {
     width: 60%;
 }
+.service-terms .modal-title {
+    font-size: 30px;
+    padding-top: 6px;
+    font-weight: 500;
+}
 .service-terms .modal-body {
     max-height: 450px; 
     overflow-y: scroll;
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
     line-height: 2;
 }
-.service-terms .modal-body h1 {
-    font-size: 24px;
-    font-weight: 500;
-    margin-top: 25px;
-}
-.service-terms .modal-body h2 {
-    font-weight: 500;
-    font-size: 18px;
-    text-align: left;
-    padding: 0;
-}
-.service-terms .modal-body ul li {
-    list-style: none;
-}
-
 .service-terms .modal-body ul,
 .service-terms .modal-body ol {
     margin-left: 2em;
+    padding-left: 0;
 }
 
 .service-terms .modal-body li,
@@ -1253,3 +1244,18 @@ header nav a, header nav a:hover, header nav a:active, header nav a:focus {
     margin-bottom: 15px;
     margin-top: 15px;
 }
+.service-terms .modal-body h1 {
+    font-size: 22.4px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.service-terms .modal-body h2 {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+    padding: 0;
+}
+.service-terms .modal-body ul li {
+    list-style: disc;
+}
+
