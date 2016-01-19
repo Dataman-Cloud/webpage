@@ -5,304 +5,182 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="keywords" content="大数据, 数人科技, 北京数人科技有限公司, 北京数人, Dataman">
-<meta name="description" content="数人科技专注于实现云时代的分布式操作系统，帮助企业开启云的力量。数人云是国内第一款基于Mesos的企业级云操作系统，可以为企业提供目前最成熟的Docker生产环境。让容器技术在生产环境落地。">
+<meta name="description" content="通过云操作系统”数人云”，可一键部署包括多种常用插件的 Discuz! 社区论坛，快速搭建用户，粉丝的交流天地。">
 <meta name="author" content="王璞, 肖德时, 谢乐冰">
-<title>数人云 - 云时代的操作系统 数人科技</title>
+<title>数人云：一键部署包括多种常用插件的 Discuz! 社区论坛</title>
 <link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico" />
 <!--build:css css/price-style.css-->
 <link rel="stylesheet" href="js/bower_components/bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/shurenyun-project.css">
 <!--endbuild-->
-
 <style>
-body {
-  background-color: #FFF;
+#CA-discuz footer.main-footer::before,
+#CA-discuz header.main-header,
+#CA-discuz .companyapp-feature02 h3, 
+#CA-discuz section.platform-vantage {
+	background-color: #00aace;
 }
-.btn-white {
-  width: 200px;
-  height: 56px;
-  padding-top: 15px;
-  border-radius: 50px;
-  border: 2px solid #FFF;
-  font-size: 18px;
+#CA-discuz .companyapp-feature02 h2 {
+	color: #00aace;
 }
-section h2 {
-  font-size: 36px;
-  margin: 0;
-  text-align: center;
+#CA-discuz header.main-header h2 {
+	font-size: 24px;
+	margin-top: 50px;
+	margin-bottom: 90px;
 }
-section h2 small {
-  display: block;
+#CA-discuz header.main-header img.app-logo {
+	width: 320px;
 }
-#CA-wordpress {
-  text-align: center;
-}
-#CA-wordpress footer.main-footer:before {
-  background-color: #fc6454;
-}
-#CA-wordpress header.main-header {
-  background: #fc6454;
-  color: #FFF;
-  height: 100%;
-  min-height: 720px;
-}
-#CA-wordpress header.main-header img.app-logo {
-  margin-top: 50px;
-  width: 480px;
-}
-#CA-wordpress header.main-header h2 {
-  font-size: 30px;
-  margin-top: 60px;
-  margin-bottom: 50px;
-}
-#CA-wordpress header.main-header h3 {
-  margin-top: 48px;
-  margin-bottom: 60px;
-}
-.wordpress-feature01 {
-  background-color: #404040;
-  text-align: center;
-  color: #FFF;
-  padding-top: 132px;
-  padding-bottom: 194px;
-}
-.wordpress-feature01 h2 {
-  margin-top: 35px;
-  font-weight: 600;
-}
-.wordpress-feature02  {
-  padding-top: 80px;
-  padding-bottom: 113px;
-}
-.wordpress-feature02 h2 {
-  margin-bottom: 90px;
-  font-weight: 600;
-}
-section.platform-vantage {
-  background-color: #fc6454;
-  color: #FFF;
-  padding-top: 80px;
-  padding-bottom: 148px;
-  text-align: center;
-}
-section.platform-vantage .show-line-v {
-  margin-top: 104px;
-  margin-bottom: 123px;
-}
-.show-line-v {
-  border-left: 3px solid #FFF;
-  margin-left: 50%;
-  margin-bottom: 0;
-}
-.show-line-v li {
-  position: relative;
-  margin-left: 15px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.show-line-v li .left-box {
-  position: absolute;
-  left: -100%;
-  width: 100%;
-  text-align: right;
-}
-.show-line-v li .left-box .title {
-  font-size: 24px;
-  padding-right: 33px;
-}
-.show-line-v li .left-box .circle {
-  background: #fff none repeat scroll 0 0;
-    border-radius: 50%;
-    display: block;
-    height: 15px;
-    width: 15px;
-  position: absolute;
-  right: 9px;
-  top: 10px;
-}
-.show-line-v li .right-box {
-  margin: 0;
-  text-align: left;
-}
-.show-line-v li .right-box dt {
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 6px;
-}
-.show-line-v li .right-box dd {
-  font-size: 12px;
-  margin-top: 10px;
-}
+
 </style>
 </head>
 
-<body id="CA-wordpress">
+<body id="CA-discuz" class="company-app">
 <header class="main-header">
-  <div class="container">
-    <nav class="navbar">
-      <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/"><img src="pics/shurenyun-logo.svg" height="30"></a>
-      </div>
-    
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="/company-app.html" target="_blank">企业应用</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">案例 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-          <li><a href="/case-miaosha.html" target="_blank">秒杀</a></li>
-          <li><a href="http://www.dataman-inc.com/case.html" target="_blank">更多案例</a></li>
-          </ul>
-        </li>
-        <li><a href="/price.html" target="_blank">价格</a></li>
-        <li><a href="http://blog.dataman-inc.com" target="_blank">博客</a></li>
-        <li><a href="http://open.shurenyun.com" target="_blank">社区</a></li>
-        <li><a href="http://www.dataman-inc.com" target="_blank">公司</a></li>
-        <li><a href="http://doc.shurenyun.com" target="_blank">文档</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-    <img src="pics/logo-wordpress.png" width="50%" class="app-logo">
-    <h2>WordPress 是全球最流行的博客平台，也是最好用的企业建站的内容管理系统之一。通过数人云，可以一键部署包括多种常用组件的 WordPress 网站。</h2>
-    <a class="btn btn-lg btn-white" href="http://shurenyun.mikecrm.com/f.php?t=QdPjhF" target="_blank">申请试用</a>
-    <h3>一键部署 ・ 10分钟建立集群 ・ 可自选组件</h3>
-    <a href="#" class="ico-arrow-down"><img src="pics/ico-arrow-down.png" width="45"></a>
-  </div>
+	<div class="container">
+		<nav class="navbar">
+		  <div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#"><img src="pics/shurenyun-logo.svg" height="30"></a>
+			</div>
+		
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse">
+			  <ul class="nav navbar-nav navbar-right">
+			  	<li><a href="/company-app.html">企业应用</a></li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">案例 <span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li><a href="/case-miaosha.html">秒杀</a></li>
+					<li><a href="http://www.dataman-inc.com/case.html">更多案例</a></li>
+				  </ul>
+				</li>
+				<li><a href="/price.html">价格</a></li>
+				<li><a href="http://blog.dataman-inc.com" target="_blank">博客</a></li>
+				<li><a href="http://open.shurenyun.com" target="_blank">社区</a></li>
+				<li><a href="http://www.dataman-inc.com" target="_blank">公司</a></li>
+				<li><a href="http://doc.shurenyun.com" target="_blank">文档</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<img src="pics/logo-discuz.svg" width="50%" class="app-logo">
+		<h2>Discuz! 是全球成熟度最高、覆盖率最大的论坛软件系统之一。通过数人云，可以一键部署包括多种常用插件的 Discuz! 社区论坛。</h2>
+		<a class="btn btn-lg btn-white" href="http://shurenyun.mikecrm.com/f.php?t=anQqPm" target="_blank" id="CA-discuz-top">申请试用</a>
+		<h3>一键部署 ・ 10分钟建立集群 ・ 可自选插件和模板</h3>
+		<a href="#" class="ico-arrow-down"><img src="pics/ico-arrow-down.png" width="45"></a>
+	</div>
 </header>
 
-<section class="wordpress-feature01">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-5">
-        <img src="pics/pic-wordpress-02.svg" height="118">
-      </div>
-      <div class="col-md-5">
-        <img src="pics/pic-wordpress-03.svg" height="118">
-      </div>
-      <div class="col-md-1"></div>
-      <div class="col-md-12"><h2>一键部署 WordPress 博客&nbsp;&nbsp;&nbsp;&nbsp;10分钟搭建 WordPress 集群</h2></div>
-    </div>
-  </div>
+<section class="companyapp-feature01">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+				<img src="pics/pic-wordpress-02.svg" height="118">
+			</div>
+			<div class="col-md-5">
+				<img src="pics/pic-wordpress-03.svg" height="118">
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-12"><h2>一键部署 Discuz!社区论坛&nbsp;&nbsp;&nbsp;&nbsp;10分钟搭建 Discuz! 集群</h2></div>
+		</div>
+	</div>
 </section>
 
-<section class="wordpress-feature02">
-  <div class="container">
-    <h2>可自选常用组件，并一键部署</h2>
-    <img src="pics/pic-wordpress-01.png" width="100%">
-  </div>
+<section class="companyapp-feature02">
+	<div class="container">
+		<h2>可自选常用组件，并一键部署</h2>
+		<img src="pics/discuz-pic-01.svg" width="100%">
+	</div>
 </section>
 
 <section class="platform-vantage">
-  <div class="container">
-    <h2>数人云平台自身优势</h2>
-    <ul class="show-line-v">
-      <li>
-        <div class="left-box">
-          <span class="title">一秒扩容</span>
-          <span class="circle"></span>
-        </div>
-        <dl class="right-box">
-          <dt>10倍流量体验依然顺畅</dt>
-          <dd>根据客户实际需求，</dd>
-          <dd>秒级动态伸缩业务应用实例个数，</dd>
-          <dd>保障业务应用的高性能。</dd>
-        </dl> 
-      </li>
-      <li>
-        <div class="left-box">
-          <span class="title">自动恢复</span>
-          <span class="circle"></span>
-        </div>
-        <dl class="right-box">
-          <dt>保障业务永不掉线</dt>
-          <dd>自动发现和恢复应用实例，</dd>
-          <dd>保障客户应用的高可用。</dd>
-        </dl> 
-      </li>
-      <li>
-        <div class="left-box">
-          <span class="title">一键部署、在线升级、灰度发布</span>
-          <span class="circle"></span>
-        </div>
-        <dl class="right-box">
-          <dt>10每天迭代产品</dt>
-          <dd>通过容器化业务应用，</dd>
-          <dd>配合数人云操作系统，</dd>
-          <dd>在不影响在线业务的同时</dd>
-          <dd>轻松实现在线升级和灰度发布。</dd>
-        </dl> 
-      </li>
-      <li>
-        <div class="left-box">
-          <span class="title">自动分配、混跑业务</span>
-          <span class="circle"></span>
-        </div>
-        <dl class="right-box">
-          <dt>资源利用率提高3~5倍</dt>
-          <dd>可将不同应用和任务混跑在同一个集群中，</dd>
-          <dd>提高资源利用率。</dd>
-        </dl> 
-      </li>
-    </ul>
-    <a class="btn btn-lg btn-white" href="http://shurenyun.mikecrm.com/f.php?t=QdPjhF" target="_blank">申请试用</a>
-  </div>
+	<div class="container">
+		<h2>数人云平台自身优势</h2>
+		<ul class="show-line-v">
+			<li>
+				<div class="left-box">
+					<span class="title">一秒扩容</span>
+					<span class="circle"></span>
+				</div>
+				<dl class="right-box">
+					<dt>10倍流量体验依然顺畅</dt>
+					<dd>根据客户实际需求，</dd>
+					<dd>秒级动态伸缩业务应用实例个数，</dd>
+					<dd>保障业务应用的高性能。</dd>
+				</dl>	
+			</li>
+			<li>
+				<div class="left-box">
+					<span class="title">自动恢复</span>
+					<span class="circle"></span>
+				</div>
+				<dl class="right-box">
+					<dt>保障业务永不掉线</dt>
+					<dd>自动发现和恢复应用实例，</dd>
+					<dd>保障客户应用的高可用。</dd>
+				</dl>	
+			</li>
+			<li>
+				<div class="left-box">
+					<span class="title">一键部署、在线升级、灰度发布</span>
+					<span class="circle"></span>
+				</div>
+				<dl class="right-box">
+					<dt>10每天迭代产品</dt>
+					<dd>通过容器化业务应用，</dd>
+					<dd>配合数人云操作系统，</dd>
+					<dd>在不影响在线业务的同时</dd>
+					<dd>轻松实现在线升级和灰度发布。</dd>
+				</dl>	
+			</li>
+			<li>
+				<div class="left-box">
+					<span class="title">自动分配、混跑业务</span>
+					<span class="circle"></span>
+				</div>
+				<dl class="right-box">
+					<dt>资源利用率提高3~5倍</dt>
+					<dd>可将不同应用和任务混跑在同一个集群中，</dd>
+					<dd>提高资源利用率。</dd>
+				</dl>	
+			</li>
+		</ul>
+		<a class="btn btn-lg btn-white" href="http://shurenyun.mikecrm.com/f.php?t=anQqPm" target="_blank" id="CA-discuz-bottom">申请试用</a>
+	</div>
 </section>
 
-<div class="footer-bg">
-  <footer class="main-footer">
-    <div class="container">
-      <div class="footer-pos">
-        <div>
-          <div class="footer-partner">
-              <h5>云计算合作伙伴</h5>
-              <img src="pics/logo-ucloud.png" height="30">
-              <img src="pics/logo-qcloud.png" height="30">
-              <img src="pics/logo-aliyun.png" height="30">
-              <img src="pics/logo-shouduzaixian.png" height="30">
-              <img src="pics/logo-ms.png" height="30">
-          </div>
-          <div class="footer-text">
-              <p>
-                  <a href="http://blog.dataman-inc.com" target="_blank">博客</a> - 
-                  <a href="http://open.shurenyun.com" target="_blank">社区</a> - 
-                  <a href="http://www.dataman-inc.com" target="_blank">公司</a> - 
-                  <a href="http://doc.shurenyun.com" target="_blank">文档</a> - 
-                  <a href="#" data-toggle="modal" data-target="#service-term">服务条款</a>
-                  <br>
-                  Copyright©2015 北京数人科技有限公司（dataman-inc.com） 京ICP备14058899号-4 版本号：<span id="omegaVersion" title="frontend agent app cluster metrics webpage"></span>
-                  <br>
-                  +86 10 64776698 info@dataman-inc.com 北京市朝阳区大望京商务园区宏泰东街浦项中心A座806-807 100102
-              </p>
-          </div>
-          <div style=" text-align: center;">
-              <div class="footer-logo">
-                  <img src="../pics/dataman-logo.png" alt="" height="54">
-              </div>
-              <div class="qr-weixin">
-                  <img src="../pics/qr-winxin.png" alt="" height="54"><br>
-                  关注微信
-              </div>
-              <div class="qr-weixin">
-                  <a href="http://weibo.com/p/1006065558261798/home?from=page_100606&mod=TAB#place" title="关注微博" target="_blank"><img src="../pics/qr-weibo.png" alt="" height="54"></a><br>
-                  关注微博
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-</div>
+
+
+<footer class="main-footer">
+	<div class="container">
+		<div>
+			<div class="footer-partner">
+				<h5>云计算合作伙伴</h5>
+				<img src="pics/logo-ucloud.png" height="30"><img src="pics/logo-qcloud.png" height="30"><img src="pics/logo-aliyun.png" height="30"><img src="pics/logo-shouduzaixian.png" height="30"><img src="pics/logo-ms.png" height="30"> </div>
+			<div class="footer-text">
+				<p> <a href="http://blog.dataman-inc.com" target="_blank">博客</a> - <a href="http://open.shurenyun.com" target="_blank">社区</a> - <a href="http://www.dataman-inc.com" target="_blank">公司</a> - <a href="http://doc.shurenyun.com" target="_blank">文档</a> - <a href="#" data-toggle="modal" data-target="#service-term">服务条款</a> <br>
+					Copyright©2015 北京数人科技有限公司（dataman-inc.com） 京ICP备14058899号-4 版本号：V0.1.1112<br>
+					+86 10 64776698 info@dataman-inc.com 北京市朝阳区大望京商务园区宏泰东街浦项中心A座806-807 100102 </p>
+			</div>
+			<div style=" text-align: center;">
+				<div class="footer-logo"> <img src="pics/dataman-logo.png" alt="" height="54"> </div>
+				<div class="qr-weixin"> <img src="pics/qr-winxin.png" alt="" height="54"><br>
+					关注微信 </div>
+				<div class="qr-weixin"> <a href="http://weibo.com/p/1006065558261798/home?from=page_100606&mod=TAB#place" title="关注微博" target="_blank"><img src="pics/qr-weibo.png" alt="" height="54"></a><br>
+					关注微博 </div>
+			</div>
+		</div>
+	</div>
+</footer>
 
 <!-- 服务条款 -->
 <div class="modal fade" id="service-term" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

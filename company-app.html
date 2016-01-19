@@ -11,79 +11,78 @@
     <!--build:css css/style.css-->
     <link rel="stylesheet" href="js/bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
-    <link rel="stylesheet" href="css/project.css">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/shurenyun-project.css">
     <!--endbuild-->
     <style>
-      .btn-white {
+    body {
+        background-color: #EEE;
+    }
+    .btn-white {
         width: 200px;
         height: 56px;
         padding-top: 15px;
         border-radius: 50px;
         border: 2px solid #FFF;
         font-size: 18px;
-      }
-      section h2 {
+    }
+    section h2 {
         font-size: 36px;
         margin: 0;
         text-align: center;
-      }
-      section h2 small {
+    }
+    section h2 small {
         display: block;
-      }
-      #companyapp {
-      	text-align: center;
-      }
-      #companyapp footer.main-footer::before {
+    }
+    #companyapp footer.main-footer::before {
         background-color: #2f7ee4;
-      }
-      #companyapp header.main-header {
+    }
+    #companyapp header.main-header {
         background: url(pics/companyapp-header-bg.jpg) no-repeat bottom;
         background-size: cover;
         color: #FFF;
         height: 100%;
         min-height: 720px;
-      }
-      #companyapp header.main-header h2 {
+    }
+    #companyapp header.main-header h2 {
         font-size: 72px;
         margin-top: 176px;
-      }
-      #companyapp header.main-header h5 {
+    }
+    #companyapp header.main-header h5 {
         margin-top: 240px;
-      }
-
-      section.select-app {
+    }
+    
+    section.select-app {
         background-color: #CCC;
         color: #FFF;
         padding-top: 86px;
         padding-bottom: 108px;
         text-align: center;
-      }
-      section.select-app h2 {
+    }
+    section.select-app h2 {
         color: #999;
         margin-bottom: 60px;
-      }
-      section.select-app h2 small {
+    }
+    section.select-app h2 small {
         font-size: 12px;
-      }
-      section.select-app dl {
+    }
+    section.select-app dl {
         margin-bottom: 0px;
-      }
-      section.select-app dt {
+    }
+    section.select-app dt {
         font-size: 18px;
         font-weight: 500;
         color: #666;
         margin-bottom: 32px;
-      }
-      section.select-app dd {
+    }
+    section.select-app dd {
         display: inline-block;
         margin-left: 13px;
         margin-bottom: 55px;
-      }
-      section.select-app dl:last-child dd {
+    }
+    section.select-app dl:last-child dd {
         margin-bottom: 0;
-      }
-      section.select-app a {
+    }
+    section.select-app a {
         display: block;
         min-width: 138px;
         height: 46px;
@@ -91,80 +90,19 @@
         color: #FFF;
         font-size: 18px;
         line-height: 42px;
-      }
-      section.select-app a:hover {
+    }
+    section.select-app a:hover {
         background-color: #2f7ee4;
         border: 2px solid #2f7ee4;
         text-decoration: none;
         cursor: pointer;
-      }
-      section.select-app .usable a {
+    }
+    section.select-app .usable a {
         background-color: #2f7ee4;
         border: 2px solid #2f7ee4;
         text-decoration: none;
         cursor: pointer;
-      }  
-
-
-      section.platform-vantage {
-        background-color: #2f7ee4;
-        color: #FFF;
-        padding-top: 80px;
-        padding-bottom: 148px;
-        text-align: center;
-      }
-      section.platform-vantage .show-line-v {
-        margin-top: 104px;
-        margin-bottom: 123px;
-      }
-
-
-
-
-      .show-line-v {
-        border-left: 3px solid #FFF;
-        margin-left: 50%;
-        margin-bottom: 0;
-      }
-      .show-line-v li {
-        position: relative;
-        margin-left: 15px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-      }
-      .show-line-v li .left-box {
-        position: absolute;
-        left: -100%;
-        width: 100%;
-        text-align: right;
-      }
-      .show-line-v li .left-box .title {
-        font-size: 24px;
-        padding-right: 33px;
-      }
-      .show-line-v li .left-box .circle {
-        background: #fff none repeat scroll 0 0;
-          border-radius: 50%;
-          display: block;
-          height: 15px;
-          width: 15px;
-        position: absolute;
-        right: 9px;
-        top: 10px;
-      }
-      .show-line-v li .right-box {
-        margin: 0;
-        text-align: left;
-      }
-      .show-line-v li .right-box dt {
-        font-size: 16px;
-        font-weight: 600;
-        margin-top: 6px;
-      }
-      .show-line-v li .right-box dd {
-        font-size: 12px;
-        margin-top: 10px;
-      }
+    }   
     </style>
 </head>
 
@@ -216,22 +154,23 @@
       <h2>选取应用 <small>注：蓝色为已开发应用，白色框为即将上线应用</small></h2>
       <dl>
         <dt>常见Web应用</dt>
-        <dd class="usable"><a href="/wordpress.html" target="_blank">WordPress</a></dd>
-        <dd><a href="http://shurenyun.mikecrm.com/f.php?t=BGpSbs" target="_blank">Discuz</a></dd>
-        <dd><a href="http://shurenyun.mikecrm.com/f.php?t=BGpSbs" target="_blank">Joomla</a></dd>
-        <dd><a href="http://shurenyun.mikecrm.com/f.php?t=BGpSbs" target="_blank">ECshop</a></dd>
+        <dd class="usable"><a href="/companyapp-detail-wordpress.html" target="_blank">WordPress</a></dd>
+        <dd class="usable"><a href="/companyapp-detail-discuz.html" target="_blank">Discuz</a></dd>
+        <dd class="usable"><a href="/companyapp-detail-joomla.html" target="_blank">Joomla</a></dd>
+        <dd class="usable"><a href="/companyapp-detail-ecshop.html" target="_blank">ECshop</a></dd>
       </dl>
       <dl>
         <dt>常见服务组件</dt>
-        <dd><a href="http://shurenyun.mikecrm.com/f.php?t=BGpSbs" target="_blank">Zookeeper</a></dd>
-        <dd><a href="http://shurenyun.mikecrm.com/f.php?t=BGpSbs" target="_blank">Kafka</a></dd>
-        <dd><a href="http://shurenyun.mikecrm.com/f.php?t=BGpSbs" target="_blank">Jekins</a></dd>
-        <dd><a href="http://shurenyun.mikecrm.com/f.php?t=BGpSbs" target="_blank">LAMP套件</a></dd>
-        <dd><a href="http://shurenyun.mikecrm.com/f.php?t=BGpSbs" target="_blank">Elasticsearch</a></dd>
+        <dd class="usable"><a href="/companyapp-detail-spark.html" target="_blank">Spark</a></dd>
+        <dd class="usable"><a href="/companyapp-detail-hadoop.html" target="_blank">Hadoop</a></dd>
+        <dd class="usable"><a href="/companyapp-detail-kafka.html" target="_blank">Kafka</a></dd>
+        <dd class="usable"><a href="/companyapp-detail-jekins.html" target="_blank">Jekins</a></dd>
+        <dd class="usable"><a href="/companyapp-detail-lnmp.html" target="_blank">LNMP套件</a></dd>
+        <dd class="usable"><a href="/companyapp-detail-elasticsearch.html" target="_blank">Elasticsearch</a></dd>
       </dl>
       <dl>
         <dt>常见商业应用</dt>
-        <dd><a href="http://shurenyun.mikecrm.com/f.php?t=BGpSbs" target="_blank">TurborMail</a></dd>
+        <dd><a href="http://shurenyun.mikecrm.com/f.php?t=BGpSbs" target="_blank">TiDB</a></dd>
         <dd><a href="http://shurenyun.mikecrm.com/f.php?t=BGpSbs" target="_blank">永洪BI</a></dd>
         <dd><a href="http://shurenyun.mikecrm.com/f.php?t=BGpSbs" target="_blank">OneSQL</a></dd>
       </dl>
@@ -290,53 +229,49 @@
           </dl>  
         </li>
       </ul>
-      <a class="btn btn-lg btn-white" href="http://shurenyun.mikecrm.com/f.php?t=BGpSbs" target="_blank">选取应用</a>
+      <a class="btn btn-lg btn-white" href="http://shurenyun.mikecrm.com/f.php?t=BGpSbs" target="_blank" id="companyapp-bottom">选取应用</a>
     </div>
   </section>
-<div class="footer-bg">
-  <footer class="main-footer">
-    <div class="container">
-      <div class="footer-pos">
-        <div>
-          <div class="footer-partner">
-              <h5>云计算合作伙伴</h5>
-              <img src="pics/logo-ucloud.png" height="30">
-              <img src="pics/logo-qcloud.png" height="30">
-              <img src="pics/logo-aliyun.png" height="30">
-              <img src="pics/logo-shouduzaixian.png" height="30">
-              <img src="pics/logo-ms.png" height="30">
+<footer class="main-footer">
+<div class="container">
+    <div>
+      <div class="footer-partner">
+          <h5>云计算合作伙伴</h5>
+          <img src="pics/logo-ucloud.png" height="30">
+          <img src="pics/logo-qcloud.png" height="30">
+          <img src="pics/logo-aliyun.png" height="30">
+          <img src="pics/logo-shouduzaixian.png" height="30">
+          <img src="pics/logo-ms.png" height="30">
+      </div>
+      <div class="footer-text">
+          <p>
+              <a href="http://blog.dataman-inc.com" target="_blank">博客</a> - 
+              <a href="http://open.shurenyun.com" target="_blank">社区</a> - 
+              <a href="http://www.dataman-inc.com" target="_blank">公司</a> - 
+              <a href="http://doc.shurenyun.com" target="_blank">文档</a> - 
+              <a href="#" data-toggle="modal" data-target="#service-term">服务条款</a>
+              <br>
+              Copyright©2015 北京数人科技有限公司（dataman-inc.com） 京ICP备14058899号-4 版本号：<span id="omegaVersion" title="frontend agent app cluster metrics webpage"></span>
+              <br>
+              +86 10 64776698 info@dataman-inc.com 北京市朝阳区大望京商务园区宏泰东街浦项中心A座806-807 100102
+          </p>
+      </div>
+      <div style=" text-align: center;">
+          <div class="footer-logo">
+              <img src="../pics/dataman-logo.png" alt="" height="54">
           </div>
-          <div class="footer-text">
-              <p>
-                  <a href="http://blog.dataman-inc.com" target="_blank">博客</a> - 
-                  <a href="http://open.shurenyun.com" target="_blank">社区</a> - 
-                  <a href="http://www.dataman-inc.com" target="_blank">公司</a> - 
-                  <a href="http://doc.shurenyun.com" target="_blank">文档</a> - 
-                  <a href="#" data-toggle="modal" data-target="#service-term">服务条款</a>
-                  <br>
-                  Copyright©2015 北京数人科技有限公司（dataman-inc.com） 京ICP备14058899号-4 版本号：<span id="omegaVersion" title="frontend agent app cluster metrics webpage"></span>
-                  <br>
-                  +86 10 64776698 info@dataman-inc.com 北京市朝阳区大望京商务园区宏泰东街浦项中心A座806-807 100102
-              </p>
+          <div class="qr-weixin">
+              <img src="../pics/qr-winxin.png" alt="" height="54"><br>
+              关注微信
           </div>
-          <div style=" text-align: center;">
-              <div class="footer-logo">
-                  <img src="../pics/dataman-logo.png" alt="" height="54">
-              </div>
-              <div class="qr-weixin">
-                  <img src="../pics/qr-winxin.png" alt="" height="54"><br>
-                  关注微信
-              </div>
-              <div class="qr-weixin">
-                  <a href="http://weibo.com/p/1006065558261798/home?from=page_100606&mod=TAB#place" title="关注微博" target="_blank"><img src="../pics/qr-weibo.png" alt="" height="54"></a><br>
-                  关注微博
-              </div>
+          <div class="qr-weixin">
+              <a href="http://weibo.com/p/1006065558261798/home?from=page_100606&mod=TAB#place" title="关注微博" target="_blank"><img src="../pics/qr-weibo.png" alt="" height="54"></a><br>
+              关注微博
           </div>
-        </div>
       </div>
     </div>
-  </footer>
-</div>
+  </div>
+</footer>
 
 
   <!-- 服务条款 -->
