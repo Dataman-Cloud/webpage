@@ -16,7 +16,16 @@
     $locationProvider,
     $httpProvider
   ) {
-    // $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/');
+
+    $stateProvider
+        .state('index', {
+            url: '/',
+            views: {
+              templateUrl: 'index.html',
+              controller: 'RootCtrl as rootCtrl'
+            }
+      })
 
     $locationProvider.html5Mode(true);
   }

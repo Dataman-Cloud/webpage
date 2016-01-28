@@ -1,4 +1,4 @@
 (function () {
   'use strict';
-  angular.module('webpage', []);
+  angular.module('webpage', ['ngCookies', 'ui.router', 'ui-notification']);
 })();
