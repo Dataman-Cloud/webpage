@@ -1,0 +1,133 @@
+body {
+  background-color: #EEE;
+}
+.btn.btn-freetry {
+  display: block;
+  height: 75px;
+  margin: 10px auto;
+  width: 440px;
+  background-color: #62be50;
+  border-radius: 6px;
+    padding-top: 25px!important;
+    font-size: 18px;
+}
+.box-btn-freetry {
+  margin: 100px 0 40px 0;
+}
+header.main-header {
+  position: relative;
+  text-align: center;
+}
+header.main-header nav {
+  position: relative;
+  right: auto;
+}
+footer.main-footer:before {
+  background: url(pics/footer-bottom.png) no-repeat 0 -10px;
+  content:"";
+  height: 100px;
+  left: 0;
+  position: absolute;
+  top: -100px;
+  width: 100%;
+}
+footer.main-footer {
+  background-color: #FFF;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  position: relative;
+}
+.main-header .navbar-nav > li > a {
+  color: #FFF;
+}
+.main-header .navbar-nav > li > a:hover, .main-header .navbar-nav > li > a:active, .main-header .navbar-nav > li > a:focus {
+  background: none;
+  color: #EEE;
+}
+.main-header .nav .open > a, .main-header .nav .open > a:focus, .main-header .nav .open > a:hover {
+  background: none;
+  color: #EEE;
+}
+.dropdown-menu {
+  min-width: 80px;
+}
+.main-header .dropdown-menu > li > a {
+  margin-left: 0;
+  text-align: center;
+}
+
+
+#case-miaosha header.main-header {
+  background: url(pics/case-miaosha-header-bg.jpg) no-repeat top;
+  background-size: cover;
+  color: #FFF;
+  height: 100%;
+  margin-bottom: 0px;
+  min-height: 600px;
+}
+#case-miaosha .case-miaosha-01 {
+  background: url(pics/case-miaosha-01.gif) no-repeat;
+  background-size: cover;
+  height: 650px;
+}
+#case-miaosha .case-miaosha-02 {
+  background: url(pics/case-miaosha-02.gif) no-repeat;
+  background-size: cover;
+  height: 650px;
+}
+#case-miaosha .case-miaosha-03 {
+  background: url(pics/case-miaosha-03.gif) no-repeat;
+  background-size: cover;
+  height: 650px;
+}
+#case-miaosha .case-miaosha-04 {
+  background: url(pics/case-miaosha-04.gif) no-repeat;
+  background-size: cover;
+  height: 650px;
+}
+#case-miaosha .btn-success {
+  background-color: #62be50;
+  border-radius: 6px;
+  border: 0;
+  padding: 10px 20px;
+}
+
+#case-miaosha .main-header {
+    text-align: left;
+}
+#case-miaosha .main-header .row {
+    margin-top: 12%;
+}
+#case-miaosha .main-header .row img {
+    margin-bottom: 20px;
+}
+#case-miaosha .main-header .row h1 {
+    font-size: 45px;
+    margin: 0 0 20px 0;
+}
+#case-miaosha .main-header .row a {
+    margin-top: 30px;
+    margin-right: 20px;
+    height: 54px;
+    min-width: 150px;
+    line-height: 54px;
+    border-radius: 27px;
+    font-size: 18px;
+    color: #FFF;
+    background: #aac404;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#case-miaosha .main-header .row a:hover {
+    text-decoration: none;
+    background-color: #b7d307;
+    color: #333;
+}
+#case-miaosha .main-header .row a:active, #case-miaosha .main-header .row a:visited, #case-miaosha .main-header .row a:focus {
+    text-decoration: none;
+    color: #FFF;
+}
