@@ -261,25 +261,7 @@ section.select-app .usable a {
 }
 
 /*wordpress*/
-body {
-    background-color: #EEE;
-}
-.btn-white {
-    width: 200px;
-    height: 56px;
-    padding-top: 15px;
-    border-radius: 50px;
-    border: 2px solid #FFF;
-    font-size: 18px;
-}
-section h2 {
-    font-size: 36px;
-    margin: 0;
-    text-align: center;
-}
-section h2 small {
-    display: block;
-}
+
 #CA-wordpress footer.main-footer::before {
     background-color: #fc6454;
 }
@@ -335,9 +317,6 @@ section.platform-vantage .show-line-v {
     margin-top: 104px;
     margin-bottom: 123px;
 }
-
-
-
 
 .show-line-v {
     border-left: 3px solid #FFF;
