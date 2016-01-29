@@ -18,9 +18,10 @@
         <!--endbuild-->
     </head>
     <body data-ng-app="webpage" data-ng-controller="RootCtrl as rootCtrl">
+        <div data-ng-include="'/views/common/nav.html'" data-include-replace></div>
         <section data-ui-view></section>
-        <div data-ng-include="'/views/common/footer.html'"></div>
-        <div data-ng-include="'/views/common/service-item.html'"></div>
+        <div data-ng-include="'/views/common/footer.html'" data-include-replace></div>
+        <div data-ng-include="'/views/common/service-item.html'" data-include-replace></div>
 
       <div id="box">
         <div id="fullpage">
@@ -856,6 +857,8 @@
 
         <script type="text/javascript" src="app/app.js"></script>
         <script type="text/javascript" src="app/app.config.js"></script>
+
+        <script type="text/javascript" src="directives/include-replace.js"></script>
         
 
         <script type="text/javascript" src="rootCtrl/root.ctrl.js"></script>
