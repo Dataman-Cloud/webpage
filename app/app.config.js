@@ -19,13 +19,15 @@
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-        .state('index', {
+        .state('landing', {
             url: '/',
             views: {
-              templateUrl: 'index.html',
-              controller: 'RootCtrl as rootCtrl'
+              '': {
+                templateUrl: 'landing/landing.html',
+                controller: 'LandingController as landingCtrl'
+              }
             }
-      })
+        });
 
     $locationProvider.html5Mode(true);
   }
