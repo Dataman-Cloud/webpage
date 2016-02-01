@@ -1294,7 +1294,7 @@ section.platform-vantage .show-line-v {
 	margin-top: 10px;
 }
 .btn-white {
-	width: 200px;
+	min-width: 200px;
 	height: 56px;
 	padding-top: 15px;
 	border-radius: 50px;
