@@ -1,5 +1,7 @@
 $(document).ready(function(){
     var verifyCode;
+    
+    var return_cs_to;
 
     var options = {
         errors: {
@@ -243,7 +245,6 @@ $(document).ready(function(){
                 docCookies.setItem('token', '\"' + data.data.token + '\"', undefined, '/', CONFIG.urls.domainUrl, undefined);
                 window.location.href = CONFIG.urls.redirectUrl;
             } else {
-                console.log(data);
                 alert("系统忙，请稍后再试");
             }
         }).error(function(resp) {
@@ -253,10 +254,13 @@ $(document).ready(function(){
 
     function login(url, postData) {
         ajaxReq(url, 'post', postData).success(function(data) {
-
             if (data && data.code === 0) {
-                docCookies.setItem('token', '\"' + data.data.token + '\"', undefined, '/', CONFIG.urls.domainUrl, undefined);
-                window.location.href = CONFIG.urls.redirectUrl;
+                if (return_cs_to) {
+                    redirectCustomerService(data.data.token, return_cs_to)
+                } else {
+                    docCookies.setItem('token', '\"' + data.data.token + '\"', undefined, '/', CONFIG.urls.domainUrl, undefined);
+                    window.location.href = CONFIG.urls.redirectUrl;
+                }
             } 
         }).error(function(resp) {
             if (resp.responseJSON && resp.responseJSON.code === 5) {
@@ -600,10 +604,48 @@ $(document).ready(function(){
             });
         }
     })();
+    
+    function getParams() {
+        var params = {};
+        var search = window.location.search.substr(1);
+        var searchs = search.split('&');
+        var i;
+        for (i=0; i<searchs.length; i++) {
+            if (searchs[i]) {
+                item = searchs[i].split('=');
+                params[item[0]] = item[1];
+            }
+        }
+        return params;
+    }
+    
+    function redirectCustomerService (token, return_to) {
+        var url = CONFIG.urls.baseUrl + CONFIG.urls.customerservice;
+        $.ajax({
+            url: url,
+            type: 'get',
+            data: {'return_to': return_to},
+            headers: {'Content-Type': 'application/json; charset=UTF-8', 'Authorization': token}
+        }).success(function(data) {
+            if(data && data.code === 0) {
+                window.location = data.data.url;
+            } else {
+                $('#login').modal('hide');
+                $('#error-modal').modal('show');
+            }
+        }).error(function(resp) {
+            $('#login').modal('hide');
+            $('#error-modal').modal('show');
+        });
+    }
 
     (function() {
-        if (window.location.search === '?register=true') {
+        var params = getParams();
+        if (params.register === 'true') {
             $('#register').modal('show');
+        } else if (params.return_to && params.return_to.indexOf('support.dataman-inc') > 0) {
+            return_cs_to = params.return_to;
+            $('#login').modal('show');
         }
     })();
 
