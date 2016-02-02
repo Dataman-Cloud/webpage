@@ -10,6 +10,7 @@ CONFIG = {
     verifyMailAddress: "api/v2/auth/password/$reset_code",
     activeUrl: "api/v2/auth/user/activation/$active_code",
     activeMailUrl: "api/v2/auth/user/activation",
+    customerservice: "api/v2/customerservice",
     _versionBaseUrl: "MARKET" + "/version/",
     versionUrl: {
       agent: "omega-agent",
