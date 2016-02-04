@@ -1,6 +1,6 @@
 CONFIG = {
   environment:"ENVIRONMENT", //dev, demo, prod
-  is_offline: true,
+  is_offline: false,
   urls: {
     baseUrl: "APIURL/",
     redirectUrl: "DASHBOARD/",
