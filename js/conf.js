@@ -12,6 +12,7 @@ CONFIG = {
     activeMailUrl: "api/v2/auth/user/activation",
     customerservice: "api/v2/customerservice",
     _versionBaseUrl: "MARKET" + "/version/",
+    noticeUrl: "api/v2/notice",
     versionUrl: {
       agent: "omega-agent",
       app: "omega-app",
