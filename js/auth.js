@@ -67,6 +67,9 @@ $(document).ready(function(){
         }
     };
 
+    //check offline
+    checkOffline();
+
     //Notice alert
     (function() {
         var url = CONFIG.urls.baseUrl + CONFIG.urls.noticeUrl;
@@ -673,4 +676,12 @@ $(document).ready(function(){
         });
       });
     })();
+
+    function checkOffline(){
+        if(CONFIG.is_offline){
+            $('#doc').attr('href', 'http://offlinedoc.shurenyun.com/');
+        }else{
+            $('#doc').attr('href', 'http://doc.shurenyun.com');
+        }
+    }
 });
