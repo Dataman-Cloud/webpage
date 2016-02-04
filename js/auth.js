@@ -65,6 +65,15 @@ $(document).ready(function(){
         }
     };
 
+    //Notice alert
+    (function() {
+        var url = CONFIG.urls.baseUrl + CONFIG.urls.noticeUrl;
+        ajaxReq(url, 'get').success(function (data){
+            $('#notice').html(data.data.content);
+            $('#noticeAlert').show()
+        })
+    })();
+
     function ajaxReq(url, type, data) {
         return $.ajax({
             url: url,
