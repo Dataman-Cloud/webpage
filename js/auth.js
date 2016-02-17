@@ -2,6 +2,7 @@ $(document).ready(function(){
     var verifyCode;
     
     var return_cs_to;
+    var reloginRedirectUrl;
 
     var options = {
         errors: {
@@ -271,7 +272,7 @@ $(document).ready(function(){
                     redirectCustomerService(data.data.token, return_cs_to)
                 } else {
                     docCookies.setItem('token', '\"' + data.data.token + '\"', undefined, '/', CONFIG.urls.domainUrl, undefined);
-                    window.location.href = CONFIG.urls.redirectUrl;
+                    window.location.href = reloginRedirectUrl ? reloginRedirectUrl : CONFIG.urls.redirectUrl;
                 }
             } 
         }).error(function(resp) {
@@ -675,6 +676,24 @@ $(document).ready(function(){
           }
         });
       });
+    })();
+
+    (function relogin() {
+        if (!window.location.search) {
+            return;
+        }
+        var searchData = window.location.search.substring(1).split('&');
+        var urlParams = {};
+        var pair = [];
+        $.each(searchData, function(index, val) {
+          pair = val.split('=');
+          urlParams[pair[0]] = pair[1];
+        });
+
+        if((urlParams.relogin) && (urlParams.status === '401')) {
+            reloginRedirectUrl = urlParams.redirect_url;
+            $('#login').modal('show');
+        }
     })();
 
     function checkOffline(){
