@@ -75,8 +75,10 @@ $(document).ready(function(){
     (function() {
         var url = CONFIG.urls.baseUrl + CONFIG.urls.noticeUrl;
         ajaxReq(url, 'get').success(function (data){
-            $('#notice').html(data.data.content);
-            $('#noticeAlert').show()
+            if(data.data && data.data.content){
+                $('#notice').html(data.data.content);
+                $('#noticeAlert').show()
+            }
         })
     })();
 
