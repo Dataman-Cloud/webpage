@@ -91,7 +91,7 @@ $(document).ready(function(){
             headers: {'Content-Type': 'application/json; charset=UTF-8'}
         });
     }
-
+        
     // 注册提示
     (function() {
 
@@ -142,6 +142,22 @@ $(document).ready(function(){
                 $('.register-password-confirm-tip').show();
             } else {
                 $('.register-password-confirm-tip').hide();
+            }
+        });
+    })();
+
+    // 重复输入密码实时校验
+    (function() {
+        $("#register-password-confirm").on("keyup", function() {
+            $('.register-password-confirm-tip').hide();
+            var password = $("#register-password").val();
+            var confirmPassword = $("#register-password-confirm").val();
+            for(var i = 0; i < confirmPassword.length; i++) {
+                if (confirmPassword[i] !== password[i]) {
+                    $('.register-password-confirm-error').addClass('has-error');
+                    $('.register-password-confirm-tip').show();
+                    break;
+                }
             }
         });
     })();
