@@ -572,7 +572,7 @@
                         <form role="form" class="registerForm" autocomplete="off">
                             <h2>请填写注册信息</h2>
                             <div class="form-group has-feedback register-mail-error">
-                                <input type="email" class="form-control" id="register-email" data-username="true" name="register-mail" data-need="true" placeholder="邮箱地址"/>
+                                <input type="email" class="form-control" id="register-email" data-username="true" name="register-mail" data-need="true" required="required" placeholder="邮箱地址"/>
                                 <div class="prompt-box register-mail-tip">
                                    <div class="arrow"></div>
                                    <span id="register-error">请输入正确的邮箱地址格式。例如：***@***</span>
@@ -584,7 +584,7 @@
                             </div>
 
                             <div class="form-group has-feedback register-company-error">
-                                <input type="text" class="form-control" id="register-company" name="register-company" data-need="true" placeholder="公司"/>
+                                <input type="text" class="form-control" id="register-company" name="register-company" required="required" data-need="true" placeholder="公司"/>
                                 <div class="prompt-box register-company-tip">
                                    <div class="arrow"></div>
                                    请填写您的公司名称。
@@ -592,7 +592,7 @@
                             </div>
 
                             <div class="form-group has-feedback register-wechatQQ-error">
-                                <input type="text" class="form-control" id="register-wechatQQ" name="register-wechat" data-need="true" placeholder="微信号或者QQ号" />
+                                <input type="text" class="form-control" id="register-wechatQQ" name="register-wechat" required="required" data-need="true" placeholder="微信号或者QQ号" />
                                 <div class="prompt-box register-wechatQQ-tip">
                                    <div class="arrow"></div>
                                    请填写您的微信号或者QQ号。
@@ -608,7 +608,7 @@
                             </div>
 
                             <div class="form-group has-feedback register-password-error">
-                                <input type="password" class="form-control" id="register-password" data-passwordtips="true" data-passwordmin="8" data-maxlength="16" data-passwordrule="true" name="register-password" data-need="true" placeholder="输入密码" />
+                                <input type="password" class="form-control" id="register-password" data-passwordtips="true" data-passwordmin="8" data-maxlength="16" data-passwordrule="true" name="register-password" data-need="true" required="required" placeholder="输入密码" />
                                 <div class="prompt-box register-password-tip">
                                     <div class="arrow"></div>
                                     密码可包含数字、标点、字母，至少要包含一位大写字母且长度为8~16位
@@ -616,7 +616,7 @@
                             </div>
 
                             <div class="form-group has-feedback register-password-confirm-error">
-                                <input type="password" class="form-control" id="register-password-confirm" data-match="#register-password" data-match-error="两次输入密码不一致" data-need="true" placeholder="请重复密码" />
+                                <input type="password" class="form-control" id="register-password-confirm" data-match="#register-password" data-match-error="两次输入密码不一致" data-need="true" required="required" placeholder="请重复密码" />
                                 <div class="prompt-box register-password-confirm-tip">
                                    <div class="arrow"></div>
                                    两次输入密码不一致
