@@ -45,7 +45,7 @@
   Validator.DEFAULTS = {
     delay: 0,
     html: false,
-    disable: true,
+    disable: false,
     custom: {},
     errors: {
       match: 'Does not match',
