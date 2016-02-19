@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="大数据, 数人科技, 北京数人科技有限公司, 北京数人, Dataman">
+        <meta name="description" content="数人科技专注于实现云时代的分布式操作系统，帮助企业开启云的力量。数人云是国内第一款基于Mesos的企业级云操作系统，可以为企业提供目前最成熟的Docker生产环境。让容器技术在生产环境落地。">
+        <meta name="author" content="王璞, 肖德时, 谢乐冰">
+        <title>数人云 - 云时代的操作系统  数人科技</title>
+        <link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico" />
+        <!--build:css css/style.css-->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <!--endbuild-->
+    </head>
+    <body>
+        <section data-ui-view></section>
+
+        <div id="browserType" class="alert alert-warning alert-dismissible browser-alert" role="alert" hidden="hidden">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            推荐使用<strong>Firefox</strong>或<strong>Chrome</strong>浏览器，少数功能在其他浏览器下无法正常使用。敬请谅解。
+        </div>
+
+        <!--build:js js/script.js-->
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-cookies/angular-cookies.js"></script>
+        <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+       
+        <!--endbuild-->
+        <script>
+            var Sys = {};
+            var ua = navigator.userAgent.toLowerCase();
+            var s;
+            (s = ua.match(/msie ([\d.]+)/)) ? Sys.ie = s[1] :
+                    (s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] :
+                            (s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] :
+                                    (s = ua.match(/opera.([\d.]+)/)) ? Sys.opera = s[1] :
+                                            (s = ua.match(/version\/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0;
+
+            if(Sys.chrome || Sys.firefox){
+                document.getElementById("browserType").style.display = "none";
+            }else{
+                document.getElementById("browserType").style.display = "block";
+            }
+        </script>
+
+        <!-- Baidu -->
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "//hm.baidu.com/hm.js?cd74c0fcc0c51aecc3bb276315e35e6a";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+
+        <!-- GrowingIO -->
+        <script type='text/javascript'>
+            var _vds = _vds || [];(function(){ _vds.push(['setAccountId', '0edf12ee248505950b0a77b02d47c537']); (function() {var vds = document.createElement('script'); vds.type='text/javascript'; vds.async = true;vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(vds, s);})();})();
+        </script>
+
+    </body>
+</html>
