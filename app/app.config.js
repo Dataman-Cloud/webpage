@@ -28,7 +28,8 @@
             url: '/user/active',
             views: {
                 '': {
-                    templateUrl: 'components/active/active.html'
+                    templateUrl: 'components/active/active.html',
+                    controller: 'ActiveCtrl as activeCtrl'
                 }
             }
         })
