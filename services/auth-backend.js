@@ -10,7 +10,8 @@
         return {
             register: register,
             active: active,
-            resetPassword: resetPassword
+            resetPassword: resetPassword,
+            login: login
         };
 
         //////////
@@ -22,10 +23,15 @@
         function active(activeCode) {
             return webHttp.Resource('user.active', {active_code: activeCode}).put();
         }
-        
+
         function resetPassword(resetCode) {
             return webHttp.Resource('user.resetPassword', {reset_code: resetCode}).get();
         }
         
+
+        function login(params) {
+            return webHttp.Resource('user.login').post(params);
+        }
+
     }
 })();
