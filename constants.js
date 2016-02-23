@@ -16,5 +16,7 @@ BACKEND_URL = {
         metrics: 'omega-metrics',
         webpage: 'omega-webpage'
     },
-    noticeUrl: 'api/v2/notice',
+    notice: {
+        notice: 'api/v2/notice'
+    }
 };

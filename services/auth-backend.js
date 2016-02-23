@@ -11,7 +11,8 @@
             register: register,
             active: active,
             resetPassword: resetPassword,
-            login: login
+            login: login,
+            getNotice: getNotice
         };
 
         //////////
@@ -27,10 +28,13 @@
         function resetPassword(resetCode) {
             return webHttp.Resource('user.resetPassword', {reset_code: resetCode}).get();
         }
-        
 
         function login(params) {
             return webHttp.Resource('user.login').post(params);
+        }
+
+        function getNotice() {
+            return webHttp.Resource('notice.notice').get();
         }
 
     }

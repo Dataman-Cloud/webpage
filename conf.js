@@ -7,6 +7,6 @@ CONFIG = {
 };
 
 BACKEND_URL_BASE = {
-    user: 'APIURL/',
+    defaultBase: 'APIURL/',
     version: 'MARKET' + '/version/'
 };
