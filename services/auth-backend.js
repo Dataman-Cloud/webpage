@@ -12,7 +12,8 @@
             active: active,
             resetPassword: resetPassword,
             login: login,
-            getNotice: getNotice
+            getNotice: getNotice,
+            forgotPassword: forgotPassword
         };
 
         //////////
@@ -35,6 +36,10 @@
 
         function getNotice() {
             return webHttp.Resource('notice.notice').get();
+        }
+
+        function forgotPassword(params){
+            return webHttp.Resource('user.forgotPassword').post(params);
         }
 
     }
