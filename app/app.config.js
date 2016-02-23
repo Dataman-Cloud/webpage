@@ -47,7 +47,8 @@
             url: '/user/forgotpassword',
             views: {
                 '': {
-                    templateUrl: '/components/password/forgot-password.html'
+                    templateUrl: '/components/password/forgot-password.html',
+                    controller: 'ForgotPasswordCtrl as forgotPasswordCtrl'
                 }
             }
         })
