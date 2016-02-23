@@ -19,8 +19,9 @@
         .state("register", {
             url: '/user/register',
             views: {
-                "": {
-                    templateUrl: '/components/register/register.html'
+                '': {
+                    templateUrl: '/components/register/register.html',
+                    controller: 'RegisterCtrl as registerCtrl'
                 }
             }
         })
