@@ -54,7 +54,8 @@
             url: '/user/resetpassword',
             views: {
                 '': {
-                    templateUrl: '/components/password/reset-password.html'
+                    templateUrl: '/components/password/reset-password.html',
+                    controller: 'ResetPasswordCtrl as resetPasswordCtrl'
                 }
             }
         })
