@@ -105,7 +105,7 @@
                 $http(req).success(function (data) {
                     this._stopLoading(this.options.loading);
                     if (data.code) {
-                        deferred.reject(data.code, data.data)
+                        deferred.reject(data)
                     } else {
                         deferred.resolve(data.data);
                     }
