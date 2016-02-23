@@ -1,0 +1,30 @@
+<div class="main-container" style="margin-left: 15%; margin-right: 15%">
+    <div class="main-container-body">
+        <form class="form-horizontal" name="staticForm" data-ng-submit="loginCtrl.login()">
+            <div class="form-group"
+                 data-ng-class="{ 'has-error' : staticForm.username.$invalid && staticForm.username.$dirty}">
+                <input type="text" class="form-control" data-required="required" placeholder="用户名" name="username"
+                       ng-model="loginCtrl.loginData.email">
+                <p data-ng-show="staticForm.username.$error.required && staticForm.username.$dirty"
+                   class="help-block">用户名不能为空</p>
+            </div>
+
+            <div class="form-group"
+                 data-ng-class="{ 'has-error' : staticForm.password.$invalid && staticForm.password.$dirty}">
+                <input type="password" class="form-control" data-required="required" placeholder="密码" name="password"
+                       ng-model="loginCtrl.loginData.password">
+                <p data-ng-show="staticForm.password.$error.required && staticForm.password.$dirty"
+                   class="help-block">密码不能为空</p>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block" data-ng-disabled="staticForm.$invalid">登录
+                </button>
+            </div>
+
+            <div class="form-group">
+                <a>忘记密码</a>
+            </div>
+        </form>
+    </div>
+</div>

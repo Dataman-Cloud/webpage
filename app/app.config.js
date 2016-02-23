@@ -37,8 +37,9 @@
         .state('login', {
             url: '/user/login',
             views: {
-                "": {
-                    templateUrl: '/components/login/login.html'
+                '': {
+                    templateUrl: '/components/login/login.html',
+                    controller: 'LoginCtrl as loginCtrl'
                 }
             }
         })
