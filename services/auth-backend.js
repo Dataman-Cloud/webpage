@@ -18,8 +18,8 @@
             
         }
 
-        function active(url, urlParams) {
-            return webHttp.Resource(url, urlParams).put();
+        function active(activeCode) {
+            return webHttp.Resource('user.active', {active_code: activeCode}).put();
         }
         
         
