@@ -3,16 +3,23 @@
   angular.module('webpage')
     .run(runBlock);
 
-  runBlock.$inject = ['authBackend'];
+  runBlock.$inject = ['authBackend', '$rootScope'];
 
-  function runBlock(authBackend) {
+  function runBlock(authBackend, $rootScope) {
 
-      (function() {
-          return authBackend.getNotice()
-            .then(function(data) {
-                // notice alert
-            });
-      })();
+      getNotice();
+      checkOffline();
+
+      function getNotice() {
+          authBackend.getNotice()
+              .then(function(data) {
+                  // notice alert
+          });
+      }
+
+      function checkOffline() {
+          $rootScope.docAddress = CONFIG.is_offline ? DOCADDRESS.offline : DOCADDRESS.online;
+      }
 
   }
 })();
