@@ -12,7 +12,7 @@
         var urlParmas = $location.search();
 
         (function() {
-            return authBackend.active('user.active', {active_code: urlParmas.active})
+            return authBackend.active(urlParmas.active)
                 .then(function(data) {
                     self.activeSuccess = true;
                     // TODO
