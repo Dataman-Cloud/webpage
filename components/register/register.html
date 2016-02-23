@@ -1,0 +1,62 @@
+<div class="main-container" style="margin-left: 15%; margin-right: 15%">
+    <div class="main-container-body">
+        <form class="form-horizontal" name="staticForm" data-ng-submit="registerCtrl.registerDataMan()">
+            <div class="form-group"
+                 data-ng-class="{ 'has-error' : staticForm.email.$invalid && staticForm.email.$dirty}">
+                <input type="email" class="form-control" data-required="required" placeholder="邮箱地址" name="email"
+                       ng-model="registerCtrl.register.email">
+                <p data-ng-show="staticForm.email.$error.required && staticForm.email.$dirty"
+                   class="help-block">邮箱不能为空</p>
+                <p data-ng-show="staticForm.email.$error.email && staticForm.email.$dirty"
+                   class="help-block">邮箱格式不正确</p>
+            </div>
+
+            <div class="form-group"
+                 data-ng-class="{ 'has-error' : staticForm.company.$invalid && staticForm.company.$dirty}">
+                <input type="text" class="form-control" data-required="required" placeholder="公司" name="company"
+                       ng-model="registerCtrl.register.company">
+                <p data-ng-show="staticForm.company.$error.required && staticForm.company.$dirty"
+                   class="help-block">公司名称不能为空</p>
+            </div>
+            <div class="form-group"
+                 data-ng-class="{ 'has-error' : staticForm.weixin.$invalid && staticForm.weixin.$dirty}">
+                <input type="text" class="form-control" data-required="required" placeholder="微信/QQ" name="weixin"
+                       ng-model="registerCtrl.register.wechat_qq">
+                <p data-ng-show="staticForm.weixin.$error.required && staticForm.weixin.$dirty"
+                   class="help-block">微信/QQ 不能为空</p>
+            </div>
+            <div class="form-group"
+                 data-ng-class="{ 'has-error' : staticForm.phone.$invalid && staticForm.phone.$dirty}">
+                <input type="text" class="form-control" placeholder="手机号" ng-pattern="/^1\d{10}$/" name="phone"
+                       ng-model="registerCtrl.register.phone_number">
+                <p data-ng-show="staticForm.phone.$error.pattern && staticForm.phone.$dirty"
+                   class="help-block">手机格式不正确</p>
+            </div>
+            <div class="form-group"
+                 data-ng-class="{ 'has-error' : staticForm.password.$invalid && staticForm.password.$dirty}">
+                <input type="password" class="form-control" data-required="required" placeholder="输入密码"
+                       ng-model="registerCtrl.register.password"
+                       name="password" data-regex-validator>
+                <p data-ng-show="staticForm.password.$error.regexValidator && staticForm.password.$dirty"
+                   class="help-block">密码只能包含英文字母、数字、标点符号且必须包含大写字母，长度为8-16位。</p>
+                <p data-ng-show="staticForm.password.$error.required && staticForm.password.$dirty"
+                   class="help-block">密码不能为空</p>
+            </div>
+            <div class="form-group"
+                 data-ng-class="{ 'has-error' : staticForm.rePassword.$invalid && staticForm.rePassword.$dirty}">
+                <input type="password" class="form-control" data-required="required" placeholder="再次输入密码"
+                       name="rePassword" ng-model="registerCtrl.rePassword" check-repeat
+                       check-data="registerCtrl.register.password">
+                <p data-ng-show="staticForm.rePassword.$error.required && staticForm.rePassword.$dirty"
+                   class="help-block">密码不能为空</p>
+                <p data-ng-show="staticForm.rePassword.$error.checkrepeat && staticForm.rePassword.$dirty"
+                   class="help-block">密码不一致</p>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block" data-ng-disabled="staticForm.$invalid">注册
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
