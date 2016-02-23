@@ -14,7 +14,7 @@
             authBackend.login(self.loginData).then(function (data) {
                 console.log("login success");
                 //TO DO
-            }, function (code, data) {
+            }, function (res) {
                 console.log("login error");
                 //TO DO
             })

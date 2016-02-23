@@ -14,8 +14,8 @@
             authBackend.register(self.register).then(function (data) {
                 alert('注册成功,请前往邮箱激活');
                 //TO DO
-            }, function (code, data) {
-                alert(data);
+            }, function (res) {
+                alert(res);
                 //TO DO
             })
         }

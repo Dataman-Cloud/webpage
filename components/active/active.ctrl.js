@@ -17,7 +17,7 @@
                     self.activeSuccess = true;
                     // TODO
                     // active success tips
-                }, function(code, data) {
+                }, function(res) {
                     // TODO
                     // active failed tips
                 });

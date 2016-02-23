@@ -17,7 +17,7 @@
                     self.resetSuccess = true;
                     // TODO
                     // reset password success
-                }, function(code, data) {
+                }, function(res) {
                     // TODO
                     // reset password failed tips
                 });
