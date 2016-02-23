@@ -3,9 +3,16 @@
   angular.module('webpage')
     .run(runBlock);
 
-  runBlock.$inject = [];
+  runBlock.$inject = ['authBackend'];
 
-  function runBlock() {
-    
+  function runBlock(authBackend) {
+
+      (function() {
+          return authBackend.getNotice()
+            .then(function(data) {
+                // notice alert
+            });
+      })();
+
   }
 })();
