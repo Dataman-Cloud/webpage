@@ -14,8 +14,8 @@
 
         //////////
 
-        function register(postParams) {
-            return webHttp.Resource('user.register').post(postParams);
+        function register(params) {
+            return webHttp.Resource('user.register').post(params);
         }
 
         function active(url, urlParams) {

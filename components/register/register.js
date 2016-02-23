@@ -11,7 +11,7 @@
     function RegisterCtrl(authBackend) {
         var self = this;
         self.registerDataMan = function () {
-            authBackend.register('user.register', self.register).then(function (data) {
+            authBackend.register(self.register).then(function (data) {
                 alert('注册成功,请前往邮箱激活');
                 //TO DO
             }, function (code, data) {
