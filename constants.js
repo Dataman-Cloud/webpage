@@ -20,3 +20,8 @@ BACKEND_URL = {
         notice: 'api/v2/notice'
     }
 };
+
+DOCADDRESS = {
+    offline: 'http://offlinedoc.shurenyun.com/',
+    online: 'http://doc.shurenyun.com'
+}
