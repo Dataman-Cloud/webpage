@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('webpage')
-      .controller('ResetPasswordCtrl', ResetPasswordCtrl);
+        .controller('ResetPasswordCtrl', ResetPasswordCtrl);
 
     ResetPasswordCtrl.$inject = ['$location', 'authBackend'];
 
@@ -11,17 +11,28 @@
         self.resetSuccess = false;
         var urlParmas = $location.search();
 
-        (function() {
+        (function () {
             return authBackend.resetPassword(urlParmas.reset)
-                .then(function(data) {
+                .then(function (data) {
                     self.resetSuccess = true;
                     // TODO
                     // reset password success
-                }, function(res) {
+                }, function (res) {
                     // TODO
                     // reset password failed tips
                 });
         })();
+
+        //发送新密码
+        self.sendPassword = function () {
+            authBackend.sendNewPassword(urlParmas.reset, self.resetData)
+                .then(function (data) {
+                    // TODO
+
+                }, function (res) {
+                    // TODO
+                })
+        }
 
     }
 })();
