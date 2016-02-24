@@ -60,6 +60,13 @@
                     }
                 }
             })
+            .state('demo', {
+                views: {
+                    '': {
+                        controller: 'DemoCtrl as demoCtrl'
+                    }
+                }
+            })
             .state('error', {
                 views: {
                     '': {
