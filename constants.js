@@ -24,4 +24,4 @@ BACKEND_URL = {
 DOCADDRESS = {
     offline: 'http://offlinedoc.shurenyun.com/',
     online: 'http://doc.shurenyun.com'
-}
+};
