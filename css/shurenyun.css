@@ -185,6 +185,7 @@ section h1 {
 .login {
 	background: #b1b8c0 url(../pics/bg-login-01.jpg) no-repeat;
 	background-size: cover;
+	height: 100%;
 	padding-top: 160px;
 	position: relative;
 	text-align: center;
