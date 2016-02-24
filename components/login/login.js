@@ -6,18 +6,13 @@
     angular.module('webpage')
         .controller('LoginCtrl', LoginCtrl);
 
-    LoginCtrl.$inject = ['authBackend'];
+    LoginCtrl.$inject = ['loginService'];
 
-    function LoginCtrl(authBackend) {
+    function LoginCtrl(loginService) {
         var self = this;
+
         self.login = function () {
-            authBackend.login(self.loginData).then(function (data) {
-                console.log("login success");
-                //TO DO
-            }, function (res) {
-                console.log("login error");
-                //TO DO
-            })
-        }
+            loginService.login(self.loginData);
+        };
     }
 })();
