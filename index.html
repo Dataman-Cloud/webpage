@@ -17,6 +17,11 @@
         <div data-ng-include="'/common_views/nav.html'" data-include-replace></div>
         <section data-ui-view></section>
 
+        <p>
+            版本号：
+            <span id="omegaVersion" title="{/version/}">{/frontendVersion/}</span>
+        </p>
+
         <div id="browserType" class="alert alert-warning alert-dismissible browser-alert" role="alert" hidden="hidden">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
                     aria-hidden="true">&times;</span></button>

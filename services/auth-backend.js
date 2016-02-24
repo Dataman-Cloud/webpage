@@ -14,7 +14,8 @@
             login: login,
             getNotice: getNotice,
             forgotPassword: forgotPassword,
-            sendNewPassword: sendNewPassword
+            sendNewPassword: sendNewPassword,
+            fetchVersions: fetchVersions
         };
 
         //////////
@@ -45,6 +46,17 @@
 
         function sendNewPassword(resetCode, params) {
             return webHttp.Resource('user.resetPassword', {reset_code: resetCode}).put(params);
+        }
+        
+        function fetchVersions() {
+            var versions = {};
+            angular.forEach(BACKEND_URL.version, function(value, key) {
+                webHttp.Resource('version.' + key).get()
+                    .then(function(data) {
+                        versions[value] = data;
+                    });
+            });
+            return versions;
         }
 
     }

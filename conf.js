@@ -8,5 +8,5 @@ CONFIG = {
 
 BACKEND_URL_BASE = {
     defaultBase: 'APIURL/',
-    version: 'MARKET' + '/version/'
+    version: 'MARKET' + '/version/' + CONFIG.environment + "-"
 };
