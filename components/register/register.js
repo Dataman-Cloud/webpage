@@ -6,9 +6,11 @@
     angular.module('webpage')
         .controller('RegisterCtrl', RegisterCtrl);
 
-    RegisterCtrl.$inject = ['authBackend'];
+    RegisterCtrl.$inject = ['authBackend', '$rootScope'];
 
-    function RegisterCtrl(authBackend) {
+    function RegisterCtrl(authBackend, $rootScope) {
+        $rootScope.contentFlag = false;
+
         var self = this;
         self.registerDataMan = function () {
             authBackend.register(self.register).then(function (data) {

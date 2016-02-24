@@ -7,9 +7,11 @@
     angular.module('webpage')
         .controller('ForgotPasswordCtrl', ForgotPasswordCtrl);
 
-    ForgotPasswordCtrl.$inject = ['authBackend'];
+    ForgotPasswordCtrl.$inject = ['authBackend', '$rootScope'];
 
-    function ForgotPasswordCtrl(authBackend) {
+    function ForgotPasswordCtrl(authBackend, $rootScope) {
+        $rootScope.contentFlag = false;
+
         var self = this;
         self.sendEmail = function () {
             authBackend.forgotPassword(self.forgot).then(function (data) {
