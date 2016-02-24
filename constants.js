@@ -1,12 +1,12 @@
 BACKEND_URL = {
     user: {
-        login: 'api/v2/auth',
-        register: 'api/v2/auth/user/registration',
-        active: 'api/v2/auth/user/activation/$active_code',
-        activeAgain: 'api/v2/auth/user/activation',
-        forgotPassword: 'api/v2/auth/password/reseturl',
-        resetPassword: 'api/v2/auth/password/$reset_code',
-        customerservice: 'api/v2/customerservice'
+        login: 'api/v3/auth',
+        register: 'api/v3/auth/user/registration',
+        active: 'api/v3/auth/user/activation/$active_code',
+        activeAgain: 'api/v3/auth/user/activation',
+        forgotPassword: 'api/v3/auth/password/reseturl',
+        resetPassword: 'api/v3/auth/password/$reset_code',
+        customerservice: 'api/v3/customerservice_url'
     },
     version: {
         agent: 'omega-agent',
@@ -17,7 +17,7 @@ BACKEND_URL = {
         webpage: 'omega-webpage'
     },
     notice: {
-        notice: 'api/v2/notice'
+        notice: 'api/v3/notice'
     }
 };
 
