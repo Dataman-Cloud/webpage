@@ -13,7 +13,8 @@
             resetPassword: resetPassword,
             login: login,
             getNotice: getNotice,
-            forgotPassword: forgotPassword
+            forgotPassword: forgotPassword,
+            sendNewPassword: sendNewPassword
         };
 
         //////////
@@ -38,8 +39,12 @@
             return webHttp.Resource('notice.notice').get();
         }
 
-        function forgotPassword(params){
+        function forgotPassword(params) {
             return webHttp.Resource('user.forgotPassword').post(params);
+        }
+
+        function sendNewPassword(resetCode, params) {
+            return webHttp.Resource('user.resetPassword', {reset_code: resetCode}).put(params);
         }
 
     }
