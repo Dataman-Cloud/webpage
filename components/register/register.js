@@ -6,16 +6,16 @@
     angular.module('webpage')
         .controller('RegisterCtrl', RegisterCtrl);
 
-    RegisterCtrl.$inject = ['authBackend', '$state', '$rootScope', 'emailService'];
+    RegisterCtrl.$inject = ['authBackend', '$state', '$rootScope', 'emailService', '$scope'];
 
-    function RegisterCtrl(authBackend, $state, $rootScope, emailService) {
+    function RegisterCtrl(authBackend, $state, $rootScope, emailService, $scope) {
         var self = this;
         self.registerDataMan = function () {
-            authBackend.register(self.register).then(function (data) {
+            authBackend.register(self.register, {"form": $scope.staticForm}).then(function (data) {
                 $rootScope.emailHref = emailService.emailUrl(self.register.email);
-                $state.go('register_success');
+                $state.go('registerSuccess');
             }, function (res) {
-                $state.go('http_error');
+
             })
         }
     }

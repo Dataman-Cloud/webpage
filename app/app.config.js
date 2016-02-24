@@ -34,11 +34,11 @@
                     }
                 }
             })
-            .state('register_success', {
-                url: '/user/register_success',
+            .state('registerSuccess', {
+                url: '/user/register/success',
                 views: {
                     '': {
-                        templateUrl: '/components/register/register-succes-notice.html'
+                        templateUrl: '/components/register/register-success-notice.html'
                     }
                 }
             })
@@ -60,7 +60,7 @@
                     }
                 }
             })
-            .state('forgotpassword', {
+            .state('forgotPassword', {
                 url: '/user/forgotpassword',
                 views: {
                     '': {
@@ -69,7 +69,7 @@
                     }
                 }
             })
-            .state('resetpassword', {
+            .state('resetPassword', {
                 url: '/user/resetpassword',
                 views: {
                     '': {
@@ -78,8 +78,8 @@
                     }
                 }
             })
-            .state('http_error', {
-                url: '/user/http_error',
+            .state('resError', {
+                url: '/user/error',
                 views: {
                     '': {
                         templateUrl: '/common_views/http-error-notice.html'

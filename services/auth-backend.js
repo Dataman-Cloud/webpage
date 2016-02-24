@@ -20,8 +20,8 @@
 
         //////////
 
-        function register(params) {
-            return webHttp.Resource('user.register').post(params);
+        function register(params, form) {
+            return webHttp.Resource('user.register').post(params, form);
         }
 
         function active(activeCode) {
