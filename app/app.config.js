@@ -34,6 +34,14 @@
                     }
                 }
             })
+            .state('register_success', {
+                url: '/user/register_success',
+                views: {
+                    '': {
+                        templateUrl: '/components/register/register-succes-notice.html'
+                    }
+                }
+            })
             .state('active', {
                 url: '/user/active',
                 views: {
@@ -67,6 +75,14 @@
                     '': {
                         templateUrl: '/components/password/reset-password.html',
                         controller: 'ResetPasswordCtrl as resetPasswordCtrl'
+                    }
+                }
+            })
+            .state('http_error', {
+                url: '/user/http_error',
+                views: {
+                    '': {
+                        templateUrl: '/common_views/http-error-notice.html'
                     }
                 }
             })
