@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="135px" height="135px" viewBox="0 0 135 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>144 - xxhdpi</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="144---xxhdpi" sketch:type="MSArtboardGroup">
+            <g id="ico-feature-02" sketch:type="MSLayerGroup" transform="translate(2.000000, 2.000000)">
+                <g id="Page-1" sketch:type="MSShapeGroup">
+                    <g id="ico-feature-02">
+                        <path d="M65.5,0 C101.675,0 131,29.325 131,65.5 C131,101.675 101.675,131 65.5,131 C29.325,131 0,101.675 0,65.5 C0,29.325 29.325,0 65.5,0 L65.5,0 L65.5,0 Z" id="Shape" stroke="#404040" stroke-width="2.47"></path>
+                        <path d="M119.67,65.5 C119.67,95.417 95.417,119.67 65.5,119.67 C35.583,119.67 11.33,95.417 11.33,65.5 C11.33,35.583 35.583,11.33 65.5,11.33" id="Shape" stroke="#404040" stroke-width="2.47"></path>
+                        <path d="M54.783,104.781 C33.089,98.861 20.301,76.477 26.22,54.782 C32.139,33.089 54.523,20.301 76.217,26.219 C97.911,32.139 110.699,54.523 104.78,76.217" id="Shape" stroke="#404040" stroke-width="2.47"></path>
+                        <path d="M38.918,76.066 C32.582,61.346 39.327,44.348 53.983,38.1 C68.639,31.852 85.656,38.721 91.992,53.442 C98.328,68.163 91.584,85.162 76.928,91.409" id="Shape" stroke="#00BDDA" stroke-width="4"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
