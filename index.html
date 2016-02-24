@@ -16,7 +16,7 @@
 
         <!--endbuild-->
     </head>
-    <body data-ng-app="webpage">
+    <body data-ng-app="webpage" data-ng-controller="RootCtrl as rootCtrl">
         <div data-ng-include="'/common_views/nav.html'" data-include-replace></div>
         <section data-ui-view></section>
         <div data-ng-include="'/common_views/footer.html'" data-include-replace></div>
@@ -38,6 +38,7 @@
         <script type="text/javascript" src="app/app.module.js"></script>
         <script type="text/javascript" src="app/app.run.js"></script>
         <script type="text/javascript" src="app/app.config.js"></script>
+        <script type="text/javascript" src="root.ctrl.js"></script>
 
         <script type="text/javascript" src="components/register/register.js"></script>
         <script type="text/javascript" src="components/login/login.js"></script>
