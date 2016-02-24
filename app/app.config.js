@@ -22,12 +22,6 @@
                 views: {
                     '': {
                         templateUrl: 'components/home/home.html'
-                    },
-                    'nav': {
-                        templateUrl: '/common_views/nav.html'
-                    },
-                    'footer': {
-                        templateUrl: '/common_views/footer.html'
                     }
                 }
             })
@@ -37,12 +31,6 @@
                     '': {
                         templateUrl: '/components/register/register.html',
                         controller: 'RegisterCtrl as registerCtrl'
-                    },
-                    'nav': {
-                        templateUrl: '/common_views/nav.html'
-                    },
-                    'footer': {
-                        templateUrl: '/common_views/copye_right_footer.html'
                     }
                 }
             })
@@ -61,9 +49,6 @@
                     '': {
                         templateUrl: '/components/login/login.html',
                         controller: 'LoginCtrl as loginCtrl'
-                    },
-                    'footer': {
-                        templateUrl: '/common_views/copye_right_footer.html'
                     }
                 }
             })
@@ -73,9 +58,6 @@
                     '': {
                         templateUrl: '/components/password/forgot-password.html',
                         controller: 'ForgotPasswordCtrl as forgotPasswordCtrl'
-                    },
-                    'footer': {
-                        templateUrl: '/common_views/copye_right_footer.html'
                     }
                 }
             })
@@ -85,9 +67,6 @@
                     '': {
                         templateUrl: '/components/password/reset-password.html',
                         controller: 'ResetPasswordCtrl as resetPasswordCtrl'
-                    },
-                    'footer': {
-                        templateUrl: '/common_views/copye_right_footer.html'
                     }
                 }
             })
