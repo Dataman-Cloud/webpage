@@ -14,8 +14,18 @@
                        $stateProvider,
                        $locationProvider, $interpolateProvider) {
 
+        $urlRouterProvider.otherwise('/');
+
         $stateProvider
-            .state("register", {
+            .state('home', {
+                url: '/',
+                views: {
+                    '': {
+                        templateUrl: 'components/home/home.html'
+                    }
+                }
+            })
+            .state('register', {
                 url: '/user/register',
                 views: {
                     '': {
@@ -24,7 +34,7 @@
                     }
                 }
             })
-            .state("active", {
+            .state('active', {
                 url: '/user/active',
                 views: {
                     '': {
