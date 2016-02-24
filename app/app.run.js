@@ -6,6 +6,7 @@
   runBlock.$inject = ['authBackend', '$rootScope'];
 
   function runBlock(authBackend, $rootScope) {
+      $rootScope.contentFlag = true;
 
       getNotice();
       checkOffline();

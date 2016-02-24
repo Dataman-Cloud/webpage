@@ -6,9 +6,11 @@
     angular.module('webpage')
         .controller('LoginCtrl', LoginCtrl);
 
-    LoginCtrl.$inject = ['authBackend'];
+    LoginCtrl.$inject = ['authBackend', '$rootScope'];
 
-    function LoginCtrl(authBackend) {
+    function LoginCtrl(authBackend, $rootScope) {
+        $rootScope.contentFlag = false;
+
         var self = this;
         self.login = function () {
             authBackend.login(self.loginData).then(function (data) {

@@ -4,9 +4,11 @@
     angular.module('webpage')
         .controller('ResetPasswordCtrl', ResetPasswordCtrl);
 
-    ResetPasswordCtrl.$inject = ['$location', 'authBackend'];
+    ResetPasswordCtrl.$inject = ['$location', 'authBackend', '$rootScope'];
 
-    function ResetPasswordCtrl($location, authBackend) {
+    function ResetPasswordCtrl($location, authBackend, $rootScope) {
+        $rootScope.contentFlag = false;
+
         var self = this;
         self.resetSuccess = false;
         var urlParmas = $location.search();

@@ -4,9 +4,11 @@
     angular.module('webpage')
       .controller('ActiveCtrl', ActiveCtrl);
 
-    ActiveCtrl.$inject = ['$location', 'authBackend'];
+    ActiveCtrl.$inject = ['$location', 'authBackend', '$rootScope'];
 
-    function ActiveCtrl($location, authBackend) {
+    function ActiveCtrl($location, authBackend, $rootScope) {
+        $rootScope.contentFlag = false;
+
         var self = this;
         self.activeSuccess = false;
         var urlParmas = $location.search();
