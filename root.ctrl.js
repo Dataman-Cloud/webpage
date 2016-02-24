@@ -3,18 +3,13 @@
     angular.module('webpage')
         .controller('RootCtrl', RootCtrl);
 
-    RootCtrl.$inject = ['authBackend'];
+    RootCtrl.$inject = ['loginService'];
 
-    function RootCtrl(authBackend) {
+    function RootCtrl(loginService) {
         var self = this;
 
         self.loginAsDemoUser = function () {
-            authBackend.login({'email': CONFIG.demoUser}).then(function (data) {
-                // TODO
-            }, function (res) {
-                // TODO
-            });
+            loginService.login({'email': CONFIG.demoUser});
         };
-        
     }
 })();
