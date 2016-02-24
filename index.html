@@ -17,10 +17,15 @@
         <!--endbuild-->
     </head>
     <body data-ng-app="webpage" data-ng-controller="RootCtrl as rootCtrl">
-        <div data-ng-include="'/common_views/nav.html'" data-include-replace></div>
-        <section data-ui-view></section>
-        <div data-ng-include="'/common_views/footer.html'" data-include-replace></div>
 
+        <!-- topBar -->
+        <div data-ui-view="nav"></div>
+
+        <!-- content -->
+        <section data-ui-view></section>
+
+        <!-- footerBar -->
+        <div data-ui-view="footer"></div>
 
         <div id="browserType" class="alert alert-warning alert-dismissible browser-alert" role="alert" hidden="hidden">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
