@@ -13,15 +13,28 @@
 
         //////////
 
-        function login(userData) {
+        function login(userData, returnTo) {
+            if (!returnTo) {
+                returnTo = CONFIG.dashboard;
+            }
             authBackend.login(userData).then(function (data) {
                 var token = '\"' + data.token + '\"';
                 $cookies.put('token', token, undefined, '/',  CONFIG.domain, undefined);
-                $window.location.href = CONFIG.dashboard;
+                redirect4Login(returnTo, data.token);
             }, function (res) {
                 // TODO
             });
         };
+        
+        function redirect4Login(returnTo, token) {
+            if (returnTo.indexOf('support.dataman-inc') > 0) {
+                authBackend.getCustomerServiceLoginUrl(token, returnTo).then(function (data) {
+                    $window.location.href = data.url;
+                });
+            } else {
+                $window.location.href = returnTo;
+            }
+        }
 
     }
 })();
