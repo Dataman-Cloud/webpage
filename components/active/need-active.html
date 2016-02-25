@@ -28,10 +28,9 @@
 
             <div class="form-group">
                 <button class="btn btn-block" type="submit" data-ng-disabled="staticForm.$invalid" data-ng-click="needActiveCtrl.resendActiveMail()">重新发送</button>
-                
             </div>
         </form>
-        <div class="switch">已有激活邮件，<a href="#" data-ng-click="">前往邮箱激活</a></div>
+        <div class="switch">已有激活邮件，<a data-ng-href="{/needActiveCtrl.emailHref/}">前往邮箱激活</a></div>
         <div data-ng-include="'/common_views/copy-right-footer.html'" data-include-replace></div>
     </div>
 </div>
