@@ -16,7 +16,8 @@
             forgotPassword: forgotPassword,
             sendNewPassword: sendNewPassword,
             fetchVersions: fetchVersions,
-            getCustomerServiceLoginUrl: getCustomerServiceLoginUrl
+            getCustomerServiceLoginUrl: getCustomerServiceLoginUrl,
+            sendActiveMail: sendActiveMail,
         };
 
         //////////
@@ -63,6 +64,10 @@
         function getCustomerServiceLoginUrl(token, returnTo) {
             webHttp.setToken(token);
             return webHttp.Resource('user.customerservice').get({'params': {'return_to': returnTo}, 'isAuth': true});
+        }
+
+        function sendActiveMail(email) {
+            return webHttp.Resource('user.sendActiveMail').post({email: email});
         }
 
     }

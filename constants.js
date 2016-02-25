@@ -3,7 +3,7 @@ BACKEND_URL = {
         login: 'api/v3/auth',
         register: 'api/v3/auth/user/registration',
         active: 'api/v3/auth/user/activation/$active_code',
-        activeAgain: 'api/v3/auth/user/activation',
+        sendActiveMail: 'api/v3/auth/user/activation',
         forgotPassword: 'api/v3/auth/password/reseturl',
         resetPassword: 'api/v3/auth/password/$reset_code',
         customerservice: 'api/v3/customerservice_url'
@@ -22,7 +22,8 @@ BACKEND_URL = {
 };
 
 MESSAGE_CODE = {
-    dataInvalid:10001
+    dataInvalid:10001,
+    needActive: 11005
 };
 
 DOCADDRESS = {
