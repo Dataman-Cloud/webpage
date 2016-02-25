@@ -6,13 +6,13 @@
     angular.module('webpage')
         .controller('LoginCtrl', LoginCtrl);
 
-    LoginCtrl.$inject = ['loginService', '$location'];
+    LoginCtrl.$inject = ['loginService', '$location', '$scope'];
 
-    function LoginCtrl(loginService, $location) {
+    function LoginCtrl(loginService, $location, $scope) {
         var self = this;
         var returnTo = $location.search()['return_to'];
         self.login = function () {
-            loginService.login(self.loginData, returnTo);
+            loginService.login(self.loginData, returnTo, $scope.staticForm);
         };
     }
 })();
