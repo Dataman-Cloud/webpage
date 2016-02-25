@@ -85,7 +85,7 @@
                 options.data = data;
                 if (options.form) {
                     options.form.$setPristine();
-                    options.form.message_error_info = {};
+                    options.form.message_error_info = undefined;
                 }
                 var promise = this.req(method, options);
                 if (options.form) {
