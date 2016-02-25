@@ -22,7 +22,7 @@
         //////////
 
         function register(params, form) {
-            return webHttp.Resource('user.register').post(params, form);
+            return webHttp.Resource('user.register').post(params, {'form': form});
         }
 
         function active(activeCode) {
@@ -33,8 +33,8 @@
             return webHttp.Resource('user.resetPassword', {reset_code: resetCode}).get();
         }
 
-        function login(params) {
-            return webHttp.Resource('user.login').post(params);
+        function login(params, form) {
+            return webHttp.Resource('user.login').post(params, {'form': form});
         }
 
         function getNotice() {

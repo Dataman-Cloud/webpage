@@ -11,7 +11,7 @@
     function RegisterCtrl(authBackend, $state, $rootScope, emailService, $scope) {
         var self = this;
         self.registerDataMan = function () {
-            authBackend.register(self.register, {"form": $scope.staticForm}).then(function (data) {
+            authBackend.register(self.register, $scope.staticForm).then(function (data) {
                 $rootScope.emailHref = emailService.emailUrl(self.register.email);
                 $state.go('registerSuccess');
             }, function (res) {
