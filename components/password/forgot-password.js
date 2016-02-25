@@ -7,13 +7,13 @@
     angular.module('webpage')
         .controller('ForgotPasswordCtrl', ForgotPasswordCtrl);
 
-    ForgotPasswordCtrl.$inject = ['authBackend'];
+    ForgotPasswordCtrl.$inject = ['authBackend', '$scope', '$state'];
 
-    function ForgotPasswordCtrl(authBackend) {
+    function ForgotPasswordCtrl(authBackend, $scope, $state) {
         var self = this;
         self.sendEmail = function () {
-            authBackend.forgotPassword(self.forgot).then(function (data) {
-                //TO DO
+            authBackend.forgotPassword(self.forgot, $scope.staticForm).then(function (data) {
+                $state.go('forgotSuccess');
             }, function (res) {
                 //TO DO
             });

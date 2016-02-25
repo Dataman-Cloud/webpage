@@ -41,8 +41,8 @@
             return webHttp.Resource('notice.notice').get();
         }
 
-        function forgotPassword(params) {
-            return webHttp.Resource('user.forgotPassword').post(params);
+        function forgotPassword(params, form) {
+            return webHttp.Resource('user.forgotPassword').post(params, {'form': form});
         }
 
         function sendNewPassword(resetCode, params) {

@@ -69,6 +69,14 @@
                     }
                 }
             })
+            .state('forgotSuccess', {
+                url: '/user/forgotpassword/success',
+                views: {
+                    '': {
+                        templateUrl: '/components/password/forgot-success-notice.html'
+                    }
+                }
+            })
             .state('resetPassword', {
                 url: '/user/resetpassword',
                 views: {
