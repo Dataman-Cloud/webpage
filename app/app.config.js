@@ -106,6 +106,22 @@
                     }
                 }
             })
+            .state('resetPasswordSuccess', {
+                url: '/user/resetpassword/success',
+                views: {
+                    '': {
+                        templateUrl: '/components/password/reset-password-success.html',
+                    }
+                }
+            })
+            .state('resetPasswordFailed', {
+                url: '/user/resetpassword/failed',
+                views: {
+                    '': {
+                        templateUrl: '/components/password/reset-password-failed.html'
+                    }
+                }
+            })
             .state('resError', {
                 url: '/user/error',
                 views: {
@@ -114,13 +130,6 @@
                     }
                 }
             })
-            .state('error', {
-                views: {
-                    '': {
-                        templateUrl: '/common_views/error.html'
-                    }
-                }
-            });
 
 
         $locationProvider.html5Mode(true);
