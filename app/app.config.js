@@ -106,6 +106,13 @@
                     }
                 }
             })
+            .state('resetPasswordFailed', {
+                views: {
+                    '': {
+                        templateUrl: '/components/password/reset-password-failed.html'
+                    }
+                }
+            })
             .state('resError', {
                 url: '/user/error',
                 views: {
@@ -114,13 +121,6 @@
                     }
                 }
             })
-            .state('error', {
-                views: {
-                    '': {
-                        templateUrl: '/common_views/error.html'
-                    }
-                }
-            });
 
 
         $locationProvider.html5Mode(true);

@@ -4,34 +4,31 @@
     angular.module('webpage')
         .controller('ResetPasswordCtrl', ResetPasswordCtrl);
 
-    ResetPasswordCtrl.$inject = ['$location', 'authBackend'];
+    ResetPasswordCtrl.$inject = ['$location', 'authBackend', '$state'];
 
-    function ResetPasswordCtrl($location, authBackend) {
+    function ResetPasswordCtrl($location, authBackend, $state) {
         var self = this;
-        self.resetSuccess = false;
         var urlParmas = $location.search();
 
-        (function () {
-            return authBackend.resetPassword(urlParmas.reset)
-                .then(function (data) {
-                    self.resetSuccess = true;
-                    // TODO
-                    // reset password success
-                }, function (res) {
-                    // TODO
-                    // reset password failed tips
-                });
-        })();
+        validResetCode();
 
         //发送新密码
         self.sendPassword = function () {
             authBackend.sendNewPassword(urlParmas.reset, self.resetData)
                 .then(function (data) {
-                    // TODO
-
+                    $state.go('login');
                 }, function (res) {
-                    // TODO
+                    $state.go('resetPasswordFailed');
                 })
+        }
+
+        function validResetCode() {
+            return authBackend.resetPassword(urlParmas.reset)
+                .then(function () {
+                    self.valid = true;
+                }, function () {
+                    self.valid = false;
+                });
         }
 
     }
