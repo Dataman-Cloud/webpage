@@ -1,8 +1,7 @@
 <div id="login" class="login">
-    <div data-ng-include="'/common_views/nav.html'" data-include-replace></div>
     <div class="container">
         <header>
-            <img src="pics/logo-shurenyun-ico-black.svg" class="logo">
+            <a ui-sref="home"><img src="pics/logo-shurenyun-ico-black.svg" class="logo"></a>
             <h1>请登录数人云账户</h1>
         </header>
         <form class="loginForm" name="staticForm" data-ng-submit="loginCtrl.login()">
