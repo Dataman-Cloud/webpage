@@ -51,6 +51,16 @@
                     }
                 }
             })
+            .state('needActive', {
+                url: '/user/active/needed',
+                data: {email: ''},
+                views: {
+                    '': {
+                        templateUrl: 'components/active/need-active.html',
+                        controller: 'NeedActiveCtrl as needActiveCtrl'
+                    }
+                }
+            })
             .state('login', {
                 url: '/user/login',
                 views: {

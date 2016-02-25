@@ -17,12 +17,10 @@
             if (!returnTo) {
                 returnTo = CONFIG.dashboard;
             }
-            authBackend.login(userData, form).then(function (data) {
+            return authBackend.login(userData, form).then(function (data) {
                 var token = '\"' + data.token + '\"';
                 $cookies.put('token', token, undefined, '/',  CONFIG.domain, undefined);
                 redirect4Login(returnTo, data.token);
-            }, function (res) {
-                // TODO
             });
         };
         
