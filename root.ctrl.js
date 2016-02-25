@@ -3,13 +3,18 @@
     angular.module('webpage')
         .controller('RootCtrl', RootCtrl);
 
-    RootCtrl.$inject = ['loginService'];
+    RootCtrl.$inject = ['loginService', '$window'];
 
-    function RootCtrl(loginService) {
+    function RootCtrl(loginService, $window) {
         var self = this;
 
         self.loginAsDemoUser = function () {
             loginService.login({'email': CONFIG.demoUser});
         };
+
+        self.goBack = function() {
+            $window.history.back();
+        };
+
     }
 })();

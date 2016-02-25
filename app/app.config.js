@@ -130,6 +130,13 @@
                     }
                 }
             })
+            .state('404', {
+                views: {
+                    '': {
+                        templateUrl: '/common_views/http-error-notice.html'
+                    }
+                }
+            });
 
 
         $locationProvider.html5Mode(true);

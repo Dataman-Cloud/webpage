@@ -1,6 +1,6 @@
 /* 重置系统默认样式 */
 body {
-	background-color: #f9f9fb;
+	background-color: #f3f5f7;
 	color: #3D3D3D;
 	font-family: 'PingHei', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
 	font-weight: 400;
@@ -11,7 +11,7 @@ body {
 body, html {
 	height: 100%;
 }
-ul,li {
+ul, li {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -150,7 +150,8 @@ ul,li {
 .footer-slogan h1 {
 	color: #5a6879;
 	font-size: 30px;
-	padding-top: 50px;
+	margin: 0;
+	padding-top: 52px;
 }
 .footer-slogan .btn {
 	margin-top: 50px;
@@ -164,7 +165,10 @@ ul,li {
 
 
 /* 首页通用样式 */
-section h1 {
+#index {
+	height: 100%;
+}
+#index section h1 {
 	color: #5a6879;
 	font-size: 36px;
 	font-weight: bold;
@@ -179,215 +183,6 @@ section h1 {
 	width: 150px;
 	
 }
-
-
-/* 登录注册样式 */
-.login {
-	background: #b1b8c0 url(../pics/bg-login-01.jpg) no-repeat;
-	background-size: cover;
-	height: 100%;
-	padding-top: 160px;
-	position: relative;
-	text-align: center;
-}
-.login .logo {
-	opacity: 0.34;
-	width: 82px;
-}
-.login h1 {
-	font-size: 24px;
-	margin-top: 15px;
-	margin-bottom: 20px;
-	color: rgba(0,0,0,0.8);
-}
-.login footer {
-	bottom: 25px;
-	color: rgba(0,0,0,0.5);
-	font-size: 11px;
-	left: 0;
-	position: absolute;
-	text-align: center;
-	width: 100%;
-}
-.login footer ul {
-	font-size: 0;
-	margin-bottom: 25px;
-}
-.login footer li {
-	display: inline-block;
-	margin: 0 10px;
-}
-.login footer li a {
-	color: rgba(0,0,0,0.6);
-	font-size: 14px;
-}
-.login .btn {
-	background-color: rgba(0,0,0,0.3);
-	border: 0 none;
-	border-radius: 25px;
-	color: rgba(0,0,0,0.5);;
-	font-size: 18px;
-	font-weight: 400;
-}
-.login .btn:hover {
-	background-color: rgba(0,0,0,0.3);
-	border: 0 none;
-	border-radius: 25px;
-	color: rgba(0,0,0,0.5);;
-	font-size: 18px;
-	font-weight: 400;
-}
-.login .content {
-
-}
-
-.loginForm {
-	margin: 0 auto;
-	width: 315px;
-}
-.loginForm .form-group {
-	margin-bottom: 0;
-	position: relative;
-}
-.loginForm .form-control {
-	background-color: #FFF;
-	border: 0;
-	border-bottom: 1px solid rgba(0,0,0,0.2);
-	border-top: 1px solid rgba(0,0,0,0.2);
-	border-radius: 0;
-	font-size: 15px;
-	height: 62px;
-	margin-top: -1px;
-	position: relative;
-	text-align: center;
-	z-index: 101;
-}
-.loginForm .form-control:focus {
-	box-shadow: none;
-}
-.loginForm .input-first {
-	border-radius: 25px 25px 0 0;
-	margin-top: 0;
-}
-.loginForm .input-last {
-	border-radius: 0 0 25px 25px;
-}
-.loginForm .input-single {
-	border-radius: 25px;
-}
-.loginForm .btn {
-	background-color: rgba(0,0,0,0.3);
-	border: 0 none;
-	border-radius: 0 0 25px 25px;
-	color: rgba(0,0,0,0.5);;
-	font-size: 18px;
-	font-weight: 400;
-	height: 70px;
-	margin-top: -25px;
-	padding-top: 27px;
-	position: relative;
-	width: 100%;
-}
-.loginForm .prompt-box {
-	background: #FFF; 
-	border: 1px solid #EEE; 
-	border-radius: 3px;
-	box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
-	display: none;
-	font-size: 11px;
-	padding: 10px; 
-	position: absolute;
-	right: -225px; 
-	text-align: left;
-	top: 10px; 
-	width: 200px;    
-}
-.loginForm .prompt-box .arrow {
-	border-color: transparent;
-	border-style: solid;
-	display: block;
-	height: 0;
-	position: absolute;
-	width: 0;
-	border-width: 11px;
-	border-left-width: 0;
-	border-right-color: #EEE;
-	left: -11px;
-	top: 7px;
-}
-.loginForm .prompt-box .arrow:after {
-	border-color: transparent;
-	border-style: solid;
-	display: block;
-	height: 0;
-	position: absolute;
-	width: 0;
-	border-width: 10px;
-	content: "";
-	border-left-width: 0;
-	border-right-color: #fff;
-	bottom: -10px;
-	content: " ";
-	left: 1px;
-}
-.loginForm span.ico {
-	background-color: #FFF;
-	border-radius: 7px;
-	color: #ff794e;
-	display: none;
-	height: 14px;
-	left: -24px;
-	position: absolute;
-	top: 24px;
-	width: 14px;
-}
-.loginForm span.ico i {
-	color: #ff794e;
-	font-size: 20px;
-	left: -1px;
-	position: absolute;
-	top: -2px;
-}
-.loginForm .has-error .form-control {
-	background-color: #feebe9;
-}
-.loginForm .has-error .prompt-box {
-	color: #f57c6c;
-}
-.loginForm .has-error span.ico {
-	display: block;
-}
-.loginForm .has-error .form-control:focus {
-	background-color: #FFF;
-	box-shadow: none;
-	border-top: 1px solid rgba(0,0,0,0.2);
-}
-.login .switch {
-	margin-top: 10px;
-}
-.login .switch a {
-	color: rgba(0,0,0,0.6);
-	font-size: 11px;
-}
-#login {
-	background: #b1b8c0 url(../pics/bg-login-01.jpg) no-repeat;
-	padding-top: 160px;
-}
-#register {
-	background: #b1b8c0 url(../pics/bg-login-01.jpg) no-repeat;
-	padding-top: 100px;
-}
-#reset-password {
-	background: #b1b8c0 url(../pics/bg-login-01.jpg) no-repeat;
-	padding-top: 160px;
-}
-#notification h1 {
-	margin: 0;
-	padding-bottom: 35px;
-	padding-top: 30px;
-}
-
-
 
 /* 首页样式 --- 轮播 */
 .index-carousel {
@@ -453,10 +248,10 @@ section h1 {
 }
 .carousel-caption h1 {
 	color: #5a6879;
-	font-size: 24px;
-	margin-top: 40px;
-	margin-bottom: 32px;
-	text-align: left;
+	font-size: 24px!important;
+	margin-top: 40px!important;
+	margin-bottom: 32px!important;
+	text-align: left!important;
 	text-shadow: none;
 }
 .carousel-caption p {
@@ -477,7 +272,6 @@ section h1 {
 	background-size: cover;
 	color: #FFF;
 	height: 100%;
-	min-height: 600px;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
@@ -636,4 +430,146 @@ section h1 {
 }
 .experience li em {
 	font-style: normal;
+}
+
+/* 解决方案样式 */
+.solution header  {
+	background-size: cover;
+	color: #FFF;
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+.solution header h1 {
+	font-size: 50px;
+	font-weight: 300;
+	margin: 180px 0 0 0;
+	text-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+}
+.solution header h2 {
+	font-size: 18px;
+	font-weight: bold;
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 2;
+	margin: 35px 0 0 0;
+}
+.solution header form {
+	margin-top: 50px;
+}
+.solution header form .btn{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.solution-content {
+	position: relative;
+	z-index: 10001;
+}
+.solution-content .container {
+	background: #FFF;
+	border-radius: 0 25px 0 25px;
+	box-shadow: 0 0 4px rgba(0,0,0,0.2);
+	margin-top: -75px; 
+	margin-bottom: 70px; 
+}
+.solution-content article {
+	border-right: 1px solid #EEE;
+	margin: 55px 0;
+	padding: 0 40px 60px 40px;
+}
+.solution-content h1 {
+	color: #00bdda;
+	font-size: 30px;
+	font-weight: 600;
+	margin: 0;
+}
+.solution-content h2 {
+	color: #5a6879;
+	font-size: 18px;
+	margin: 0;
+}
+.solution-content h3 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 0 25px 0;
+}
+.solution-content hr {
+	border-color: #999;
+	margin: 25px 0 45px 0;
+	width: 80px;
+}
+.solution-content p {
+	color: #666;
+	line-height: 1.5;
+	margin-bottom: 45px;
+}
+.solution-content ul {
+	margin-bottom: 45px;
+	margin-left: 2em;
+}
+.solution-content li {
+	color: #666;
+	margin-bottom: 0.5em;
+	padding-left: 1.2em;
+	position: relative;
+}
+.solution-content li:before {
+	content: "・";
+	color: #00bdda;
+	font-weight: 600;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.solution-content img {
+	margin-bottom: 45px;
+}
+
+.solution-content dl {
+	padding: 55px 0;
+}
+.solution-content dd .btn {
+	background-color: #f8f8f8;
+	border-radius: 15px;
+	border: 0;
+	color: #333;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 4px 6px 0;
+	padding: 0 20px;
+	width: auto;
+}
+.solution-content dd .btn:hover {
+	background-color: #EEE;
+}
+.solution-content blockquote {
+	margin-bottom: 45px;
+}
+.solution-content blockquote h1 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 35px;
+}
+.solution-content blockquote p {
+	font-size: 18px;
+}
+
+#solution-finance .header-solution {
+	background-image: url(../pics/bg-solution-01.jpg);
+}
+#solution-tradition .header-solution {
+	background-image: url(../pics/bg-solution-02.jpg);
+}
+#solution-internet .header-solution {
+	background-image: url(../pics/bg-solution-03.jpg);
+}
+#solution-o2o .header-solution {
+	background-image: url(../pics/bg-solution-04.jpg);
+}
+#solution-bio .header-solution {
+	background-image: url(../pics/bg-solution-05.jpg);
+}
+#solution-operator .header-solution {
+	background-image: url(../pics/bg-solution-06.jpg);
 }
