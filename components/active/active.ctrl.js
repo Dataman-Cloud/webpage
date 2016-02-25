@@ -8,7 +8,7 @@
 
     function ActiveCtrl($location, authBackend) {
         var self = this;
-        self.activeSuccess = false;
+        self.activeSuccess = undefined;
         var urlParmas = $location.search();
 
         (function() {
@@ -18,6 +18,7 @@
                     // TODO
                     // active success tips
                 }, function(res) {
+                    self.activeSuccess = false;
                     // TODO
                     // active failed tips
                 });
