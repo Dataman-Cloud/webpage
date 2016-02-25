@@ -61,6 +61,16 @@
                     }
                 }
             })
+            .state('sendActiveMailSuccess', {
+                url: '/user/active/sendmailsuccess',
+                data: {email: ''},
+                views: {
+                    '': {
+                        templateUrl: 'components/active/send-active-mail-success.html',
+                        controller: 'SendActiveMailSuccessCtrl as sendActiveMailSuccessCtrl'
+                    }
+                }
+            })
             .state('login', {
                 url: '/user/login',
                 views: {
