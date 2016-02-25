@@ -6,17 +6,16 @@
     angular.module('webpage')
         .controller('RegisterCtrl', RegisterCtrl);
 
-    RegisterCtrl.$inject = ['authBackend'];
+    RegisterCtrl.$inject = ['authBackend', '$state', '$rootScope', 'emailService', '$scope'];
 
-    function RegisterCtrl(authBackend) {
+    function RegisterCtrl(authBackend, $state, $rootScope, emailService, $scope) {
         var self = this;
         self.registerDataMan = function () {
-            authBackend.register(self.register).then(function (data) {
-                alert('注册成功,请前往邮箱激活');
-                //TO DO
+            authBackend.register(self.register, {"form": $scope.staticForm}).then(function (data) {
+                $rootScope.emailHref = emailService.emailUrl(self.register.email);
+                $state.go('registerSuccess');
             }, function (res) {
-                alert(res);
-                //TO DO
+
             })
         }
     }

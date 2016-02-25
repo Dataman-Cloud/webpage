@@ -21,6 +21,10 @@ BACKEND_URL = {
     }
 };
 
+MESSAGE_CODE = {
+    dataInvalid:10001
+};
+
 DOCADDRESS = {
     offline: 'http://offlinedoc.shurenyun.com/',
     online: 'http://doc.shurenyun.com'

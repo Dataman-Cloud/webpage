@@ -3,8 +3,8 @@
     
     angular.module('webpage').factory('webHttp', webHttp);
 
-    webHttp.$inject = ['$q', '$rootScope', '$http'];
-    function webHttp($q, $rootScope, $http) {
+    webHttp.$inject = ['$q', '$rootScope', '$http', '$state'];
+    function webHttp($q, $rootScope, $http, $state) {
         var token;
         
         if (!$rootScope.loadings) {
@@ -63,23 +63,39 @@
             };
             
             Resource.prototype.post = function(data, options) {
-                if (!options) {
-                    options = {};
-                }
-                options.data = data;
-                return this.req('post', options);
+                return this.dataReq('post', data, options);
             };
             
             Resource.prototype.put = function(data, options) {
-                if (!options) {
-                    options = {};
-                }
-                options.data = data;
-                return this.req('put', options);
+                return this.dataReq('put', data, options);
+            };
+
+            Resource.prototype.patch = function(data, options) {
+                return this.dataReq('patch', data, options);
             };
             
             Resource.prototype.delete = function(options) {
                 return this.req('delete', options);
+            };
+
+            Resource.prototype.dataReq = function(method, data, options) {
+                if (!options) {
+                    options = {};
+                }
+                options.data = data;
+                if (options.form) {
+                    options.form.$setPristine();
+                    options.form.message_error_info = {};
+                }
+                var promise = this.req(method, options);
+                if (options.form) {
+                    promise.catch(function (data) {
+                        if(data.code === MESSAGE_CODE.dataInvalid) {
+                            options.form.message_error_info = data.data;
+                        }
+                    });
+                }
+                return promise;
             };
             
             Resource.prototype.req = function(method, options) {
@@ -141,7 +157,7 @@
                 } else if (status == 404) {
                     $state.go('404');
                 } else {
-                    alert("服务忙，请稍后再试")
+                    $state.go('resError');
                 }
             };
             

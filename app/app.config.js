@@ -34,6 +34,14 @@
                     }
                 }
             })
+            .state('registerSuccess', {
+                url: '/user/register/success',
+                views: {
+                    '': {
+                        templateUrl: '/components/register/register-success-notice.html'
+                    }
+                }
+            })
             .state('active', {
                 url: '/user/active',
                 views: {
@@ -52,7 +60,7 @@
                     }
                 }
             })
-            .state('forgotpassword', {
+            .state('forgotPassword', {
                 url: '/user/forgotpassword',
                 views: {
                     '': {
@@ -61,12 +69,20 @@
                     }
                 }
             })
-            .state('resetpassword', {
+            .state('resetPassword', {
                 url: '/user/resetpassword',
                 views: {
                     '': {
                         templateUrl: '/components/password/reset-password.html',
                         controller: 'ResetPasswordCtrl as resetPasswordCtrl'
+                    }
+                }
+            })
+            .state('resError', {
+                url: '/user/error',
+                views: {
+                    '': {
+                        templateUrl: '/common_views/http-error-notice.html'
                     }
                 }
             })
