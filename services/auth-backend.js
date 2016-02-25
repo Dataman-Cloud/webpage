@@ -15,7 +15,8 @@
             getNotice: getNotice,
             forgotPassword: forgotPassword,
             sendNewPassword: sendNewPassword,
-            fetchVersions: fetchVersions
+            fetchVersions: fetchVersions,
+            getCustomerServiceLoginUrl: getCustomerServiceLoginUrl
         };
 
         //////////
@@ -57,6 +58,11 @@
                     });
             });
             return versions;
+        }
+        
+        function getCustomerServiceLoginUrl(token, returnTo) {
+            webHttp.setToken(token);
+            return webHttp.Resource('user.customerservice').get({'params': {'return_to': returnTo}, 'isAuth': true});
         }
 
     }
