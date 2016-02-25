@@ -1,0 +1,18 @@
+<div class="login">
+    <div class="container">
+        <header>
+            <a ui-sref="home">
+                <img src="pics/logo-shurenyun-ico-black.svg" class="logo">
+            </a>
+            <h1 data-ng-if="activeCtrl.activeSuccess">激活成功！</h1>
+            <h1 data-ng-if="activeCtrl.activeSuccess===false">激活失败！</h1>
+        </header>
+
+        <div class="content">
+            <a class="btn" data-ng-if="activeCtrl.activeSuccess" data-ui-sref="login">登录</a>
+            <a class="btn" data-ng-if="activeCtrl.activeSuccess===false" data-ui-sref="register">重新注册</a>
+        </div>
+
+        <div data-ng-include="'/common_views/copy-right-footer.html'" data-include-replace></div>
+    </div>
+</div>
