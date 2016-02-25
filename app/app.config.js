@@ -106,7 +106,16 @@
                     }
                 }
             })
+            .state('resetPasswordSuccess', {
+                url: '/user/resetpassword/success',
+                views: {
+                    '': {
+                        templateUrl: '/components/password/reset-password-success.html',
+                    }
+                }
+            })
             .state('resetPasswordFailed', {
+                url: '/user/resetpassword/failed',
                 views: {
                     '': {
                         templateUrl: '/components/password/reset-password-failed.html'

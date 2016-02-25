@@ -16,10 +16,10 @@
         self.sendPassword = function () {
             authBackend.sendNewPassword(urlParmas.reset, self.resetData)
                 .then(function (data) {
-                    $state.go('login');
+                    $state.go('resetPasswordSuccess');
                 }, function (res) {
                     $state.go('resetPasswordFailed');
-                })
+                });
         }
 
         function validResetCode() {
