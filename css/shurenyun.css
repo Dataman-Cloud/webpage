@@ -34,6 +34,34 @@ ul, li {
 	background-color: #00bdda;
 	border-color: #00bdda;
 }
+.nav > li {
+	position: static;
+}
+.dropdown-menu {
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+}
+.dropdown-menu h2 {
+	font-size: 14px;
+	color: rgba(255,255,255,0.6);
+}
+.dropdown-menu a {
+	font-size: 11px;
+	color: rgba(255,255,255,0.4);
+	display: inline-block;
+	margin: 0 20px 20px 0; 
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+	color: #00bdda;
+}
+.dropdown-menu a:hover {
+	color: #00bdda;
+	text-decoration: none;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+	background-color: transparent;
+	color: #00bdda;
+}
 
 /* 通用头部样式 */
 .nav-main {
@@ -51,12 +79,10 @@ ul, li {
 	padding-left: 6px;
 	padding-right: 6px;
 }
-
-.nav-main .navbar-nav > li > a:hover,  .nav-main .navbar-nav > li > a:focus {
+.nav-main .navbar-nav > .active > a, .nav-main .navbar-nav > .active > a:focus, .nav-main .navbar-nav > .active > a:hover {
 	background-color: transparent;
 	color: #00bdda;
 }
-
 .nav-main .navbar-brand {
 	background-color: transparent;
 	height: 38px;
@@ -82,6 +108,14 @@ ul, li {
 	border: 1px solid #CCC;
 	color: #CCC;
 }
+.nav-scroll {
+	background-color: rgba(0,0,0,0.6)!important;
+}
+
+
+
+
+
 
 
 /* 通用底部样式 */
@@ -191,6 +225,23 @@ ul, li {
 	padding-top: 90px;
 	padding-bottom: 40px;
 }
+.index-carousel .header h1 {
+	color: #00b9df;
+	font-size: 50px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 80px;
+	text-align: center;
+}
+.index-carousel .header h2 {
+	font-size: 18px;
+	line-height: 18px;
+	margin-top: 0;
+	margin-bottom: 30px;
+	opacity: 0.4;
+	text-align: center;
+	vertical-align: middle;
+}
 .carousel-indicators {
 	font-size: 0;
 	left: 0;
@@ -273,6 +324,7 @@ ul, li {
 	background-image: url('../pics/bg-index-header.jpg');
 	background-size: cover;
 	color: #FFF;
+	min-height: 650px;
 	height: 100%;
 	overflow: hidden;
 	position: relative;
@@ -309,7 +361,7 @@ ul, li {
 	margin-right: 10px;
 }
 .header-index footer {
-	bottom: 25px;
+	bottom: 15px;
 	color: rgba(255,255,255,0.6);
 	font-size: 42px;
 	left: 0;
@@ -555,7 +607,7 @@ ul, li {
 }
 .solution-content blockquote p {
 	font-size: 18px;
-}
+}	
 
 #solution-finance .header-solution {
 	background-image: url(../pics/bg-solution-01.jpg);
@@ -575,3 +627,91 @@ ul, li {
 #solution-operator .header-solution {
 	background-image: url(../pics/bg-solution-06.jpg);
 }
+
+#product {
+	height: 100%;
+	background-color: #FFF;
+}
+#product header {
+	background-image: url(../pics/pic-product-01.jpg);
+}
+#product header h1 {
+	font-size: 50px;
+	margin-top: 145px;
+}
+#product header h2 {
+	font-size: 18px;
+	font-weight: bold;
+}
+#product header h4 {
+	font-size: 11px;
+	line-height: 2;
+}
+#product header form {
+	margin-top: 90px;
+}
+#product section:nth-child(2n) {
+	background-color: #FFF;
+}
+#product section:nth-child(2n+1) {
+	background-color: #f3f5f7;
+}
+#product .product-feature h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 30px 0 30px 0;
+}
+#product .solution-enter {
+	background-color: #FFF;
+	padding-top: 95px;
+	padding-bottom: 105px;
+	text-align: center;
+}
+#product .solution-enter a {
+	color: #999;
+	display: inline-block;
+	font-size: 11px;
+	margin-top: 12px;
+}
+
+#aboutus {
+	background-color: #FFF;
+	height: 100%;
+}
+#aboutus header {
+	background-image: url(../pics/pic-aboutus-01.png);
+	padding-top: 200px;
+	text-align: left;
+}
+#aboutus header h1 {
+	font-size: 50px;
+	font-weight: bold;
+	text-align: right;
+	margin: 0;
+}
+#aboutus header p {
+	line-height: 2;
+}
+#aboutus header hr {
+	margin-left: 0;
+	border-color: #00bdda;
+	width: 220px;
+}
+#aboutus section {
+	background-color: #FFF;
+}
+#aboutus .member h3 {
+	color: #5a6879;
+	font-size: 30px;
+}
+#aboutus .member h3 small {
+	font-size: 15px;
+}
+#aboutus .member p {
+	color: #666;
+	font-size: 12px;
+}
+
+
+
+
