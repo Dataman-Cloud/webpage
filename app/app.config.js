@@ -136,6 +136,62 @@
                         templateUrl: '/common_views/http-error-notice.html'
                     }
                 }
+            })
+            .state('solution', {
+                abstract: true,
+                views: {
+                    '': {
+                        templateUrl: '/static_views/solution/solution.html'
+                    }
+                }
+            })
+            .state('solution.bioinfo', {
+                url: '/solution-bioinfo',
+                views: {
+                    'solution': {
+                        templateUrl: '/static_views/solution/solution-bioinfo.html'
+                    }
+                }
+            })
+            .state('solution.finance', {
+                url: '/solution-finance',
+                views: {
+                    'solution': {
+                        templateUrl: '/static_views/solution/solution-finance.html'
+                    }
+                }
+            })
+            .state('solution.internet', {
+                url: '/solution-internet',
+                views: {
+                    'solution': {
+                        templateUrl: '/static_views/solution/solution-internet.html'
+                    }
+                }
+            })
+            .state('solution.o2o', {
+                url: '/solution-o2o',
+                views: {
+                    'solution': {
+                        templateUrl: '/static_views/solution/solution-o2o.html'
+                    }
+                }
+            })
+            .state('solution.operator', {
+                url: '/solution-operator',
+                views: {
+                    'solution': {
+                        templateUrl: '/static_views/solution/solution-operator.html'
+                    }
+                }
+            })
+            .state('solution.tradition', {
+                url: '/solution-tradition',
+                views: {
+                    'solution': {
+                        templateUrl: '/static_views/solution/solution-tradition.html'
+                    }
+                }
             });
 
 

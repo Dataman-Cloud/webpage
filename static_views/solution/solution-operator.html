@@ -1,0 +1,46 @@
+<div id="solution-operator" class="solution">     
+    <header class="header-solution">
+        <div class="container">
+            <h1><img src="pics/bg-solution-06-1.png" height="80"></h1>
+            <h2>数人云核心基于Apache Mesos 开源商业化解决方案，实现底层资源的细粒度池化。容器部分采用了Marathon为主的调度系统，这套技术框架路线已经在浙江移动、Verizon等运营商的生产系统得到了验证。</h2>
+            <div data-ng-include="'/static_views/solution/solution-button.html'" data-include-replace></div>
+        </div>
+    </header>
+    
+    <div class="solution-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <article>
+                        <blockquote>
+                            <p>电信运营商是传统企业是 IT 水平最高的领域，同时也是离“互联网”最近、受冲击最大的部分。一方面电信运营商要加快研发节奏，提升灵活性，发展自己的海量互联网应用。另外一方面作为社会基础资源，也担负着支撑全社会互联网发展的责任，有必要不断提升效率、降低成本。</p>
+                        </blockquote>
+                        <h1>需求描述</h1>
+                        <hr>
+                        <ul>
+                            <li>运营商的用户基数较大，互联网业务需要为爆发性增长做准备，顶住可能的高并发访问（例如秒杀、红包类应用）。</li>
+                            <li>运营商的业务多数由第三方开发，需要不断提升开发、测试和生产环境的一致性，实现业务快速上线。</li>
+                            <li>运营商的业务较多，造成服务器利用率较低，需要某种技术手段显著地提升资源利用率。</li>
+                            <li>运营商底层异构资源较多，网络情况复杂，需要技术手段来屏蔽底层异构资源。</li>
+                        </ul>
+                        <p>针对上面的问题，运营商在过去十年已经进行了业务 X86 迁移、服务器虚拟化、资源池私有云等改造。一定程度上解决了底层资源自动化管理和屏蔽异构的问题，问题的焦点逐渐向应用层转移，例如业务上线慢、扩容慢、维护成本高等等。</p>
+                        <h1>数人云解决方案</h1>
+                        <hr>
+                        <p>数人云通过和多家移动省公司的交流，并且参考了美国 Verizon 和中国移动浙江公司基于 Mesos 的最佳实践，提出了自己的开源商业化数据中心操作系统方案（Datacenter OS）。这个方案旨在针对运营商的互联网有关业务，提供如下的特性：</p>
+                        <ul>
+                            <li>在数据中心层面提供资源弹性，实现业务的快速横向扩展和自动容错。</li>
+                            <li>通过持续集成功能，向内外开发团队提供标准的应用发布接口，实现业务的快速测试和顺利上线。</li>
+                            <li>进一步抽象底层资源（计算资源为主，配合IaaS可以实现存储和网络的抽象），实现应用对于底层资源的无缝调用。</li>
+                            <li>提供跨机房和跨云管理功能，实现混合云的搭建</li>
+                        </ul>
+                        <img src="pics/bg-solution-06-2.svg" width="80%">
+                        <h1>实施效果</h1>
+                        <hr>
+                        <p>数人云核心基于 Apache Mesos 开源商业化解决方案，实现底层资源的细粒度池化。容器部分采用了 Marathon 为主的调度系统，这套技术框架路线已经在浙江移动、Verizon 等运营商的生产系统得到了验证。在资源统调层之上是各个 PaaS 的业务模块，例如实现高并发下弹性扩展的“弹性扩展管理”模块，例如提供自动打包和自动部署功能的“持续集成模块”。这些模块加上企业级的日志和监控模块（也可以和企业既有日志监控系统对接），实现了一个完整的数据中心操作系统功能。</p>
+                    </article>
+                </div>
+                <div data-ng-include="'/static_views/solution/solution-nav.html'" data-include-replace></div>
+            </div>
+        </div>
+    </div>
+</div>
