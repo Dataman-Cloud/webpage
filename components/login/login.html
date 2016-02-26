@@ -1,5 +1,11 @@
 <div id="login" class="login">
     <div class="container">
+        <div class="alert alert-warning alert-dismissible" role="alert" data-ng-show='loginCtrl.notice'>
+            <div class="container">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <span data-ng-bind-html="loginCtrl.notice"></span>
+            </div>
+        </div>
         <header>
             <a ui-sref="home"><img src="pics/logo-shurenyun-ico-black.svg" class="logo"></a>
             <h1>请登录数人云账户</h1>

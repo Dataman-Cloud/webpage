@@ -216,3 +216,12 @@
 	padding-bottom: 35px;
 	padding-top: 30px;
 }
+.login .alert {
+	border-radius: 0;
+	border: 0;
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	font-size: 11px;
+} 

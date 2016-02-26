@@ -7,16 +7,9 @@
 
   function runBlock(authBackend, $rootScope) {
 
-      getNotice();
       checkOffline();
       fetchVersions();
 
-      function getNotice() {
-          authBackend.getNotice()
-              .then(function(data) {
-                  // notice alert
-          });
-      }
 
       function checkOffline() {
           $rootScope.docAddress = CONFIG.is_offline ? DOCADDRESS.offline : DOCADDRESS.online;
