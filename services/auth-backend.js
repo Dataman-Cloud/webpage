@@ -53,7 +53,7 @@
         function fetchVersions() {
             var versions = {};
             angular.forEach(BACKEND_URL.version, function(value, key) {
-                webHttp.Resource('version.' + key).get()
+                webHttp.Resource('version.' + key).get({'ignoreErr': true})
                     .then(function(data) {
                         versions[value] = data;
                     });

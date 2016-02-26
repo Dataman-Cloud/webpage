@@ -54,7 +54,8 @@
                 this.url = buildFullURL(urlName, params);
                 this.options = {
                     isAuth: false,
-                    loading: ''
+                    loading: '',
+                    ignoreErr: false
                 }
             }
             
@@ -127,7 +128,9 @@
                     }
                 }.bind(this)).error(function (data, status) {
                     this._stopLoading(this.options.loading);
-                    this._handleErrors(status);
+                    if (!this.options.ignoreErr) {
+                        this._handleErrors(status);
+                    }
                 }.bind(this));
                 
                 return deferred.promise;

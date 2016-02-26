@@ -6,12 +6,14 @@
     angular.module('webpage')
         .controller('LoginCtrl', LoginCtrl);
 
-    LoginCtrl.$inject = ['loginService', '$location', '$scope', '$state'];
+    LoginCtrl.$inject = ['loginService', '$location', '$scope', '$state', 'authBackend'];
 
-    function LoginCtrl(loginService, $location, $scope, $state) {
+    function LoginCtrl(loginService, $location, $scope, $state, authBackend) {
         var self = this;
         self.loginData = {};
         var returnTo = $location.search()['return_to'];
+        
+        setNotice();
 
         self.login = function () {
             loginService.login(self.loginData, returnTo, $scope.staticForm)
@@ -24,5 +26,14 @@
                     }
                 })
         };
+        
+        function setNotice() {
+            authBackend.getNotice()
+            .then(function(data) {
+                if (data) {
+                    self.notice = data.content;
+                }
+            });
+        }
     }
 })();
