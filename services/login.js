@@ -19,7 +19,7 @@
             }
             return authBackend.login(userData, form).then(function (data) {
                 var token = '\"' + data.token + '\"';
-                $cookies.put('token', token, undefined, '/',  CONFIG.domain, undefined);
+                $cookies.put('token', token, {domain: CONFIG.domain});
                 redirect4Login(returnTo, data.token);
             });
         };
