@@ -200,6 +200,14 @@
                         templateUrl: '/static_views/price.html'
                     }
                 }
+            })
+            .state('service-item', {
+                url: '/service-item',
+                views: {
+                    '': {
+                        templateUrl: '/common_views/service-item.html'
+                    }
+                }
             });
 
 
