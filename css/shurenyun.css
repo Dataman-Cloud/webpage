@@ -51,10 +51,12 @@ ul, li {
 	padding-left: 6px;
 	padding-right: 6px;
 }
-.nav-main .navbar-nav > .active > a, .nav-main .navbar-nav > .active > a:focus, .nav-main .navbar-nav > .active > a:hover {
+
+.nav-main .navbar-nav > li > a:hover,  .nav-main .navbar-nav > li > a:focus {
 	background-color: transparent;
 	color: #00bdda;
 }
+
 .nav-main .navbar-brand {
 	background-color: transparent;
 	height: 38px;
