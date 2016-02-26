@@ -192,6 +192,14 @@
                         templateUrl: '/static_views/solution/solution-tradition.html'
                     }
                 }
+            })
+            .state('price', {
+                url: '/price',
+                views: {
+                    '': {
+                        templateUrl: '/static_views/price.html'
+                    }
+                }
             });
 
 
