@@ -15,7 +15,7 @@ var minifyHtml = require('gulp-minify-html');
 var inject = require('gulp-inject');
 
 gulp.task('copy-conf', function() {
-    gulp.src('js/conf.js')
+    gulp.src('conf.js')
         .pipe(gulp.dest('build/js/'));
 });
 
