@@ -216,6 +216,14 @@
                         templateUrl: '/static_views/aboutus.html'
                     }
                 }
+            })
+            .state('product', {
+                url: '/product',
+                views: {
+                    '': {
+                        templateUrl: '/static_views/product-index.html'
+                    }
+                }
             });
 
 
