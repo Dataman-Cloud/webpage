@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
-var concat = require('gulp-concat');
 var minifyCss = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
 var RevAll = require('gulp-rev-all');
@@ -9,6 +8,11 @@ var useref = require('gulp-useref');
 var clean = require('gulp-clean');
 var gulpif = require('gulp-if');
 var rev = require('gulp-rev-hash');
+var jslint = require('gulp-jslint-simple');
+
+var angularTemplatecache = require('gulp-angular-templatecache');
+var minifyHtml = require('gulp-minify-html');
+var inject = require('gulp-inject');
 
 gulp.task('copy-conf', function() {
     gulp.src('js/conf.js')
@@ -16,32 +20,71 @@ gulp.task('copy-conf', function() {
 });
 
 gulp.task('copy-pics', ['copy-conf'], function() {
-    gulp.src('pics/*')
+    gulp.src(['pics/*', 'pics/**/*'])
         .pipe(gulp.dest('build/pics/'));
 });
 
 gulp.task('copy-fonts', ['copy-pics'], function() {
-    var sources = ['js/bower_components/bootstrap/dist/fonts/*'];
+    var sources = ['fonts/*'];
     gulp.src(sources)
-        .pipe(gulp.dest('build/fonts'))
+        .pipe(gulp.dest('build/fonts'));
 });
 
-gulp.task('html-replace', function() {
+gulp.task('template-min', function () {
+    var htmlSrc = [
+        'common_views/*.html', 
+        'components/**/*.html',
+        'static_views/*.html',
+        'static_views/**/*.html'
+    ];
+    return gulp.src(htmlSrc)
+        .pipe(minifyHtml({
+            empty: true,
+            spare: true,
+            quotes: true
+        }))
+        .pipe(angularTemplatecache('templateCacheHtml.js', {
+            module: 'webpage'
+        }))
+        .pipe(gulp.dest('build/js/'));
+});
+
+gulp.task('html-replace', ['template-min'], function() {
+
+    var templateInjectFile = gulp.src('build/js/templateCacheHtml.js', { read: false });
+    var templatenjectOptions = {
+        starttag: '<!-- inject:template.js  -->',
+        addRootSlash: false
+    };
+
     var assets = useref.assets();
-    var revAll = new RevAll({dontRenameFile: ['.html'], dontUpdateReference: ['.html']});
-    return gulp.src(['index.html', 'price.html', 'case-miaosha.html', 'company-app.html', 'companyapp-detail-discuz.html',
-                     'companyapp-detail-ecshop.html', 'companyapp-detail-elasticsearch.html', 'companyapp-detail-hadoop.html',
-                     'companyapp-detail-jekins.html', 'companyapp-detail-joomla.html', 'companyapp-detail-kafka.html',
-                     'companyapp-detail-lnmp.html', 'companyapp-detail-spark.html', 'companyapp-detail-wordpress.html'])
+   // var options = {collapseWhitespace: true};
+    var revAll = new RevAll();
+    return gulp.src('index.html')
+        .pipe(inject(templateInjectFile, templatenjectOptions))
         .pipe(assets)
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', minifyCss()))
         .pipe(assets.restore())
-        .pipe(useref())
-        .pipe(revAll.revision())
+        .pipe(useref().on('error', gutil.log))
+        .pipe(revAll.revision().on('error', gutil.log))
         .pipe(gulp.dest('build/'))
         .pipe(revAll.manifestFile())
         .pipe(gulp.dest('build/'));
+});
+
+gulp.task('html-rename', ['html-replace'], function() {
+    gulp.src('build/index.*.html')
+      .pipe(rename('index.html').on('error', gutil.log))
+      .pipe(gulp.dest('build/'));
+});
+
+gulp.task('clean', ['html-rename'], function() {
+    var sources = [
+      'build/index.**.html'
+    ];
+    return gulp.src(sources, {read: false})
+        .pipe(clean());
 });
 
 gulp.task('rev', function() {
@@ -50,4 +93,4 @@ gulp.task('rev', function() {
         .pipe(gulp.dest('build/'))
 });
 
-gulp.task('default', ['html-replace', 'copy-fonts']);
+gulp.task('default', ['clean', 'copy-fonts']);
