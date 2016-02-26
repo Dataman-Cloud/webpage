@@ -700,6 +700,32 @@ ul, li {
 #aboutus section {
 	background-color: #FFF;
 }
+#aboutus .member {
+	padding: 25px 0;
+	text-align: center;
+}
+#aboutus .member h1 {
+	color: #e4bd23;
+	font-size: 24px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+#aboutus .member h2 {
+	color: #5a6879;
+	font-size: 36px;
+	margin: 0;
+}
+#aboutus .member hr {
+	border-color: #cccccc;
+	margin-bottom: 80px;
+	width: 150px;
+}
+#aboutus .thumbnail {
+	border: 0;
+	min-height: 530px;
+	padding: 0 25px;
+	text-align: left;
+}
 #aboutus .member h3 {
 	color: #5a6879;
 	font-size: 30px;
@@ -710,8 +736,38 @@ ul, li {
 #aboutus .member p {
 	color: #666;
 	font-size: 12px;
+	line-height: 2;
 }
-
-
+#aboutus .joinus-link a {
+	color: #18aad3;
+	font-size: 18px;
+	font-weight: 200;
+}
+#aboutus .partner {
+	background-color: #f3f5f7;
+}
+#aboutus .partner h1 {
+	color: #5a6879;
+	font-size: 36px;
+}
+#aboutus .partner hr {
+	border-color: #333;
+	margin-left: 0;
+	width: 80px;
+}
+#aboutus .partner h2 {
+	color: #666;
+	font-size: 18px;
+}
+#aboutus .partner dt {
+	border-bottom: 1px solid #bbb;
+}
+#aboutus .partner dd {
+	padding: 55px 0;
+}
+#aboutus .partner dd img {
+	height: 38px;
+	margin-right: 75px;
+}
 
 

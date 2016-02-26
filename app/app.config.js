@@ -208,6 +208,14 @@
                         templateUrl: '/common_views/service-item.html'
                     }
                 }
+            })
+            .state('aboutus', {
+                url: '/aboutus',
+                views: {
+                    '': {
+                        templateUrl: '/static_views/aboutus.html'
+                    }
+                }
             });
 
 
