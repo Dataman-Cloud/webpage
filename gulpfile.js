@@ -16,7 +16,7 @@ var inject = require('gulp-inject');
 
 gulp.task('copy-conf', function() {
     gulp.src('conf.js')
-        .pipe(gulp.dest('build/js/'));
+        .pipe(gulp.dest('build/'));
 });
 
 gulp.task('copy-pics', ['copy-conf'], function() {
@@ -30,44 +30,23 @@ gulp.task('copy-fonts', ['copy-pics'], function() {
         .pipe(gulp.dest('build/fonts'));
 });
 
-gulp.task('template-min', function () {
-    var htmlSrc = [
+gulp.task('html-replace', function() {
+    var assets = useref.assets();
+    var srcTemplates = [
+        'index.html',
         'common_views/*.html', 
         'components/**/*.html',
         'static_views/*.html',
         'static_views/**/*.html'
     ];
-    return gulp.src(htmlSrc)
-        .pipe(minifyHtml({
-            empty: true,
-            spare: true,
-            quotes: true
-        }))
-        .pipe(angularTemplatecache('templateCacheHtml.js', {
-            module: 'webpage'
-        }))
-        .pipe(gulp.dest('build/js/'));
-});
-
-gulp.task('html-replace', ['template-min'], function() {
-
-    var templateInjectFile = gulp.src('build/js/templateCacheHtml.js', { read: false });
-    var templatenjectOptions = {
-        starttag: '<!-- inject:template.js  -->',
-        addRootSlash: false
-    };
-
-    var assets = useref.assets();
-   // var options = {collapseWhitespace: true};
-    var revAll = new RevAll();
-    return gulp.src('index.html')
-        .pipe(inject(templateInjectFile, templatenjectOptions))
+    var revAll = new RevAll({dontRenameFile: ['.html'], dontUpdateReference: ['.html']});
+    return gulp.src(srcTemplates)
         .pipe(assets)
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', minifyCss()))
         .pipe(assets.restore())
-        .pipe(useref().on('error', gutil.log))
-        .pipe(revAll.revision().on('error', gutil.log))
+        .pipe(useref())
+        .pipe(revAll.revision())
         .pipe(gulp.dest('build/'))
         .pipe(revAll.manifestFile())
         .pipe(gulp.dest('build/'));
