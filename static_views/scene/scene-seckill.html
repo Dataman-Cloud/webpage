@@ -1,0 +1,103 @@
+<div id="scene-seckill" class="solution">
+    <header class="header-solution">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-1">
+                    <img src="pics/pic-scene-01-3.svg" width="100%">
+                </div>
+                <div class="col-md-5 col-md-offset-2">
+                    <h1>高并发 & 秒杀</h1>
+                    <h2>通过使用数人云<br>
+                        可轻松应对秒杀等瞬时高并发业务。</h2>
+                    <form>
+                        <button class="btn btn-primary">免费咨询</button>
+                        <button class="btn btn-default">立即注册</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="solution-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <article>
+                        <h1>问题和分析</h1>
+                        <hr>
+                        <p>
+                            电商秒杀是典型的互联网海量应用场景，对于IT基础架构、软件架构和运维能力都是严峻的考验。秒杀特点是大量用户在短时间内涌入，后台系统不但要保证在压力下不会瘫痪，还要保证高并发下抢购逻辑的正确性。</p>
+                        <p>主要挑战体现在：</p>
+                        <ul>
+                            <li><strong>网络：</strong>需要有足够的网络带宽容纳海量用户的访问</li>
+                            <li><strong>安全：</strong>防止各种恶意攻击，例如 DDOS</li>
+                            <li><strong>计算资源：</strong>要能够按需提供足够的计算资源，满足上层软件处理的需求</li>
+                            <li><strong>软件架构：</strong>软件架构要能充分利用底层资源，容纳高并发的访问</li>
+                            <li><strong>交易正确性：</strong>要保证交易的最终一致性，避免出现超购或者购买流程错误的情况</li>
+                            <li><strong>监控和控制：</strong>要为商家提供足够的监控手段，同时在交易出现特定异常情况时，手动或者自动熔断核心要求底层资源调度和软件架构上要能提供足够的弹性，保证在高并发场景下系统容量能够横向扩展，取得最大的营销效果。同时要确保交易的安全和正确性，避免客户财产的损失。
+                            </li>
+                        </ul>
+                        <h1>解决方案</h1>
+                        <hr>
+                        <p>2016年初，数人云应某TOP 3视频网站的要求，以网络春晚抢红包为模拟业务场景，设计了基于公有云资源和数人云软件的解决联合方案。</p>
+                        <p>核心红包处理系统,整体解决方案的设计思路如下：</p>
+                        <p>
+                            利用公有云解决资源层弹性问题，提供近乎“无限”的网络带宽资源和计算资源软件架构上采用经典的分布式架构，承接用户访问压力的“等候领奖”组件无状态化，便于横向扩展。用户请求通过消息队列传递到后端发奖处理模块，实现“排队”领奖的异步逻辑。</p>
+                        <p>数人云作为“中间件”层实现了处理能力随着压力不断平滑扩展，抗住了高并发。向下管理资源，将底层计算资源组成一个资源池。向上承载核心业务逻辑，实现了“等候领奖”等组件的横向扩展。</p>
+                        <p>下列表格说明了资源方（公有云或者企业自建的私有云）和数人云秒杀平台之间的分工：</p>
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>公有云</th>
+                                <th>私有云</th>
+                                <th class="info">数人云秒杀</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>网 络</th>
+                                <td>动态带宽资源，CDN承载静态页面</td>
+                                <td>预留足够带宽，CDN承载静态页面</td>
+                                <td class="info">无 关</td>
+                            </tr>
+                            <tr>
+                                <th>安 全</th>
+                                <td>防DDOS服务</td>
+                                <td>第三方防DDOS服务</td>
+                                <td class="info">应用本身能抗住较高并发</td>
+                            </tr>
+                            <tr>
+                                <th>技术机资源</th>
+                                <td>云主机动态扩展</td>
+                                <td>虚拟机动态扩展</td>
+                                <td class="info">将底层资源池化，承载核心应用</td>
+                            </tr>
+                            <tr>
+                                <th>高并发处理逻辑</th>
+                                <td>无 关</td>
+                                <td>无 关</td>
+                                <td class="info">等候页面无状态，通过横向扩展抗住高并发。等候和发奖模块之间异步排队，保证发奖逻辑正确</td>
+                            </tr>
+                            <tr>
+                                <th>监控和熔断</th>
+                                <td>无 关</td>
+                                <td>无 关</td>
+                                <td class="info">监控等候页面压力和发奖队列长度，提供预定义的熔断功能</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p>数人云红包或者秒杀平台同客户自有系统对接有如下几种方式：</p>
+                        <ul>
+                            <li>客户可以直接在秒杀管理界面上传兑换码，则不需要接口级别对接。</li>
+                            <li>客户可以设置自己的支付跳转页面，数人云会将抢购成功用户引导跳转到客户的支付页面。</li>
+                        </ul>
+                        <p>具体架构图如下：</p>
+                        <img src="pics/pic-scene-01-1.svg" width="100%">
+                    </article>
+                </div>
+                <div data-ng-include="'/static_views/scene/scene-nav.html'" data-include-replace></div>
+            </div>
+        </div>
+    </div>
+</div>

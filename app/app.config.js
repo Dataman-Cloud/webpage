@@ -193,6 +193,46 @@
                     }
                 }
             })
+            .state('scene', {
+                abstract: true,
+                views: {
+                    '': {
+                        templateUrl: '/static_views/scene/scene.html'
+                    }
+                }
+            })
+            .state('scene.bigdata', {
+                url: '/scene-bigdata',
+                views: {
+                    'scene': {
+                        templateUrl: '/static_views/scene/scene-bigdata.html'
+                    }
+                }
+            })
+            .state('scene.cicd', {
+                url: '/scene-cicd',
+                views: {
+                    'scene': {
+                        templateUrl: '/static_views/scene/scene-cicd.html'
+                    }
+                }
+            })
+            .state('scene.containercloud', {
+                url: '/scene-containercloud',
+                views: {
+                    'scene': {
+                        templateUrl: '/static_views/scene/scene-containercloud.html'
+                    }
+                }
+            })
+            .state('scene.seckill', {
+                url: '/scene-seckill',
+                views: {
+                    'scene': {
+                        templateUrl: '/static_views/scene/scene-seckill.html'
+                    }
+                }
+            })
             .state('price', {
                 url: '/price',
                 views: {
