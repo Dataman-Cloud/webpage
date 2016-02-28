@@ -1,0 +1,61 @@
+<div id="scene-bigdata" class="solution">
+    <header class="header-solution">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-1">
+                    <img src="pics/pic-scene-03-2.svg" width="100%">
+                </div>
+                <div class="col-md-5 col-md-offset-2">
+                    <h1>Big Data</h1>
+                    <p>数人云提供统一管理和调度的大数据平台解决方案
+                        帮助企业快速搭建大数据应用环境，提高数据中心的资源利用率。
+                        在降低大数据平台的实施、运维管理复杂度的同时，
+                        让大数据技术帮助企业实现业务的快速发展。</p>
+                    <form>
+                        <button class="btn btn-primary">免费咨询</button>
+                        <button class="btn btn-default">立即注册</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="solution-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <article>
+                        <h1>问题和分析</h1>
+                        <hr>
+                        <p>当企业积累了大量的数据，如何有效利用数据的价值成为企业的当务之急，大数据技术就是为了解决这个问题应运而生。</p>
+                        <p>以 Hadoop、Spark 为核心的大数据生态圈正在快速发展，层出不穷的大数据工具方便了企业处理海量数据，但也给大数据平台的部署和维护带来了挑战。</p>
+                        <p>这些挑战主要有以下方面：</p>
+                        <ul>
+                            <li><strong>提高资源利用率：</strong>大数据应用分为多种使用场景，如离线计算、流式计算、AdHoc
+                                即席查询等，不同场景对资源的使用量和使用时间也不尽相同，如何提高资源利用率并缩短任务执行时间？
+                            </li>
+                            <li><strong>大数据平台扩容：</strong>当企业积累的数据规模越来越大时，如何方便地对大数据平台进行扩容，提高大数据平台处理能力？</li>
+                            <li><strong>快速部署：</strong>大数据生态系统越来越复杂，不同的大数据工具之间往往需要搭配使用，如何快速部署和方便地配置这些工具组件？
+                            <li><strong>高可用性：</strong>随着大数据平台的集群规模越来越大，大数据工具组件越来越多，相互依赖越来越复杂，如何保证大数据平台的稳定性，保证高可用性？</li>
+                            <li><strong>管理和监控：</strong>每个大数据组件都有自己的控制台和监控界面，有的甚至只有命令行工具，这给企业运维带来了很多困扰。如何对大数据平台进行统一的管理和监控？
+                            </li>
+                        </ul>
+                        <h1>解决方案</h1>
+                        <hr>
+                        <p>数人云利用 Mesos 技术可以在集群中混合部署 Hadoop、Spark、Kafka、Hbase、Storm
+                            等大数据应用，提高集群计算资源利用率，按需为各种大数据应用分配资源。</p>
+                        <p>数人云以 Mesos 技术为核心，面向数据中心对计算资源进行统一管理和调度，为应用提供弹性伸缩能力，轻松实现大数据平台一键扩容。</p>
+                        <p>数人云以 Docker 形式进行应用分发，每个大数据应用打包成 Docker，轻松实现快速部署。</p>
+                        <p>数人云采用容错机制，保证各种大数据工具组件的高可用性，极大地降低了大数据系统的运维复杂度。</p>
+                        <p>数人云提供统一的界面，轻松监控各个大数据应用的运行情况。</p>
+                        <h1>场景</h1>
+                        <hr>
+                        <p>比如这样一个场景，用户每天凌晨1点通过 Hadoop 对历史数据进行离线计算和分析；同时，每隔两小时通过 Spark 进行一次批处理；此外，通过 Storm 进行实时流式计算。</p>
+                        <p>过去，该用户需要为 Hadoop、Spark、Storm 分别创建集群，维护这三套集群。而数人云可以在同一个集群上部署这三种大数据应用，并按需为每种应用动态分配资源。</p>
+                    </article>
+                </div>
+                <div data-ng-include="'/static_views/scene/scene-nav.html'" data-include-replace></div>
+            </div>
+        </div>
+    </div>
+</div>

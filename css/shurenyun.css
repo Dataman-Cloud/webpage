@@ -110,6 +110,7 @@ ul, li {
 }
 .nav-scroll {
 	background-color: rgba(0,0,0,0.6)!important;
+	z-index: 11111;
 }
 
 
@@ -207,7 +208,6 @@ ul, li {
 #index section h1 {
 	color: #5a6879;
 	font-size: 36px;
-	font-weight: bold;
 	margin: 0;
 	text-align: center;
 }
@@ -222,6 +222,7 @@ ul, li {
 
 /* 首页样式 --- 轮播 */
 .index-carousel {
+	background-color: #FFF;
 	padding-top: 90px;
 	padding-bottom: 40px;
 }
@@ -346,12 +347,13 @@ ul, li {
 .header-index h3 {
 	background-color: rgba(204,0,77,0.6);
 	border-radius: 10px;
+	display: inline-block;
 	font-size: 12px;
 	height: 20px;
-	padding-top: 3px;
+	padding: 3px 20px 0 20px;
 	letter-spacing: 2px;
 	margin: 27px auto 0 auto;
-	width: 155px;
+	width: auto;
 }
 .header-index form {
 	margin-top: 145px;
@@ -425,6 +427,9 @@ ul, li {
 }
 
 /* 首页样式 --- 技术和组件 */
+.tec-com {
+	background-color: #FFF;
+}
 .tec-com h1 {
 	padding-top: 90px;
 }
@@ -447,7 +452,8 @@ ul, li {
 
 /* 首页样式 --- 成功经验 */
 .experience {
-	margin-bottom: 90px;
+	background-color: #FFF;
+	padding-bottom: 90px;
 }
 .experience h1 {
 	padding-top: 90px;
@@ -469,9 +475,8 @@ ul, li {
 }
 .experience li a .logo {
 	display: none;
-	margin: 15% auto;
 	text-align: center;
-	height: 70%;
+	width: 100%;
 }
 .experience li a:hover {
 	background-color: #7a7a7a;
@@ -558,6 +563,9 @@ ul, li {
 	line-height: 1.5;
 	margin-bottom: 45px;
 }
+.solution-content table {
+	margin-bottom: 45px;
+}
 .solution-content ul {
 	margin-bottom: 45px;
 	margin-left: 2em;
@@ -628,6 +636,8 @@ ul, li {
 	background-image: url(../pics/bg-solution-06.jpg);
 }
 
+
+/* 产品页面样式 */
 #product {
 	height: 100%;
 	background-color: #FFF;
@@ -674,6 +684,8 @@ ul, li {
 	margin-top: 12px;
 }
 
+
+/* 关于我们样式 */
 #aboutus {
 	background-color: #FFF;
 	height: 100%;
@@ -749,10 +761,12 @@ ul, li {
 #aboutus .partner h1 {
 	color: #5a6879;
 	font-size: 36px;
+	margin-top: 45px;
 }
 #aboutus .partner hr {
 	border-color: #333;
 	margin-left: 0;
+	margin-bottom: 45px;
 	width: 80px;
 }
 #aboutus .partner h2 {
@@ -764,10 +778,198 @@ ul, li {
 }
 #aboutus .partner dd {
 	padding: 55px 0;
+	font-size: 0;
 }
 #aboutus .partner dd img {
 	height: 38px;
 	margin-right: 75px;
 }
 
+#scene-seckill header {
+	background-image: url(../pics/pic-scene-01-2.jpg); 
+}
+#scene-seckill header img {
+	margin-top: 120px;
+}
+#scene-seckill header .row {
+	text-align: left;
+}
+#scene-containercloud header {
+	background-image: url(../pics/pic-scene-02.jpg); 
+}
+#scene-bigdata header {
+	background-image: url(../pics/pic-scene-03-1.jpg); 
+}
+#scene-bigdata header .row {
+	text-align: left;
+}
+#scene-bigdata header img {
+	margin-top: 120px;
+}
+#scene-bigdata header h1 {
+	margin-bottom: 30px;
+}
+#scene-bigdata header p {
+	line-height: 2;
+}
+#scene-cicd header {
+	background-image: url(../pics/pic-scene-04-1.jpg); 
+}
+#scene-cicd header .row {
+	text-align: left;
+}
+#scene-cicd header img {
+	margin-top: 140px;
+}
+#scene-cicd header h1 {
+	font-size: 36px;
+	margin-top: 160px;
+}
 
+
+
+
+
+.btn-freetry {
+	display: block;
+	height: 75px;
+	margin: 10px auto;
+	width: 440px;
+	background-color: #62be50;
+	border-radius: 6px;
+}
+.box-btn-freetry {
+	margin: 100px 0 40px 0;
+}
+#product-price header.main-header {
+	background: url(../pics/bg-price-01.jpg) no-repeat top;
+	background-size: cover;
+	color: #FFF;
+	height: 80%;
+	margin-bottom: 300px;
+	min-height: 600px;
+}
+#product-price .btn {
+	background-color: #62be50;
+	border-radius: 6px;
+}
+#product-price table {
+	margin-bottom: 50px;
+}
+#product-price thead th {
+	color: #666;
+	font-size: 24px;
+	font-weight: normal;
+	text-align: center;
+}
+#product-price tbody td {
+	border-top: 0;
+	color: #66bf54;
+	font-size: 18px;
+	padding: 20px;
+	text-align: center;
+}
+#product-price tbody td:first-child {
+	color: #666;
+	padding-left: 40px;
+	text-align:left;
+}
+#product-price tbody th {
+	font-size: 30px;
+	font-weight: normal;
+	padding: 20px;
+}
+#product-price header h5 {
+	margin-bottom: 165px;
+}
+#product-price header h5 em {
+	color: #ffb0a9;
+	font-weight: bold;
+}
+#product-price header.main-header {
+	position: relative;
+	text-align: center;
+}
+#product-price header.main-header nav {
+	position: relative;
+	right: auto;
+}
+#product-price header.main-header h2 {
+	font-size: 45px;
+	font-weight: 500;
+	margin-top: 120px;
+}
+#product-price .price-card-bar {
+	text-align: center;
+	vertical-align: top;
+	margin-bottom: -200px;
+}
+#product-price .price-card {
+	background-color: #FFF;
+	border-radius: 6px;
+	box-shadow: 0 0 5px #AAA;
+	color: #333;
+	display: inline-block;
+	height: 450px;
+	margin: 0 10px;
+	position: relative;
+	width: 325px;
+	vertical-align: top;
+	z-index: 10;
+}
+#product-price .price-card header {
+	background-color: #f46f63;
+	border-radius: 6px;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 600;
+	height: 90px;
+	padding-top: 18px;
+}
+#product-price .price-card.pro, #product-price .price-card.company {
+	height: 400px;
+	margin-top: 25px;
+}
+#product-price .price-card.pro {
+	margin-right: -25px;
+}
+#product-price .price-card.company {
+	margin-left: -25px;
+	z-index: 0;
+}
+#product-price .price-card.pro header, #product-price .price-card.company header {
+	padding-top: 34px;
+}
+#product-price .price-card.pro header {
+	background-color: #50b6ff;
+}
+#product-price .price-card.company header {
+	background-color: #e687ee;
+}
+#product-price .price-card h1 {
+	border-bottom: 1px solid #333;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 36px;
+	margin: 56px auto 0 auto;
+	padding-bottom: 10px;
+	width: 190px;
+}
+#product-price .price-card.company h1 {
+	font-size: 24px;
+}
+#product-price .price-card h3 {
+	color: #999;
+	font-size: 15px;
+	margin-top: 20px;
+}
+#product-price .price-card h4 {
+	color: #666;	
+	font-size: 12px;
+	margin-top: 36px;
+}
+#product-price .price-card .btn {
+	height: 41px;
+	margin-top: 34px;
+	width: 136px;
+}
