@@ -22,6 +22,11 @@
                     <span>请填写邮箱地址</span>
                 </div>
                 <div class="prompt-box" style="display: block;"
+                     data-ng-show="staticForm.username.$error.email && staticForm.username.$dirty">
+                    <div class="arrow"></div>
+                    <span>邮箱格式不正确</span>
+                </div>
+                <div class="prompt-box" style="display: block;"
                      data-ng-show="staticForm.$pristine && staticForm.message_error_info">
                     <div class="arrow"></div>
                     <span>邮箱或密码错误</span>
