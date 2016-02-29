@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
+<html lang="zh-CN" data-ng-app="webpage" data-ng-controller="RootCtrl as rootCtrl">
+    <head data-update-meta>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="数人云、数人科技、DCOS、下一代DCOS、数据中心操作系统、云操作系统">
-        <meta name="description" content="数人云是基于Mesos和Docker技术的下一代DCOS（数据中心操作系统）。领先的轻量级PaaS平台。可部署在公有云或者私有云（IDC）之上，帮助用户在云端快速建立并稳定运维高性能生产环境。实现秒级扩容，一键部署，混跑多种应用的能力。">
+        <meta name="keywords" content={/metaKeywords/}>
+        <meta name="description" content={/metaDescription/}>
+        <title>{/metaTitle/}</title>
         <base href="/">
-        <title>数人云 ･ 下一代 DCOS 数据中心操作系统</title>
+        
         <link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico" />
         <!--build:css css/style.css-->
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -17,7 +18,7 @@
 
         <!--endbuild-->
     </head>
-    <body data-ng-app="webpage" data-ng-controller="RootCtrl as rootCtrl" scroll-top>
+    <body scroll-top>
 
         <div data-ui-view style="height: 100%;"></div>
 
@@ -49,6 +50,7 @@
         <script type="text/javascript" src="directives/check-repeat.js"></script>
         <script type="text/javascript" src="directives/scroll-top.js"></script>
         <script type="text/javascript" src="directives/solution-drop.js"></script>
+        <script type="text/javascript" src="directives/update-meta.js"></script>
 
         <script type="text/javascript" src="components/register/register.js"></script>
         <script type="text/javascript" src="components/login/login.js"></script>
