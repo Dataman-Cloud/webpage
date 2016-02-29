@@ -3,9 +3,9 @@
 
     angular.module('webpage').factory('authBackend', authBackend);
 
-    authBackend.$inject = ['webHttp'];
+    authBackend.$inject = ['webHttp', '$http'];
 
-    function authBackend(webHttp) {
+    function authBackend(webHttp, $http) {
 
         return {
             register: register,
@@ -15,7 +15,7 @@
             getNotice: getNotice,
             forgotPassword: forgotPassword,
             sendNewPassword: sendNewPassword,
-            fetchVersions: fetchVersions,
+            fetchVersion: fetchVersion,
             getCustomerServiceLoginUrl: getCustomerServiceLoginUrl,
             sendActiveMail: sendActiveMail,
         };
@@ -49,16 +49,12 @@
         function sendNewPassword(resetCode, params) {
             return webHttp.Resource('user.resetPassword', {reset_code: resetCode}).put(params);
         }
-        
-        function fetchVersions() {
-            var versions = {};
-            angular.forEach(BACKEND_URL.version, function(value, key) {
-                webHttp.Resource('version.' + key).get({'ignoreErr': true})
-                    .then(function(data) {
-                        versions[value] = data;
-                    });
-            });
-            return versions;
+
+        function fetchVersion(versionName) {
+            return $http({
+                method: 'GET',
+                url: webHttp.buildFullURL('version.' + versionName)
+            })
         }
         
         function getCustomerServiceLoginUrl(token, returnTo) {

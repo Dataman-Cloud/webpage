@@ -15,7 +15,8 @@
         
         return {
             setToken: setToken,
-            Resource: Resource
+            Resource: Resource,
+            buildFullURL: buildFullURL
         };
         
         function setToken(val) {
