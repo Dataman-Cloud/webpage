@@ -23,7 +23,9 @@
 
             $('.nav > li').not("#dropdown-solution").bind("mouseover", null, function () {
                 $('#solution-menu').hide();
-                $('nav').removeClass("nav-scroll")
+                if($(document).scrollTop() <= 0){
+                    $('nav').removeClass("nav-scroll")
+                }
             });
         }
 
