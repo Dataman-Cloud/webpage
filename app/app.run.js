@@ -16,17 +16,17 @@
       }
 
       function fetchVersions() {
-          var versions = authBackend.fetchVersions();
-          var version = '';
-          angular.forEach(versions, function(value, key) {
-              version += key + ':' + value + '\n';
-              if (key === BACKEND_URL.version.frontend) {
-                  $rootScope.frontendVersion = value;
-              }
-          });
-           
-          $rootScope.version = version;
-      }
+          $rootScope.version = '';
+          $rootScope.frontendVersion = '';
+          angular.forEach(BACKEND_URL.version, function (value, key) {
+              authBackend.fetchVersion(key).success(function (data) {
+                  $rootScope.version += value + ':' + data + '\n';
 
+                  if (key === 'frontend') {
+                      $rootScope.frontendVersion = data;
+                  }
+              });
+          });
+      }
   }
 })();
