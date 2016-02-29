@@ -113,6 +113,110 @@
                     }
                 }
             })
+            .state('scene.companyapp', {
+                url: '/scene-companyapp',
+                views: {
+                    'scene': {
+                        templateUrl: '/static_views/companyapp/companyapp.html'
+                    }
+                }
+            })
+            .state('scene.companyapp.index', {
+                url: '/index',
+                views: {
+                    'companyapp': {
+                        templateUrl: '/static_views/companyapp/companyapp-index.html'
+                    }
+                }
+            })
+            .state('scene.companyapp.discuz', {
+                url: '/discuz',
+                views: {
+                    'companyapp': {
+                        templateUrl: '/static_views/companyapp/companyapp-detail-discuz.html'
+                    }
+                }
+            })
+            .state('scene.companyapp.wordpress', {
+                url: '/wordpress',
+                views: {
+                    'companyapp': {
+                        templateUrl: '/static_views/companyapp/companyapp-detail-wordpress.html'
+                    }
+                }
+            })
+            .state('scene.companyapp.ecshop', {
+                url: '/ecshop',
+                views: {
+                    'companyapp': {
+                        templateUrl: '/static_views/companyapp/companyapp-detail-ecshop.html'
+                    }
+                }
+            })
+            .state('scene.companyapp.elasticsearch', {
+                url: '/elasticsearch',
+                views: {
+                    'companyapp': {
+                        templateUrl: '/static_views/companyapp/companyapp-detail-elasticsearch.html'
+                    }
+                }
+            })
+            .state('scene.companyapp.hadoop', {
+                url: '/hadoop',
+                views: {
+                    'companyapp': {
+                        templateUrl: '/static_views/companyapp/companyapp-detail-hadoop.html'
+                    }
+                }
+            })
+            .state('scene.companyapp.jekins', {
+                url: '/jekins',
+                views: {
+                    'companyapp': {
+                        templateUrl: '/static_views/companyapp/companyapp-detail-jekins.html'
+                    }
+                }
+            })
+            .state('scene.companyapp.joomla', {
+                url: '/joomla',
+                views: {
+                    'companyapp': {
+                        templateUrl: '/static_views/companyapp/companyapp-detail-joomla.html'
+                    }
+                }
+            })
+            .state('scene.companyapp.kafka', {
+                url: '/kafka',
+                views: {
+                    'companyapp': {
+                        templateUrl: '/static_views/companyapp/companyapp-detail-kafka.html'
+                    }
+                }
+            })
+            .state('scene.companyapp.lnmp', {
+                url: '/lnmp',
+                views: {
+                    'companyapp': {
+                        templateUrl: '/static_views/companyapp/companyapp-detail-lnmp.html'
+                    }
+                }
+            })
+            .state('scene.companyapp.spark', {
+                url: '/spark',
+                views: {
+                    'companyapp': {
+                        templateUrl: '/static_views/companyapp/companyapp-detail-spark.html'
+                    }
+                }
+            })
+            .state('scene.companyapp.help', {
+                url: '/help',
+                views: {
+                    'companyapp': {
+                        templateUrl: '/static_views/companyapp/companyapp-help.html'
+                    }
+                }
+            })
             .state('price', {
                 url: '/price',
                 views: {
