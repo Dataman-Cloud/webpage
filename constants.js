@@ -14,7 +14,8 @@ BACKEND_URL = {
         cluster: 'omega-cluster',
         frontend: 'omega-frontend',
         metrics: 'omega-metrics',
-        webpage: 'omega-webpage'
+        webpage: 'omega-webpage',
+        es: 'omega-es'
     },
     notice: {
         notice: 'api/v3/notice'
