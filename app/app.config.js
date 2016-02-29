@@ -91,9 +91,11 @@
             })
             .state('forgotSuccess', {
                 url: '/user/forgotpassword/success',
+                data: {email: ''},
                 views: {
                     '': {
-                        templateUrl: '/components/password/forgot-success-notice.html'
+                        templateUrl: '/components/password/forgot-success-notice.html',
+                        controller: 'ForgotPasswordSuccessCtrl as forgotPasswordSuccessCtrl'
                     }
                 }
             })
