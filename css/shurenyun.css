@@ -671,6 +671,9 @@ ul, li {
 	font-weight: bold;
 	margin: 30px 0 30px 0;
 }
+#product .product-feature h2 small {
+	margin-left: 12px;
+}
 #product .solution-enter {
 	background-color: #FFF;
 	padding-top: 95px;
@@ -692,7 +695,7 @@ ul, li {
 }
 #aboutus header {
 	background-image: url(../pics/pic-aboutus-01.png);
-	padding-top: 200px;
+	padding-top: 160px;
 	text-align: left;
 }
 #aboutus header h1 {
