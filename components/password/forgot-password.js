@@ -13,6 +13,7 @@
         var self = this;
         self.sendEmail = function () {
             authBackend.forgotPassword(self.forgot, $scope.staticForm).then(function (data) {
+                $state.get('forgotSuccess').data.email = self.forgot.email;
                 $state.go('forgotSuccess');
             }, function (res) {
                 //TO DO
