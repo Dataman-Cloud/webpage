@@ -31,8 +31,7 @@
                 <i class="fa fa-cogs"></i>
                 <h1>技术咨询</h1>
                 <p>遇到任何技术问题，都可以直接电话获得技术支持。也可发送邮件与我们联系。</p>
-                <em>+86 10 64776698</em>
-                <em><a href="mailto:info@shurenyun.com">info@shurenyun.com</a></em>
+                <em>+86 10 64776698<br><a href="mailto:info@shurenyun.com">info@shurenyun.com</a></em>
             </li>
             <li class="col-md-3">
                 <i class="fa fa-comments-o"></i>
@@ -49,10 +48,10 @@
                     <li class="col-md-2">
                         <h1>产品</h1>
                         <ul>
-                            <li><a href="#">下一代DCOS</a></li>
+                            <li><a href="#" data-ui-sref="product">下一代DCOS</a></li>
                             <li><a href="#" data-ui-sref="price">报价</a></li>
                             <li><a href={/docAddress/} target="_blank">文档</a></li>
-                            <li><a href="#">常见 FAQ</a></li>
+                            <li><a href="https://dataman.kf5.com/home" target="_blank">常见 FAQ</a></li>
                             <li><a href="#" data-ui-sref="service-item">服务条款</a></li>
                         </ul>
                     </li>
@@ -104,10 +103,10 @@
                     <li class="col-md-2">
                         <h1>关于</h1>
                         <ul>
-                            <li><a href="http://www.dataman-inc.com/contact.html" target="_blank">公司</a></li>
+                            <li><a href="#" data-ui-sref="aboutus">公司</a></li>
                             <li><a href="#">合作伙伴</a></li>
-                            <li><a href="#">招聘</a></li>
-                            <li><a href="#">微信</a></li>
+                            <li><a href="http://www.lagou.com/gongsi/j37868.html">招聘</a></li>
+                            <li><a href="#" data-toggle="popover" class="wechat-qrcode" data-trigger="focus">微信</a></li>
                         </ul>
                     </li>
                     <li class="col-md-3">
@@ -127,7 +126,7 @@
                     <li class="col-md-12">
                         <div class="social-network">
                             <a href="#" data-toggle="popover"
-                                id="qr-wechat"
+                                class="wechat-qrcode"
                                 data-trigger="focus">
                                 <i class="fa fa-weixin"></i>
                             </a>
@@ -149,7 +148,7 @@
 <script type="text/javascript">
     $(function () {
         var image = '<img src="/pics/qr-winxin.png">';
-        $('#qr-wechat')
+        $('.wechat-qrcode')
             .popover({placement: 'top', content: image, html: true});
     });
 </script>
