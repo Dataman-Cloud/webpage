@@ -53,7 +53,8 @@
         function fetchVersion(versionName) {
             return $http({
                 method: 'GET',
-                url: webHttp.buildFullURL('version.' + versionName)
+                url: webHttp.buildFullURL('version.' + versionName),
+                cache: false
             })
         }
         
