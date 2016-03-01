@@ -185,12 +185,12 @@
                     }
                 }
             })
-            .state('scene.companyapp.jekins', {
-                url: '/jekins',
+            .state('scene.companyapp.jenkins', {
+                url: '/jenkins',
                 meta: METADATA.sceneCompanyApp,
                 views: {
                     'companyapp': {
-                        templateUrl: '/static_views/companyapp/companyapp-detail-jekins.html'
+                        templateUrl: '/static_views/companyapp/companyapp-detail-jenkins.html'
                     }
                 }
             })
