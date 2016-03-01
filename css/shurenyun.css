@@ -153,6 +153,7 @@ ul, li {
 	margin-bottom: 20px;
 }
 .footer-main .footer-help p {
+	height: 55px;
 	margin-bottom: 25px;
 	padding: 0 25px;
 }
@@ -683,8 +684,9 @@ ul, li {
 #product .solution-enter a {
 	color: #999;
 	display: inline-block;
-	font-size: 11px;
-	margin-top: 12px;
+	font-size: 14px;
+	margin-top: 18px;
+	margin-left: 12px;
 }
 
 
