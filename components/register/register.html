@@ -4,7 +4,7 @@
             <a ui-sref="home"><img src="pics/logo-shurenyun-ico-black.svg" class="logo"></a>
             <h1>欢迎注册数人云</h1>
         </header>
-        <form class="loginForm" name="staticForm" data-ng-submit="registerCtrl.registerDataMan()">
+        <form class="loginForm" name="staticForm" data-ng-submit="registerCtrl.registerDataMan()" autocomplete="off">
             <div class="form-group" ng-class="{'has-error': (staticForm.email.$invalid && staticForm.email.$dirty) || (staticForm.email.$pristine && staticForm.message_error_info.email)}">
                 <input type="email" placeholder="请输入您的邮箱" class="form-control input-first" data-required="required"
                        name="email"
@@ -69,9 +69,9 @@
 
             <div class="form-group"
                  data-ng-class="{ 'has-error' : staticForm.password.$invalid && staticForm.password.$dirty}">
-                <input type="password" placeholder="输入密码" class="form-control" data-required="required"
+                <input type="text" id="password" placeholder="输入密码" class="form-control" data-required="required"
                        ng-model="registerCtrl.register.password"
-                       name="password" data-regex-validator>
+                       name="password" data-regex-validator autocomplete="off">
                 <div class="prompt-box" style="display: block;"
                      data-ng-show="staticForm.password.$error.regexValidator && staticForm.password.$dirty">
                     <div class="arrow"></div>
@@ -88,7 +88,7 @@
 
             <div class="form-group"
                  data-ng-class="{ 'has-error' : staticForm.rePassword.$invalid && staticForm.rePassword.$dirty}">
-                <input type="password" placeholder="重新输入密码" class="form-control input-last" data-required="required"
+                <input type="text" id="repassword" placeholder="重新输入密码" class="form-control input-last" data-required="required"
                        name="rePassword" ng-model="registerCtrl.rePassword" check-repeat
                        check-data="registerCtrl.register.password">
                 <div class="prompt-box" style="display: block;"
@@ -114,3 +114,12 @@
 
     </div>
 </div>
+<script type="text/javascript">
+    $(function(){                                               
+        setTimeout(function(){
+            $("#password").attr("type","password");
+            $("#repassword").attr("type","password");
+            
+        },10);
+    });
+</script>
