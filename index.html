@@ -26,8 +26,9 @@
                     aria-hidden="true">&times;</span></button>
             推荐使用<strong>Firefox</strong>或<strong>Chrome</strong>浏览器，少数功能在其他浏览器下无法正常使用。敬请谅解。
         </div>
-
+        <!-- rev-hash -->
         <script type="text/javascript" src="conf.js"></script>
+        <!-- end -->
         <!--build:js js/script.js-->
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -63,7 +64,14 @@
         <script type="text/javascript" src="services/auth-backend.js"></script>
         <script type="text/javascript" src="services/login.js"></script>
         <script type="text/javascript" src="services/common-email.js"></script>
+        
         <!--endbuild-->
+        
+        <!--build:js js/template.js-->
+        <!-- inject:template:js -->
+        <!-- endinject -->
+        <!--endbuild-->
+        
         <script>
             var Sys = {};
             var ua = navigator.userAgent.toLowerCase();
