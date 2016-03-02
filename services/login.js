@@ -15,7 +15,7 @@
 
         function login(userData, returnTo, form) {
             if (!returnTo) {
-                returnTo = CONFIG.dashboard;
+                returnTo = CONFIG.dashboard+"?timestamp="+new Date().getTime();
             }
             return authBackend.login(userData, form).then(function (data) {
                 var token = '\"' + data.token + '\"';
