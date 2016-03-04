@@ -21,7 +21,7 @@
                 url: '/',
                 views: {
                     '': {
-                        templateUrl: 'components/home/home.html'
+                        templateUrl: '/components/home/home.html'
                     }
                 }
             })
@@ -46,7 +46,7 @@
                 url: '/user/active',
                 views: {
                     '': {
-                        templateUrl: 'components/active/active.html',
+                        templateUrl: '/components/active/active.html',
                         controller: 'ActiveCtrl as activeCtrl'
                     }
                 }
@@ -56,7 +56,7 @@
                 data: {email: ''},
                 views: {
                     '': {
-                        templateUrl: 'components/active/need-active.html',
+                        templateUrl: '/components/active/need-active.html',
                         controller: 'NeedActiveCtrl as needActiveCtrl'
                     }
                 }
@@ -66,7 +66,7 @@
                 data: {email: ''},
                 views: {
                     '': {
-                        templateUrl: 'components/active/send-active-mail-success.html',
+                        templateUrl: '/components/active/send-active-mail-success.html',
                         controller: 'SendActiveMailSuccessCtrl as sendActiveMailSuccessCtrl'
                     }
                 }

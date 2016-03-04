@@ -21,8 +21,9 @@
     <body scroll-top>
 
         <div data-ui-view style="height: 100%;"></div>
-        
+        <!-- rev-hash -->
         <script type="text/javascript" src="conf.js"></script>
+        <!-- end -->
         <!--build:js js/script.js-->
         <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -59,6 +60,12 @@
         <script type="text/javascript" src="services/auth-backend.js"></script>
         <script type="text/javascript" src="services/login.js"></script>
         <script type="text/javascript" src="services/common-email.js"></script>
+        
+        <!--endbuild-->
+        
+        <!--build:js js/template.js-->
+        <!-- inject:template:js -->
+        <!-- endinject -->
         <!--endbuild-->
 
         <!-- Baidu -->

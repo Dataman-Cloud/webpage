@@ -30,17 +30,73 @@ gulp.task('copy-fonts', ['copy-pics'], function() {
         .pipe(gulp.dest('build/fonts'));
 });
 
-gulp.task('html-replace', function() {
+//views html to js
+gulp.task('template-min-static', function () {
+    return gulp.src('static_views/**/*.html')
+        .pipe(minifyHtml({
+            empty: true,
+            spare: true,
+            quotes: true
+        }))
+        .pipe(angularTemplatecache('templateCacheHtmlStatic.js', {
+            module: 'webpage',
+            root: '/static_views'
+        }))
+        .pipe(gulp.dest('build/js/'));
+});
+
+gulp.task('template-min-common', ['template-min-static'], function () {
+    return gulp.src('common_views/**/*.html')
+        .pipe(minifyHtml({
+            empty: true,
+            spare: true,
+            quotes: true
+        }))
+        .pipe(angularTemplatecache('templateCacheHtmlCommon.js', {
+            module: 'webpage',
+            root: '/common_views'
+        }))
+        .pipe(gulp.dest('build/js/'));
+});
+
+gulp.task('template-min-components', ['template-min-common'], function () {
+    return gulp.src('components/**/*.html')
+        .pipe(minifyHtml({
+            empty: true,
+            spare: true,
+            quotes: true
+        }))
+        .pipe(angularTemplatecache('templateCacheHtmlComponent.js', {
+            module: 'webpage',
+            root: '/components'
+        }))
+        .pipe(gulp.dest('build/js/'));
+    
+    gulp.src('static_views/**/*.html')
+        .pipe(minifyHtml({
+            empty: true,
+            spare: true,
+            quotes: true
+        }))
+        .pipe(angularTemplatecache('templateCacheHtmlStatic.js', {
+            module: 'webpage',
+            root: '/static_views'
+        }))
+        .pipe(gulp.dest('build/js/'));
+});
+
+gulp.task('html-replace', ['template-min-components'], function() {
+    
+    var templateInjectFile = gulp.src('build/js/templateCacheHtml*.js', { read: false });
+    var templatenjectOptions = {
+        starttag: '<!-- inject:template:js -->',
+        addRootSlash: false
+    };
     var assets = useref.assets();
-    var srcTemplates = [
-        'index.html',
-        'common_views/*.html', 
-        'components/**/*.html',
-        'static_views/*.html',
-        'static_views/**/*.html'
-    ];
+
     var revAll = new RevAll({dontRenameFile: ['.html'], dontUpdateReference: ['.html']});
-    return gulp.src(srcTemplates)
+    return gulp.src('index.html')
+        .pipe(inject(templateInjectFile, templatenjectOptions))
         .pipe(assets)
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', minifyCss()))
@@ -60,7 +116,8 @@ gulp.task('html-rename', ['html-replace'], function() {
 
 gulp.task('clean', ['html-rename'], function() {
     var sources = [
-      'build/index.**.html'
+      'build/index.**.html',
+      'build/js/templateCacheHtml*.js'
     ];
     return gulp.src(sources, {read: false})
         .pipe(clean());
