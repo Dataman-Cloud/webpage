@@ -272,6 +272,13 @@
                         templateUrl: '/static_views/product-index.html'
                     }
                 }
+            }).state('case-seckill', {
+                url: '/case-seckill',
+                views: {
+                    '': {
+                        templateUrl: '/static_views/case-seckill.html'
+                    }
+                }
             });
     }
 })();
