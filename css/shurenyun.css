@@ -1422,7 +1422,7 @@ section.select-app .usable a {
 }
 
 #case-seckill header {
-	background: url(pics/case-miaosha-header-bg.jpg) no-repeat top;
+	background: url(/pics/case-miaosha-header-bg.jpg) no-repeat top;
 	background-size: cover;
 	color: #FFF;
 	height: 100%;
@@ -1430,22 +1430,22 @@ section.select-app .usable a {
 	min-height: 600px;
 }
 #case-seckill .case-miaosha-01 {
-	background: url(pics/case-miaosha-01.gif) no-repeat;
+	background: url(/pics/case-miaosha-01.gif) no-repeat;
 	background-size: cover;
 	height: 650px;
 }
 #case-seckill .case-miaosha-02 {
-	background: url(pics/case-miaosha-02.gif) no-repeat;
+	background: url(/pics/case-miaosha-02.gif) no-repeat;
 	background-size: cover;
 	height: 650px;
 }
 #case-seckill .case-miaosha-03 {
-	background: url(pics/case-miaosha-03.gif) no-repeat;
+	background: url(/pics/case-miaosha-03.gif) no-repeat;
 	background-size: cover;
 	height: 650px;
 }
 #case-seckill .case-miaosha-04 {
-	background: url(pics/case-miaosha-04.gif) no-repeat;
+	background: url(/pics/case-miaosha-04.gif) no-repeat;
 	background-size: cover;
 	height: 650px;
 }
