@@ -885,7 +885,7 @@ ul, li {
 	padding: 20px;
 }
 #product-price header h5 {
-	margin-bottom: 165px;
+	margin-bottom: 150px;
 }
 #product-price header h5 em {
 	color: #ffb0a9;
@@ -902,7 +902,7 @@ ul, li {
 #product-price header.main-header h2 {
 	font-size: 45px;
 	font-weight: 500;
-	margin-top: 120px;
+	margin-top: 150px;
 }
 #product-price .price-card-bar {
 	text-align: center;
@@ -912,7 +912,7 @@ ul, li {
 #product-price .price-card {
 	background-color: #FFF;
 	border-radius: 6px;
-	box-shadow: 0 0 5px #AAA;
+	box-shadow: 0 0 5px #666;
 	color: #333;
 	display: inline-block;
 	height: 450px;
