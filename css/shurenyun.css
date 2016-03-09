@@ -42,11 +42,11 @@ ul, li {
 	width: 100%;
 }
 .dropdown-menu h2 {
-	font-size: 14px;
+	font-size: 15px;
 	color: rgba(255,255,255,0.8);
 }
 .dropdown-menu a {
-	font-size: 11px;
+	font-size: 13px;
 	color: rgba(255,255,255,0.4);
 	display: inline-block;
 	margin: 0 20px 20px 0; 
