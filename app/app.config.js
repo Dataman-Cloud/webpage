@@ -51,6 +51,15 @@
                     }
                 }
             })
+            .state('groupActive', {
+                url: '/user/groupactive',
+                views: {
+                    '': {
+                        templateUrl: '/components/active/group-active.html',
+                        controller: 'GroupActiveCtrl as groupActiveCtrl'
+                    }
+                }
+            })
             .state('needActive', {
                 url: '/user/active/needed',
                 data: {email: ''},

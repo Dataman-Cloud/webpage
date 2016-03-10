@@ -18,6 +18,7 @@
             fetchVersion: fetchVersion,
             getCustomerServiceLoginUrl: getCustomerServiceLoginUrl,
             sendActiveMail: sendActiveMail,
+            groupActive: groupActive
         };
 
         //////////
@@ -65,6 +66,10 @@
 
         function sendActiveMail(email) {
             return webHttp.Resource('user.sendActiveMail').post({email: email});
+        }
+
+        function groupActive(activeCode) {
+            return webHttp.Resource('user.groupActive', {active_code: activeCode}).put();
         }
 
     }
