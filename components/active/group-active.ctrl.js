@@ -12,7 +12,7 @@
         var urlParmas = $location.search();
 
         (function() {
-            return authBackend.groupActive(urlParmas.invalid)
+            return authBackend.groupActive(urlParmas.invite)
                 .then(function(data) {
                     self.activeSuccess = true;
                     // TODO
