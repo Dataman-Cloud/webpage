@@ -6,7 +6,8 @@ BACKEND_URL = {
         sendActiveMail: 'api/v3/auth/user/activation',
         forgotPassword: 'api/v3/auth/password/reseturl',
         resetPassword: 'api/v3/auth/password/$reset_code',
-        customerservice: 'api/v3/customerservice_url'
+        customerservice: 'api/v3/customerservice_url',
+        groupActive: 'api/v3/group/activation/$active_code'
     },
     version: {
         agent: 'omega-agent',
