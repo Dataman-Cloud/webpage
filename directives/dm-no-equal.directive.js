@@ -4,14 +4,14 @@
 (function () {
     'use strict';
     angular.module('webpage')
-        .directive('checkRepeat', checkRepeat);
+        .directive('dmNoEqual', dmNoEqual);
 
-    function checkRepeat() {
+    function dmNoEqual() {
         return {
             restrict: "A",
             require: 'ngModel',
             scope: {
-                checking: '=checkData'
+                checking: '=dmNoEqual'
             },
             link: function (scope, ele, attrs, ngModelController) {
                 ngModelController.$validators.checkrepeat = function(modelValue, viewValue) {
