@@ -155,10 +155,7 @@
             };
 
             Resource.prototype._handleErrors = function (status) {
-                if (status == 401) {
-                    window.location.href = USER_URL;
-                    $rootScope.$destroy();
-                } else if (status == 404) {
+                if (status == 404) {
                     $state.go('404');
                 } else {
                     $state.go('resError');
