@@ -734,7 +734,7 @@ ul, li {
 }
 #aboutus .member hr {
 	border-color: #cccccc;
-	margin-bottom: 80px;
+	margin-bottom: 50px;
 	width: 130px;
 }
 #aboutus .thumbnail {
@@ -759,6 +759,7 @@ ul, li {
 	color: #18aad3;
 	font-size: 18px;
 	font-weight: 200;
+	margin-bottom: 40px;
 }
 #aboutus .partner {
 	background-color: #f3f5f7;
