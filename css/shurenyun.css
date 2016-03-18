@@ -730,12 +730,12 @@ ul, li {
 #aboutus .member h2 {
 	color: #5a6879;
 	font-size: 36px;
-	margin: 0;
+	margin-top: 60px;
 }
 #aboutus .member hr {
 	border-color: #cccccc;
 	margin-bottom: 80px;
-	width: 150px;
+	width: 130px;
 }
 #aboutus .thumbnail {
 	border: 0;
@@ -901,7 +901,7 @@ ul, li {
 }
 #product-price header.main-header h2 {
 	font-size: 45px;
-	font-weight: 500;
+	font-weight: 300;
 	margin-top: 150px;
 }
 #product-price .price-card-bar {
@@ -927,7 +927,7 @@ ul, li {
 	border-radius: 6px;
 	color: #FFF;
 	font-size: 18px;
-	font-weight: 600;
+	font-weight: 300;
 	height: 90px;
 	padding-top: 18px;
 }
