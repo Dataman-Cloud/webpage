@@ -89,8 +89,8 @@
             <div class="form-group"
                  data-ng-class="{ 'has-error' : staticForm.rePassword.$invalid && staticForm.rePassword.$dirty}">
                 <input type="text" id="repassword" placeholder="重新输入密码" class="form-control input-last" data-required="required"
-                       name="rePassword" ng-model="registerCtrl.rePassword" check-repeat
-                       check-data="registerCtrl.register.password">
+                       name="rePassword" ng-model="registerCtrl.rePassword"
+                       data-dm-no-equal="registerCtrl.register.password">
                 <div class="prompt-box" style="display: block;"
                      data-ng-show="staticForm.rePassword.$error.required && staticForm.rePassword.$dirty">
                     <div class="arrow"></div>
