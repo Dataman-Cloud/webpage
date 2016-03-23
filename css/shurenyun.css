@@ -924,7 +924,7 @@ ul, li {
 #product-price .price-card {
 	background-color: #FFF;
 	border-radius: 6px;
-	box-shadow: 0 0 5px #666;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 	color: #333;
 	display: inline-block;
 	height: 450px;
