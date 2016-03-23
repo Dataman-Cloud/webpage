@@ -542,7 +542,7 @@ ul, li {
 	color: #00bdda;
 	font-size: 30px;
 	font-weight: 600;
-	margin: 0;
+	 margin-top: 50px;
 }
 .solution-content h2 {
 	color: #5a6879;
@@ -556,13 +556,13 @@ ul, li {
 }
 .solution-content hr {
 	border-color: #999;
-	margin: 25px 0 45px 0;
+	margin: 25px 0 35px 0;
 	width: 80px;
 }
 .solution-content p {
 	color: #666;
 	line-height: 1.5;
-	margin-bottom: 45px;
+	margin-bottom: 25px;
 }
 .solution-content table {
 	margin-bottom: 45px;
