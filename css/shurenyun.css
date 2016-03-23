@@ -332,6 +332,17 @@ ul, li {
 	position: relative;
 	text-align: center;
 }
+.header-container {
+	color: #FFF;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 40;
+}
 .header-index h1 {
 	font-size: 32px;
 	font-weight: 300;
@@ -1543,4 +1554,48 @@ section.select-app .usable a {
         -webkit-animation: cloudLoop 80s linear infinite;
         animation: cloudLoop 80s linear infinite;
     }
+}
+
+/* Create a bouncing scroll-down arrow on homepage with cover image */
+.scroll-down {
+	cursor: pointer;
+	-webkit-animation: bounce 4s 2s infinite;
+	animation: bounce 4s 2s infinite;
+}
+
+/* Stop it bouncing and increase contrast when hovered */
+.scroll-down:hover {
+	color: #fff;
+	-webkit-animation: none;
+	animation: none;
+}
+
+/* Used to bounce .scroll-down on home page */
+@-webkit-keyframes bounce {
+	0%, 10%, 25%, 40%, 50% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	20% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	30% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	60% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
 }
