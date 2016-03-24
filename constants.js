@@ -28,6 +28,10 @@ MESSAGE_CODE = {
     needActive: 11005
 };
 
+CODE_MESSAGE = {
+    11006: "已加入用户组！"
+}
+
 DOCADDRESS = {
     offline: 'http://offlinedoc.shurenyun.com/',
     online: 'http://doc.shurenyun.com'

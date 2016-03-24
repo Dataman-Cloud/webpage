@@ -8,21 +8,22 @@
 
     function GroupActiveCtrl($location, authBackend) {
         var self = this;
-        self.activeSuccess = undefined;
         var urlParmas = $location.search();
+        
+        activate()
 
-        (function() {
+        function activate() {
             return authBackend.groupActive(urlParmas.invite)
                 .then(function(data) {
-                    self.activeSuccess = true;
-                    // TODO
-                    // active success tips
+                    self.resultMessage = "加入用户组成功！";
                 }, function(res) {
-                    self.activeSuccess = false;
-                    // TODO
-                    // active failed tips
+                    if (CODE_MESSAGE[res.code]) {
+                        self.resultMessage = CODE_MESSAGE[res.code];
+                    } else {
+                        self.resultMessage = "加入用户组失败！"
+                    }
                 });
-        })();
+        }
 
     }
 })();
