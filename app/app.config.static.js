@@ -105,6 +105,15 @@
                     }
                 }
             })
+            .state('scene.stresstesting', {
+                url: '/scene-stresstesting',
+                meta: METADATA.sceneStresstesting,
+                views: {
+                    'scene': {
+                        templateUrl: '/static_views/scene/scene-stresstesting.html'
+                    }
+                }
+            })
             .state('scene.containercloud', {
                 url: '/scene-containercloud',
                 meta: METADATA.sceneContainerCloud,
