@@ -152,8 +152,8 @@ var solutionBioinfo = {
 var sceneStresstesting = {
     title: '性能测试 - 百万并发级的压力测试解决方案',
     keywords: '百万并发级的压力测试解决方案，DCOS、PaaS、Mesos、Docker',
-    description: '数人云性能测试（Performance Testing）解决方案，能够提供百万并发用户级别的分布式压测能力，可模拟海量用户真实的业务场景。
-廉价、高效、易用的压测解决方案。'
+    description: '数人云性能测试（Performance Testing）解决方案，能够提供百万并发用户级别的分布式压测能力，可模拟海量用户真实的业务场景。'
+        + '廉价、高效、易用的压测解决方案。'
 }
 
 
