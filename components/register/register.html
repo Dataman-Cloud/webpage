@@ -4,104 +4,84 @@
             <a ui-sref="home"><img src="pics/logo-shurenyun-ico-black.svg" class="logo"></a>
             <h1>欢迎注册数人云</h1>
         </header>
-        <form class="loginForm" name="staticForm" data-ng-submit="registerCtrl.registerDataMan()" autocomplete="off">
-            <div class="form-group" ng-class="{'has-error': (staticForm.email.$invalid && staticForm.email.$dirty) || (staticForm.email.$pristine && staticForm.message_error_info.email)}">
+        <form class="loginForm" name="staticForm" data-ng-submit="registerCtrl.registerDataMan()" data-dm-form data-error-msg="registerCtrl.formErrorMsg" autocomplete="off">
+            <div class="form-group" ng-class="{'has-error': staticForm.$dmErrors.email}">
                 <input type="email" placeholder="请输入您的邮箱" class="form-control input-first" data-required="required"
                        name="email"
                        ng-model="registerCtrl.register.email">
                 <div class="prompt-box" style="display: block;"
-                     data-ng-show="staticForm.email.$error.required && staticForm.email.$dirty">
+                     data-ng-show="staticForm.$dmErrors.email">
                     <div class="arrow"></div>
-                    <span>请输入您的邮箱</span>
+                    <span data-ng-bind="staticForm.$dmErrors.email"></span>
                 </div>
-                <div class="prompt-box" style="display: block;"
-                     data-ng-show="staticForm.email.$error.email && staticForm.email.$dirty">
-                    <div class="arrow"></div>
-                    <span>邮箱格式不正确</span>
-                </div>
-                <div class="prompt-box" style="display: block;"
-                     data-ng-show="staticForm.email.$pristine && staticForm.message_error_info.email">
-                    <div class="arrow"></div>
-                    <span>{/ staticForm.message_error_info.email /}</span>
-                </div>
-            <span class="ico" data-ng-show="staticForm.email.$invalid && staticForm.email.$dirty"><i
+            <span class="ico" data-ng-show="staticForm.$dmErrors.email"><i
                     class="fa fa-exclamation-circle"></i></span>
             </div>
 
             <div class="form-group"
-                 data-ng-class="{ 'has-error' : staticForm.company.$invalid && staticForm.company.$dirty}">
+                 data-ng-class="{ 'has-error' : staticForm.$dmErrors.company}">
                 <input type="text" placeholder="公司" class="form-control" data-required="required" name="company"
                        ng-model="registerCtrl.register.company">
                 <div class="prompt-box" style="display: block;"
-                     data-ng-show="staticForm.company.$error.required && staticForm.company.$dirty">
+                     data-ng-show="staticForm.$dmErrors.company">
                     <div class="arrow"></div>
-                    <span>请输入公司名称</span>
+                    <span data-ng-bind="staticForm.$dmErrors.company"></span>
                 </div>
-            <span class="ico" data-ng-show="staticForm.company.$invalid && staticForm.company.$dirty"><i
+            <span class="ico" data-ng-show="staticForm.$dmErrors.company"><i
                     class="fa fa-exclamation-circle"></i></span>
             </div>
 
             <div class="form-group"
-                 data-ng-class="{ 'has-error' : staticForm.weixin.$invalid && staticForm.weixin.$dirty}">
+                 data-ng-class="{ 'has-error' : staticForm.$dmErrors.weixin}">
                 <input type="text" placeholder="微信或QQ号" class="form-control" data-required="required" name="weixin"
                        ng-model="registerCtrl.register.wechat_qq">
                 <div class="prompt-box" style="display: block;"
-                     data-ng-show="staticForm.weixin.$error.required && staticForm.weixin.$dirty">
+                     data-ng-show="staticForm.$dmErrors.weixin">
                     <div class="arrow"></div>
-                    <span>请输入微信或QQ号</span>
+                    <span data-ng-bind="staticForm.$dmErrors.weixin"></span>
                 </div>
-            <span class="ico" data-ng-show="staticForm.weixin.$invalid && staticForm.weixin.$dirty"><i
+            <span class="ico" data-ng-show="staticForm.$dmErrors.weixin"><i
                     class="fa fa-exclamation-circle"></i></span>
             </div>
 
             <div class="form-group"
-                 data-ng-class="{ 'has-error' : staticForm.phone.$invalid && staticForm.phone.$dirty}">
+                 data-ng-class="{ 'has-error' : staticForm.$dmErrors.phone}">
                 <input type="text" placeholder="手机号（选填）" class="form-control" ng-pattern="/^1\d{10}$/" name="phone"
                        ng-model="registerCtrl.register.phone_number">
                 <div class="prompt-box" style="display: block;"
-                     data-ng-show="staticForm.phone.$error.pattern && staticForm.phone.$dirty">
+                     data-ng-show="staticForm.$dmErrors.phone">
                     <div class="arrow"></div>
-                    <span>手机格式不正确</span>
+                    <span data-ng-bind="staticForm.$dmErrors.phone"></span>
                 </div>
-            <span class="ico" data-ng-show="staticForm.phone.$invalid && staticForm.phone.$dirty"><i
+            <span class="ico" data-ng-show="staticForm.$dmErrors.phone"><i
                     class="fa fa-exclamation-circle"></i></span>
             </div>
 
             <div class="form-group"
-                 data-ng-class="{ 'has-error' : staticForm.password.$invalid && staticForm.password.$dirty}">
+                 data-ng-class="{ 'has-error' : staticForm.$dmErrors.password}">
                 <input type="text" id="password" placeholder="输入密码" class="form-control" data-required="required"
                        ng-model="registerCtrl.register.password"
                        name="password" data-regex-validator autocomplete="off">
                 <div class="prompt-box" style="display: block;"
-                     data-ng-show="staticForm.password.$error.regexValidator && staticForm.password.$dirty">
+                     data-ng-show="staticForm.$dmErrors.password">
                     <div class="arrow"></div>
-                    <span>密码只能包含英文字母、数字、标点符号且必须包含大写字母，长度为8-16位。</span>
+                    <span data-ng-bind="staticForm.$dmErrors.password"></span>
                 </div>
-                <div class="prompt-box" style="display: block;"
-                     data-ng-show="staticForm.password.$error.required && staticForm.password.$dirty">
-                    <div class="arrow"></div>
-                    <span>请输入密码</span>
-                </div>
-            <span class="ico" data-ng-show="staticForm.password.$invalid && staticForm.password.$dirty"><i
+            <span class="ico" data-ng-show="staticForm.$dmErrors.password"><i
                     class="fa fa-exclamation-circle"></i></span>
             </div>
 
             <div class="form-group"
-                 data-ng-class="{ 'has-error' : staticForm.rePassword.$invalid && staticForm.rePassword.$dirty}">
+                 data-ng-class="{ 'has-error' : staticForm.$dmErrors.rePassword}">
                 <input type="text" id="repassword" placeholder="重新输入密码" class="form-control input-last" data-required="required"
                        name="rePassword" ng-model="registerCtrl.rePassword"
                        data-dm-no-equal="registerCtrl.register.password">
                 <div class="prompt-box" style="display: block;"
-                     data-ng-show="staticForm.rePassword.$error.required && staticForm.rePassword.$dirty">
+                     data-ng-show="staticForm.$dmErrors.rePassword">
                     <div class="arrow"></div>
-                    <span>请再次输入密码</span>
+                    <span data-ng-bind="staticForm.$dmErrors.rePassword"></span>
                 </div>
-                <div class="prompt-box" style="display: block;"
-                     data-ng-show="staticForm.rePassword.$error.checkrepeat && staticForm.rePassword.$dirty">
-                    <div class="arrow"></div>
-                    <span>密码不一致</span>
-                </div>
-            <span class="ico" data-ng-show="staticForm.rePassword.$invalid && staticForm.rePassword.$dirty"><i
+            <span class="ico" data-ng-show="staticForm.$dmErrors.rePassword"><i
                     class="fa fa-exclamation-circle"></i></span>
             </div>
 

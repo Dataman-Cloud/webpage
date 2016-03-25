@@ -10,47 +10,37 @@
             <a ui-sref="home"><img src="pics/logo-shurenyun-ico-black.svg" class="logo"></a>
             <h1>请登录数人云账户</h1>
         </header>
-        <form class="loginForm" name="staticForm" data-ng-submit="loginCtrl.login()">
+        <form class="loginForm" name="staticForm" data-ng-submit="loginCtrl.login()" data-dm-form data-error-msg="loginCtrl.formErrorMsg">
             <div class="form-group"
-                 data-ng-class="{ 'has-error' : (staticForm.username.$invalid && staticForm.username.$dirty) || (staticForm.$pristine && staticForm.message_error_info)}">
+                 data-ng-class="{ 'has-error' : staticForm.$dmErrors.email}">
                 <input type="email" placeholder="邮箱地址" class="form-control input-first" data-required="required"
-                       name="username"
-                       ng-model="loginCtrl.loginData.email">
+                       name="email"
+                       data-ng-model="loginCtrl.loginData.email">
                 <div class="prompt-box" style="display: block;"
-                     data-ng-show="staticForm.username.$error.required && staticForm.username.$dirty">
+                     data-ng-show="staticForm.$dmErrors.email">
                     <div class="arrow"></div>
-                    <span>请填写邮箱地址</span>
+                    <span data-ng-bind="staticForm.$dmErrors.email"></span>
                 </div>
-                <div class="prompt-box" style="display: block;"
-                     data-ng-show="staticForm.username.$error.email && staticForm.username.$dirty">
-                    <div class="arrow"></div>
-                    <span>邮箱格式不正确</span>
-                </div>
-                <div class="prompt-box" style="display: block;"
-                     data-ng-show="staticForm.$pristine && staticForm.message_error_info">
-                    <div class="arrow"></div>
-                    <span>邮箱或密码错误</span>
-                </div>
-            <span class="ico" data-ng-show="staticForm.username.$invalid && staticForm.username.$dirty"><i
+            <span class="ico" data-ng-show="staticForm.$dmErrors.email"><i
                     class="fa fa-exclamation-circle"></i></span>
             </div>
 
             <div class="form-group"
-                 data-ng-class="{ 'has-error' : staticForm.password.$invalid && staticForm.password.$dirty}">
+                 data-ng-class="{ 'has-error' : staticForm.$dmErrors.password}">
                 <input type="password" placeholder="密码" class="form-control input-last" data-required="required"
                        name="password"
-                       ng-model="loginCtrl.loginData.password">
+                       data-ng-model="loginCtrl.loginData.password">
                 <div class="prompt-box" style="display: block;"
-                     data-ng-show="staticForm.password.$error.required && staticForm.password.$dirty">
+                     data-ng-show="staticForm.$dmErrors.password">
                     <div class="arrow"></div>
-                    <span>请输入密码</span>
+                    <span data-ng-bind="staticForm.$dmErrors.password"></span>
                 </div>
-            <span class="ico" data-ng-show="staticForm.password.$invalid && staticForm.password.$dirty"><i
+            <span class="ico" data-ng-show="staticForm.$dmErrors.password"><i
                     class="fa fa-exclamation-circle"></i></span>
             </div>
 
             <div class="form-group">
-                <button class="btn btn-block" type="submit" data-ng-disabled="staticForm.$invalid" id="login-btn-login">登录</button>
+                <button class="btn btn-block" type="submit" data-ng-disabled="staticForm.$invalid" id="login-btn-login" >登录</button>
             </div>
         </form>
         <div class="switch">

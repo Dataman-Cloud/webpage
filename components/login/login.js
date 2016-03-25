@@ -14,9 +14,23 @@
         var returnTo = $location.search()['return_to'];
         
         setNotice();
+        
+        self.formErrorMsg = {
+                email: {
+                    required: "邮箱不能为空",
+                    email: "邮箱格式不正确",
+        
+                },
+                password: {
+                    required: "密码不能为空"
+                }
+        }
 
         self.login = function () {
-            loginService.login(self.loginData, returnTo, $scope.staticForm)
+            function setErrors (errors) {
+                $scope.staticForm.$dmSetErrors({email: "邮箱或密码错误"})
+            }
+            loginService.login(self.loginData, returnTo, setErrors)
                 .then(function () {
                     
                 }, function (res) {

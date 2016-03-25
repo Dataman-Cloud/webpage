@@ -13,11 +13,11 @@
 
         //////////
 
-        function login(userData, returnTo, form) {
+        function login(userData, returnTo, invalideCallback) {
             if (!returnTo) {
                 returnTo = CONFIG.dashboard+"?timestamp="+new Date().getTime();
             }
-            return authBackend.login(userData, form).then(function (data) {
+            return authBackend.login(userData, invalideCallback).then(function (data) {
                 var token = '\"' + data.token + '\"';
                 $cookies.put('token', token, {domain: CONFIG.domain});
                 redirect4Login(returnTo, data.token);
