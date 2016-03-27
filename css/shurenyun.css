@@ -96,9 +96,9 @@ ul, li {
 }
 .nav-main .btn-default {
 	background-color:transparent;
-	border: 1px solid #81D4FA;
+	border: 1px solid #00bdda;
 	border-radius: 19px;
-	color: #81D4FA;
+	color: #00bdda;
 	font-size: 12px;
 	height: 38px;
 	padding: 0;
@@ -310,7 +310,7 @@ ul, li {
 	text-shadow: none;
 }
 .carousel-caption p {
-	color: #404040;
+	color: rgba(0, 0, 0, 0.5);
 	font-size: 18px;
 	text-align: left;
 	text-shadow: none;
