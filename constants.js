@@ -17,8 +17,8 @@ BACKEND_URL = {
         metrics: 'omega-metrics',
         webpage: 'omega-webpage',
         es: 'omega-es',
-        harbor: CONFIG.environment + 'harbor',
-        drone: CONFIG.environment + 'drone'
+        harbor: 'harbor',
+        drone: 'drone'
     },
     notice: {
         notice: 'api/v3/notice'
