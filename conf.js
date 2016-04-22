@@ -11,3 +11,4 @@ BACKEND_URL_BASE = {
     version: 'MARKET' + '/version/' + CONFIG.environment + "-"
 };
 
+USE_LDAP = IS_USE_LDAP; //set true or false;
