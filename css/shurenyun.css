@@ -802,8 +802,9 @@ ul, li {
 	font-size: 0;
 }
 #aboutus .partner dd img {
-	height: 50px;
+	height: 38px;
 	margin-right: 75px;
+	margin-bottom: 50px;
 }
 
 #scene-seckill header {
