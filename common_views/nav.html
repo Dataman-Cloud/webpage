@@ -13,61 +13,8 @@
 
         <div class="collapse navbar-collapse">
             <form class="navbar-form navbar-right" role="search">
-                <button type="button" class="btn btn-default" ui-sref="register" id="nav-btn-register">注册</button>
                 <button type="button" class="btn btn-default" ui-sref="login" id="nav-btn-login">登录</button>
-                <button type="button" class="btn btn-default" data-ng-click="rootCtrl.loginAsDemoUser()" id="nav-btn-demo">Demo</button>
             </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a ui-sref="product">产品<span
-                        class="sr-only">(current)</span></a></li>
-                <li class="dropdown" solution id="dropdown-solution">
-                    <a href="#" aria-haspopup="true"
-                       aria-expanded="false">解决方案 <span class="caret"></span></a>
-                    <ul class="dropdown-menu" id="solution-menu">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h2>场景</h2>
-                                    <div>
-                                        <a href="#" data-ui-sref="scene.seckill">高并发 / 秒杀</a>
-                                        <a href="#" data-ui-sref="scene.containercloud">容器云</a>
-                                        <a href="#" data-ui-sref="scene.cicd">CI / CD</a>
-                                        <a href="#" data-ui-sref="scene.bigdata">大数据</a>
-                                        <a href="#" data-ui-sref="scene.companyapp.index">企业应用平台</a>
-                                        <a href="#" data-ui-sref="scene.stresstesting">性能测试</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h2>行业</h2>
-                                    <div>
-                                        <a href="#" data-ui-sref="solution.finance">金融</a>
-                                        <a href="#" data-ui-sref="solution.internet">互联网</a>
-                                        <a href="#" data-ui-sref="solution.bioinfo">生物信息</a>
-                                        <a href="#" data-ui-sref="solution.o2o">电商</a>
-                                        <a href="#" data-ui-sref="solution.operator">运营商</a>
-                                        <a href="#" data-ui-sref="solution.tradition">能源</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" data-ui-sref="price">价格</a>
-                </li>
-                <li>
-                    <a href={/docAddress/} target="_blank">文档</a>
-                </li>
-                <li>
-                    <a href="http://blog.dataman-inc.com/" target="_blank">博客</a>
-                </li>
-                <li>
-                    <a href="http://open.shurenyun.com/" target="_blank">社区</a>
-                </li>
-                <li>
-                    <a data-ui-sref="aboutus">关于</a>
-                </li>
-            </ul>
         </div>
     </div>
 </nav>
