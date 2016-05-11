@@ -18,7 +18,8 @@ BACKEND_URL = {
         webpage: 'omega-webpage',
         es: 'omega-es',
         harbor: 'harbor',
-        drone: 'drone'
+        drone: 'drone',
+        alert: 'sryun-alert'
     },
     notice: {
         notice: 'api/v3/notice'
