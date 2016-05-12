@@ -382,7 +382,9 @@ ul, li {
 	position: absolute;
 	width: 100%;
 }
-
+.header-index footer a {
+	color: rgba(255,255,255,0.6);
+}
 
 /* 首页样式 --- 产品特点 */
 .product-feature {
