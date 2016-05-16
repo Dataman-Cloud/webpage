@@ -1,6 +1,7 @@
 /* 登录注册样式 */
 .login {
 	background: #b1b8c0 url(../pics/bg-login-01.jpg) no-repeat;
+	background-size:100% 100%;
 	background-size: cover;
 	padding-top: 160px;
 	position: relative;
@@ -67,6 +68,7 @@
 	margin-bottom: 0;
 	position: relative;
 }
+
 .loginForm .form-control {
 	background-color: #FFF;
 	border: 0;
@@ -203,10 +205,12 @@
 #login {
 	background: #b1b8c0 url(../pics/bg-login-01.jpg) no-repeat;
 	padding-top: 160px;
+	background-size:100% 100%;
 }
 #register {
 	background: #b1b8c0 url(../pics/bg-login-01.jpg) no-repeat;
 	padding-top: 70px;
+	background-size:100% 100%;
 }
 #reset-password {
 	background: #b1b8c0 url(../pics/bg-login-01.jpg) no-repeat;
