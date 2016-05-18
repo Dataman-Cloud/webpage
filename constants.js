@@ -41,8 +41,8 @@ DOCADDRESS = {
 };
 
 var home = {
-    title: '数人云 - 下一代 DCOS 数据中心操作系统',
-    keywords: '数人云、数人科技、DCOS、下一代DCOS、数据中心操作系统，云操作系统',
+    title: '数人云 - 轻量级PaaS平台',
+    keywords: '数人云、数人科技、数人云轻量级 PaaS 平台、数据中心操作系统，云操作系统',
     description: '数人云是基于 Mesos 和 Docker 技术的下一代 DCOS（数据中心操作系统）。'
     + '领先的轻量级 PaaS 平台。'
     + '可部署在公有云或者私有云（IDC）之上，帮助用户在云端快速建立并稳定运维高性能生产环境。'
@@ -50,14 +50,14 @@ var home = {
 };
 
 var price = {
-    title: '数人云下一代 DCOS 报价 企业试用版可免费试用 - 数人云',
+    title: '数人云 PaaS 平台报价 企业试用版可免费试用 - 数人云',
     keywords: '数人云报价，数人云企业版，数人云专业版',
-    description: '数人云下一代DCOS专业版报价，企业试用版可免费试用，企业版请拨打电话010-64776698 与我们联系。'
+    description: '数人云 PaaS 平台专业版报价，企业试用版可免费试用，企业版请拨打电话010-64776698 与我们联系。'
 }
 
 var product = {
-    title: '基于 Mesos 和 Docker 技术的下一代 DCOS - 数人云',
-    keywords: '数人云，DCOS',
+    title: '基于 Mesos 和 Docker 技术的轻量级 PaaS - 数人云',
+    keywords: '数人云，轻量级 PaaS 平台',
     description: '基于Mesos和Docker技术的数人云，可部署在任意公有云、私有云和物理机上。'
     + '可像用单机电脑一样管理集群和云端应用。'
     + '实现秒级扩容，一键部署，混跑多种应用的集群资源管理能力，从而满足企业业务快速增长需求。'
@@ -78,7 +78,7 @@ var sceneSeckill = {
 
 var sceneCompanyApp = {
     title: '一键部署企业级应用 - 数人云',
-    keywords: '一键部署，DCOS、PaaS、Mesos、Docker',
+    keywords: '一键部署，PaaS 平台、PaaS、Mesos、Docker',
     description: '通过数人云可一键部署Docker容器化应用，Spark、Hadoop、Jenkins等分布式应用。'
     + '从而快速搭建微服务和大数据生产环境。'
 };
@@ -105,7 +105,7 @@ var solutionO2O = {
 
 var solutionInternet = {
     title: '互联网社交应用弹性扩展解决方案 - 数人云',
-    keywords: '互联网社交解决方案，DCOS、PaaS、Mesos、Docker',
+    keywords: '互联网社交解决方案，轻量级 PaaS 平台、PaaS、Mesos、Docker',
     description: '采用数人云互联网社交解决方案，可实现对底层资源的统一管理和动态调度，并将应用层和资源层解耦，'
     + '使整个系统实现了弹性伸缩。'
     + '解决互联网社交应用的突发访问量增长问题。'
@@ -113,7 +113,7 @@ var solutionInternet = {
 
 var solutionTridition = {
     title: '能源企业混合云、PaaS平台、互联网业务解决方案 - 数人云',
-    keywords: '能源行业解决方案，DCOS、PaaS、Mesos、Docker',
+    keywords: '能源行业解决方案，轻量级 PaaS 平台、PaaS、Mesos、Docker',
     description: '数人云作为专注于企业生产环境的PaaS产品，可以帮助企业快速搭建基于私有云和混合云环境。'
     + '首先数人云的提供了如下的功能，将应用运维80%的重复工作自动化和标准化，'
     + '帮助传统企业应对互联网业务带来的规模挑战。'
@@ -121,29 +121,29 @@ var solutionTridition = {
 
 var solutionOperator = {
     title: '电信运营商轻量级PaaS平台解决方案',
-    keywords: '电信运营商解决方案，DCOS, Mesos, Docker, PaaS',
-    description: '数人云下一代 DCOS，是基于 Apache Mesos 开源技术的商业化解决方案。'
+    keywords: '电信运营商解决方案，轻量级 PaaS 平台, Mesos, Docker, PaaS',
+    description: '数人云轻量级 paaS 平台，是基于 Apache Mesos 开源技术的商业化解决方案。'
     + '可快速搭建起极具弹性的轻量级 PaaS 平台。满足运营商日益增长的互联网应用需求。'
     + '此套技术框架路线已在浙江移动、Verizon 等运营商的生产系统得到了验证。'
 };
 
 var solutionFinance = {
     title: '金融行业数据搜集和大数据处理解决方案 - 数人云',
-    keywords: '金融大数据解决方案，DCOS、PaaS、Mesos、Docker',
+    keywords: '金融大数据解决方案，轻量级 PaaS 平台、PaaS、Mesos、Docker',
     description: '采用数人云金融行业大数据解决方案，可极大的提高集群资源利用率，并更方便的维护大数据处理平台。'
     + '让用户将注意力集中在大数据业务层，快速挖掘大数据所带来的商业价值。'
 };
 
 var solutionBioinfo = {
     title: '生物信息行业弹性扩展解决方案 - 数人云',
-    keywords: '生物信息解决方案，DCOS、PaaS、Mesos、Docker',
+    keywords: '生物信息解决方案，轻量级 PaaS 平台、Mesos、Docker',
     description: '采用数人云生物信息行业解决方案，使得多任务在同一集群并行执行，'
     + '节省了大量的计算资源，帮助客户更加灵活地应对业务量的起伏。'
 };
 
 var sceneStresstesting = {
     title: '性能测试 - 百万并发级的压力测试解决方案',
-    keywords: '百万并发级的压力测试解决方案，DCOS、PaaS、Mesos、Docker',
+    keywords: '百万并发级的压力测试解决方案，轻量级 PaaS 平台、Mesos、Docker',
     description: '数人云性能测试（Performance Testing）解决方案，能够提供百万并发用户级别的分布式压测能力，可模拟海量用户真实的业务场景。'
     + '廉价、高效、易用的压测解决方案。'
 }
