@@ -13,23 +13,18 @@
         <form class="loginForm" name="staticForm" data-ng-submit="loginCtrl.login()">
             <div class="form-group"
                  data-ng-class="{ 'has-error' : (staticForm.username.$invalid && staticForm.username.$dirty) || (staticForm.$pristine && staticForm.message_error_info)}">
-                <input type="email" placeholder="邮箱地址" class="form-control input-first" data-required="required"
+                <input type="text" placeholder="{/transLDAP('邮箱地址')/}" class="form-control input-first" data-required="required"
                        name="username"
                        ng-model="loginCtrl.loginData.email">
                 <div class="prompt-box" style="display: block;"
                      data-ng-show="staticForm.username.$error.required && staticForm.username.$dirty">
                     <div class="arrow"></div>
-                    <span>请填写邮箱地址</span>
-                </div>
-                <div class="prompt-box" style="display: block;"
-                     data-ng-show="staticForm.username.$error.email && staticForm.username.$dirty">
-                    <div class="arrow"></div>
-                    <span>邮箱格式不正确</span>
+                    <span>请填写{/transLDAP("邮箱地址")/}</span>
                 </div>
                 <div class="prompt-box" style="display: block;"
                      data-ng-show="staticForm.$pristine && staticForm.message_error_info">
                     <div class="arrow"></div>
-                    <span>邮箱或密码错误</span>
+                    <span>{/transLDAP("邮箱")/}或密码错误</span>
                 </div>
             <span class="ico" data-ng-show="staticForm.username.$invalid && staticForm.username.$dirty"><i
                     class="fa fa-exclamation-circle"></i></span>
@@ -53,7 +48,7 @@
                 <button class="btn btn-block" type="submit" data-ng-disabled="staticForm.$invalid" id="login-btn-login">登录</button>
             </div>
         </form>
-        <div class="switch">
+        <div class="switch" data-ng-show="!useLDAP">
             <a title="忘记密码" ui-sref="forgotPassword" href="#">忘记密码</a>&nbsp;&nbsp;&nbsp;
             <a title="注册" ui-sref="register" href="#" id="login-btn-register">注册</a>
         </div>

@@ -166,3 +166,9 @@ METADATA = {
     solutionBioinfo: solutionBioinfo,
     sceneStresstesting: sceneStresstesting
 };
+
+
+LDAP_TRANS_STRINGS = {
+    '邮箱': '用户名',
+    '邮箱地址': '用户名'
+};
