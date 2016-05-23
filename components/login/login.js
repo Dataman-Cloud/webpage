@@ -27,6 +27,8 @@
                 })
         };
         
+        $("[data-toggle='popover']").popover();
+        
         function setNotice() {
             authBackend.getNotice()
             .then(function(data) {
