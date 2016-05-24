@@ -1,13 +1,79 @@
 <nav class="navbar navbar-default navbar-fixed-top nav-main" id="nav">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-            </button>
+            </button>-->
+<div class="container">
+	<div class="button" id="button">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div class="cover">
+		<div class="top"></div>
+		<ul class="nav navbar-nav navbar-right">
+            <li><a ui-sref="product">产品<span
+                    class="sr-only">(current)</span></a></li>
+            <li class="dropdown" solution>
+                <a href="#" aria-haspopup="true"
+                   aria-expanded="false" id="dropdown-solution">解决方案 <span class="caret"></span></a>
+                <ul class="dropdown-menu" id="solution-menu">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>场景</p>
+                                <div class="col-md-6_one">
+                                    <a href="#" data-ui-sref="scene.seckill">高并发 / 秒杀</a>
+                                    <a href="#" data-ui-sref="scene.containercloud">容器云</a>
+                                    <a href="#" data-ui-sref="scene.cicd">CI / CD</a>
+                                    <a href="#" data-ui-sref="scene.bigdata">大数据</a>
+                                    <a href="#" data-ui-sref="scene.companyapp.index">企业应用平台</a>
+                                    <a href="#" data-ui-sref="scene.stresstesting">性能测试</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>行业</p>
+                                <div class="col-md-6_one">
+                                    <a href="#" data-ui-sref="solution.finance">金融</a>
+                                    <a href="#" data-ui-sref="solution.internet">互联网</a>
+                                    <a href="#" data-ui-sref="solution.bioinfo">生物信息</a>
+                                    <a href="#" data-ui-sref="solution.o2o">电商</a>
+                                    <a href="#" data-ui-sref="solution.operator">运营商</a>
+                                    <a href="#" data-ui-sref="solution.tradition">能源</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <a href="#" data-ui-sref="price">价格</a>
+            </li>
+            <li>
+                <a href={/docAddress/} target="_blank">文档</a>
+            </li>
+            <li>
+                <a href="http://blog.dataman-inc.com/" target="_blank">博客</a>
+            </li>
+            <li>
+                <a href="http://open.shurenyun.com/" target="_blank">社区</a>
+            </li>
+            <li>
+                <a data-ui-sref="aboutus">关于</a>
+            </li>
+        </ul>
+	</div>
+</div> 
+            
+            
+            
+            
+            
             <a class="navbar-brand" ui-sref="home"><img src="/pics/logo-shurenyun-ico.svg" height="100%"></a>
         </div>
 
