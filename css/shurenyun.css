@@ -1626,7 +1626,9 @@ section.select-app .usable a {
 
 
 /*手机端导航*/
+@media screen and (max-width:375px){.button{display:block;}}
 .button{
+	display: none;
 	width: 44px;
 	height: 34px;
 	float: right;
