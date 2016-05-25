@@ -23,8 +23,8 @@
 
         //////////
 
-        function register(params, form) {
-            return webHttp.Resource('user.register').post(params, {'form': form});
+        function register(params, invalideCallback) {
+            return webHttp.Resource('user.register').post(params, {'invalideCallback': invalideCallback});
         }
 
         function active(activeCode) {
@@ -35,16 +35,16 @@
             return webHttp.Resource('user.resetPassword', {reset_code: resetCode}).get();
         }
 
-        function login(params, form) {
-            return webHttp.Resource('user.login').post(params, {'form': form});
+        function login(params, invalideCallback) {
+            return webHttp.Resource('user.login').post(params, {invalideCallback: invalideCallback});
         }
 
         function getNotice() {
             return webHttp.Resource('notice.notice').get();
         }
 
-        function forgotPassword(params, form) {
-            return webHttp.Resource('user.forgotPassword').post(params, {'form': form});
+        function forgotPassword(params, invalideCallback) {
+            return webHttp.Resource('user.forgotPassword').post(params, {'invalideCallback': invalideCallback});
         }
 
         function sendNewPassword(resetCode, params) {

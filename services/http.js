@@ -85,15 +85,11 @@
                     options = {};
                 }
                 options.data = data;
-                if (options.form) {
-                    options.form.$setPristine();
-                    options.form.message_error_info = undefined;
-                }
                 var promise = this.req(method, options);
-                if (options.form) {
+                if (options.invalideCallback) {
                     promise.catch(function (data) {
                         if(data.code === MESSAGE_CODE.dataInvalid) {
-                            options.form.message_error_info = data.data;
+                            options.invalideCallback(data.data);
                         }
                     });
                 }
