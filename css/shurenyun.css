@@ -1673,12 +1673,13 @@ section.select-app .usable a {
 .col-md-6 h2{
 	font-size: 12px;
 }
+#dropdown-solution .dropdown-menu {
+	position: relative;
+}
 }
 
 @media(min-width: 769px){
 	.button{display:none;}
 }
 
-#dropdown-solution .dropdown-menu {
-	position: relative;
-}
+
