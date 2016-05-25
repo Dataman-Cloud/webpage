@@ -18,14 +18,17 @@
 					var cover = document.querySelector('.cover');
 					var btn = document.querySelector('#navbar_toggle');
 					var nav = document.querySelector(".nav");
+					var body = document.querySelector('body')
 					btn.addEventListener('click', function() {
 						var isDisplay = getCSSValue(cover, 'display')
 						if (isDisplay == 'none') {
 							cover.style.display = 'block';
 							nav.style.display = 'block';
+							body.style.overflow="hidden";
 						} else {
 							cover.style.display = 'none';
 							nav.style.display = 'none';
+							body.style["overflow-y"]="auto";
 						}
 					});
 					cover.addEventListener('click', function() {
