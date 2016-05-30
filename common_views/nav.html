@@ -13,9 +13,9 @@
 
         <div class="collapse navbar-collapse in">
             <form class="navbar-form navbar-right" role="search">
-                <button type="button" class="btn btn-default" ui-sref="login" id="nav-btn-login">登录</button>
-                <button type="button" class="btn btn-default btn-login" ui-sref="register" id="nav-btn-register">注册</button>
-                <button type="button" class="btn btn-default btn-login" data-ng-click="rootCtrl.loginAsDemoUser()" id="nav-btn-demo">Demo</button>
+                <a data-ng-href="{/FRONTEND_URL.login/}"><button type="button" class="btn btn-default" id="nav-btn-login">登录</button></a>
+                <a data-ng-href="{/FRONTEND_URL.register/}"><button type="button" class="btn btn-default btn-login" id="nav-btn-register">注册</button></a>
+                <a data-ng-href="{/FRONTEND_URL.demo/}"><button type="button" class="btn btn-default btn-login" id="nav-btn-demo">Demo</button></a>
             </form>
             <ul class="nav navbar-nav navbar-right">
                 <li><a ui-sref="product">产品<span

@@ -9,6 +9,7 @@
 
       checkOffline();
       fetchVersions();
+      $rootScope.FRONTEND_URL = FRONTEND_URL;
 
 
       function checkOffline() {

@@ -26,6 +26,12 @@ BACKEND_URL = {
     }
 };
 
+FRONTEND_URL = {
+    login: CONFIG.dashboard + "auth/login",
+    register: CONFIG.dashboard + "auth/register",
+    demo: CONFIG.dashboard + "auth/demoLogin",
+}
+
 MESSAGE_CODE = {
     dataInvalid: 10001,
     needActive: 11005
