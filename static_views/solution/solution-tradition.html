@@ -1,4 +1,10 @@
-<div id="solution-tradition" class="solution">    
+<% extend "../../common.html" %>
+<% block 'keywords': %>能源行业解决方案，轻量级 PaaS 平台、PaaS、Mesos、Docker<% end %>
+<% block 'description': %>数人云作为专注于企业生产环境的PaaS产品，可以帮助企业快速搭建基于私有云和混合云环境。首先数人云的提供了如下的功能，将应用运维80%的重复工作自动化和标准化，帮助传统企业应对互联网业务带来的规模挑战。<% end %>
+<% block 'title': %>能源企业混合云、PaaS平台、互联网业务解决方案 - 数人云<% end %>
+<% block 'bodyContent': %>
+<% include '../../common_views/nav.html' %>
+<div id="solution-tradition" class="solution">
     <header class="header-solution">
         <div class="container">
             <h1>能源等传统行业</h1>
@@ -7,7 +13,9 @@
                 <a href="http://shurenyun.mikecrm.com/f.php?t=Ekogeg" target="_blank" class="btn btn-primary" id="btn-consult-solution-tradition">
                     免费咨询
                 </a>
-                <button class="btn btn-default" data-ui-sref="register" id="solution-tradition-btn-register">立即注册</button>
+                <a data-ng-href="{/FRONTEND_URL.register/}" class="btn btn-default"  id="solution-bioinfo-btn-register">
+                    立即注册
+                </a>
             </form>
         </div>
     </header>
@@ -55,8 +63,10 @@
                         <p>在国有能源企业千万级别自主可控的混合云平台项目中，数人云承担了其 PaaS 平台部分模块，成功地部署网上商城等互联网业务，并且也迁移了部分传统 Java 业务系统。</p>
                     </article>
                 </div>
-                <div data-ng-include="'/static_views/solution/solution-nav.html'" data-include-replace></div>
+                <% include './solution-nav.html' %>
             </div>
         </div>
     </div>
 </div>
+<% include '../../common_views/footer.html' %>
+<% end %>

@@ -1,3 +1,9 @@
+<% extend "../../common.html" %>
+<% block 'keywords': %>电商秒杀，红包促销，秒杀解决方案，红包IT解决方案<% end %>
+<% block 'description': %>使用数人云的秒级扩容能力，将应用弹性做到极致，解决高并发问题。轻松实现电商、互联网金融等行业的秒杀，红包解决方案。<% end %>
+<% block 'title': %>电商秒杀、红包等高并发解决方案 - 数人云<% end %>
+<% block 'bodyContent': %>
+<% include '../../common_views/nav.html' %>
 <div id="solution-o2o" class="solution">
     <header class="header-solution">
         <div class="container">
@@ -7,7 +13,9 @@
                 <a href="http://shurenyun.mikecrm.com/f.php?t=vMvB2t" target="_blank" class="btn btn-primary" id="btn-consult-solution-o2o">
                     免费咨询
                 </a>
-                <button class="btn btn-default" data-ui-sref="register" id="solution-o2o-btn-register">立即注册</button>
+                 <a data-ng-href="{/FRONTEND_URL.register/}" class="btn btn-default"  id="solution-bioinfo-btn-register">
+                     立即注册
+                 </a>
             </form>
         </div>
     </header>
@@ -32,8 +40,10 @@
                         <p>某电商希望在双11全民网购狂欢节上通过采用“秒杀”等业务形式，大幅度提高网站的订单量以及知名度。</p>
                     </article>
                 </div>
-                <div data-ng-include="'/static_views/solution/solution-nav.html'" data-include-replace></div>
+                <% include './solution-nav.html' %>
             </div>
         </div>
     </div>
 </div>
+<% include '../../common_views/footer.html' %>
+<% end %>

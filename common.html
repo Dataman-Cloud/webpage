@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<% content %>
+<head data-update-meta>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="<% content 'keywords' %>">
+    <meta name="description" content="<% content 'description' %>">
+    <title><% content 'title' %></title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="pics/facicon.ico"/>
+    <!--build:css css/style.css-->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/shurenyun.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <!--endbuild-->
+</head>
+<body>
+
+<div style="height: 100%;" class="homepage">
+    <% content 'bodyContent' %>
+</div>
+<!-- rev-hash -->
+<script src="conf.js"></script>
+<!-- end -->
+<!--build:js js/script.js-->
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="service.js"></script>
+<script src="common.js"></script>
+<!--endbuild-->
+<!-- Baidu -->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?cd74c0fcc0c51aecc3bb276315e35e6a";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<!-- GrowingIO -->
+<script type='text/javascript'>
+    var _vds = _vds || [];(function(){ _vds.push(['setAccountId', '0edf12ee248505950b0a77b02d47c537']); (function() {var vds = document.createElement('script'); vds.type='text/javascript'; vds.async = true;vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(vds, s);})();})();
+</script>
+
+</body>
+</html>

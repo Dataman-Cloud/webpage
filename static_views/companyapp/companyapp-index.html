@@ -1,9 +1,15 @@
+<% extend "../../common.html" %>
+<% block 'keywords': %>一键部署，PaaS 平台、PaaS、Mesos、Docker<% end %>
+<% block 'description': %>通过数人云可一键部署Docker容器化应用，Spark、Hadoop、Jenkins等分布式应用。从而快速搭建微服务和大数据生产环境.<% end %>
+<% block 'title': %>一键部署企业级应用 - 数人云<% end %>
+<% block 'bodyContent': %>
+<% include '../../common_views/nav.html' %>
 <div id="companyapp">
     <header class="main-header">
         <div class="container">
             <h2>数人云企业应用平台</h2>
             <h3>一键部署 ・ 方便集成 ・ 稳定运行</h3>
-            <a ui-sref="scene.companyapp.help" class="btn btn-white"><strong>创业助力计划</strong> ・ 申请1年免费主机资源</a>
+            <a href="./companyapp-help.html" class="btn btn-white"><strong>创业助力计划</strong> ・ 申请1年免费主机资源</a>
             <footer><a href="#product-feature"><i class="fa fa-angle-down scroll-down"></i></a></footer>
         </div>
     </header>
@@ -15,19 +21,19 @@
             </h2>
             <dl>
                 <dt>常见Web应用</dt>
-                <dd class="usable"><a ui-sref="scene.companyapp.wordpress">WordPress</a></dd>
-                <dd class="usable"><a ui-sref="scene.companyapp.discuz">Discuz</a></dd>
-                <dd class="usable"><a ui-sref="scene.companyapp.joomla">Joomla</a></dd>
-                <dd class="usable"><a ui-sref="scene.companyapp.ecshop">ECshop</a></dd>
+                <dd class="usable"><a href="./companyapp-detail-wordpress.html">WordPress</a></dd>
+                <dd class="usable"><a href="./companyapp-detail-discuz.html">Discuz</a></dd>
+                <dd class="usable"><a href="./companyapp-detail-joomla.html">Joomla</a></dd>
+                <dd class="usable"><a href="./companyapp-detail-ecshop.html">ECshop</a></dd>
             </dl>
             <dl>
                 <dt>常见服务组件</dt>
-                <dd class="usable"><a ui-sref="scene.companyapp.spark">Spark</a></dd>
-                <dd class="usable"><a ui-sref="scene.companyapp.hadoop">Hadoop</a></dd>
-                <dd class="usable"><a ui-sref="scene.companyapp.kafka">Kafka</a></dd>
-                <dd class="usable"><a ui-sref="scene.companyapp.jenkins">Jenkins</a></dd>
-                <dd class="usable"><a ui-sref="scene.companyapp.lnmp">LNMP套件</a></dd>
-                <dd class="usable"><a ui-sref="scene.companyapp.elasticsearch">Elasticsearch</a></dd>
+                <dd class="usable"><a href="./companyapp-detail-spark.html">Spark</a></dd>
+                <dd class="usable"><a href="./companyapp-detail-hadoop.html">Hadoop</a></dd>
+                <dd class="usable"><a href="./companyapp-detail-kafka.html">Kafka</a></dd>
+                <dd class="usable"><a href="./companyapp-detail-jenkins.html">Jenkins</a></dd>
+                <dd class="usable"><a href="./companyapp-detail-lnmp.html">LNMP套件</a></dd>
+                <dd class="usable"><a href="./companyapp-detail-elasticsearch.html">Elasticsearch</a></dd>
             </dl>
             <dl>
                 <dt>常见商业应用</dt>
@@ -95,3 +101,5 @@
         </div>
     </section>
 </div>
+<% include '../../common_views/footer.html' %>
+<% end %>
