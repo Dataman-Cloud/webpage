@@ -1,3 +1,9 @@
+<% extend "../../common.html" %>
+<% block 'keywords': %>容器云，数人云，容器生产环境，Docker<% end %>
+<% block 'description': %>数人云基于Mesos技术，实现了大规模企业级Docker生产环境，可迅速搭建企业级容器云.帮助用户自动化、方便的使用Docker等容器技术。<% end %>
+<% block 'title': %>基于Mesos的企业级容器云 大规模容器生产环境 - 数人云<% end %>
+<% block 'bodyContent': %>
+<% include '../../common_views/nav.html' %>
 <div id="scene-containercloud" class="solution">
     <header class="header-solution">
         <div class="container">
@@ -7,7 +13,9 @@
                 <a href="http://shurenyun.mikecrm.com/f.php?t=mfDeyg" target="_blank" class="btn btn-primary" id="btn-consult-scene-containercloud">
                     免费咨询
                 </a>
-                <button class="btn btn-default" data-ui-sref="register" id="btn-register-scene-containercloud">立即注册</button>
+                <a data-ng-href="{/FRONTEND_URL.register/}" class="btn btn-default"  id="solution-bioinfo-btn-register">
+                    立即注册
+                </a>
             </form>
         </div>
     </header>
@@ -38,8 +46,10 @@
                         <p>当您开启高可用服务后， 数人云自动为宕机服务器上运行的节点重新分配资源，保障业务不掉线，高可靠运行。这也就意味着您不用再为一两台服务器的宕机， 而经历一个不眠之夜。</p>
                     </article>
                 </div>
-                <div data-ng-include="'/static_views/scene/scene-nav.html'" data-include-replace></div>
+                <% include './scene-nav.html' %>
             </div>
         </div>
     </div>
 </div>
+<% include '../../common_views/footer.html' %>
+<% end %>

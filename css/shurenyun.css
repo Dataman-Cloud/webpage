@@ -661,7 +661,7 @@ ul, li {
 	background-color: #FFF;
 }
 #product header {
-	background-image: url(../pics/pic-product-01.jpg);
+	background-image: url("../pics/pic-product-01.jpg");
 }
 #product header h1 {
 	font-size: 70px;
@@ -1385,7 +1385,7 @@ section.platform-vantage .show-line-v {
 }
 
 #companyapp header.main-header {
-	background: url(/pics/companyapp-header-bg.jpg) no-repeat bottom;
+	background: url("../pics/companyapp-header-bg.jpg") no-repeat bottom;
 	background-size: cover;
 	color: #FFF;
 	height: 100%;

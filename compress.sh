@@ -1,7 +1,6 @@
 #! /bin/bash
-#npm install -g bower
-#bower install --allow-root
 rm -rf build/*
+npm config set registry https://registry.npm.taobao.org
 npm install --global gulp
 npm install
-gulp && gulp rev
+gulp build && gulp && gulp clean

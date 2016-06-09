@@ -1,4 +1,10 @@
-<div id="solution-bio" class="solution">      
+<% extend "../../common.html" %>
+<% block 'keywords': %>生物信息解决方案，轻量级 PaaS 平台、Mesos、Docker<% end %>
+<% block 'description': %>采用数人云生物信息行业解决方案，使得多任务在同一集群并行执行，节省了大量的计算资源，帮助客户更加灵活地应对业务量的起伏。<% end %>
+<% block 'title': %>生物信息行业弹性扩展解决方案 - 数人云<% end %>
+<% block 'bodyContent': %>
+<% include '../../common_views/nav.html' %>
+<div id="solution-bio" class="solution">
     <header class="header-solution">
         <div class="container">
             <h1>生物信息行业</h1>
@@ -7,7 +13,9 @@
                 <a href="http://shurenyun.mikecrm.com/f.php?t=yfvfA5" target="_blank" class="btn btn-primary" id="btn-consult-solution-bioinfo">
                     免费咨询
                 </a>
-                <button class="btn btn-default" data-ui-sref="register" id="solution-bioinfo-btn-register">立即注册</button>
+                <a data-ng-href="{/FRONTEND_URL.register/}" class="btn btn-default"  id="solution-bioinfo-btn-register">
+                    立即注册
+                </a>
             </form>
         </div>
     </header>
@@ -29,8 +37,10 @@
                         <p>通过数人云解决方案，使得多任务在同一集群并行执行，节省了大量的计算资源，帮助客户更加灵活地应对业务量的起伏。</p>
                     </article>
                 </div>
-                <div data-ng-include="'/static_views/solution/solution-nav.html'" data-include-replace></div>
+                <% include './solution-nav.html' %>
             </div>
         </div>
     </div>
 </div>
+<% include '../../common_views/footer.html' %>
+<% end %>

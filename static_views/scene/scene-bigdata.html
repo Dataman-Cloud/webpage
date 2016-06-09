@@ -1,3 +1,9 @@
+<% extend "../../common.html" %>
+<% block 'keywords': %>大数据，大数据平台，大数据解决方案，Spark，Hadoop<% end %>
+<% block 'description': %>数人云提供统一管理和调度的大数据平台解决方案，帮助企业快速搭建大数据应用环境，提高数据中心的资源利用率。在降低大数据平台的实施、运维管理复杂度的同时，让大数据技术帮助企业实现业务的快速发展。<% end %>
+<% block 'title': %>大数据平台解决方案 - 数人云<% end %>
+<% block 'bodyContent': %>
+<% include '../../common_views/nav.html' %>
 <div id="scene-bigdata" class="solution">
     <header class="header-solution">
         <div class="container">
@@ -15,7 +21,9 @@
                         <a href="http://shurenyun.mikecrm.com/f.php?t=ynmZPa" target="_blank" class="btn btn-primary" id="btn-consult-scene-bigdata">
                             免费咨询
                         </a>
-                        <button class="btn btn-default" data-ui-sref="register" id="btn-register-scene-bigdata">立即注册</button>
+                        <a data-ng-href="{/FRONTEND_URL.register/}" class="btn btn-default"  id="solution-bioinfo-btn-register">
+                            立即注册
+                        </a>
                     </form>
                 </div>
             </div>
@@ -56,8 +64,10 @@
                         <p>过去，该用户需要为 Hadoop、Spark、Storm 分别创建集群，维护这三套集群。而数人云可以在同一个集群上部署这三种大数据应用，并按需为每种应用动态分配资源。</p>
                     </article>
                 </div>
-                <div data-ng-include="'/static_views/scene/scene-nav.html'" data-include-replace></div>
+                <% include './scene-nav.html' %>
             </div>
         </div>
     </div>
 </div>
+<% include '../../common_views/footer.html' %>
+<% end %>

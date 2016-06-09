@@ -1,9 +1,15 @@
-<div id="solution-finance" class="solution">      
+<% extend "../../common.html" %>
+<% block 'keywords': %>金融大数据解决方案，轻量级 PaaS 平台、PaaS、Mesos、Docker<% end %>
+<% block 'description': %>采用数人云金融行业大数据解决方案，可极大的提高集群资源利用率，并更方便的维护大数据处理平台。让用户将注意力集中在大数据业务层，快速挖掘大数据所带来的商业价值。<% end %>
+<% block 'title': %>金融行业数据搜集和大数据处理解决方案 - 数人云<% end %>
+<% block 'bodyContent': %>
+<% include '../../common_views/nav.html' %>
+<div id="solution-finance" class="solution">
     <header class="header-solution">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="/pics/bg-solution-01-1.svg" width="100%">
+                    <img src="./pics/bg-solution-01-1.svg" width="100%">
                 </div>
                 <div class="col-md-6">
                     <h1>金融容器云</h1>
@@ -12,7 +18,9 @@
                         <a href="http://shurenyun.mikecrm.com/f.php?t=RXMFED" target="_blank" class="btn btn-primary" id="btn-consult-solution-finance">
                             免费咨询
                         </a>
-                        <button class="btn btn-default" data-ui-sref="register" id="solution-finance-btn-register">立即注册</button>
+                        <a data-ng-href="{/FRONTEND_URL.register/}" class="btn btn-default"  id="solution-bioinfo-btn-register">
+                            立即注册
+                        </a>
                     </form>
                 </div>
             </div>
@@ -55,8 +63,10 @@
                         <h2>数人金融容器云，助力金融机构构建开放业务新形态。</h2>
                     </article>
                 </div>
-                <div data-ng-include="'/static_views/solution/solution-nav.html'" data-include-replace></div>
+                <% include './solution-nav.html' %>
             </div>
         </div>
     </div>
 </div>
+<% include '../../common_views/footer.html' %>
+<% end %>

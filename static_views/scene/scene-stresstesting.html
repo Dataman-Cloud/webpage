@@ -1,3 +1,9 @@
+<% extend "../../common.html" %>
+<% block 'keywords': %>百万并发级的压力测试解决方案，轻量级 PaaS 平台、Mesos、Docker<% end %>
+<% block 'description': %>数人云性能测试（Performance Testing）解决方案，能够提供百万并发用户级别的分布式压测能力，可模拟海量用户真实的业务场景。廉价、高效、易用的压测解决方案。<% end %>
+<% block 'title': %>性能测试 - 百万并发级的压力测试解决方案<% end %>
+<% block 'bodyContent': %>
+<% include '../../common_views/nav.html' %>
 <div id="scene-stresstesting" class="solution">
     <header class="header-solution">
         <div class="container">
@@ -12,7 +18,9 @@
                         <a href="http://shurenyun.mikecrm.com/f.php?t=ynmZPa" target="_blank" class="btn btn-primary" id="btn-consult-scene-stresstesting">
                             免费咨询
                         </a>
-                        <button class="btn btn-default" data-ui-sref="register" id="btn-register-scene-stresstesting">立即注册</button>
+                        <a data-ng-href="{/FRONTEND_URL.register/}" class="btn btn-default"  id="solution-bioinfo-btn-register">
+                            立即注册
+                        </a>
                     </form>
                 </div>
             </div>
@@ -133,8 +141,10 @@
                             </ul>
                     </article>
                 </div>
-                <div data-ng-include="'/static_views/scene/scene-nav.html'" data-include-replace></div>
+                <% include './scene-nav.html' %>
             </div>
         </div>
     </div>
 </div>
+<% include '../../common_views/footer.html' %>
+<% end %>
