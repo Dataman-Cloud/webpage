@@ -69,8 +69,6 @@ gulp.task('ectHtml', function(){
         absolutePathArray.push(rootPath + relativePathArray[i]);
     }
 
-    console.log(absolutePathArray)
-
     return gulp.src(absolutePathArray, {read: false})
         .pipe(ect({ext: '.html'}))
         .pipe(htmlmin({collapseWhitespace: true}))
