@@ -1,4 +1,10 @@
-<div data-ng-include="'/common_views/nav.html'" data-include-replace></div>
+
+<% extend "../common.html" %>
+<% block 'keywords': %>数人云报价，数人云企业版，数人云专业版<% end %>
+<% block 'description': %>数人云 PaaS 平台专业版报价，企业试用版可免费试用，企业版请拨打电话010-64776698 与我们联系。<% end %>
+<% block 'title': %>数人云 PaaS 平台报价 企业试用版可免费试用 - 数人云<% end %>
+<% block 'bodyContent': %>
+<% include '../common_views/nav.html' %>
 <div id="product-price">
     <header class="main-header">
         <div class="container">
@@ -10,14 +16,20 @@
                     <h1><sup>&yen;</sup> 1200</h1>
                     <h3>Agent / 月</h3>
                     <h4>7×24小时</h4>
-                    <button class="btn btn-success" data-ui-sref="register" id="price-btn-pro-register">立即试用</button>
+                    <a data-ng-href="{/FRONTEND_URL.register/}" class="btn btn-success"  id="price-btn-pro-register">
+                        立即试用
+                    </a>
+
                 </div>
                 <div class="price-card">
                     <header>无限制<br>企业功能试用版</header>
                     <h1><sup>&yen;</sup> 0</h1>
                     <h3>Agent / 月</h3>
                     <h4>5×8小时</h4>
-                    <button class="btn btn-success" data-ui-sref="register" id="price-btn-try-register">立即试用</button>
+                    <a data-ng-href="{/FRONTEND_URL.register/}" class="btn btn-success"  id="price-btn-try-register">
+                        立即试用
+                    </a>
+
                 </div>
                 <div class="price-card company">
                     <header>企业版</header>
@@ -62,9 +74,9 @@
                 </tr>
                 <tr>
                     <td>1.3 跨云管理</td>
-                    <td>开发中...</td>
-                    <td>开发中...</td>
-                    <td>开发中...</td>
+                    <td><span class="glyphicon glyphicon-ok"></span></td>
+                    <td><span class="glyphicon glyphicon-ok"></span></td>
+                    <td><span class="glyphicon glyphicon-ok"></span></td>
                 </tr>
                 </tbody>
                 <tbody>
@@ -114,15 +126,15 @@
                 </tr>
                 <tr>
                     <td>3.1 一键部署</td>
-                    <td>开发中...</td>
-                    <td>开发中...</td>
-                    <td>开发中...</td>
+                    <td><span class="glyphicon glyphicon-ok"></span></td>
+                    <td><span class="glyphicon glyphicon-ok"></span></td>
+                    <td><span class="glyphicon glyphicon-ok"></span></td>
                 </tr>
                 <tr>
                     <td>3.2 第三方应用</td>
-                    <td>开发中...</td>
-                    <td>开发中...</td>
-                    <td>开发中...</td>
+                    <td><span class="glyphicon glyphicon-ok"></span></td>
+                    <td><span class="glyphicon glyphicon-ok"></span></td>
+                    <td><span class="glyphicon glyphicon-ok"></span></td>
                 </tr>
                 </tbody>
                 <tbody>
@@ -153,12 +165,14 @@
                 </tbody>
             </table>
             <div class="box-btn-freetry">
-                <button class="btn btn-success btn-freetry" data-ui-sref="register" id="price-btn-bottom-register">立即注册，体验30天 无限制<br>
-                    企业功能试用版
-                </button>
+                <a data-ng-href="{/FRONTEND_URL.register/}" class="btn btn-success btn-freetry"  id="price-btn-bottom-register">
+                    立即注册，体验30天 无限制<br>企业功能试用版
+                </a>
+
                 <p class="text-center">如有疑问，请拨打咨询电话：<strong>010-64776698</strong></p>
             </div>
         </div>
     </section>
-    <div data-ng-include="'/common_views/footer.html'" data-include-replace></div>
+    <% include '../common_views/footer.html' %>
 </div>
+<% end %>

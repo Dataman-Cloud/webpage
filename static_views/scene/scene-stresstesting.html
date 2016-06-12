@@ -1,3 +1,9 @@
+<% extend "../../common.html" %>
+<% block 'keywords': %>百万并发级的压力测试解决方案，轻量级 PaaS 平台、Mesos、Docker<% end %>
+<% block 'description': %>数人云性能测试（Performance Testing）解决方案，能够提供百万并发用户级别的分布式压测能力，可模拟海量用户真实的业务场景。廉价、高效、易用的压测解决方案。<% end %>
+<% block 'title': %>性能测试 - 百万并发级的压力测试解决方案<% end %>
+<% block 'bodyContent': %>
+<% include '../../common_views/nav.html' %>
 <div id="scene-stresstesting" class="solution">
     <header class="header-solution">
         <div class="container">
@@ -12,7 +18,9 @@
                         <a href="http://shurenyun.mikecrm.com/f.php?t=ynmZPa" target="_blank" class="btn btn-primary" id="btn-consult-scene-stresstesting">
                             免费咨询
                         </a>
-                        <button class="btn btn-default" data-ui-sref="register" id="btn-register-scene-stresstesting">立即注册</button>
+                        <a data-ng-href="{/FRONTEND_URL.register/}" class="btn btn-default"  id="solution-bioinfo-btn-register">
+                            立即注册
+                        </a>
                     </form>
                 </div>
             </div>
@@ -81,7 +89,7 @@
                                 <li><strong>软件：</strong>采用开源技术，降低商业压测软件使用成本。
                                     <p>数人云结合在开源领域的领先优势和自身的技术特点，从根本将压测软件本身的授权成本降低成趋近于零。</p>
                                 </li>
-                                <li><strong>硬件和网络：</strong>利用数人云 DCOS 的跨机房动态管理资源的能力统一管理调配所需资源。
+                                <li><strong>硬件和网络：</strong>利用数人云操作系统的跨机房动态管理资源的能力统一管理调配所需资源。
                                     <p>数人云将利用自身超强的跨机房及动态管理物理资源的技术特性和公有云“几乎无限”的资源来解决资源层弹性问题。提供一套近乎“无限”的网络带宽资源和计算资源分布式压力测试架构解决方案，承接用户对于压力测试的各种物理层需求。</p>
                                 </li>
                                 <li><strong>人员：</strong>数人云提供专业人员帮助用户部署和测试，用户无需自己雇用此类专业人员。
@@ -133,8 +141,10 @@
                             </ul>
                     </article>
                 </div>
-                <div data-ng-include="'/static_views/scene/scene-nav.html'" data-include-replace></div>
+                <% include './scene-nav.html' %>
             </div>
         </div>
     </div>
 </div>
+<% include '../../common_views/footer.html' %>
+<% end %>

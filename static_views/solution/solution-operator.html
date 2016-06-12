@@ -1,13 +1,21 @@
-<div id="solution-operator" class="solution">     
+<% extend "../../common.html" %>
+<% block 'keywords': %>电信运营商解决方案，轻量级 PaaS 平台, Mesos, Docker, PaaS<% end %>
+<% block 'description': %>数人云轻量级 paaS 平台，是基于 Apache Mesos 开源技术的商业化解决方案。可快速搭建起极具弹性的轻量级 PaaS 平台。满足运营商日益增长的互联网应用需求。此套技术框架路线已在浙江移动、Verizon 等运营商的生产系统得到了验证。<% end %>
+<% block 'title': %>电信运营商轻量级PaaS平台解决方案<% end %>
+<% block 'bodyContent': %>
+<% include '../../common_views/nav.html' %>
+<div id="solution-operator" class="solution">
     <header class="header-solution">
         <div class="container">
             <h1><img src="pics/bg-solution-06-1.png" height="80"></h1>
-            <h2>数人云下一代 DCOS，是基于 Apache Mesos  开源技术的商业化解决方案。可快速搭建起极具弹性的轻量级 PaaS 平台。满足运营商日益增长的互联网应用需求。此套技术框架路线已在浙江移动、Verizon 等运营商的生产系统得到了验证。</h2>
+            <h2>数人云操作系统，是基于 Apache Mesos  开源技术的商业化解决方案。可快速搭建起极具弹性的轻量级 PaaS 平台。满足运营商日益增长的互联网应用需求。此套技术框架路线已在浙江移动、Verizon 等运营商的生产系统得到了验证。</h2>
             <form>
                 <a href="http://shurenyun.mikecrm.com/f.php?t=me31lm" target="_blank" class="btn btn-primary" id="btn-consult-solution-operator">
                     免费咨询
                 </a>
-                <button class="btn btn-default" data-ui-sref="register" id="solution-bioinfo-btn-operator">立即注册</button>
+                <a data-ng-href="{/FRONTEND_URL.register/}" class="btn btn-default"  id="solution-bioinfo-btn-register">
+                    立即注册
+                </a>
             </form>
         </div>
     </header>
@@ -31,7 +39,7 @@
                         <p>针对上面的问题，运营商在过去十年已经进行了业务 X86 迁移、服务器虚拟化、资源池私有云等改造。一定程度上解决了底层资源自动化管理和屏蔽异构的问题，问题的焦点逐渐向应用层转移，例如业务上线慢、扩容慢、维护成本高等等。</p>
                         <h1>数人云解决方案</h1>
                         <hr>
-                        <p>数人云通过和多家移动省公司的交流，并且参考了美国 Verizon 和中国移动浙江公司基于 Mesos 的最佳实践，提出了自己的开源商业化数据中心操作系统方案（Datacenter OS）。这个方案旨在针对运营商的互联网有关业务，提供如下的特性：</p>
+                        <p>数人云通过和多家移动省公司的交流，并且参考了美国 Verizon 和中国移动浙江公司基于 Mesos 的最佳实践，提出了自己的开源商业化数据中心操作系统方案。这个方案旨在针对运营商的互联网有关业务，提供如下的特性：</p>
                         <ul>
                             <li>在数据中心层面提供资源弹性，实现业务的快速横向扩展和自动容错。</li>
                             <li>通过持续集成功能，向内外开发团队提供标准的应用发布接口，实现业务的快速测试和顺利上线。</li>
@@ -44,8 +52,10 @@
                         <p>数人云核心基于 Apache Mesos 开源商业化解决方案，实现底层资源的细粒度池化。容器部分采用了 Marathon 为主的调度系统，这套技术框架路线已经在浙江移动、Verizon 等运营商的生产系统得到了验证。在资源统调层之上是各个 PaaS 的业务模块，例如实现高并发下弹性扩展的“弹性扩展管理”模块，例如提供自动打包和自动部署功能的“持续集成模块”。这些模块加上企业级的日志和监控模块（也可以和企业既有日志监控系统对接），实现了一个完整的数据中心操作系统功能。</p>
                     </article>
                 </div>
-                <div data-ng-include="'/static_views/solution/solution-nav.html'" data-include-replace></div>
+                <% include './solution-nav.html' %>
             </div>
         </div>
     </div>
 </div>
+<% include '../../common_views/footer.html' %>
+<% end %>

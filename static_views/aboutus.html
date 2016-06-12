@@ -1,4 +1,10 @@
-<div data-ng-include="'/common_views/nav.html'" data-include-replace></div>
+<% extend "../common.html" %>
+<% block 'keywords': %>数人云、数人科技、数人云轻量级 PaaS 平台、数据中心操作系统，云操作系统<% end %>
+<% block 'description': %>数人云是基于 Mesos 和 Docker 技术的下一代 DCOS（数据中心操作系统.领先的轻量级 PaaS 平台
+可部署在公有云或者私有云（IDC）之上，帮助用户在云端快速建立并稳定运维高性能生产环境。实现秒级扩容，一键部署，混跑多种应用的能力。<% end %>
+<% block 'title': %>数人云 - 轻量级PaaS平台<% end %>
+<% block 'bodyContent': %>
+<% include '../common_views/nav.html' %>
 <div id="aboutus">
     <header class="header-index">
         <div class="container">
@@ -7,8 +13,8 @@
                     <h1>About Us</h1>
                 </div>
                 <div class="col-md-7 col-md-offset-1">
-                    <p>数人科技隶属于北京数字世纪科技有限公司，由原 Google 架构师王璞博士于2014年创立，其核心团队来自于 Google、RedHat 和 HP。数人科技致力于打造下一代 DCOS 数人云，将应用弹性做到极致。<br>
-                        “数人云”是一款部署在公有云、私有云以及混合云之上的 DCOS（Data Center Operating System ），旨在帮助用户在云端快速建立并稳定运行一个高性能生产环境，将应用弹性做到极致，实现一站式的微服务架构集群系统。<br> 
+                    <p>数人科技隶属于北京数字世纪科技有限公司，由原 Google 架构师王璞博士于2014年创立，其核心团队来自于 Google、RedHat 和 HP。数人科技致力于打造下一代轻量级PaaS平台，将应用弹性做到极致。<br>
+                        “数人云”是一款部署在公有云、私有云以及混合云之上的企业级云操作系统，旨在帮助用户在云端快速建立并稳定运行一个高性能生产环境，将应用弹性做到极致，实现一站式的微服务架构集群系统。<br>
                         基于领先的 Mesos 和 Docker 技术，数人云可为用户的业务系统带来高可用的服务质量，快速的性能伸缩，高效的资源利用以及便捷的可视化管理和监控；同时，数人云保证用户的计算资源和数据完全为用户私有可控。
                     </p>
                     <hr>
@@ -114,34 +120,36 @@
                 <h2>商业合作伙伴</h2>
                 </dt>
                 <dd>
+                    <a alt="gaoyangjinxin" target="_blank" href="http://www.gaoyangjinxin.com/index.html">
+                        <img alt="gaoyangjinxin" src="pics/logo/gaoyangjinxin.png"></a>
                     <a alt="yonghong" target="_blank" href="http://www.yonghongtech.com/index.html">
-<img alt="yonghong" src="pics/logo/logo-yonghong.png"></a>
-<a alt="ti" target="_blank" href="http://www.pingcap.com/">
-<img alt="ti" src="pics/logo/logo-ti.png"></a>
-<a alt="51cache" target="_blank" href="https://portal.51cache.com/index.php?controller=login&action=login">
-<img alt="51cache" src="pics/logo/logo-51cache.png"></a>
-<a alt="qiniu" target="_blank" href="http://www.qiniu.com/">
-<img alt="qiniu" src="pics/logo/logo-qiniu.png"></a>
-<a alt="youpaiyun" target="_blank" href="https://www.upyun.com/zh/index.html">
-<img alt="youpaiyun" src="pics/logo/logo-youpaiyun.png"></a>
-<a alt="coding" target="_blank" href="https://coding.net/">
-<img alt="coding" src="pics/logo/logo-coding.png"></a>
-<a alt="yunzhihui" target="_blank" href="http://www.cloudwise.com/">
-<img alt="yunzhihui" src="pics/logo/logo-yunzhihui.png"></a>
-<a alt="yunsuo" target="_blank" href="http://www.yunsuo.com.cn/">
-<img alt="yunsuo" src="pics/logo/logo-yunsuo.png"></a>
-<a alt="ping" target="_blank" href="https://www.pingxx.com">
-<img alt="ping" src="pics/logo/logo-ping.png"></a>
-<a alt="huanxin" target="_blank" href="http://www.easemob.com/">
-<img alt="huanxin" src="pics/logo/logo-huanxin.png"></a>
-<a alt="GrowingIO" target="_blank" href="https://www.growingio.com">
-<img alt="GrowingIO" src="pics/logo/logo-GrowingIO.png"></a>
-<a alt="oneapm" target="_blank" href="http://www.oneapm.com">
-<img alt="oneapm" src="pics/logo/logo-oneapm.png"></a>
-<a alt="yegou" target="_blank" href="https://www.wilddog.com/">
-<img alt="yegou" src="pics/logo/logo-yegou.png"></a>
-<a alt="上海英拿信息技术有限公司" target="_blank" href="#">
-<img alt="上海英拿信息技术有限公司" src="pics/logo/logo-inner-service.png"></a>
+                        <img alt="yonghong" src="pics/logo/logo-yonghong.png"></a>
+                    <a alt="ti" target="_blank" href="http://www.pingcap.com/">
+                        <img alt="ti" src="pics/logo/logo-ti.png"></a>
+                    <a alt="51cache" target="_blank" href="https://portal.51cache.com/index.php?controller=login&action=login">
+                        <img alt="51cache" src="pics/logo/logo-51cache.png"></a>
+                    <a alt="qiniu" target="_blank" href="http://www.qiniu.com/">
+                        <img alt="qiniu" src="pics/logo/logo-qiniu.png"></a>
+                    <a alt="youpaiyun" target="_blank" href="https://www.upyun.com/zh/index.html">
+                        <img alt="youpaiyun" src="pics/logo/logo-youpaiyun.png"></a>
+                    <a alt="coding" target="_blank" href="https://coding.net/">
+                        <img alt="coding" src="pics/logo/logo-coding.png"></a>
+                    <a alt="yunzhihui" target="_blank" href="http://www.cloudwise.com/">
+                        <img alt="yunzhihui" src="pics/logo/logo-yunzhihui.png"></a>
+                    <a alt="yunsuo" target="_blank" href="http://www.yunsuo.com.cn/">
+                        <img alt="yunsuo" src="pics/logo/logo-yunsuo.png"></a>
+                    <a alt="ping" target="_blank" href="https://www.pingxx.com">
+                        <img alt="ping" src="pics/logo/logo-ping.png"></a>
+                    <a alt="huanxin" target="_blank" href="http://www.easemob.com/">
+                        <img alt="huanxin" src="pics/logo/logo-huanxin.png"></a>
+                    <a alt="GrowingIO" target="_blank" href="https://www.growingio.com">
+                        <img alt="GrowingIO" src="pics/logo/logo-GrowingIO.png"></a>
+                    <a alt="oneapm" target="_blank" href="http://www.oneapm.com">
+                        <img alt="oneapm" src="pics/logo/logo-oneapm.png"></a>
+                    <a alt="yegou" target="_blank" href="https://www.wilddog.com/">
+                        <img alt="yegou" src="pics/logo/logo-yegou.png"></a>
+                    <a alt="上海英拿信息技术有限公司" target="_blank" href="#">
+                        <img alt="上海英拿信息技术有限公司" src="pics/logo/logo-inner-service.png"></a>
                 </dd>
                 <dt>
                 <h2>科研机构</h2>
@@ -152,5 +160,6 @@
             </dl>
         </div>
     </section>
-    <div data-ng-include="'/common_views/footer.html'" data-include-replace></div>
+    <% include '../common_views/footer.html' %>
 </div>
+<% end %>
