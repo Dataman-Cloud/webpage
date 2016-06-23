@@ -1,0 +1,232 @@
+/* 登录注册样式 */
+.login {
+	background: #b1b8c0 url(../pics/bg-login-01.jpg) no-repeat;
+	background-size:100% 100%;
+	background-size: cover;
+	padding-top: 160px;
+	position: relative;
+	text-align: center;
+	height: 100%;
+	min-height: 720px;
+}
+.login .logo {
+	opacity: 0.34;
+	width: 82px;
+}
+.login h1 {
+	font-size: 24px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	color: rgba(0,0,0,0.6);
+}
+.login footer {
+	bottom: 25px;
+	color: rgba(0,0,0,0.5);
+	font-size: 11px;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+.login footer ul {
+	font-size: 0;
+	margin-bottom: 10px;
+}
+.login footer li {
+	display: inline-block;
+	margin: 0 10px;
+}
+.login footer li a {
+	color: rgba(0,0,0,0.6);
+	font-size: 14px;
+}
+.login .btn {
+	background-color: rgba(0,0,0,0.3);
+	border: 0 none;
+	border-radius: 25px;
+	color: rgba(0,0,0,0.5);;
+	font-size: 18px;
+	font-weight: 400;
+}
+.login .btn:hover {
+	background-color: rgba(0,0,0,0.3);
+	border: 0 none;
+	border-radius: 25px;
+	color: rgba(0,0,0,0.5);;
+	font-size: 18px;
+	font-weight: 400;
+}
+.login .content {
+
+}
+
+.loginForm {
+	margin: 0 auto;
+	width: 315px;
+}
+.loginForm .form-group {
+	margin-bottom: 0;
+	position: relative;
+}
+
+.loginForm .form-control {
+	background-color: #FFF;
+	border: 0;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	border-top: 1px solid rgba(0,0,0,0.2);
+	border-radius: 0;
+	font-size: 15px;
+	height: 62px;
+	margin-top: -1px;
+	position: relative;
+	text-align: center;
+	z-index: 101;
+}
+.loginForm .form-control:focus {
+	box-shadow: none;
+}
+.loginForm .input-first {
+	border-radius: 25px 25px 0 0;
+	margin-top: 0;
+}
+.loginForm .input-last {
+	border-radius: 0 0 25px 25px;
+}
+.loginForm .input-single {
+	border-radius: 25px;
+}
+.loginForm .btn {
+	background-color: rgba(0,0,0,0.3);
+	border: 0 none;
+	border-radius: 0 0 25px 25px;
+	color: rgba(0,0,0,0.5);;
+	font-size: 18px;
+	font-weight: 400;
+	height: 70px;
+	margin-top: -25px;
+	padding-top: 27px;
+	position: relative;
+	width: 100%;
+}
+.loginForm .btn:hover {
+	background-color: rgba(0,0,0,0.6);
+	border: 0 none;
+	border-radius: 0 0 25px 25px;
+	color: rgba(255,255,255,1);;
+	font-size: 18px;
+	font-weight: 400;
+	height: 70px;
+	margin-top: -25px;
+	padding-top: 27px;
+	position: relative;
+	width: 100%;
+}
+.loginForm .prompt-box {
+	background: #FFF; 
+	border: 1px solid #EEE; 
+	border-radius: 3px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+	display: none;
+	font-size: 11px;
+	padding: 10px; 
+	position: absolute;
+	right: -225px; 
+	text-align: left;
+	top: 10px; 
+	width: 200px;    
+}
+.loginForm .prompt-box .arrow {
+	border-color: transparent;
+	border-style: solid;
+	display: block;
+	height: 0;
+	position: absolute;
+	width: 0;
+	border-width: 11px;
+	border-left-width: 0;
+	border-right-color: #EEE;
+	left: -11px;
+	top: 7px;
+}
+.loginForm .prompt-box .arrow:after {
+	border-color: transparent;
+	border-style: solid;
+	display: block;
+	height: 0;
+	position: absolute;
+	width: 0;
+	border-width: 10px;
+	content: "";
+	border-left-width: 0;
+	border-right-color: #fff;
+	bottom: -10px;
+	content: " ";
+	left: 1px;
+}
+.loginForm span.ico {
+	background-color: #FFF;
+	border-radius: 7px;
+	color: #ff794e;
+	display: none;
+	height: 14px;
+	left: -24px;
+	position: absolute;
+	top: 24px;
+	width: 14px;
+}
+.loginForm span.ico i {
+	color: #ff794e;
+	font-size: 20px;
+	left: -1px;
+	position: absolute;
+	top: -2px;
+}
+.loginForm .has-error .form-control {
+	background-color: #feebe9;
+}
+.loginForm .has-error .prompt-box {
+	color: #f57c6c;
+}
+.loginForm .has-error span.ico {
+	display: block;
+}
+.loginForm .has-error .form-control:focus {
+	background-color: #FFF;
+	box-shadow: none;
+	border-top: 1px solid rgba(0,0,0,0.2);
+}
+.login .switch {
+	margin-top: 10px;
+}
+.login .switch a {
+	color: rgba(0,0,0,0.6);
+	font-size: 11px;
+}
+#login {
+	background: #b1b8c0 url(../pics/bg-login-01.jpg) no-repeat;
+	padding-top: 160px;
+	background-size:100% 100%;
+}
+#register {
+	background: #b1b8c0 url(../pics/bg-login-01.jpg) no-repeat;
+	padding-top: 70px;
+	background-size:100% 100%;
+}
+#reset-password {
+	background: #b1b8c0 url(../pics/bg-login-01.jpg) no-repeat;
+	padding-top: 160px;
+}
+#notification h1 {
+	margin: 0;
+	padding-bottom: 35px;
+	padding-top: 30px;
+}
+.login .alert {
+	border-radius: 0;
+	border: 0;
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	font-size: 11px;
+} 

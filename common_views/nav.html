@@ -26,13 +26,13 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="./product.html">产品<span
                         class="sr-only">(current)</span></a></li>
-                <li class="dropdown clearfix" id="dropdown-solution">
-                    <a id="dropdown_click" href="#" aria-haspopup="true"
+                <li class="dropdown clearfix dropdown-solution" id="dropdown">
+                    <a class="dropdown_click" href="#" aria-haspopup="true"
                        aria-expanded="false">解决方案 <span class="caret"></span></a>
-                    <ul class="dropdown-menu" id="solution-menu">
+                    <ul class="dropdown-menu" id="dropdown-menu">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 height">
                                     <h2>场景</h2>
                                     <div>
                                         <a href="./scene-seckill.html">高并发 / 秒杀</a>
@@ -70,8 +70,26 @@
                 <li>
                     <a href="http://open.shurenyun.com/" target="_blank">社区</a>
                 </li>
-                <li>
-                    <a href="./aboutus.html">关于</a>
+                <li class="dropdown clearfix dropdown-solution" id="solution">
+                    <a class="dropdown_click" href="#" aria-haspopup="true"
+                       aria-expanded="false">关于 <span class="caret"></span></a>
+                    <ul class="dropdown-menu solution-menu" id="solution-menu">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-md-7">
+                                    <h2>关于我们</h2>
+                                    <div>
+                                    	    <a href="./aboutus.html">公司</a>
+                                        <a href="./aboutus.html#member">创始团队</a>
+                                        <a href="./aboutus.html#partner">合作伙伴</a>
+                                        <a href="http://blog.dataman-inc.com/tag/news">新闻</a>
+                                        <a href="http://blog.dataman-inc.com/tag/events">活动</a>
+                                        <a href="http://www.lagou.com/gongsi/j37868.html">招聘</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
                 </li>
             </ul>
         </div>
