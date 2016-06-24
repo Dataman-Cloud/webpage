@@ -471,7 +471,6 @@ ul, li {
 /* 首页样式 --- 成功经验 */
 .experience {
 	background-color: #f3f5f7
-	padding-bottom: 90px;
 }
 .experience h1 {
 	padding-top: 90px;
@@ -492,10 +491,10 @@ ul, li {
 	vertical-align: middle;
 }*/
 img.desaturate { filter: grayscale(100%);
--webkit-filter: grayscale(100%);
--moz-filter: grayscale(100%);
--ms-filter: grayscale(100%);
--o-filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
 }
 img.desaturate:hover{
 	filter: grayscale(0%);
@@ -506,6 +505,9 @@ img.desaturate:hover{
 }
 .row{
 	padding-left: 20PX;
+}
+.experience-bot{
+	padding-bottom: 90px;
 }
 .logo {
 	width: 165px;
@@ -528,58 +530,62 @@ img.desaturate:hover{
 	margin-bottom: 30px;
 }
 /*新闻和动态*/
+
+.news-box h1{
+	padding-top: 90px;
+}
 .news-trends{
 	width: 100%;
+	background: #FFFFFF;
+	padding-bottom: 60px;
 }
+
 .dynamic{
-	width: 500px;
-	height: 300px;
+	width: 550px;
 	float: left;
-	margin-left: 200px;
+	margin-left: 140px;
 }
 .dynamic dl{
-	width: 400px;
-	margin-top: 20px;
+	width: 550px;
 }
-.dynamic dl dt{
+.dynamic dl dt a{
+	max-width: 530px;
+	display: inline-block;
 	font-size: 18px;
 	color: #00b9df;
 	overflow:hidden;
 	white-space:nowrap;
 	text-overflow:ellipsis;
 	-o-text-overflow:ellipsis;
-}
-.dynamic dl dt:hover{
-	border-bottom: 1px solid #00b9df;
 }
 .dynamic dl dd{
 	font-size: 12px;
 	color: #999999;
 }
 .news{
-	width: 500px;
-	height: 300px;
+	width: 550px;
 	float: left;
-	margin-left: 80px;
+	margin-left: 50px;
 }
 .news dl{
-	width: 400px;
+	width: 550px;
 }
-.news dl dt{
+.news dl dt a{
+	max-width: 530px;
+	display: inline-block;
 	font-size: 18px;
 	color: #00b9df;
-	margin-top: 20px;
 	overflow:hidden;
 	white-space:nowrap;
 	text-overflow:ellipsis;
 	-o-text-overflow:ellipsis;
 }
-.news dl dt:hover{
-	border-bottom: 1px solid #00b9df;
-}
 .news dl dd{
 	font-size: 12px;
 	color: #999999;
+}
+.news-trends footer{
+	padding-bottom: 50px;
 }
 .news-trends footer ul{
 	width: 100px;
@@ -592,6 +598,7 @@ img.desaturate:hover{
 .news-trends footer  li a{
 	font-size: 18px;
 	white-space:nowrap;
+	color: #00b9df;
 }
 /* 解决方案样式 */
 .solution header  {
