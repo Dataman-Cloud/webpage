@@ -55,8 +55,8 @@
             $('nav').addClass("nav-scroll")
         });
         $('#dropdown-menu').bind("mouseleave", null, function () {
+        		$('#dropdown-menu').hide();
             if($(document).scrollTop() <= 0){
-           	 	$('#dropdown-menu').hide();
                 $('nav').removeClass("nav-scroll")
             }
         });
@@ -67,8 +67,8 @@
         });
 		
         $('#solution-menu').bind("mouseleave", null, function () {
+        		$('.solution-menu').hide();
             if($(document).scrollTop() <= 0){
-            		$('.solution-menu').hide();
                 $('nav').removeClass("nav-scroll")
             }
         });
@@ -97,5 +97,4 @@
         });
 
     })
-    
 })(window);
