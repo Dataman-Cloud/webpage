@@ -193,6 +193,7 @@ ul, li {
 	font-size: 30px;
 	margin: 0;
 	padding-top: 52px;
+	font-weight: 200;
 }
 .footer-slogan .btn {
 	margin-top: 50px;
@@ -512,7 +513,7 @@ img.desaturate:hover{
 .experience-bot{
 	padding-bottom: 90px;
 }
-.logo {
+.logos {
 	width: 130px;
 	text-align: center;
 	cursor: pointer;
@@ -560,6 +561,7 @@ img.desaturate:hover{
 	white-space:nowrap;
 	text-overflow:ellipsis;
 	-o-text-overflow:ellipsis;
+	font-weight: 200;
 }
 .dynamic dl dd{
 	font-size: 12px;
@@ -582,6 +584,7 @@ img.desaturate:hover{
 	white-space:nowrap;
 	text-overflow:ellipsis;
 	-o-text-overflow:ellipsis;
+	font-weight: 200;
 }
 .news dl dd{
 	font-size: 12px;
@@ -591,7 +594,6 @@ img.desaturate:hover{
 	padding-bottom: 50px;
 }
 .news-trends footer span{
-	width: 100px;
 	margin-left: 46%;
 }
 .news-trends footer  span{
@@ -652,8 +654,8 @@ img.desaturate:hover{
 }
 .solution-content h1 {
 	color: #00bdda;
-	font-size: 30px;
-	font-weight: 600;
+	font-size: 24px;
+	font-weight: 400;
 	 margin-top: 50px;
 }
 .solution-content h2 {
@@ -665,24 +667,25 @@ img.desaturate:hover{
 .solution-content h3 {
 	font-size: 18px;
 	font-weight: bold;
-	margin: 0 0 25px 0;
+	margin: 0 0 10px 0;
+	color: #5a6879;
 }
 .solution-content hr {
 	border-color: #999;
 	margin: 25px 0 35px 0;
-	width: 80px;
+	width: 65px;
 }
 .solution-content p {
-	color: #666;
+	color: #5a6879;
 	line-height: 1.5;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 }
 .solution-content table {
 	margin-bottom: 45px;
 }
 .solution-content ul {
 	margin-bottom: 45px;
-	margin-left: 2em;
+	margin-left: 1em;
 }
 .solution-content ul ul {
 	margin-top: 45px;
@@ -1112,7 +1115,13 @@ img.desaturate:hover{
 	margin-top: 34px;
 	width: 136px;
 }
-
+.flat-popular{
+	width: 88px;
+	height: 88px;
+	position: absolute;
+	top: -10px;
+	right: -8px;
+}
 
 
 /* 企业应用 */
@@ -1777,5 +1786,4 @@ section.select-app .usable a {
 @media(min-width: 769px){
 	.button{display:none;}
 }
-
 
