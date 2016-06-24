@@ -62,7 +62,10 @@ ul, li {
 	background-color: transparent;
 	color: #00bdda;
 }
-
+.col-md-7{
+	float: right;
+	margin-right: -120px;
+}
 /* 通用头部样式 */
 .nav-main {
 	background-color: transparent;
@@ -447,7 +450,8 @@ ul, li {
 .tec-com h1 {
 	padding-top: 90px;
 }
-.tec-com .row div {
+.tec-com .
+ div {
 	padding: 0 20px;
 }
 .tec-com h2 {
@@ -463,11 +467,13 @@ ul, li {
 .tec-com .logo{
 	height: 40px;
 }
+.tec-comtwo{
+	padding-bottom: 30px;
+}
 
 /* 首页样式 --- 成功经验 */
 .experience {
-	background-color: #FFF;
-	padding-bottom: 90px;
+	background-color: #f3f5f7
 }
 .experience h1 {
 	padding-top: 90px;
@@ -475,7 +481,7 @@ ul, li {
 .experience hr {
 	margin-bottom: 85px!important;
 }
-.experience li a {
+/*.experience li a {
 	background-color: #f3f5f7;
 	color: #5a6879;
 	display: block;
@@ -486,11 +492,30 @@ ul, li {
 	overflow: hidden;
 	text-align: center;
 	vertical-align: middle;
+}*/
+img.desaturate { filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
 }
-.experience li a .logo {
-	display: none;
+img.desaturate:hover{
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+}
+.row{
+	padding-left: 20PX;
+}
+.experience-bot{
+	padding-bottom: 90px;
+}
+.logo {
+	width: 130px;
 	text-align: center;
-	width: 100%;
+	cursor: pointer;
 }
 .experience li a:hover {
 	background-color: #7a7a7a;
@@ -504,7 +529,81 @@ ul, li {
 .experience li em {
 	font-style: normal;
 }
+.col-md-2{
+	margin-bottom: 30px;
+}
+/*新闻和动态*/
 
+.news-box h1{
+	padding-top: 90px;
+}
+.news-trends{
+	width: 100%;
+	background: #FFFFFF;
+	padding-bottom: 90px;
+}
+
+.dynamic{
+	width: 550px;
+	float: left;
+	margin-left: 140px;
+}
+.dynamic dl{
+	width: 550px;
+}
+.dynamic dl dt a{
+	max-width: 530px;
+	display: inline-block;
+	font-size: 18px;
+	color: #00b9df;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+}
+.dynamic dl dd{
+	font-size: 12px;
+	color: #999999;
+}
+.news{
+	width: 550px;
+	float: left;
+	margin-left: 50px;
+}
+.news dl{
+	width: 550px;
+}
+.news dl dt a{
+	max-width: 530px;
+	display: inline-block;
+	font-size: 18px;
+	color: #00b9df;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+}
+.news dl dd{
+	font-size: 12px;
+	color: #999999;
+}
+.news-trends footer{
+	padding-bottom: 50px;
+}
+.news-trends footer span{
+	width: 100px;
+	margin-left: 46%;
+}
+.news-trends footer  span{
+	float: left;
+	text-align: center;
+	padding-top: 40px;
+}
+.news-trends footer  span a{
+	font-size: 18px;
+	white-space:nowrap;
+	color: #00b9df;
+}
 /* 解决方案样式 */
 .solution header  {
 	background-size: cover;

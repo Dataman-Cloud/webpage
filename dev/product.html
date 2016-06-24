@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="数人云，数人科技，容器，Container，容器云，云原生，镜像仓库，容器集群管理，Docker，Docker镜像，Mesos，Marathon，DCOS，PaaS平台，数人云操作系统，灰度发布 ，微服务，服务发现，持续集成，镜像构建，CICD，持续交付 ，DevOps，敏捷开发，自动化，金融容器云，高并发，秒杀，容器编排，docker compose，应用编排，弹性扩缩 弹性伸缩">
+    <meta name="description" content="数人云是基于 Mesos 和 Docker 技术的云操作系统，致力于打造最轻量化的PaaS平台，可实现应用的快速发布和弹性扩展。支持混合云管理，实现一站式的微服务架构集群系统，帮助用户快速建立并稳定运维高性能生产环境，解决从客户到云资源的最后一公里。">
+    <title>数人云产品 - 基于容器的最轻量化 PaaS 平台</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="pics/facicon.ico"/>
+    <!--build:css css/style.css-->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/shurenyun.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <!--endbuild-->
+</head>
+<body>
+
+<div style="height: 100%;" class="homepage">
+    <nav class="navbar navbar-default navbar-fixed-top nav-main" id="nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" id="navbar_toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html"><img src="pics/logo-shurenyun-ico.svg" height="100%"></a>
+        </div>
+
+        <div class="collapse navbar-collapse in">
+            <form class="navbar-form navbar-right" data-role="search">
+                <a data-ng-href="{/FRONTEND_URL.login/}">
+                    <button type="button" class="btn btn-default" id="nav-btn-login">登录</button>
+                </a>
+                <a data-ng-href="{/FRONTEND_URL.register/}">
+                    <button type="button" class="btn btn-default btn-login" id="nav-btn-register">注册</button>
+                </a>
+                <a data-ng-href="{/FRONTEND_URL.demo/}">
+                    <button type="button" class="btn btn-default btn-login" id="nav-btn-demo">Demo</button>
+                </a>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="./product.html">产品<span
+                        class="sr-only">(current)</span></a></li>
+                <li class="dropdown clearfix dropdown-solution" id="dropdown">
+                    <a class="dropdown_click" href="#" aria-haspopup="true"
+                       aria-expanded="false">解决方案 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="dropdown-menu">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 height">
+                                    <h2>场景</h2>
+                                    <div>
+                                        <a href="./scene-seckill.html">高并发 / 秒杀</a>
+                                        <a href="./scene-containercloud.html">容器云</a>
+                                        <a href="./scene-cicd.html">CI / CD</a>
+                                        <a href="./scene-bigdata.html">大数据</a>
+                                        <a href="./companyapp-index.html">企业应用平台</a>
+                                        <a href="./scene-stresstesting.html">性能测试</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h2>行业</h2>
+                                    <div>
+                                        <a href="./solution-finance.html">金融</a>
+                                        <a href="./solution-internet.html">互联网</a>
+                                        <a href="./solution-bioinfo.html">生物信息</a>
+                                        <a href="./solution-o2o.html">电商</a>
+                                        <a href="./solution-operator.html">运营商</a>
+                                        <a href="./solution-tradition.html">能源</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./price.html">价格</a>
+                </li>
+                <li>
+                    <a href="http://doc.shurenyun.com" target="_blank">文档</a>
+                </li>
+                <li>
+                    <a href="http://blog.dataman-inc.com/" target="_blank">博客</a>
+                </li>
+                <li>
+                    <a href="http://open.shurenyun.com/" target="_blank">社区</a>
+                </li>
+                <li class="dropdown clearfix dropdown-solution" id="solution">
+                    <a class="dropdown_click" href="#" aria-haspopup="true"
+                       aria-expanded="false">关于 <span class="caret"></span></a>
+                    <ul class="dropdown-menu solution-menu" id="solution-menu">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-md-7">
+                                    <h2>关于我们</h2>
+                                    <div>
+                                    	    <a href="./aboutus.html">公司</a>
+                                        <a href="./aboutus.html#member">创始团队</a>
+                                        <a href="./aboutus.html#partner">合作伙伴</a>
+                                        <a href="http://blog.dataman-inc.com/tag/news">新闻</a>
+                                        <a href="http://blog.dataman-inc.com/tag/events">活动</a>
+                                        <a href="http://www.lagou.com/gongsi/j37868.html">招聘</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="product">
+    <header class="header-index">
+        <h1>数人云操作系统</h1>
+        <h2>将应用弹性做到极致的轻量 PaaS 平台</h2>
+        <h4>使用数人云操作系统，可像用单机电脑一样管理集群和云端应用。<br>
+            一键伸缩，满足业务快速增长需求。<br>
+            一键部署 Docker 容器应用和 Spark 等分布式应用，快速搭建微服务和大数据生产环境。</h4>
+        <form>
+            <a data-ng-href="{/FRONTEND_URL.register/}" class="btn btn-primary"  id="product-index-btn-register">
+                免费注册
+            </a>
+                <a data-ng-href="{/FRONTEND_URL.demo/}" class="btn btn-default"  id="product-index-btn-demo">查看Demo</a>
+        </form>
+        <footer><i class="fa fa-angle-down scroll-down"></i></footer>
+    </header>
+    <section class="product-feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-1">
+                    <img src="pics/pic-product-02.png" width="100%">
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <h2>一键伸缩<small>「满足业务爆发增长需求」</small></h2>
+                    <p>数人云操作系统可以管理任意规模的应用。不管是10还是10000台服务器，数人云都可以在整个集群轻松实现弹性扩展。一键扩展应用实例，从而轻松应对业务的爆发式增长。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-1">
+                    <h2>资源池化<small>「提高资源利用率」</small></h2>
+                    <p>传统的数据中心或云的资源利用率只有12-15%。数人云操作系统可以将集群资源池化，并将不同应用自动混合部署到整个集群，不受单个服务器边界限制，明显提升了资源利用率。平均可提升400%。</p>
+                    <p>混跑应用支持 Docker 容器化应用，以及 Spark、Hadoop、Cassandra 等多种分布式应用。</p>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <img src="pics/pic-product-03.png" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-1">
+                    <img src="pics/pic-product-04.png" width="100%">
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <h2>混合云管理<small>「多环境支持&无缝迁移」</small></h2>
+                    <p>数人云操作系统，可安装在公有云、私有云、混合云之上。<br>
+                        支持物理机、虚拟机。可在多平台间无缝迁移。<br>
+                        帮助用户保持统一的开发运维体验。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-1">
+                    <h2>一键部署<small>「快速搭建企业生产环境」</small></h2>
+                    <p>可一键部署 Docker 容器化应用。（支持企业原有容器化应用，及 Docker Hub 等第三方平台的 Docker 镜像）；<br>可一键部署 Spark、Hadoop、
+                        Cassandra、Jenkins、Kafka 等多种常用分布式应用，从而快速搭建企业生产环境，开发流行的微服务和大数据应用。</p>
+                </div>
+                <div class="col-md-4 col-md-offset-1">
+                    <img src="pics/pic-product-05.png" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-1">
+                    <img src="pics/pic-product-06.png" width="100%">
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <h2>简化运维<small>「快速实现 DevOps」</small></h2>
+                    <p>打破开发和运维团队之间的障碍，提高应用开发、部署、维护效率。<br>
+                        通过统一界面，管理应用和集群。可随时监控每一个应用，集群，主机的运行健康状态。<br>
+                        提供 API 接口，可与多种第三方应用，或企业自有管理系统对接整合。<br>
+                        可统一收集应用和集群主机日志，能够快速查询和检索，帮助企业快速定位问题。<br>
+                        让用户像用单机电脑一样管理集群和云端应用。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-1">
+                    <h2>服务高可用<small>「自动容错，永不掉线」</small></h2>
+                    <p>当您开启高可用服务后，数人云自动为宕机服务器上运行的节点重新分配资源，保障业务不掉线，高可靠运行。这也就意味着您不用再为一两台服务器的宕机，而经历一个不眠之夜。</p>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <img src="pics/pic-product-07.png" width="100%">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="product-feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1">
+                    <img src="pics/pic-product-09.svg" width="100%">
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <h2>金融容器云<small>构建开放业务新形态</small></h2>
+                    <p>作为基于 Docker 的新一代轻量级 PaaS 平台，数人金融容器云实现秒级启停，帮助客户及时响应高并发等新型业务需求；同时，借助容器技术，数人金融容器云使应用的交付变得标准，极大地消除技术部署的局限性，提高客户产品的交付及运维效率。</p>
+                    <a href="#" href="./solution-finance.html">了解更多 >></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="index-carousel">
+        <div class="container">
+            <div class="header">
+                <h2><img src="pics/logo-shurenyun-ico-black.svg" height="18"> 想您所想，达您所需</h2>
+                <h1>五大场景解决方案</h1>
+                <div>
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active">高并发</li>
+        <li data-target="#carousel-example-generic" data-slide-to="1">容器云</li>
+        <li data-target="#carousel-example-generic" data-slide-to="2">持续集成</li>
+        <li data-target="#carousel-example-generic" data-slide-to="3">大数据平台</li>
+        <li data-target="#carousel-example-generic" data-slide-to="4">企业应用平台</li>
+
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="carousel-caption">
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-1"><img src="pics/pic-carousel-01.svg"
+                                                               width="100%"></div>
+                    <div class="col-md-4 col-md-offset-1">
+                        <h1>一秒扩容 - 应对高并发<br>
+                            10倍流量体验依然顺畅
+                        </h1>
+                        <p>根据客户业务需求，<br>
+                            秒级动态伸缩业务应用实例个数，<br>
+                            保障业务应用的高性能。<br>
+                            <a href="./scene-slide.html">了解详情 ></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-1">
+                        <h1>大规模 Docker 生产环境</h1>
+                        <p>微服务架构是云时代的趋势。<br>
+                            使用云操作系统可简化微服务应用的开发过程。<br>
+                            快速搭建容器云，统一管理数万个 Docker 实例<br>
+                            <a href="./scene-slide.html" >了解详情 ></a>
+                        </p>
+                    </div>
+                    <div class="col-md-4"><img src="pics/pic-carousel-04.png" width="100%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-1"><img src="pics/pic-carousel-05.svg"
+                                                               width="100%"></div>
+                    <div class="col-md-6 col-md-offset-1">
+                        <h1>持续集成环境 - 加快产品迭代</h1>
+                        <p>产品迭代速度已成为互联网公司成败的关键因素。<br>
+                            使用数人云操作系统可迅速搭建 Jenkins 持续集成环境，<br>
+                            从而保障产品实现快速迭代。<br>
+                            <a href="./scene-slide.html">了解详情 ></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-1"><img src="pics/pic-carousel-03.svg"
+                                                               width="100%"></div>
+                    <div class="col-md-6 col-md-offset-1">
+                        <h1>大数据处理平台</h1>
+                        <p>用户需要更实时，更智能的应用。<br>
+                            要满足这些需求，企业需要一个大数据处理平台做支撑。<br>
+                            数人云可以快速搭建和管理流行的大数据处理框架。<br>
+                            <a href="./scene-slide.html">了解详情 ></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="carousel-caption">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-1">
+                        <h1>企业级应用平台 - 快速搭建生产环境</h1>
+                        <p>一键部署上万种 Docker 容器化应用<br>
+                            快速部署 Hadoop、Spark、Cassandra、<br>
+                            Jenkins、Kafka 和 MemSQL 等分布式应用。<br>
+                            <a href="./scene-slide.html">了解详情 ></a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 "><img src="pics/pic-carousel-02.png" width="100%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#carousel-example-generic" role="button"
+       data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button"
+       data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="solution-enter">
+        <img src="pics/pic-product-08.svg" width="235">
+        <div><a  href="./solution-finance.html">金融</a> <a href="./solution-internet.html" >互联网</a> <a href="./solution-bioinfo.html">生物信息</a> <a href="./solution-o2o.html">电商</a> <a href="./solution-operator.html">运营商</a> <a href="./solution-tradition.html">能源</a></div>
+    </div>
+    <div class="footer-slogan">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8"><h1>数人云操作系统将应用弹性做到极致</h1></div>
+            <div class="col-md-3">
+                <a href="#" class="btn btn-primary" data-ng-href="{/FRONTEND_URL.register/}">
+                    免费注册
+                    <i class="fa fa-arrow-circle-o-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer-main">
+    <div class="container">
+        <ul class="row footer-help">
+            <li class="col-md-3">
+                <i class="fa fa-question-circle"></i>
+                <h1>用户手册 & 帮助中心</h1>
+                <p>查阅文档、提交问题工单、搜索故障解决方案，都可以前往「帮助中心」。</p>
+                <em><a href="http://doc.shurenyun.com" target="_blank">前往帮助中心 ></a></em>
+            </li>
+            <li class="col-md-3">
+                <i class="fa fa-shopping-cart"></i>
+                <h1>销售咨询</h1>
+                <p>销售经理为您解答 报价、部署实施方案的各种问题。</p>
+                <em>+86 10 64776698</em>
+            </li>
+            <li class="col-md-3">
+                <i class="fa fa-cogs"></i>
+                <h1>技术咨询</h1>
+                <p>遇到任何技术问题，都可以直接电话获得技术支持。也可发送邮件与我们联系。</p>
+                <em>+86 10 64776698<br><a href="mailto:info@shurenyun.com">info@shurenyun.com</a></em>
+            </li>
+            <li class="col-md-3">
+                <i class="fa fa-comments-o"></i>
+                <h1>博客 | 社区</h1>
+                <p>关注 数人云 最新技术和开发进展，请访问「数人技术博客」。</p>
+                <em>
+                    <a href="http://blog.dataman-inc.com/" target="_blank">前往博客</a> | <a
+                        href="http://open.shurenyun.com" target="_blank">前往社区</a>
+                </em>
+            </li>
+        </ul>
+        <div class="row footer-aboutus">
+            <div class="col-md-10">
+                <ul class="row">
+                    <li class="col-md-2">
+                        <h1>产品</h1>
+                        <ul>
+                            <li><a href="./product.html">企业级云操作系统</a></li>
+                            <li><a href="./price.html">报价</a></li>
+                            <li><a href="http://doc.shurenyun.com" target="_blank">文档</a></li>
+                            <li><a href="https://dataman.kf5.com/home" target="_blank">常见 FAQ</a></li>
+                            <li><a href="./service-item.html">服务条款</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-md-2">
+                        <h1>解决方案</h1>
+                        <ul>
+                            <li><a href="./scene-seckill.html">高并发 / 秒杀</a></li>
+                            <li><a href="./scene-containercloud.html">容器云</a></li>
+                            <li><a href="./scene-cicd.html">CI / CD</a></li>
+                            <li><a href="./scene-bigdata.html">大数据</a></li>
+                            <li><a href="./companyapp-index.html">企业应用平台</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-md-2">
+                        <h1>行业方案</h1>
+                        <ul>
+                            <li>
+                            <a href="./solution-finance.html">
+                                    金融大数据
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./solution-internet.html">
+                                    互联网
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./solution-bioinfo.html">
+                                    生物信息
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./solution-o2o.html">
+                                    电商
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./solution-operator.html">
+                                    运营商
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./solution-tradition.html">
+                                    能源
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="col-md-2">
+                        <h1>关于</h1>
+                        <ul>
+                            <li><a href="./aboutus.html">公司</a></li>
+                            <li><a href="./aboutus.html#partner">合作伙伴</a></li>
+                            <li><a href="http://www.lagou.com/gongsi/j37868.html" target="_blank">招聘</a></li>
+                            <li><a href="javascript:;" data-toggle="popover" class="wechat-qrcode"
+                                   data-trigger="focus">微信</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-md-3">
+                        <h1>联系我们</h1>
+                        <ul>
+                            <li>电话: +86 10 64776698</li>
+                            <li>邮箱: <a href="mailto:info@dataman-inc.com">info@dataman-inc.com</a></li>
+                            <li>地址: 北京市朝阳区大望京商务园区宏泰东街浦项中心A座806-807</li>
+                            <li>邮编: 100102</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="row">
+
+                    <li class="col-md-12">
+                        <div class="social-network">
+                            <a href="javascript:;" data-toggle="popover"
+                               class="wechat-qrcode"
+                               data-trigger="focus">
+                                <i class="fa fa-weixin"></i>
+                            </a>
+                            <a href="http://weibo.com/dataman2014" target="_blank"><i
+                                    class="fa fa-weibo"></i></a>
+                        </div>
+
+                        <p>关注 数人云<br>获取最新行业资讯</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">Copyright © 2015 北京数字世纪科技有限公司（<a href="https://www.shurenyun.com/">www.shurenyun.com</a>）
+            京ICP备14058899号-4 版本号：
+            <span id="omegaVersion" title="{/version/}">{/frontendVersion/}</span>
+        </div>
+    </div>
+</footer></div>
+</div>
+<!-- rev-hash -->
+<script src="conf.js"></script>
+<!-- end -->
+<!--build:js js/script.js-->
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="service.js"></script>
+<script src="common.js"></script>
+<!--endbuild-->
+<!-- Baidu -->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?cd74c0fcc0c51aecc3bb276315e35e6a";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<!-- GrowingIO -->
+<script type='text/javascript'>
+    var _vds = _vds || [];(function(){ _vds.push(['setAccountId', '0edf12ee248505950b0a77b02d47c537']); (function() {var vds = document.createElement('script'); vds.type='text/javascript'; vds.async = true;vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(vds, s);})();})();
+</script>
+
+</body>
+</html>

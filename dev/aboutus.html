@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="数人云，数人科技，容器，Container，容器云，云原生，镜像仓库，容器集群管理，Docker，Docker镜像，Mesos，Marathon，DCOS，PaaS平台，数人云操作系统，灰度发布 ，微服务，服务发现，持续集成，镜像构建，CICD，持续交付 ，DevOps，敏捷开发，自动化，金融容器云，高并发，秒杀，容器编排，docker compose，应用编排，弹性扩缩 弹性伸缩">
+    <meta name="description" content="数人云是基于 Mesos 和 Docker 技术的云操作系统，致力于打造最轻量化的PaaS平台，可实现应用的快速发布和弹性扩展。支持混合云管理，实现一站式的微服务架构集群系统，帮助用户快速建立并稳定运维高性能生产环境，解决从客户到云资源的最后一公里。">
+    <title>关于数人云 - 基于容器的最轻量化 PaaS 平台</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="pics/facicon.ico"/>
+    <!--build:css css/style.css-->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/shurenyun.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <!--endbuild-->
+</head>
+<body>
+
+<div style="height: 100%;" class="homepage">
+    <nav class="navbar navbar-default navbar-fixed-top nav-main" id="nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" id="navbar_toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html"><img src="pics/logo-shurenyun-ico.svg" height="100%"></a>
+        </div>
+
+        <div class="collapse navbar-collapse in">
+            <form class="navbar-form navbar-right" data-role="search">
+                <a data-ng-href="{/FRONTEND_URL.login/}">
+                    <button type="button" class="btn btn-default" id="nav-btn-login">登录</button>
+                </a>
+                <a data-ng-href="{/FRONTEND_URL.register/}">
+                    <button type="button" class="btn btn-default btn-login" id="nav-btn-register">注册</button>
+                </a>
+                <a data-ng-href="{/FRONTEND_URL.demo/}">
+                    <button type="button" class="btn btn-default btn-login" id="nav-btn-demo">Demo</button>
+                </a>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="./product.html">产品<span
+                        class="sr-only">(current)</span></a></li>
+                <li class="dropdown clearfix dropdown-solution" id="dropdown">
+                    <a class="dropdown_click" href="#" aria-haspopup="true"
+                       aria-expanded="false">解决方案 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="dropdown-menu">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 height">
+                                    <h2>场景</h2>
+                                    <div>
+                                        <a href="./scene-seckill.html">高并发 / 秒杀</a>
+                                        <a href="./scene-containercloud.html">容器云</a>
+                                        <a href="./scene-cicd.html">CI / CD</a>
+                                        <a href="./scene-bigdata.html">大数据</a>
+                                        <a href="./companyapp-index.html">企业应用平台</a>
+                                        <a href="./scene-stresstesting.html">性能测试</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h2>行业</h2>
+                                    <div>
+                                        <a href="./solution-finance.html">金融</a>
+                                        <a href="./solution-internet.html">互联网</a>
+                                        <a href="./solution-bioinfo.html">生物信息</a>
+                                        <a href="./solution-o2o.html">电商</a>
+                                        <a href="./solution-operator.html">运营商</a>
+                                        <a href="./solution-tradition.html">能源</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./price.html">价格</a>
+                </li>
+                <li>
+                    <a href="http://doc.shurenyun.com" target="_blank">文档</a>
+                </li>
+                <li>
+                    <a href="http://blog.dataman-inc.com/" target="_blank">博客</a>
+                </li>
+                <li>
+                    <a href="http://open.shurenyun.com/" target="_blank">社区</a>
+                </li>
+                <li class="dropdown clearfix dropdown-solution" id="solution">
+                    <a class="dropdown_click" href="#" aria-haspopup="true"
+                       aria-expanded="false">关于 <span class="caret"></span></a>
+                    <ul class="dropdown-menu solution-menu" id="solution-menu">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-md-7">
+                                    <h2>关于我们</h2>
+                                    <div>
+                                    	    <a href="./aboutus.html">公司</a>
+                                        <a href="./aboutus.html#member">创始团队</a>
+                                        <a href="./aboutus.html#partner">合作伙伴</a>
+                                        <a href="http://blog.dataman-inc.com/tag/news">新闻</a>
+                                        <a href="http://blog.dataman-inc.com/tag/events">活动</a>
+                                        <a href="http://www.lagou.com/gongsi/j37868.html">招聘</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="aboutus">
+    <header class="header-index">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>About Us</h1>
+                </div>
+                <div class="col-md-7 col-md-offset-1">
+                    <p>数人科技隶属于北京数字世纪科技有限公司，由原 Google 架构师王璞博士于2014年创立，其核心团队来自于 Google、RedHat 和 HP。数人科技致力于打造下一代轻量级PaaS平台，将应用弹性做到极致。<br>
+                        “数人云”是一款部署在公有云、私有云以及混合云之上的企业级云操作系统，旨在帮助用户在云端快速建立并稳定运行一个高性能生产环境，将应用弹性做到极致，实现一站式的微服务架构集群系统。<br>
+                        基于领先的 Mesos 和 Docker 技术，数人云可为用户的业务系统带来高可用的服务质量，快速的性能伸缩，高效的资源利用以及便捷的可视化管理和监控；同时，数人云保证用户的计算资源和数据完全为用户私有可控。
+                    </p>
+                    <hr>
+                    <p><strong>数人云可让用户获得：</strong></p>
+
+                    <p>一键伸缩 —— 满足业务爆发增长需求<br>
+                        资源池化 —— 提高资源利用率<br>
+                        混合云管理 —— 多环境支持&无缝迁移<br>
+                        一键部署 —— 快速搭建企业生产环境<br>
+                        简化运维 —— 快速实现 DevOps<br>
+                        服务高可用 —— 自动容错，永不掉线</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="member" id="member">
+        <div class="container">
+            <h2>创始团队</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="pics/photo-ceo.jpg" alt="...">
+                        <div class="caption">
+                            <h3>王璞
+                                <small>创始人&CEO</small>
+                            </h3>
+                            <p>美国 George Mason 大学计算机博士。曾先后供职于 Google、Groupon 和 StumbleUpon
+                                等硅谷互联网公司。擅长分布式计算、大规模机器学习、海量数据处理。曾担任 Google 广告部门数据平台构架师，负责管理每秒访问量全球最高的架构平台。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="pics/photo-cto.jpg" alt="...">
+                        <div class="caption">
+                            <h3>肖德时
+                                <small>CTO</small>
+                            </h3>
+                            <p>前 RedHat 内部工具组 Team Leader，擅长企业内部工具的设计及实现。
+                                在数人科技负责开源项目的选型和整合，让众多开源项目无缝连接，提供更加强大、更加弹性、更加稳定的运算能力。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="pics/photo-coo.jpg" alt="...">
+                        <div class="caption">
+                            <h3>谢乐冰
+                                <small>COO</small>
+                            </h3>
+                            <p>在德国工作十年，回国后加盟惠普电信运营商部门。
+                                拥有多年项目经验和创业公司工作经验。在数人科技负责互联网数据搜集和处理，擅长技术应用领域，为电商、招聘、电信、互联网金融等行业提供服务。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 joinus-link">
+                    <a href="http://www.lagou.com/gongsi/j37868.html" id="aboutus-btn-joinus">work with us ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partner" id="partner">
+        <div class="container">
+            <h1>合作伙伴</h1>
+            <hr>
+            <dl>
+                <dt>
+                <h2>公有云合作伙伴</h2>
+                </dt>
+                <dd>
+                    <img src="pics/logo/logo-ucloud.png">
+                    <img src="pics/logo/logo-tengxunyun.png">
+                    <img src="pics/logo/logo-aliyun.png">
+                    <img src="pics/logo/logo-cds.png">
+                    <img src="pics/logo/logo-windows-azure.png">
+                </dd>
+                <dt>
+                <h2>私有云合作伙伴</h2>
+                </dt>
+                <dd>
+                    <img src="pics/logo/logo-easystack.png">
+                </dd>
+                <dt>
+                <h2>IT 厂商</h2>
+                </dt>
+                <dd>
+                    <img src="pics/logo/logo-cisco.png">
+                    <img src="pics/logo/logo-huawei.png">
+                    <img src="pics/logo/logo-ms-opentechnologies.png">
+                </dd>
+                <dt>
+                <h2>开源技术&行业组织</h2>
+                </dt>
+                <dd>
+                    <img src="pics/logo/logo-chinayun.png">
+                    <img src="pics/logo/logo-kaiyuanshe.png">
+                    <img src="pics/logo/logo-dockone.png">
+                </dd>
+                <dt>
+                <h2>商业合作伙伴</h2>
+                </dt>
+                <dd>
+                    <a alt="gaoyangjinxin" target="_blank" href="http://www.gaoyangjinxin.com/index.html">
+                        <img alt="gaoyangjinxin" src="pics/logo/gaoyangjinxin.png"></a>
+                    <a alt="yonghong" target="_blank" href="http://www.yonghongtech.com/index.html">
+                        <img alt="yonghong" src="pics/logo/logo-yonghong.png"></a>
+                    <a alt="ti" target="_blank" href="http://www.pingcap.com/">
+                        <img alt="ti" src="pics/logo/logo-ti.png"></a>
+                    <a alt="51cache" target="_blank" href="https://portal.51cache.com/index.php?controller=login&action=login">
+                        <img alt="51cache" src="pics/logo/logo-51cache.png"></a>
+                    <a alt="qiniu" target="_blank" href="http://www.qiniu.com/">
+                        <img alt="qiniu" src="pics/logo/logo-qiniu.png"></a>
+                    <a alt="youpaiyun" target="_blank" href="https://www.upyun.com/zh/index.html">
+                        <img alt="youpaiyun" src="pics/logo/logo-youpaiyun.png"></a>
+                    <a alt="coding" target="_blank" href="https://coding.net/">
+                        <img alt="coding" src="pics/logo/logo-coding.png"></a>
+                    <a alt="yunzhihui" target="_blank" href="http://www.cloudwise.com/">
+                        <img alt="yunzhihui" src="pics/logo/logo-yunzhihui.png"></a>
+                    <a alt="yunsuo" target="_blank" href="http://www.yunsuo.com.cn/">
+                        <img alt="yunsuo" src="pics/logo/logo-yunsuo.png"></a>
+                    <a alt="ping" target="_blank" href="https://www.pingxx.com">
+                        <img alt="ping" src="pics/logo/logo-ping.png"></a>
+                    <a alt="huanxin" target="_blank" href="http://www.easemob.com/">
+                        <img alt="huanxin" src="pics/logo/logo-huanxin.png"></a>
+                    <a alt="GrowingIO" target="_blank" href="https://www.growingio.com">
+                        <img alt="GrowingIO" src="pics/logo/logo-GrowingIO.png"></a>
+                    <a alt="oneapm" target="_blank" href="http://www.oneapm.com">
+                        <img alt="oneapm" src="pics/logo/logo-oneapm.png"></a>
+                    <a alt="yegou" target="_blank" href="https://www.wilddog.com/">
+                        <img alt="yegou" src="pics/logo/logo-yegou.png"></a>
+                    <a alt="上海英拿信息技术有限公司" target="_blank" href="#">
+                        <img alt="上海英拿信息技术有限公司" src="pics/logo/logo-inner-service.png"></a>
+                </dd>
+                <dt>
+                <h2>科研机构</h2>
+                </dt>
+                <dd>
+                    <img src="pics/logo/logo-qinghua.png">
+                </dd>
+            </dl>
+        </div>
+    </section>
+    <div class="footer-slogan">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8"><h1>数人云操作系统将应用弹性做到极致</h1></div>
+            <div class="col-md-3">
+                <a href="#" class="btn btn-primary" data-ng-href="{/FRONTEND_URL.register/}">
+                    免费注册
+                    <i class="fa fa-arrow-circle-o-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer-main">
+    <div class="container">
+        <ul class="row footer-help">
+            <li class="col-md-3">
+                <i class="fa fa-question-circle"></i>
+                <h1>用户手册 & 帮助中心</h1>
+                <p>查阅文档、提交问题工单、搜索故障解决方案，都可以前往「帮助中心」。</p>
+                <em><a href="http://doc.shurenyun.com" target="_blank">前往帮助中心 ></a></em>
+            </li>
+            <li class="col-md-3">
+                <i class="fa fa-shopping-cart"></i>
+                <h1>销售咨询</h1>
+                <p>销售经理为您解答 报价、部署实施方案的各种问题。</p>
+                <em>+86 10 64776698</em>
+            </li>
+            <li class="col-md-3">
+                <i class="fa fa-cogs"></i>
+                <h1>技术咨询</h1>
+                <p>遇到任何技术问题，都可以直接电话获得技术支持。也可发送邮件与我们联系。</p>
+                <em>+86 10 64776698<br><a href="mailto:info@shurenyun.com">info@shurenyun.com</a></em>
+            </li>
+            <li class="col-md-3">
+                <i class="fa fa-comments-o"></i>
+                <h1>博客 | 社区</h1>
+                <p>关注 数人云 最新技术和开发进展，请访问「数人技术博客」。</p>
+                <em>
+                    <a href="http://blog.dataman-inc.com/" target="_blank">前往博客</a> | <a
+                        href="http://open.shurenyun.com" target="_blank">前往社区</a>
+                </em>
+            </li>
+        </ul>
+        <div class="row footer-aboutus">
+            <div class="col-md-10">
+                <ul class="row">
+                    <li class="col-md-2">
+                        <h1>产品</h1>
+                        <ul>
+                            <li><a href="./product.html">企业级云操作系统</a></li>
+                            <li><a href="./price.html">报价</a></li>
+                            <li><a href="http://doc.shurenyun.com" target="_blank">文档</a></li>
+                            <li><a href="https://dataman.kf5.com/home" target="_blank">常见 FAQ</a></li>
+                            <li><a href="./service-item.html">服务条款</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-md-2">
+                        <h1>解决方案</h1>
+                        <ul>
+                            <li><a href="./scene-seckill.html">高并发 / 秒杀</a></li>
+                            <li><a href="./scene-containercloud.html">容器云</a></li>
+                            <li><a href="./scene-cicd.html">CI / CD</a></li>
+                            <li><a href="./scene-bigdata.html">大数据</a></li>
+                            <li><a href="./companyapp-index.html">企业应用平台</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-md-2">
+                        <h1>行业方案</h1>
+                        <ul>
+                            <li>
+                            <a href="./solution-finance.html">
+                                    金融大数据
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./solution-internet.html">
+                                    互联网
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./solution-bioinfo.html">
+                                    生物信息
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./solution-o2o.html">
+                                    电商
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./solution-operator.html">
+                                    运营商
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./solution-tradition.html">
+                                    能源
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="col-md-2">
+                        <h1>关于</h1>
+                        <ul>
+                            <li><a href="./aboutus.html">公司</a></li>
+                            <li><a href="./aboutus.html#partner">合作伙伴</a></li>
+                            <li><a href="http://www.lagou.com/gongsi/j37868.html" target="_blank">招聘</a></li>
+                            <li><a href="javascript:;" data-toggle="popover" class="wechat-qrcode"
+                                   data-trigger="focus">微信</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-md-3">
+                        <h1>联系我们</h1>
+                        <ul>
+                            <li>电话: +86 10 64776698</li>
+                            <li>邮箱: <a href="mailto:info@dataman-inc.com">info@dataman-inc.com</a></li>
+                            <li>地址: 北京市朝阳区大望京商务园区宏泰东街浦项中心A座806-807</li>
+                            <li>邮编: 100102</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="row">
+
+                    <li class="col-md-12">
+                        <div class="social-network">
+                            <a href="javascript:;" data-toggle="popover"
+                               class="wechat-qrcode"
+                               data-trigger="focus">
+                                <i class="fa fa-weixin"></i>
+                            </a>
+                            <a href="http://weibo.com/dataman2014" target="_blank"><i
+                                    class="fa fa-weibo"></i></a>
+                        </div>
+
+                        <p>关注 数人云<br>获取最新行业资讯</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">Copyright © 2015 北京数字世纪科技有限公司（<a href="https://www.shurenyun.com/">www.shurenyun.com</a>）
+            京ICP备14058899号-4 版本号：
+            <span id="omegaVersion" title="{/version/}">{/frontendVersion/}</span>
+        </div>
+    </div>
+</footer></div>
+</div>
+<!-- rev-hash -->
+<script src="conf.js"></script>
+<!-- end -->
+<!--build:js js/script.js-->
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="service.js"></script>
+<script src="common.js"></script>
+<!--endbuild-->
+<!-- Baidu -->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?cd74c0fcc0c51aecc3bb276315e35e6a";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<!-- GrowingIO -->
+<script type='text/javascript'>
+    var _vds = _vds || [];(function(){ _vds.push(['setAccountId', '0edf12ee248505950b0a77b02d47c537']); (function() {var vds = document.createElement('script'); vds.type='text/javascript'; vds.async = true;vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(vds, s);})();})();
+</script>
+
+</body>
+</html>
