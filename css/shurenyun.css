@@ -467,6 +467,9 @@ ul, li {
 .tec-com .logo{
 	height: 40px;
 }
+.tec-comtwo{
+	padding-bottom: 30px;
+}
 
 /* 首页样式 --- 成功经验 */
 .experience {
@@ -510,7 +513,7 @@ img.desaturate:hover{
 	padding-bottom: 90px;
 }
 .logo {
-	width: 165px;
+	width: 130px;
 	text-align: center;
 	cursor: pointer;
 }
@@ -537,7 +540,7 @@ img.desaturate:hover{
 .news-trends{
 	width: 100%;
 	background: #FFFFFF;
-	padding-bottom: 60px;
+	padding-bottom: 90px;
 }
 
 .dynamic{
@@ -587,15 +590,16 @@ img.desaturate:hover{
 .news-trends footer{
 	padding-bottom: 50px;
 }
-.news-trends footer ul{
+.news-trends footer span{
 	width: 100px;
 	margin-left: 46%;
 }
-.news-trends footer  li{
+.news-trends footer  span{
 	float: left;
 	text-align: center;
+	padding-top: 40px;
 }
-.news-trends footer  li a{
+.news-trends footer  span a{
 	font-size: 18px;
 	white-space:nowrap;
 	color: #00b9df;
