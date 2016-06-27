@@ -180,6 +180,11 @@ ul, li {
 .footer-main .footer-aboutus .social-network a:hover {
 	color: rgba(255,255,255,1);
 }
+@media (max-width: 992px) {
+	.footer-main .footer-aboutus li {
+		display: inline-block;
+	}
+}
 .footer-main .copyright {
 	padding-bottom: 30px;
 	text-align: center;
@@ -282,6 +287,29 @@ ul, li {
 	text-align: center;
 	width: 167px;
 }
+@media (max-width:992px) {
+.carousel-indicators li {
+	background-color: #737f8d;
+	border: 0;
+	border-radius: 0;
+	color: #FFF;
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 0 0 1px;
+	text-align: center;
+	text-indent: 0;
+	width: 110px;
+}
+.carousel-indicators li.active {
+	background-color: #00bdda;
+	border: 0;
+	border-radius: 0;
+	height: 50px;
+	text-align: center;
+	width: 110px;
+}
+}
 .carousel-control {
 	background: #f3f5f7!important;
 	color: #5a6879;
@@ -324,7 +352,6 @@ ul, li {
 	text-align: left;
 	text-shadow: none;
 }
-
 /* 首页样式 --- 头部 */
 .header-index {
 	background-image: url('../pics/bg-index-header.jpg');
@@ -352,6 +379,11 @@ ul, li {
 	font-weight: 300;
 	margin: 200px 0 0 0;
 	text-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+}
+@media(max-width:768px){
+	.header-index h1{
+		font-size: 24px;
+	}
 }
 .header-index h2 {
 	font-size: 70px;
@@ -410,7 +442,6 @@ ul, li {
 	min-height: 120px;
 	width: 85%;
 }
-
 /* 首页样式 --- 解决问题 */
 .resolve-question {
 	background: #00bdda url(../pics/bg-index-01.png) no-repeat bottom center;
@@ -482,18 +513,6 @@ ul, li {
 .experience hr {
 	margin-bottom: 85px!important;
 }
-/*.experience li a {
-	background-color: #f3f5f7;
-	color: #5a6879;
-	display: block;
-	font-size: 24px;
-	height: 165px;
-	line-height: 165px;
-	margin-bottom: 26px;
-	overflow: hidden;
-	text-align: center;
-	vertical-align: middle;
-}*/
 img.desaturate { filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
@@ -507,11 +526,9 @@ img.desaturate:hover{
 	-ms-filter: grayscale(0%);
 	-o-filter: grayscale(0%);
 }
-.row{
-	padding-left: 20PX;
-}
-.experience-bot{
+#experience-bot{
 	padding-bottom: 90px;
+	margin-left: 50px;
 }
 .logos {
 	width: 130px;
@@ -534,7 +551,6 @@ img.desaturate:hover{
 	margin-bottom: 30px;
 }
 /*新闻和动态*/
-
 .news-box h1{
 	padding-top: 90px;
 }
@@ -542,18 +558,10 @@ img.desaturate:hover{
 	width: 100%;
 	background: #FFFFFF;
 	padding-bottom: 90px;
-}
-
-.dynamic{
-	width: 550px;
-	float: left;
-	margin-left: 140px;
-}
-.dynamic dl{
-	width: 550px;
+	padding-left: 140px;
 }
 .dynamic dl dt a{
-	max-width: 530px;
+	max-width: 400px;
 	display: inline-block;
 	font-size: 18px;
 	color: #00b9df;
@@ -562,21 +570,9 @@ img.desaturate:hover{
 	text-overflow:ellipsis;
 	-o-text-overflow:ellipsis;
 	font-weight: 200;
-}
-.dynamic dl dd{
-	font-size: 12px;
-	color: #999999;
-}
-.news{
-	width: 550px;
-	float: left;
-	margin-left: 50px;
-}
-.news dl{
-	width: 550px;
 }
 .news dl dt a{
-	max-width: 530px;
+	max-width: 400px;
 	display: inline-block;
 	font-size: 18px;
 	color: #00b9df;
@@ -585,10 +581,6 @@ img.desaturate:hover{
 	text-overflow:ellipsis;
 	-o-text-overflow:ellipsis;
 	font-weight: 200;
-}
-.news dl dd{
-	font-size: 12px;
-	color: #999999;
 }
 .news-trends footer{
 	padding-bottom: 50px;
@@ -606,6 +598,7 @@ img.desaturate:hover{
 	white-space:nowrap;
 	color: #00b9df;
 }
+
 /* 解决方案样式 */
 .solution header  {
 	background-size: cover;
