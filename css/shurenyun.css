@@ -115,7 +115,12 @@ ul, li {
 	background-color: rgba(0,0,0,0.6)!important;
 	z-index: 11111;
 }
-
+@media(max-width:768px) {
+	.navbar{
+		width: 100%;
+		height: 72px;
+	}
+}
 
 
 
@@ -160,6 +165,9 @@ ul, li {
 	margin-bottom: 25px;
 	padding: 0 25px;
 }
+.footer-help .col-xs-6{
+	margin-top: 50px;
+}
 .footer-main .footer-aboutus {
 	padding-top: 54px;
 	padding-bottom: 110px;
@@ -183,6 +191,7 @@ ul, li {
 @media (max-width: 992px) {
 	.footer-main .footer-aboutus li {
 		display: inline-block;
+		margin-left: 15px;
 	}
 }
 .footer-main .copyright {
