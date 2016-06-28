@@ -10,6 +10,7 @@ body {
 }
 body, html {
 	height: 100%;
+	font-family: 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
 }
 ul, li {
 	list-style: none;
@@ -62,9 +63,9 @@ ul, li {
 	background-color: transparent;
 	color: #00bdda;
 }
-.col-md-7{
+.nav-about{
 	float: right;
-	margin-right: -120px;
+	margin-right: -95px;
 }
 /* 通用头部样式 */
 .nav-main {
@@ -91,7 +92,6 @@ ul, li {
 	height: 38px;
 	padding-top: 0;
 	padding-bottom: 0;
-	
 }
 .nav-main .navbar-form {
 	margin: 0;
@@ -908,7 +908,7 @@ img.desaturate:hover{
 	font-size: 0;
 }
 #aboutus .partner dd img {
-	height: 38px;
+	height: 45px;
 	margin-right: 75px;
 	margin-bottom: 50px;
 }
@@ -1066,9 +1066,9 @@ img.desaturate:hover{
 	border-radius: 6px;
 	color: #FFF;
 	font-size: 18px;
-	font-weight: 300;
-	height: 90px;
-	padding-top: 18px;
+	font-weight: 600;
+	height: 100px;
+	padding-top: 24px;
 }
 #product-price .price-card.pro, #product-price .price-card.company {
 	height: 400px;
@@ -1143,7 +1143,7 @@ img.desaturate:hover{
 	background: #2f7ee4;
 	color: #FFF;
 	height: 100%;
-	min-height: 720px;
+	min-height: 850px;
 	text-align: center;
 }
 .company-app header.main-header img.app-logo {
@@ -1217,12 +1217,13 @@ section.platform-vantage .show-line-v {
 }
 .btn-white {
 	width: auto!important;
-	height: 56px;
-	padding-top: 15px;
+	height: 50px;
+	padding-top: 6px;
 	border-radius: 50px;
-	border: 2px solid #FFF;
-	font-size: 18px;
-	color: #FFF;
+	border: 2px solid #ffeb00;
+	font-size: 24px;
+	color: #000;
+	background: #ffeb00;
 }
 .btn-white:hover {
 	color: #FFF;
@@ -1499,15 +1500,17 @@ section.platform-vantage .show-line-v {
 	background-size: cover;
 	color: #FFF;
 	height: 100%;
-	min-height: 720px;
+	min-height: 800px;
 	text-align: center;
 }
 #companyapp header.main-header h2 {
 	font-size: 72px;
 	margin-top: 190px;
+	margin-bottom: 60px;
+	font-family: 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
 }
 #companyapp header.main-header h3 {
-	margin-bottom: 20px;
+	margin-bottom: 60px;
 }
 #companyapp header.main-header h5 {
 	margin-top: 240px;
@@ -1788,4 +1791,6 @@ section.select-app .usable a {
 @media(min-width: 769px){
 	.button{display:none;}
 }
-
+.icon-bar{
+	background: #FFFFFF !important;
+}
