@@ -24,22 +24,17 @@
             cover.style.display = "none"
             nav.style.display = 'none';
         });
-        var drop = document.querySelector('.dropdown_click');
-        var menu = document.querySelector('.solution-menu');
-        drop.onclick = function(event) {
-            event.stopPropagation();
-            var notDisplay = getCSSValue(menu, 'display');
-            if (notDisplay == 'none') {
-                menu.style.display = 'block';
-            } else {
-                menu.style.display = 'none';
-            }
-        };
-//      var dropdown =  document.querySelector('#dropdown');
-//      var dropdown =  document.querySelector('#nav');
-//	        dropdown.onclick = function(event) {
-//	            
-//	        };
+//      var drop = document.querySelector('.dropdown_click');
+//      var menu = document.querySelector('.solution-menu');
+//      drop.onclick = function(event) {
+//          event.stopPropagation();
+//          var notDisplay = getCSSValue(menu, 'display');
+//          if (notDisplay == 'none') {
+//              menu.style.display = 'block';
+//          } else {
+//              menu.style.display = 'none';
+//          }
+//      };
         function getCSSValue(obj, key) { //获取元素CSS值
             if (obj.currentStyle) { //IE
                 return obj.currentStyle[key];
