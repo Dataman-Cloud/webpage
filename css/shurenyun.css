@@ -560,15 +560,17 @@ img.desaturate:hover{
 	margin-bottom: 30px;
 }
 /*新闻和动态*/
-.news-box h1{
-	padding-top: 90px;
-}
 .news-trends{
 	width: 100%;
 	background: #FFFFFF;
 	padding-bottom: 90px;
-	padding-left: 140px;
+	padding-top: 90px;
 }
+#news-box{
+	width: 1040px;
+	margin: auto;
+}
+
 .dynamic dl dt a{
 	max-width: 400px;
 	display: inline-block;
@@ -580,6 +582,11 @@ img.desaturate:hover{
 	-o-text-overflow:ellipsis;
 	font-weight: 200;
 }
+.dynamic dl dd{
+	color: #5A6879;
+	font-size: 11px;
+}
+
 .news dl dt a{
 	max-width: 400px;
 	display: inline-block;
@@ -590,6 +597,10 @@ img.desaturate:hover{
 	text-overflow:ellipsis;
 	-o-text-overflow:ellipsis;
 	font-weight: 200;
+}
+.news dl dd{
+	color: #5A6879;
+	font-size: 11px;
 }
 .news-trends footer{
 	padding-bottom: 50px;
@@ -1453,7 +1464,7 @@ section.platform-vantage .show-line-v {
 	background-color: #271819;
 }
 #companyapp-help header.main-header {
-	background: url(/pics/companyapp-header-bg-01.jpg) no-repeat bottom;
+	background: url(http://blog.dataman-inc.com/content/images/2016/05/boke--.jpg) no-repeat bottom;
 	background-size: cover;
 	color: #FFF;
 	height: 100%;
@@ -1471,7 +1482,7 @@ section.platform-vantage .show-line-v {
 	margin-bottom: 20px;
 }
 #companyapp-help .platform-vantage {
-	background-color: #271819;
+	background-color: #100e26;
 }
 #companyapp-help .feature {
 	background: rgba(0,0,0,0.6);
