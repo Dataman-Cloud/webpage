@@ -537,7 +537,6 @@ img.desaturate:hover{
 }
 #experience-bot{
 	padding-bottom: 90px;
-	margin-left: 50px;
 }
 .logos {
 	width: 130px;
@@ -572,7 +571,7 @@ img.desaturate:hover{
 }
 
 .dynamic dl dt a{
-	max-width: 400px;
+	max-width: 480px;
 	display: inline-block;
 	font-size: 18px;
 	color: #00b9df;
@@ -588,7 +587,7 @@ img.desaturate:hover{
 }
 
 .news dl dt a{
-	max-width: 400px;
+	max-width: 500px;
 	display: inline-block;
 	font-size: 18px;
 	color: #00b9df;
@@ -1785,7 +1784,7 @@ section.select-app .usable a {
 	margin-top: 100px;
 	padding-left: 50px;
 }
-.nav li{
+/*.nav li{
 	padding:3px 0 3px 0;
 }
 .collapse.navbar-collapse{
@@ -1793,10 +1792,151 @@ section.select-app .usable a {
 }
 .col-md-6 h2{
 	font-size: 12px;
-}
+}*/
 #dropdown-solution .dropdown-menu {
 	position: relative;
 }
+#program{
+	position: absolute;
+	top: 200px;
+	left: 30px;
+}
+/* 首页样式 --- 产品特点 */
+
+.product-feature .media-object {
+	width: 33px;
+}
+.product-feature .media-heading {
+	color: #5a6879;
+	font-size: 14px;
+	margin-bottom: 9px;
+}
+.product-feature .media-content {
+	color: #666;
+	min-height: 120px;
+	width: 85%;
+}
+.left{
+	display: none;
+}
+.right{
+	display: none;
+}
+#caption-img img{
+	width: 150px;
+	height: 200px;
+}
+#caption-word h1{
+	font-size: 18px !important;
+}
+#caption-word p{
+	font-size: 14px;
+}
+#caption-word a{
+	font-size: 14px;
+}
+#features{
+	width: 80%;
+	margin-top: 90px;
+}
+.carousel-indicators{
+	margin-top: 50px;
+}
+.tec-comtwo li{
+	padding-top: 30px;
+}
+.experience li img{
+	width: 80%;
+}
+.dynamic dl dt a{
+	width: 280px;
+	font-size: 16px;
+	color: #00b9df;
+}
+.news dl dt a{
+	width: 280px;
+	font-size: 16px;
+	color: #00b9df;
+}
+#slogan-food h1{
+	padding-top: 35px;
+	font-size: 20px;
+	text-align: center;
+}
+.btn a{
+	width: 42px;
+	height: 20px;
+}
+.footer-slogan .btn {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.environment .logo {
+	width: 60%;
+}
+#scene-seckill header img {
+	height: 150px;
+    margin-top: 50px;
+}
+.solution header h1 {
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+.solution header h2{
+	text-align: center;
+}
+.solution header form{
+	margin-left: 30px;
+}
+.cloud {
+	padding-top: 150px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#scene-cicd header img {
+    height: 150px;
+    margin-top: 50px;
+}
+#scene-cicd header h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+#scene-bigdata header img {
+    height: 150px;
+    margin-top: 50px;
+}
+#scene-stresstesting header img {
+    height: 150px;
+    margin-top: 50px;
+}
+#scene-stresstesting header h1 {
+    font-size: 26px;
+    margin-top: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media(min-width: 769px){
