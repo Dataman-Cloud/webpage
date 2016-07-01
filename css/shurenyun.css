@@ -117,7 +117,6 @@ ul, li {
 }
 @media(max-width:768px) {
 	.navbar{
-		width: 100%;
 		height: 72px;
 	}
 }
@@ -1748,6 +1747,9 @@ section.select-app .usable a {
 
 /*手机端导航*/
 @media(max-width: 768px){
+	body{
+		overflow-x: hidden;
+	}
 	.button{display:block;}
 	.nav{
 		display: none;
@@ -1758,7 +1760,7 @@ section.select-app .usable a {
 	}
 	.navbar-toggle{
 	position: absolute;
-	top: 20px;
+	top: 10px;
 	right: 20px;
 	z-index: 999;
 }
@@ -1781,24 +1783,16 @@ section.select-app .usable a {
 .collapse{
 	width: 100%;
 	height: 100%;
-	margin-top: 100px;
+	margin-top: 30px;
 	padding-left: 50px;
 }
-/*.nav li{
-	padding:3px 0 3px 0;
-}
-.collapse.navbar-collapse{
-	max-height:none;
-}
-.col-md-6 h2{
-	font-size: 12px;
-}*/
+
 #dropdown-solution .dropdown-menu {
 	position: relative;
 }
 #program{
 	position: absolute;
-	top: 200px;
+	top: 150px;
 	left: 30px;
 }
 /* 首页样式 --- 产品特点 */
@@ -1860,7 +1854,7 @@ section.select-app .usable a {
 }
 #slogan-food h1{
 	padding-top: 35px;
-	font-size: 20px;
+	font-size: 20px !important;
 	text-align: center;
 }
 .btn a{
@@ -1869,10 +1863,10 @@ section.select-app .usable a {
 }
 .footer-slogan .btn {
     margin-top: 20px;
-    margin-left: 100px;
+   	margin-left: 30%;
 }
 .environment .logo {
-	width: 60%;
+	width: 80%;
 }
 #scene-seckill header img {
 	height: 150px;
@@ -1921,13 +1915,32 @@ section.select-app .usable a {
     font-weight: 300;
     text-align: center;
 }
-
-
-
-
-
-
-
+ .title-size{
+	font-size: 24px !important;
+}
+.resolve-question h1{
+	font-size: 24px !important;
+}
+.header-index h1 {
+    font-size: 32px;
+    font-weight: 300;
+    margin:100px 0 0 0;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+}
+.logo-sole{
+	margin-top: 20px;
+}
+.navbar-fixed-top .navbar-collapse{
+    max-height: 100% !important;
+}
+.dropdown-menu a{
+	color: rgba(255,255,255,0.6);
+}
+.nav-about{
+	position: absolute;
+	top: 340px;
+	left: 28px;
+}
 
 
 
