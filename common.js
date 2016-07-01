@@ -13,7 +13,7 @@
             if (isDisplay == 'none') {
                 cover.style.display = 'block';
                 nav.style.display = 'block';
-                body.style.overflow="hidden";
+                body.style["overflow-y"]="hidden";
             } else {
                 cover.style.display = 'none';
                 nav.style.display = 'none';
@@ -24,7 +24,7 @@
             cover.style.display = "none"
             nav.style.display = 'none';
         });
-        
+
         function getCSSValue(obj, key) { //获取元素CSS值
             if (obj.currentStyle) { //IE
                 return obj.currentStyle[key];
@@ -83,3 +83,43 @@
 
     })
 })(window);
+function bindEvent(){
+	var w=window.innerWidth;
+	var flag=false; 
+	$('#dropdown-click').on('click',function(){
+		if(w<769 && flag==false){
+			$('#dropdown').css({
+				'height':'300px'
+			})
+			$('#program').show()
+			flag=true;
+		}else if(w<769 && flag==true){
+			$('#dropdown').css({
+				'height':'38px'
+			})
+			$('#program').hide()
+			flag=false;
+		}
+	})
+	$('.dropdown-about').on('click',function(){
+		if(w<769 && flag==false){
+			$('#solution').css({
+				'height':'300px'
+			})
+			$('.nav-about').show()
+			flag=true;
+		}else if(w<769 && flag==true){
+			$('#solution').css({
+				'height':'38px'
+			})
+			$('.nav-about').hide()
+			flag=false;
+		}
+	})
+	
+}
+
+bindEvent();
+$(window).resize(function() {
+ 	bindEvent();
+});
