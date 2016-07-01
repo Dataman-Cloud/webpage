@@ -1,0 +1,8 @@
+WEBPAGE_ENVIRONMENT=http://devforward.dataman-inc.net
+WEBPAGE_DASHBOARD=ws://devstreaming.dataman-inc.net
+WEBPAGE_MARKET=http://devwww.dataman-inc.net
+NGINX_USER=nginx
+NGINX_WORKER_PROCESSES=4
+NGINX_WORKER_CONNECTIONS=10240
+CONF_DASHBOARD_SERVERNAME=devwww.dataman-inc.net
+CONF_DASHBOARD_LISTEN_PORT=80
