@@ -1,0 +1,20 @@
+FROM demoregistry.dataman-inc.com/shurenyun/centos7-nginx-1.8.0:omega.v0.2.7
+
+ADD ./webpage.tar.gz  /usr/local/share/
+
+RUN rm -rf /usr/share/nginx/html/* && \
+    cp -r /usr/local/share/webpage/build /usr/share/nginx/html/www.shurenyun.com && \
+    rm -rf /usr/local/share/webpage*
+
+RUN rm -rf /etc/nginx/certs
+
+
+COPY webpage/dockerfiles/update.sh /
+
+COPY webpage/dockerfiles/entrypoint.sh /
+
+WORKDIR /
+
+RUN chmod +x update.sh entrypoint.sh
+
+ENTRYPOINT ["./entrypoint.sh"]
