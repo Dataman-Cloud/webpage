@@ -564,11 +564,9 @@ img.desaturate:hover{
 	padding-bottom: 90px;
 	padding-top: 90px;
 }
-#news-box{
-	width: 1040px;
-	margin: auto;
-}
-
+/*.dynamic{
+	padding-left: 150px;
+}*/
 .dynamic dl dt a{
 	max-width: 480px;
 	display: inline-block;
@@ -584,7 +582,10 @@ img.desaturate:hover{
 	color: #5A6879;
 	font-size: 11px;
 }
-
+/*.news{
+	width: 35%;
+	float: left;
+}*/
 .news dl dt a{
 	max-width: 500px;
 	display: inline-block;
@@ -1747,9 +1748,6 @@ section.select-app .usable a {
 
 /*手机端导航*/
 @media(max-width: 768px){
-	body{
-		overflow-x: hidden;
-	}
 	.button{display:block;}
 	.nav{
 		display: none;
