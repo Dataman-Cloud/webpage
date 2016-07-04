@@ -1,4 +1,4 @@
-FROM demoregistry.dataman-inc.com/shurenyun/centos7-nginx-1.8.0:omega.v0.2.7
+FROM demoregistry.dataman-inc.com/shurenyun/centos7-nginx-1.8.0:omega.v0.2.8
 
 ADD ./webpage.tar.gz  /usr/local/share/
 
