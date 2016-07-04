@@ -17,7 +17,9 @@ ul, li {
 	margin: 0;
 	padding: 0;
 }
-
+.homepage{
+	height: 100%;
+}
 /* cover bootstrap css */
 .btn {
 	border-radius: 20px;
@@ -601,18 +603,14 @@ img.desaturate:hover{
 	color: #5A6879;
 	font-size: 11px;
 }
-.news-trends footer{
+footer{
 	padding-bottom: 50px;
 }
-.news-trends footer span{
-	margin-left: 46%;
-}
-.news-trends footer  span{
-	float: left;
+.news-events{
+	display: block;
 	text-align: center;
-	padding-top: 40px;
 }
-.news-trends footer  span a{
+footer .news-events a{
 	font-size: 18px;
 	white-space:nowrap;
 	color: #00b9df;
@@ -1950,7 +1948,4 @@ section.select-app .usable a {
 }
 .icon-bar{
 	background: #FFFFFF !important;
-}
-div{
-	border: 1px solid red;
 }
