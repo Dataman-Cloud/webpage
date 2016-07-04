@@ -432,7 +432,7 @@ ul, li {
 
 /* 首页样式 --- 产品特点 */
 .product-feature {
-	padding: 135px 0;
+	margin: 135px 0;
 }
 .product-feature .media-left {
 	padding-right: 20px;
@@ -1889,9 +1889,6 @@ section.select-app .usable a {
     margin-right: auto;
     margin-left: auto;
 }
-.writing h1{
-	font-size:18px;
-}
 #scene-cicd header img {
     height: 150px;
     margin-top: 50px;
@@ -1928,9 +1925,9 @@ section.select-app .usable a {
     margin:100px 0 0 0;
     text-shadow: 0px 0px 4px rgba(0,0,0,0.4);
 }
-.logo-sole{
+/*.logo-sole{
 	margin-top: 20px;
-}
+}*/
 .navbar-fixed-top .navbar-collapse{
     max-height: 100% !important;
 }
@@ -1942,26 +1939,7 @@ section.select-app .usable a {
 	top: 340px;
 	left: 28px;
 }
-.btn-freetry {
-    display: block;
-    height: 75px;
-    width: 340px;
-    padding-right: 20px;
-    background-color: #62be50;
-    border-radius: 6px;
-}
-.solution-logo h1 img{
-	margin-top: 60px;
-}
-.solution-logo h1 img{
-	height: 40px;
-}
-.header-index-h1{
-	margin-right: 70px;
-}
-.header-index h2{
-	font-size: 20px !important;
-}
+
 
 
 
