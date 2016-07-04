@@ -434,7 +434,7 @@ ul, li {
 
 /* 首页样式 --- 产品特点 */
 .product-feature {
-	margin: 135px 0;
+	padding: 100px 0;
 }
 .product-feature .media-left {
 	padding-right: 20px;
@@ -777,7 +777,6 @@ footer .news-events a{
 }
 #product header h1 {
 	font-size: 70px;
-	margin-top: 190px;
 }
 #product header h2 {
 	font-size: 24px;
@@ -1839,17 +1838,18 @@ section.select-app .usable a {
 	width: 80%;
 }
 .dynamic dl dt a{
-	width: 280px;
+	width: 380px;
 	font-size: 16px;
 	color: #00b9df;
 }
 .news dl dt a{
-	width: 280px;
+	width: 380px;
 	font-size: 16px;
 	color: #00b9df;
 }
 #slogan-food h1{
 	padding-top: 35px;
+	padding-bottom: 20px;
 	font-size: 20px !important;
 	text-align: center;
 }
@@ -1859,7 +1859,8 @@ section.select-app .usable a {
 }
 .footer-slogan .btn {
     margin-top: 20px;
-   	margin-left: 30%;
+    display: block;
+    margin: auto;
 }
 .environment .logo {
 	width: 80%;
@@ -1937,8 +1938,81 @@ section.select-app .usable a {
 	top: 340px;
 	left: 28px;
 }
-
-
+.content-h1 h1{
+	font-size: 18px;
+}
+#product-price header h5 {
+	margin-bottom: 20px;
+}
+#product-price .price-card.pro{
+	margin-right: 12px;
+	margin-bottom: 25px;
+}
+#product-price .price-card.company{
+	margin-left: 10px;
+}
+.container-img img{
+	width: 70%;
+	height: 70%;
+	margin-top: 75px;
+}
+.resolve-question {
+	background: #00bdda url(../pics/bg-index-01.png) no-repeat bottom center;
+	background-size:190%;
+	height: 470px;
+}
+.resolve-question h1{
+	padding-top: 60px;
+}
+.feature-img img{
+	padding-top: 60px;
+}
+.feature-p{
+	margin-bottom: 60px;
+}
+.feature-logo img{
+	width: 60%;
+	display: block;
+	margin:0 auto;
+}
+.header h1{
+	font-size: 30px !important;
+}
+.service{
+	margin-top: 30px;
+}
+#product header h2 {
+	width: 90%;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: bold;
+}
+#product header h4 {
+	width: 90%;
+	display: inline-block;
+	font-size: 11px;
+	line-height: 2;
+}
+.header-solution-h1 h1{
+	font-size: 25px !important;
+}
+.header-solution-h1 h2{
+	font-size: 16px !important
+}
+#scene-bigdata header p {
+    line-height: 2;
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+#product-price .btn {
+    width: 80%;
+    background-color: #62be50;
+    border-radius: 6px;
+}
+#aboutus header {
+     padding-top: 70px; 
+}
 
 
 }
