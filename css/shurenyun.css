@@ -2080,12 +2080,12 @@ section.select-app .usable a {
 		margin-top: 20px;
 	}
 	.dynamic dl dt a{
-		width: 280px;
+		width: 230px;
 		font-size: 14px;
 		color: #00b9df;
 	}
 	.news dl dt a{
-		width: 280px;
+		width: 230px;
 		font-size: 16px;
 		color: #00b9df;
 	}
@@ -2166,7 +2166,7 @@ section.select-app .usable a {
 		width: 250px;
 	}
 	#product-price thead th{
-		font-size: 14px;
+		font-size: 12px;
 	}
 	#product-price tbody th{
 		font-size: 16px;
@@ -2177,6 +2177,33 @@ section.select-app .usable a {
 	#aboutus .partner dd{
 		padding:40px 0;
 	}
+	#product .product-feature h2 small {
+	    font-size: 12px;
+	}
+	.footer-help li{
+		margin-bottom: 30px;
+	}
+	.carousel-indicators{
+		padding-top: 50px;
+	}
+	.carousel-indicators li {
+	    color: #FFF;
+	    font-size: 10px;
+	    height: 30px; 
+	    width: 67px;
+	    line-height: 30px;
+	}
+	.carousel-indicators li.active {
+	    background-color: #00bdda;
+	    border: 0;
+	    border-radius: 0;
+	    height: 30px;
+	    text-align: center;
+	    width: 67px;
+	}
+
+
+
 }
 /*div{
 	border: 1px solid red;
