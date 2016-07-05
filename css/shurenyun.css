@@ -166,9 +166,9 @@ ul, li {
 	margin-bottom: 25px;
 	padding: 0 25px;
 }
-.footer-help .col-xs-6{
+/*.footer-help .col-xs-6{
 	margin-top: 50px;
-}
+}*/
 .footer-main .footer-aboutus {
 	padding-top: 54px;
 	padding-bottom: 110px;
@@ -1742,9 +1742,11 @@ section.select-app .usable a {
 		transform: translateY(-5px);
 	}
 }
-
+.product-feature-h2{
+	margin-top: 80px;
+}
 /*手机端导航*/
-@media(max-width: 768px){
+@media(max-width: 414px){
 	.button{display:block;}
 	.nav{
 		display: none;
@@ -1839,12 +1841,12 @@ section.select-app .usable a {
 }
 .dynamic dl dt a{
 	width: 380px;
-	font-size: 16px;
+	font-size: 18px;
 	color: #00b9df;
 }
 .news dl dt a{
 	width: 380px;
-	font-size: 16px;
+	font-size: 18px;
 	color: #00b9df;
 }
 #slogan-food h1{
@@ -2068,3 +2070,114 @@ section.select-app .usable a {
 .icon-bar{
 	background: #FFFFFF !important;
 }
+
+/*苹果五*/
+@media(max-width: 375px){
+	.product-feature {
+		padding: 60px 0;
+	}
+	.text-center a{
+		margin-top: 20px;
+	}
+	.dynamic dl dt a{
+		width: 280px;
+		font-size: 14px;
+		color: #00b9df;
+	}
+	.news dl dt a{
+		width: 280px;
+		font-size: 16px;
+		color: #00b9df;
+	}
+	#slogan-food h1{
+		font-size: 16px !important;
+	}
+	.footer-help li{
+		width: 100%;
+	}
+	.header-container h1 {
+		font-size: 14px;
+	}
+	.header-index h2 {
+    		font-size: 24px;
+	}
+	.resolve-question{
+		height: 390px;
+	}
+	.product-feature-h2{
+		margin-top: 40px;
+	}
+	.index-carousel{
+		padding-top: 45px;
+	}
+	.environment{
+		padding-bottom: 40px;
+	}
+	#experience-bot{
+		padding-bottom: 45px;
+	}
+	.experience h1{
+		padding-top: 50px;
+	}
+	.news-trends{
+		padding-bottom: 35px;
+		padding-top: 45px;
+	}
+	 #case-miaosha-bottom{
+	    width: 200px;
+	    font-size: 18px;
+	    padding-top: 24px;
+	}
+	.environment h1{
+		padding-top: 45px;
+	}
+	.tec-com h1 {
+	    padding-top: 45px;
+	}
+	.footer-main .footer-aboutus{
+		padding-bottom: 60px;
+	}
+	.tec-comtwo{
+		padding-bottom: 60px;
+	}
+	.solution header form {
+	    display: flex;
+	    margin: 20px auto;
+	}
+	#scene-cicd header img{
+		height: 100px;
+	}
+	.solution-content article{
+		padding-bottom: 0px;
+	}
+	.box-btn-freetry{
+		margin: 0;
+	}
+	#scene-bigdata header p{
+		font-size: 12px;
+	}
+	#scene-stresstesting header p{
+		font-size: 12px;
+	}
+	.solution header h2 {
+		font-size: 16px;
+	}
+	#product-price .price-card{
+		width: 250px;
+	}
+	#product-price thead th{
+		font-size: 14px;
+	}
+	#product-price tbody th{
+		font-size: 16px;
+	}
+	#product-price tbody td{
+		font-size: 12px;
+	}
+	#aboutus .partner dd{
+		padding:40px 0;
+	}
+}
+/*div{
+	border: 1px solid red;
+}*/
