@@ -1881,7 +1881,8 @@ section.select-app .usable a {
 	text-align: center;
 }
 .solution header form{
-	margin-left: 30px;
+	display: flex;
+	margin:30px 50px;
 }
 .cloud {
 	padding-top: 150px;
@@ -2060,6 +2061,15 @@ section.select-app .usable a {
 #product .product-feature h2 {
     margin: 30px 0 16px 0;
 }
+#product-price tbody th{
+	font-size: 20px;
+}
+#product-price tbody td{
+	font-size: 16px;
+}
+#product-price thead th{
+	font-size: 14px;
+}
 
 
 }
@@ -2142,7 +2152,7 @@ section.select-app .usable a {
 	}
 	.solution header form {
 	    display: flex;
-	    margin: 20px auto;
+	    margin: 20px 25px;
 	}
 	#scene-cicd header img{
 		height: 100px;
