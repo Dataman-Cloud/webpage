@@ -648,7 +648,7 @@ footer .news-events a{
 }
 .solution-content {
 	position: relative;
-	z-index: 10001;
+	/*z-index: 10001;*/
 }
 .solution-content .container {
 	background: #FFF;
