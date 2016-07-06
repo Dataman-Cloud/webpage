@@ -13,7 +13,7 @@
             if (isDisplay == 'none') {
                 cover.style.display = 'block';
                 nav.style.display = 'block';
-                body.style["overflow-y"]="hidden";
+                body.style.overflow="hidden";
             } else {
                 cover.style.display = 'none';
                 nav.style.display = 'none';
@@ -34,6 +34,7 @@
         }
 
         // nav hover
+        if(isPC()) {
         $('#dropdown').on("mouseover", function () {
             $('#dropdown-menu').show();
             $('.solution-menu').hide();
@@ -64,6 +65,7 @@
                 $('nav').removeClass("nav-scroll")
             }
         });
+        }
 
         // nav scroll
         $(document).on("scroll", function () {
@@ -91,13 +93,13 @@ function bindEvent(){
 			$('#dropdown').css({
 				'height':'300px'
 			})
-			$('#program').show()
+			$('#dropdown-menu').show()
 			flag=true;
 		}else if(w<769 && flag==true){
 			$('#dropdown').css({
 				'height':'38px'
 			})
-			$('#program').hide()
+			$('#dropdown-menu').hide()
 			flag=false;
 		}
 	})
@@ -106,20 +108,39 @@ function bindEvent(){
 			$('#solution').css({
 				'height':'300px'
 			})
-			$('.nav-about').show()
+			$('.solution-menu').show()
 			flag=true;
 		}else if(w<769 && flag==true){
 			$('#solution').css({
 				'height':'38px'
 			})
-			$('.nav-about').hide()
+			$('.solution-menu').hide()
 			flag=false;
 		}
 	})
 	
 }
 
-bindEvent();
+if(!isPC()) {
+	bindEvent();
 $(window).resize(function() {
  	bindEvent();
 });
+}
+
+function isPC() {
+    var userAgentInfo = navigator.userAgent;
+    	
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    console.log(flag)
+    return flag;
+}
