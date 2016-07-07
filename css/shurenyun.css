@@ -1789,7 +1789,14 @@ section.select-app .usable a {
 	left: 0;
 	top: 25px;
 }
-
+.scroll{
+	height: 600px;
+}
+.nav{
+	overflow-y: auto;
+	height: 700px;
+	overflow-x: hidden;
+}
 .dropdown-menu {
     background-color: rgba(0,0,0,0.1);
     width: 110%;
