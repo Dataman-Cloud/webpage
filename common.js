@@ -13,16 +13,17 @@
             if (isDisplay == 'none') {
                 cover.style.display = 'block';
                 nav.style.display = 'block';
-                body.style.overflow="hidden";
+//              $("body,html").css({"overflow":"hidden"});
             } else {
                 cover.style.display = 'none';
-                nav.style.display = 'none';
-                body.style["overflow-y"]="auto";
+               	nav.style.display = 'none';
+//              $("body,html").css({"overflow":"visible"});
             }
         });
         cover.addEventListener('click', function() {
             cover.style.display = "none"
             nav.style.display = 'none';
+            $("body,html").css({"overflow":"visible"});
         });
 
         function getCSSValue(obj, key) { //获取元素CSS值
@@ -91,7 +92,7 @@ function bindEvent(){
 	$('#dropdown-click').on('click',function(){
 		if(w<769 && flag==false){
 			$('#dropdown').css({
-				'height':'300px'
+				'height':'230px'
 			})
 			$('#dropdown-menu').show()
 			flag=true;
@@ -106,7 +107,7 @@ function bindEvent(){
 	$('.dropdown-about').on('click',function(){
 		if(w<769 && flag==false){
 			$('#solution').css({
-				'height':'300px'
+				'height':'180px'
 			})
 			$('.solution-menu').show()
 			flag=true;
@@ -141,6 +142,5 @@ function isPC() {
             break;
         }
     }
-    console.log(flag)
     return flag;
 }
