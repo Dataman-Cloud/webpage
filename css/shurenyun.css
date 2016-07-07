@@ -94,6 +94,8 @@ ul, li {
 	height: 38px;
 	padding-top: 0;
 	padding-bottom: 0;
+	z-index: 999;
+    position: relative;
 }
 .nav-main .navbar-form {
 	margin: 0;
@@ -648,7 +650,6 @@ footer .news-events a{
 }
 .solution-content {
 	position: relative;
-	/*z-index: 10001;*/
 }
 .solution-content .container {
 	background: #FFF;
@@ -1747,13 +1748,10 @@ section.select-app .usable a {
 }
 /*手机端导航*/
 @media(max-width: 414px){
+	
 	.button{display:block;}
 	.nav{
 		display: none;
-	}
-	
-	.nav li{
-		border-bottom: 1px solid #FFFFFF;
 	}
 	.navbar-toggle{
 	position: absolute;
@@ -1783,14 +1781,24 @@ section.select-app .usable a {
 	margin-top: 30px;
 	padding-left: 50px;
 }
-
-#dropdown-solution .dropdown-menu {
+.nav .dropdown,.nav #solution{
 	position: relative;
 }
-#program{
+.nav .dropdown-click~ul,.nav #solution-menu{
 	position: absolute;
-	top: 150px;
-	left: 30px;
+	left: 0;
+	top: 25px;
+}
+
+.dropdown-menu {
+    background-color: rgba(0,0,0,0.1);
+    width: 110%;
+}
+.nav #solution-menu .nav-about{
+	position: absolute;
+	left: 0;
+	top: 0px;
+	margin-right: 0;
 }
 /* 首页样式 --- 产品特点 */
 
@@ -1941,7 +1949,7 @@ section.select-app .usable a {
 }
 .nav-about{
 	position: absolute;
-	top: 340px;
+	top: 240px;
 	left: 28px;
 }
 .content-h1 h1{
@@ -2106,6 +2114,7 @@ section.select-app .usable a {
 		width: 100%;
 	}
 	.header-container h1 {
+		margin: 130px 0 0 0;
 		font-size: 14px;
 	}
 	.header-index h2 {
@@ -2211,8 +2220,16 @@ section.select-app .usable a {
 	    text-align: center;
 	    width: 67px;
 	}
-
-
+	.dropdown-menu a {
+	    font-size: 12px;
+	    color: rgba(255,255,255,0.4);
+	    display: inline-block;
+	    margin: 0 8px 8px 0;
+	}
+	.dropdown-menu {
+	    background-color: rgba(0,0,0,0.1);
+	    width: 110%;
+	}
 
 }
 /*div{
