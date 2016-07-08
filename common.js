@@ -8,7 +8,9 @@
         var btn = document.querySelector('#navbar_toggle');
         var nav = document.querySelector(".nav");
         var body = document.querySelector('body');
+        var scroll = document.querySelector('.scroll');
         btn.addEventListener('click', function() {
+        		scroll.style.display = 'block';
             var isDisplay = getCSSValue(cover, 'display')
             if (isDisplay == 'none') {
                 cover.style.display = 'block';
@@ -17,6 +19,7 @@
             } else {
                 cover.style.display = 'none';
                	nav.style.display = 'none';
+               	scroll.style.display = 'none';
 //              $("body,html").css({"overflow":"visible"});
             }
         });

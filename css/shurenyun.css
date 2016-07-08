@@ -1770,9 +1770,6 @@ section.select-app .usable a {
 		left: 0;
 		top: 0;
 	}
-	.navbar-nav {
-	    margin:100px 50px;
-	}
 	.nav .dropdown,.nav #solution{
 		position: relative;
 	}
@@ -1787,7 +1784,9 @@ section.select-app .usable a {
 }
 /*手机端导航*/
 @media(max-width: 414px){
-	
+	form{
+		display: none;
+	}
 	.button{display:block;}
 	.nav{
 		display: none;
@@ -1829,6 +1828,7 @@ section.select-app .usable a {
 	top: 25px;
 }
 .scroll{
+	display: none;
 	height: 600px;
 }
 .nav{
@@ -2124,7 +2124,9 @@ section.select-app .usable a {
 #product-price thead th{
 	font-size: 14px;
 }
-
+.solution header form {
+	display: none;
+}
 
 }
 
@@ -2135,6 +2137,9 @@ section.select-app .usable a {
 
 /*苹果五*/
 @media(max-width: 375px){
+	form{
+		display: none;
+	}
 	.product-feature {
 		padding: 60px 0;
 	}
@@ -2158,7 +2163,7 @@ section.select-app .usable a {
 		width: 100%;
 	}
 	.header-container h1 {
-		margin: 130px 0 0 0;
+		margin: 180px 0 0 0;
 		font-size: 14px;
 	}
 	.header-index h2 {
@@ -2204,8 +2209,7 @@ section.select-app .usable a {
 		padding-bottom: 60px;
 	}
 	.solution header form {
-	    display: flex;
-	    margin: 20px 25px;
+		display: none;
 	}
 	#scene-cicd header img{
 		height: 100px;
