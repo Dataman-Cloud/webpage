@@ -1784,14 +1784,6 @@ section.select-app .usable a {
 }
 /*手机端导航*/
 @media(max-width: 414px){
-	.container {
-	     padding-right: 0; 
-	     padding-left: 0; 
-	}
-	.container>.navbar-header {
-	    margin-right: 0px;
-	    margin-left: 0px;
-	}
 	form{
 		display: none;
 	}
