@@ -2287,11 +2287,8 @@ section.select-app .usable a {
 	    width: 110%;
 	}
 	.row {
-	     margin-right: 0; 
+	    margin-right: 0; 
 	    margin-left: -15px;
 	}
 
-}
-div{
-	border: 1px solid red;
 }
