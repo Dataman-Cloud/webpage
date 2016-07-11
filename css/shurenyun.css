@@ -1784,6 +1784,9 @@ section.select-app .usable a {
 }
 /*手机端导航*/
 @media(max-width: 414px){
+	.footer-slogan{
+		display: none;
+	}
 	form{
 		display: none;
 	}
@@ -2127,7 +2130,9 @@ section.select-app .usable a {
 .solution header form {
 	display: none;
 }
-
+.footer-help li{
+	margin-bottom: 20px;
+}
 }
 
 
@@ -2137,6 +2142,9 @@ section.select-app .usable a {
 
 /*苹果五*/
 @media(max-width: 375px){
+	.footer-slogan{
+		display: none;
+	}
 	form{
 		display: none;
 	}
