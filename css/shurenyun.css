@@ -3,7 +3,7 @@ body {
 	background-color: #f3f5f7;
 	color: #3D3D3D;
 	font-family: pingfontweb,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Hiragino Sans GB,Microsoft Yahei,Microsoft Jhenghei,sans-serif;
-	font-weight: 400;
+	font-weight: 200;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
@@ -254,7 +254,7 @@ ul, li {
 	font-weight: bold;
 	margin-top: 0;
 	text-align: center;
-	font-weight: 400;
+	font-weight: 300;
 }
 .index-carousel .header h2 {
 	font-size: 18px;
@@ -636,7 +636,7 @@ footer .news-events a{
 .solution header h2 {
 	font-size: 18px;
 	font-weight: bold;
-	font-weight: 500;
+	font-weight: 200;
 	letter-spacing: 1px;
 	line-height: 2;
 	margin: 35px 0 0 0;
@@ -666,13 +666,13 @@ footer .news-events a{
 .solution-content h1 {
 	color: #00bdda;
 	font-size: 24px;
-	font-weight: 400;
+	font-weight: 200;
 	 margin-top: 50px;
 }
 .solution-content h2 {
 	color: #5a6879;
 	font-size: 18px;
-	font-weight: 600;
+	font-weight: 200;
 	margin: 0 0 25px 0;
 }
 .solution-content h3 {
