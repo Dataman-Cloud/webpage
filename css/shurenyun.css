@@ -2316,10 +2316,14 @@ section.select-app .usable a {
 	margin-top: 100px;
 }
 
-.header-about .carousel-inner>.item>.row>.col-md-6,
-.header-about .carousel-inner>.item>.row>.col-xs-6{
-padding-left: 40px;
-padding-right: 5px;
+.header-about .carousel-inner>.item>.row>.col-md-6:first-child,
+.header-about .carousel-inner>.item>.row>.col-xs-6:first-child {
+	padding-left: 40px;
+}
+
+.header-about .carousel-inner>.item>.row>.col-md-6:last-child,
+.header-about .carousel-inner>.item>.row>.col-xs-6:last-child {
+	padding-right: 40px;
 }
 
 .header-about .left-img{
