@@ -2513,3 +2513,212 @@ margin-bottom: 18px;
 .about-content .more a{
 	color: #666666;
 }
+
+
+
+#product-craner .header-index {
+	background-image: url("../pics/craner-background.png");
+	color: red;
+}
+#product-craner .header-index img {
+	width: 400px;
+	margin: 160px auto 0 auto;
+}
+#product-craner .header-index h1 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #FFF;
+	text-shadow: none;
+	margin-top: 50px;
+	margin-bottom: 0;
+}
+#product-craner .header-index h2 {
+	font-size: 22px;
+	color: #FFF;
+	font-weight: 300;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+#product-craner .header-index form {
+	margin: 0;
+}
+#product-craner .header-index button {
+	width: 220px;
+	height: 65px;
+	border-radius: 5px;
+	border: 0;
+	font-size: 24px;
+	background-color: #FFF;
+	color: #000;
+	margin-top: 90px;
+	margin-bottom: 155px;
+}
+#product-craner .summary {
+	text-align: center;
+	background-color: #f3f5f7;
+	padding: 120px 0;
+}
+#product-craner .summary img {
+	width: 88px;
+}
+#product-craner .summary h2 {
+	font-size: 24px;
+	font-weight: 100;
+	margin-top: 15px;
+}
+#product-craner .summary p {
+	font-size: 24px;
+	color: #595959;
+	width: 500px;
+	margin: 60px auto 0 auto;
+	font-weight: 300;
+	line-height: 1.5;
+}
+#product-craner .scenarios {
+	background-color: #FFF;
+	text-align: center;
+	padding: 120px 0;
+}
+#product-craner .scenarios h1 {
+	font-size: 36px;
+}
+#product-craner .scenarios h2 {
+	font-size: 24px;
+	font-weight: 100;
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+#product-craner .scenarios img {
+	width: 100px;
+}
+#product-craner .scenarios h3 {
+	font-size: 24px;
+	font-weight: 200;
+	margin: 25px 0;
+	color: #d1a52d;
+}
+#product-craner .scenarios p {
+	font-size: 18px;
+	width: 85%;
+	margin: 0 auto;
+	color: #6e6e6e;
+}
+
+
+/* product-craner */
+#product-craner .index-carousel {
+	padding-bottom: 120px;
+	background-color: #f3f5f7;
+	text-align: center;
+}
+#product-craner .index-carousel h1 {
+	font-size: 36px;
+}
+#product-craner .index-carousel h2 {
+	font-size: 24px;
+	font-weight: 100;
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+#product-craner .index-carousel .carousel-inner {
+	width: 85%;
+	margin: 0 auto;
+	height: 500px;
+}
+#product-craner .index-carousel header {
+	background-color: #000;
+	border-radius: 10px 10px 0 0;
+	height: 120px;
+	text-align: left;
+	padding: 20px 30px;
+}
+
+#product-craner .index-carousel header h1 {
+	margin: 0!important;
+	font-size: 40px!important;
+	font-weight: 200; 
+	color: #FFF;
+}
+#product-craner .index-carousel header h2 {
+	margin: 0!important;
+	font-size: 24px;
+	color: #8acfdb;
+}
+#product-craner .index-carousel p {
+	font-size: 14px;
+	text-align: center;
+	color: #666;
+	margin-bottom: 50px;
+}
+#product-craner .index-carousel h3 {
+	font-size: 15px;
+	text-shadow: none;
+	color: #000;
+	font-weight: bold;
+}
+#product-craner .index-carousel img {
+	width: 24px;
+}
+#product-craner .index-carousel footer img {
+	width: 45px;
+	position: absolute;
+	bottom: 28px;
+	right: 28px;
+}
+#product-craner .index-carousel .row {
+	width: 80%;
+	margin: 0 auto;
+}
+#product-craner .index-carousel .carousel-caption {
+	height: 480px;
+	width: 90%;
+	margin: 10px auto 0 auto;
+	box-shadow: 0 0 10px rgba(0,0,0,1);
+	padding-top: 0;
+	background-color: #FFF;
+	border-radius: 10px;
+	position: relative;
+}
+#product-craner .index-carousel .carousel-indicators {
+	bottom: -70px;
+}
+
+#product-craner .other-info {
+	text-align: center;
+	color: #999;
+}
+#product-craner .other-info img {
+	width: 265px;
+}  
+#product-craner .other-info > button {
+	width: 220px;
+	height: 65px;
+	border-radius: 5px;
+	border: 0;
+	font-size: 24px;
+	background-color: #000;
+	color: #FFF;
+	margin-bottom: 40px;
+}
+#product-craner .other-info .btn-bar {
+	margin-top: 105px;
+	margin-bottom: 115px;
+}
+#product-craner .other-info .btn-bar button {
+	height: 50px;
+	border-radius: 10px;
+	font-size: 18px;
+	border: 0;
+	text-align: left;
+	min-width: 150px;
+	padding-left: 20px;
+	padding-right: 40px;
+	background: #FFF url('../pics/craner-08.png') no-repeat right 20px;
+	background-size: 35px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#product-craner .other-info p {
+	font-size: 12px;
+	margin-bottom: 50px;
+}

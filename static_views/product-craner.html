@@ -1,0 +1,265 @@
+<% extend "../common.html" %>
+<% block 'keywords': %>数人云，数人科技，容器，Container，容器云，云原生，镜像仓库，容器集群管理，Docker，Docker镜像，Mesos，Marathon，DCOS，PaaS平台，数人云操作系统，灰度发布 ，微服务，服务发现，持续集成，镜像构建，CICD，持续交付 ，DevOps，敏捷开发，自动化，金融容器云，高并发，秒杀，容器编排，docker compose，应用编排，弹性扩缩 弹性伸缩<% end %>
+<% block 'description': %>数人云是基于 Mesos 和 Docker 技术的云操作系统，致力于打造最轻量化的PaaS平台，可实现应用的快速发布和弹性扩展。支持混合云管理，实现一站式的微服务架构集群系统，帮助用户快速建立并稳定运维高性能生产环境，解决从客户到云资源的最后一公里。<% end %>
+<% block 'title': %>数人云产品 - 基于容器的最轻量化 PaaS 平台<% end %>
+<% block 'bodyContent': %>
+<% include '../common_views/nav.html' %>
+<div id="product-craner">     
+        <header class="header-index">
+            <img src="pics/craner-01.png">
+            <h1>数人云管理面板 Craner</h1>
+            <h2>基于 Docker SwarmKit 的容器管理面板</h2>
+            <form>
+                <button class="btn btn-primary" type="button" onclick="window.open('http://shurenyun.mikecrm.com/o4BJEq')">免费申请试用</button>
+            </form>
+            <!--<footer><i class="fa fa-angle-down"></i></footer>-->
+        </header>
+        
+        <section class="summary">
+            <div class="container">
+                <img src="pics/craner-02.png">
+                <h2>Characteristic</h2>
+                <p>数人云 Craner<br>
+是国内首个基于最新的 Docker SwarmKit 技术的集群管理工具。它根据 Docker 的原生编排功能，采用轻量化架构，帮助开发者快速搭建 DevOps 环境，体验 Docker 的各种最新功能。</p>
+            </div>
+        </section>
+
+        <section class="scenarios">
+            <div class="container">
+                <h1>应用场景</h1>
+                <h2>Scenarios</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="pics/craner-04.png">
+                        <h3>Scenariot-1</h3>
+                        <p>基于 Docker SwarmKit 实现大规模集群管理，应用弹性扩缩。</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="pics/craner-04.png">
+                        <h3 style="color: #a6d132;">Scenariot-2</h3>
+                        <p>应用隔离，极大提高数据中心资源利用率。</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="pics/craner-04.png">
+                        <h3 style="color: #6cdbba;">Scenariot-3</h3>
+                        <p>快速搭建开发/测试环境，一键部署，节省运维主机资源成本。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="index-carousel">
+            <div class="container">
+                <h1>功能特性</h1>
+                <h2>Feature</h2>
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators 
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active">应用治理</li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1">镜像管控</li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2">集群运维</li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3">用户管理</li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4">轻量化设计</li>
+                    </ol>-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="carousel-caption">
+                                <header>
+                                    <h1>Feature-1</h1>
+                                    <h2>应用治理</h2>
+                                </header>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>应用跨机编排</h3>
+                                        <p>保证应用内服务的自动发现，有多种应用下发模式</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>服务滚动更新</h3>
+                                        <p>控制固定时间内的并行更新任务数，与上游的镜像构建对接</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>任务按需伸缩</h3>
+                                        <p>对运行中的服务随时进行扩容缩容，并保证全局的资源隔离</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>服务全局容错</h3>
+                                        <p>配置任务的失败重启策略，保证集群的整体稳定性</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>多机负载均衡</h3>
+                                        <p>提高了服务的可用性和吞吐量，消除负载均衡单点</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>多种分发模式</h3>
+                                        <p>实现多种任务分发组合，满足不同应用场景</p>
+                                    </div>
+                                </div>
+                                <footer>
+                                    <img src="pics/craner-05.png">
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="carousel-caption">
+                                <header>
+                                    <h1>Feature-2</h1>
+                                    <h2>镜像管控</h2>
+                                </header>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>应用目录</h3>
+                                        <p>打造企业内部的镜像市场，一键下发公共应用，提高运维效率</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>私有镜像</h3>
+                                        <p>实现用户管理与镜像管控的闭环</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>公有镜像</h3>
+                                        <p>结合用户管理功能，将镜像公开给组内的人使用，实现组内资源共享</p>
+                                    </div>
+                                </div>
+                                <footer>
+                                    <img src="pics/craner-05.png">
+                                </footer>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="carousel-caption">
+                                <header>
+                                    <h1>Feature-3</h1>
+                                    <h2>集群运维</h2>
+                                </header>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>主机管理</h3>
+                                        <p>查看集群内各个主机；随时快速添加主机；一键调度；为主机添加标签等</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>虚拟网络</h3>
+                                        <p>实现应用网络隔离和独立的网络规划能力，无缝对接多种 overlay 网络方案</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>webssh</h3>
+                                        <p>进入容器内部进行操作，同时限制用户进入他人的容器内部，张弛有度</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>实时监控</h3>
+                                        <p>从全局和底层单元多角度监控主机和服务的运行状况</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>实时日志</h3>
+                                        <p>容器和服务级别的实时日志收集</p>
+                                    </div>
+                                </div>
+                                <footer>
+                                    <img src="pics/craner-05.png">
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="carousel-caption">
+                                <header>
+                                    <h1>Feature-4</h1>
+                                    <h2>用户管理</h2>
+                                </header>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>用户组管理</h3>
+                                        <p>创建并添加用户到组中，共同治理应用，共享存储卷，网络，镜像等资源</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>LDAP 集成</h3>
+                                        <p>简单配置集成内部 LDAP 账号，实现统一的账号管理</p>
+                                    </div>
+                                </div>
+                                <footer>
+                                    <img src="pics/craner-05.png">
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="carousel-caption">
+                                <header>
+                                    <h1>Feature-5</h1>
+                                    <h2>轻量化设计</h2>
+                                </header>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>安装便捷</h3>
+                                        <p>十分钟，零基础搞定安装</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>插件化架构</h3>
+                                        <p>灵活插拔存储与网络驱动，按需启停用户管理，镜像管理等功能</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>对接上下游</h3>
+                                        <p>提供服务更新的 webhook 对接上游镜像构建</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="pics/craner-06.png">
+                                        <h3>开放接口</h3>
+                                        <p>提供命令行工具和 API 接口，无缝对接企业内部运维流程</p>
+                                    </div>
+                                </div>
+                                <footer>
+                                    <img src="pics/craner-05.png">
+                                </footer>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="other-info">
+            <img src="pics/craner-07.png">
+            <div class="btn-bar">
+                <button>开发文档</button><button>视频教程</button><button>常见问题</button><button>相关技术文档</button>
+            </div>
+            <button type="button" onclick="window.open('http://shurenyun.mikecrm.com/o4BJEq')">免费申请试用</button>
+            <p>如有疑问，请拨打咨询电话：<strong>010-64776698</strong></p>
+        </section>
+    <% include '../common_views/footer.html' %>
+</div>
+<% end %>
