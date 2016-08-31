@@ -115,6 +115,9 @@ ul, li {
 	border: 1px solid #CCC;
 	color: #CCC;
 }
+.nav-main .dropdown-menu .row > div {
+	margin-bottom: 0;
+}
 .nav-scroll {
 	background-color: rgba(0,0,0,0.6)!important;
 	z-index: 11111;
@@ -1211,7 +1214,7 @@ section.platform-vantage .show-line-v {
 	top: 10px;
 }
 .show-line-v li .right-box {
-	margin: 0;
+	margin: 0;		
 	text-align: left;
 }
 .show-line-v li .right-box dt {
@@ -2569,7 +2572,7 @@ margin-bottom: 18px;
 #product-craner .summary p {
 	font-size: 24px;
 	color: #595959;
-	width: 500px;
+	width: 60%;
 	margin: 60px auto 0 auto;
 	font-weight: 300;
 	line-height: 1.5;
@@ -2723,3 +2726,8 @@ margin-bottom: 18px;
 	font-size: 12px;
 	margin-bottom: 50px;
 }
+@media(max-width: 769px){
+	#product-craner .header-index img {
+		width: 60%;
+	}
+	}
