@@ -25,14 +25,37 @@
             </form>
             <div class="scroll">
             <ul class="nav navbar-nav navbar-right">
-            		<li><a href="./index.html">首页</a></li>
-                <li><a href="./product.html">产品<span
-                        class="sr-only">(current)</span></a></li>
+            	<li><a href="./index.html">首页</a></li>
+
+
+                <li class="dropdown dropdown-product" id="product-dropdown">
+                    <a class="dropdown-click dropdown" href="#" aria-haspopup="true" aria-expanded="false">产品 <span class="caret"></span></a>
+                    <ul class="dropdown-menu " id="product-dropdown-menu">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-2 col-md-offset-7">
+                                    <h2>数人云 企业版</h2>
+                                    <div>
+                                        <a href="./product.html">数人云操作系统</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <h2>Swarm</h2>
+                                    <div>
+                                        <a href="./product-craner.html">数人云管理面板 Craner</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+
+                </li>
+
+
                 <li class="dropdown dropdown-solution" id="dropdown">
-                    <a id="dropdown-click" class="dropdown-click dropdown" href="#" aria-haspopup="true"
-                       aria-expanded="false">解决方案 <span class="caret"></span></a>
+                    <a id="dropdown-click" class="dropdown-click dropdown" href="#" aria-haspopup="true" aria-expanded="false">解决方案 <span class="caret"></span></a>
                     <ul class="dropdown-menu" id="dropdown-menu">
-                        <div class="container" id="program">
+                        <div class="container">
                             <div class="row">
                                 <div class="col-md-6">
                                     <h2>场景</h2>
@@ -60,6 +83,8 @@
                         </div>
                     </ul>
                 </li>
+
+
                 <li>
                     <a href="./price.html">价格</a>
                 </li>
@@ -73,8 +98,7 @@
                     <a href="http://open.shurenyun.com/" target="_blank">社区</a>
                 </li>
                 <li class="dropdown dropdown-solution" id="solution">
-                    <a class="dropdown-about dropdown" href="#" aria-haspopup="true"
-                       aria-expanded="false">关于 <span class="caret"></span></a>
+                    <a class="dropdown-about dropdown" href="#" aria-haspopup="true" aria-expanded="false">关于 <span class="caret"></span></a>
                     <ul class="dropdown-menu solution-menu" id="solution-menu">
                         <div class="container about-us">
                             <div class="row">
@@ -87,7 +111,6 @@
                                         <a target="_blank" href="http://blog.dataman-inc.com/tag/news">新闻</a>
                                         <a target="_blank" href="http://blog.dataman-inc.com/tag/events">活动</a>
                                         <a target="_blank" href="http://www.lagou.com/gongsi/j37868.html">招聘</a>
-
                                     </div>
                                 </div>
                                 <div class="col-xs-6 nav-about">

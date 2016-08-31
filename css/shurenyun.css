@@ -2689,8 +2689,9 @@ margin-bottom: 18px;
 }
 #product-craner .other-info img {
 	width: 265px;
+	margin-bottom: 50px;
 }  
-#product-craner .other-info > button {
+#product-craner .other-info button.apply {
 	width: 220px;
 	height: 65px;
 	border-radius: 5px;
@@ -2698,7 +2699,7 @@ margin-bottom: 18px;
 	font-size: 24px;
 	background-color: #000;
 	color: #FFF;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 #product-craner .other-info .btn-bar {
 	margin-top: 105px;
