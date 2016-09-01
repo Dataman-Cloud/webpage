@@ -2610,7 +2610,7 @@ margin-bottom: 18px;
 
 /* product-craner */
 #product-craner .index-carousel {
-	padding-bottom: 120px;
+	padding-bottom: 100px;
 	background-color: #f3f5f7;
 	text-align: center;
 }
@@ -2626,24 +2626,24 @@ margin-bottom: 18px;
 #product-craner .index-carousel .carousel-inner {
 	width: 85%;
 	margin: 0 auto;
-	height: 500px;
+	height: 640px;
 }
 #product-craner .index-carousel header {
 	background-color: #000;
 	border-radius: 10px 10px 0 0;
-	height: 120px;
+	height: 150px;
 	text-align: left;
 	padding: 20px 30px;
 }
 
 #product-craner .index-carousel header h1 {
-	margin: 0!important;
-	font-size: 40px!important;
+	margin: 8px!important;
+	font-size: 36px!important;
 	font-weight: 200; 
 	color: #FFF;
 }
 #product-craner .index-carousel header h2 {
-	margin: 0!important;
+	margin: 8px !important;
 	font-size: 24px;
 	color: #8acfdb;
 }
@@ -2651,7 +2651,8 @@ margin-bottom: 18px;
 	font-size: 14px;
 	text-align: center;
 	color: #666;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
+	line-height: 22px;
 }
 #product-craner .index-carousel h3 {
 	font-size: 15px;
@@ -2660,7 +2661,7 @@ margin-bottom: 18px;
 	font-weight: bold;
 }
 #product-craner .index-carousel img {
-	width: 24px;
+	width: 30px;
 }
 #product-craner .index-carousel footer img {
 	width: 45px;
@@ -2673,10 +2674,10 @@ margin-bottom: 18px;
 	margin: 0 auto;
 }
 #product-craner .index-carousel .carousel-caption {
-	height: 480px;
-	width: 90%;
+	height: 620px;
+	width: 70%;
 	margin: 10px auto 0 auto;
-	box-shadow: 0 0 10px rgba(0,0,0,1);
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	padding-top: 0;
 	background-color: #FFF;
 	border-radius: 10px;
