@@ -2619,7 +2619,7 @@ margin-bottom: 18px;
 	text-align: center;
 }
 #product-craner .index-carousel h1 {
-	font-size: 36px;
+	font-size: 36px;font-weight: 300;color:#666;
 }
 #product-craner .index-carousel h2 {
 	font-size: 20px;
