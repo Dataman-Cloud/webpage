@@ -2592,7 +2592,8 @@ margin-bottom: 18px;
 	margin-bottom: 50px;
 }
 #product-craner .scenarios img {
-	width: 100px;
+	width:60px;
+	margin-top: 40px;
 }
 #product-craner .scenarios h3 {
 	font-size: 24px;
@@ -2621,8 +2622,8 @@ margin-bottom: 18px;
 	font-size: 36px;
 }
 #product-craner .index-carousel h2 {
-	font-size: 24px;
-	font-weight: 100;
+	font-size: 20px;
+	font-weight: 200;
 	margin-top: 15px;
 	margin-bottom: 50px;
 }
@@ -2637,6 +2638,7 @@ margin-bottom: 18px;
 	height: 150px;
 	text-align: left;
 	padding: 20px 30px;
+	margin-bottom: 40px;
 }
 
 #product-craner .index-carousel header h1 {
