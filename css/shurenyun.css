@@ -2603,7 +2603,10 @@ margin-bottom: 18px;
 #product-craner .scenarios p {
 	font-size: 18px;
 	width: 85%;
-	margin: 0 auto;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 50px;
+        margin-left: auto;
 	color: #6e6e6e;
 }
 
