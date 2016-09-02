@@ -2532,14 +2532,14 @@ margin-bottom: 18px;
 	font-weight: bold;
 	color: #FFF;
 	text-shadow: none;
-	margin-top: 50px;
+	margin: 50px 10px 0 10px;
 	margin-bottom: 0;
 }
 #product-craner .header-index h2 {
 	font-size: 22px;
 	color: #FFF;
 	font-weight: 300;
-	margin-top: 30px;
+	margin: 30px 10px 0 10px;
 	margin-bottom: 0;
 }
 #product-craner .header-index form {
