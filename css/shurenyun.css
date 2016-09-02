@@ -2630,7 +2630,7 @@ margin-bottom: 18px;
 #product-craner .index-carousel .carousel-inner {
 	width: 85%;
 	margin: 0 auto;
-	height: 640px;
+	height: auto;
 }
 #product-craner .index-carousel header {
 	background-color: #000;
@@ -2679,9 +2679,9 @@ margin-bottom: 18px;
 	margin: 0 auto;
 }
 #product-craner .index-carousel .carousel-caption {
-	height: 620px;
+	height: auto;
 	width: 70%;
-	margin: 10px auto 0 auto;
+	margin: 10px auto 10px auto;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	padding-top: 0;
 	background-color: #FFF;
