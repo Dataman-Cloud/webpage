@@ -2593,7 +2593,7 @@ margin-bottom: 18px;
 	margin-bottom: 50px;
 }
 #product-craner .scenarios img {
-	width:60px;
+	height: 60px;
 	margin-top: 40px;
 }
 #product-craner .scenarios h3 {
@@ -2667,10 +2667,10 @@ margin-bottom: 18px;
 	font-weight: bold;
 }
 #product-craner .index-carousel img {
-	width: 30px;
+	height: 30px;
 }
 #product-craner .index-carousel footer img {
-	width: 45px;
+	height: 40px;
 	position: absolute;
 	bottom: 28px;
 	right: 28px;
@@ -2698,7 +2698,7 @@ margin-bottom: 18px;
 	color: #999;
 }
 #product-craner .other-info img {
-	width: 265px;
+	/*width: 265px;*/
 	margin-bottom: 50px;
 }  
 #product-craner .other-info button.apply {
@@ -2738,3 +2738,39 @@ margin-bottom: 18px;
 		width: 60%;
 	}
 	}
+#QA .modal-body h4 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 35px;
+	padding-bottom: 5px;
+	padding-left: 25px;
+	line-height: 1.5;
+	color: #000;
+	position: relative;
+}
+#QA .modal-body h4:first-child {
+	margin-top: 0;
+}
+#QA .modal-body h4:before {
+	content: "Q:";
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#QA .modal-body h4:after {
+	content: "A:";
+	position: absolute;
+	left: 0;
+	bottom: -32px;
+}
+#QA .modal-body p {
+	font-size: 14px;
+	line-height: 1.5;
+	margin-left: 25px;
+}
+#QA .modal-body ol {
+	margin-left: 25px;
+}
+#QA .modal-body ol li {
+	list-style-type: decimal;
+}
