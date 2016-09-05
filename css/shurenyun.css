@@ -168,7 +168,7 @@ ul, li {
 }
 .footer-main .footer-help p {
 	height: 55px;
-	margin-bottom: 25px;
+	margin-bottom: 0px;
 	padding: 0 25px;
 }
 /*.footer-help .col-xs-6{
