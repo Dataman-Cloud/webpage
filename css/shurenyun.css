@@ -252,7 +252,7 @@ ul, li {
 	padding-bottom: 80px;
 }
 .index-carousel .header h1 {
-	color: #00b9df;
+	color: #4e4e4e;
 	font-size: 50px;
 	font-weight: bold;
 	margin-top: 0;
@@ -366,6 +366,7 @@ ul, li {
 	font-size: 14px;
 	text-align: left;
 	text-shadow: none;
+	font-weight: 500;
 }
 /* 首页样式 --- 头部 */
 .header-index {
@@ -439,7 +440,7 @@ ul, li {
 
 /* 首页样式 --- 产品特点 */
 .product-feature {
-	padding: 100px 0;
+	padding: 180px 0;
 }
 .product-feature .media-left {
 	padding-right: 20px;
@@ -800,9 +801,9 @@ footer .news-events a{
 	background-color: #f3f5f7;
 }
 #product .product-feature h2 {
-	font-size: 24px;
-	font-weight: bold;
-	margin: 30px 0 16px 0;
+	font-size: 36px;
+	font-weight: 400;
+	margin: 60px 0 16px 0;
 }
 #product .product-feature h2 small {
 	margin-left: 12px;
