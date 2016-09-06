@@ -116,7 +116,7 @@ gulp.task('copy-cssdev', function () {
         .pipe(gulp.dest('dev/css'));
 });
 gulp.task('copy-jsdev',['copy-cssdev'], function () {
-    gulp.src(['conf.js','common.js','service.js'])
+    gulp.src(['conf.js','common.js','service.js', 'starfield.js'])
         .pipe(gulp.dest('dev/'));
 });
 
