@@ -370,7 +370,7 @@ ul, li {
 }
 /* 首页样式 --- 头部 */
 .header-index {
-	background-image: url('../pics/bg-index-header.jpg');
+	background-image: url('../pics/header-background-02.jpg');
 	background-size: cover;
 	color: #FFF;
 	min-height: 650px;
