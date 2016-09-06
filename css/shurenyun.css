@@ -2799,7 +2799,7 @@ margin-bottom: 18px;
 -----------------------------------------------  */
 @media screen and (min-width: 48em) {
 	.starfield, .starfields {
-		z-index:1111111;
+		z-index:4;
 		position:absolute;
 		top:0;
 		left:0;
