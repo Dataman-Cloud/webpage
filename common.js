@@ -94,6 +94,14 @@
                 .popover({placement: 'top', content: image, html: true});
         });
 
+        $(".starfield").starfield({
+            starColor: "rgba(255,255,255,1)",
+            fps: 30,
+            speed: 1,
+            mouseSpeed: 10,
+            quantity: 1e3,
+            "class": "starfield"
+        });
     })
 })(window);
 function bindEvent(){

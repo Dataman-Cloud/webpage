@@ -1678,34 +1678,6 @@ section.select-app .usable a {
     }
 }
 
-@media screen and (min-width: 48em) {
-    .hero-clouds-container {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    width: 100%;
-    height: 100%;
-    -webkit-overflow-scrolling: touch;
-    }
-    
-    .hero-clouds {
-        background: url("../pics/clouds.png") 0px 100% repeat;
-        visibility: inherit;
-        opacity: 1;
-        position: absolute;
-        z-index: 30;
-        top: 0;
-        left: 0;
-        width: 250.625em;
-        min-height: 650px;
-        height:100%;
-        -webkit-animation: cloudLoop 80s linear infinite;
-        animation: cloudLoop 80s linear infinite;
-    }
-}
-
 /* Create a bouncing scroll-down arrow on homepage with cover image */
 .scroll-down {
 	cursor: pointer;
@@ -2819,4 +2791,35 @@ margin-bottom: 18px;
 }
 #QA .modal-body ol li {
 	list-style-type: decimal;
+}
+
+/*----------------------------------------------
+-Starfields
+@description: styles for the canvas starfield
+-----------------------------------------------  */
+@media screen and (min-width: 48em) {
+	.starfield, .starfields {
+		z-index:1111111;
+		position:absolute;
+		top:0;
+		left:0;
+		height:100%;
+		width:100%;
+		opacity: 0.6;
+	}
+
+	.starfield--entrance{
+		opacity: 1;
+		will-change: opacity;
+		animation: starfield-entrance 7s ease both;
+	}
+
+	@keyframes starfield-entrance{
+		from{
+			opacity: 1;
+		}
+		to{
+			opacity: 0.5;
+		}
+	}
 }
