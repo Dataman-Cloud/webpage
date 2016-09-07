@@ -483,6 +483,7 @@ ul, li {
 	line-height: 2;
 	margin-bottom: 50px;
 	text-align: center;
+	font-weight: 200;
 }
 .environment li {
 	padding: 25px 0;
