@@ -10,8 +10,10 @@
             <h1>数人云容器管理面板</h1>
             <h2>国内首个基于 Docker SwarmKit 的容器管理工具「体验版」</h2>
             <form>
-                <button class="btn btn-primary" type="button" onclick="window.open('http://shurenyun.mikecrm.com/buamTk')">免费申请试用</button>
+                <button class="btn btn-primary" type="button" onclick="window.open('http://shurenyun.mikecrm.com/buamTk')">申请下载</button>
+                <div><a href="https://github.com/Dataman-Cloud/crane" target="_blank"><i class="fa fa-github"></i> GitHub Project</a></div>
             </form>
+
             <!--<footer><i class="fa fa-angle-down"></i></footer>-->
         </header>
         
@@ -381,10 +383,7 @@ color: #333;">应用场景</h1>
         <section class="other-info">
             <img src="pics/craner-07.png">
             <div class="btn-bar">
-                <button onclick="window.open('https://dataman.gitbooks.io/crane-guide/content/')">开发文档</button>
-                 <!--<button disabled>视频教程</button>
-                <button data-toggle="modal" data-target="#QA">常见问题</button>
-               <button disabled>相关技术文档</button>-->
+                <button onclick="window.open('https://dataman.gitbooks.io/crane-guide/content/')">使用手册</button>
             </div>
             <div>
                 <button type="button" class="apply" onclick="window.open('http://shurenyun.mikecrm.com/buamTk')">免费申请试用</button>
@@ -392,30 +391,5 @@ color: #333;">应用场景</h1>
             </div>
         </section>
     <% include '../common_views/footer.html' %>
-    <div class="modal fade" id="QA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-top: 80px;">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">常见问题</h4>
-          </div>
-          <div class="modal-body">
-            <h4>为什么我的机器无法加入(join)到 swarm 集群中？终端报错：加入集群超时。</h4>
-            <p>这个问题极有可能是主机间时钟不同步导致的，建议开启 ntp 服务，同步主机时间。</p>
-            <h4>为什么我在 manager A 上通过命令 docker network create 的 overlay 网络无法在集群另外的机器 B 上通过 docker network ls 发现？</h4>
-            <p>这有可能是正常的。按 swarm 当前的设计，只有使用相应网络的容器被调度到了机器 B 上，overlay 网络信息才会更新到机器 B 上去。</p>
-            <h4>为什么我的服务的 publish port 在有些机器上不生效？我使用 netstat –lnp 方式看不到端口监听。</h4>
-            <p>与问题1一样，这也可能是时钟不同步导致的问题。</p>
-            <h4>我在实际使用中发现一些不好重现的网络问题？</h4>
-            <p>这是非常有可能的，目前网络相关的 bug 繁多，譬如：</p>
-            <ol>
-                <li>在 overlay 网络中，有些容器的无法通过 hostname 访问。</li>
-                <li>带有对外端口的服务的随机网络问题。</li>
-                <li>任务扩缩时内部服务通信不稳定。</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>
 </div>
 <% end %>
