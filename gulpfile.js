@@ -88,7 +88,12 @@ gulp.task('copy-css',['copy-js'],function() {
         .pipe(gulp.dest('build/css'));
 });
 
-gulp.task('rev',['copy-css'], function () {
+gulp.task('copy-application', ['copy-css'], function () {
+    gulp.src('./application.html')
+        .pipe(gulp.dest('build/'))
+});
+
+gulp.task('rev',['copy-application'], function () {
     gulp.src('build/*.html')
         .pipe(rev())
         .pipe(gulp.dest('build/'))
@@ -131,9 +136,14 @@ gulp.task('copy-fontsdev', ['copy-picsdev'], function () {
         .pipe(gulp.dest('dev/fonts'));
 });
 
+gulp.task('copy-application-dev', ['copy-fontsdev'], function () {
+    gulp.src('application.html')
+        .pipe(gulp.dest('dev/'))
+});
 
 
-gulp.task('dev',['copy-fontsdev'], function(){
+
+gulp.task('dev',['copy-application'], function(){
     var rootPath = 'static_views/';
     var relativePathArray = ['*.html', 'solution/*.html', 'companyapp/*.html', 'scene/*.html', 'about/*.html'];
 
