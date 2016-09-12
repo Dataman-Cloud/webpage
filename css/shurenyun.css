@@ -866,15 +866,16 @@ footer .news-events a{
 	color: #5a6879;
 	font-size: 36px;
 	margin-top: 60px;
+	font-weight: 400;
 }
 #aboutus .member hr {
 	border-color: #cccccc;
-	margin-bottom: 50px;
+	margin-bottom: 90px;
 	width: 130px;
 }
 #aboutus .thumbnail {
 	border: 0;
-	min-height: 530px;
+	min-height: 380px;
 	padding: 0 25px;
 	text-align: left;
 }
@@ -903,7 +904,8 @@ footer .news-events a{
 #aboutus .partner h1 {
 	color: #5a6879;
 	font-size: 36px;
-	margin-top: 45px;
+	margin-top: 90px;
+	font-weight: 400;
 }
 #aboutus .partner hr {
 	border-color: #333;
@@ -2492,6 +2494,9 @@ margin-bottom: 18px;
 .about-content .more a{
 	color: #666666;
 }
+
+.thumbnail > img.about-people-pic{max-width: 100px;
+	margin-left: 13px}
 
 
 
