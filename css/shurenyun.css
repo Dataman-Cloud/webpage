@@ -1724,9 +1724,6 @@ section.select-app .usable a {
 }
 @media(max-width: 769px){
 	.button{display:block;}
-	.navbar-form{
-		display: none;
-	}
 	.nav{
 		display: none;
 	}
@@ -1761,9 +1758,6 @@ section.select-app .usable a {
 /*手机端导航*/
 @media(max-width: 414px){
 	.footer-slogan{
-		display: none;
-	}
-	form{
 		display: none;
 	}
 	.button{display:block;}
@@ -2119,9 +2113,6 @@ section.select-app .usable a {
 /*苹果五*/
 @media(max-width: 375px){
 	.footer-slogan{
-		display: none;
-	}
-	form{
 		display: none;
 	}
 	.product-feature {
@@ -2713,7 +2704,7 @@ margin-bottom: 18px;
 	#product-craner .header-index img {
 		width: 60%;
 	}
-	}
+}
 #product-craner .feature-mobile {
 		display: none;
 	}

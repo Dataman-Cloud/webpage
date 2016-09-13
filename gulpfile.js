@@ -143,7 +143,7 @@ gulp.task('copy-application-dev', ['copy-fontsdev'], function () {
 
 
 
-gulp.task('dev',['copy-application'], function(){
+gulp.task('dev',['copy-application-dev'], function(){
     var rootPath = 'static_views/';
     var relativePathArray = ['*.html', 'solution/*.html', 'companyapp/*.html', 'scene/*.html', 'about/*.html'];
 
