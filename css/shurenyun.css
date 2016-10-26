@@ -2487,10 +2487,10 @@ margin-bottom: 18px;
 	background-image: url("../pics/swan-b(1).png");
 	color: red;
 }
-/*#product-craner .header-swam {
+#product-craner .header-swam {
 	background-image: url("../pics/swan-b(1).png");
 	color: red;
-}*/
+}
 #product-craner .header-index img {
 	width: 400px;
 	margin: 160px auto 0 auto;
@@ -2658,6 +2658,13 @@ margin-bottom: 18px;
 	margin-bottom: 40px;
 }
 #product-craner .index-carousel .carousel-caption {
+	margin: 10px;
+	padding-top: 0;
+	background-color: #FFF;
+	border-radius: 10px;
+	position: relative;
+}
+#product-craner .index-carousel .carousel-caption1 {
 	height: 256px;
 	width: 256px;
 	margin: 10px;
