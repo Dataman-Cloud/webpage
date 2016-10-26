@@ -371,7 +371,7 @@ ul, li {
 }
 /* 首页样式 --- 头部 */
 .header-index {
-	background-image: url('../pics/header-background-02.jpg');
+	background-image: url('../pics/swan-b(1).png');
 	background-size: cover;
 	color: #FFF;
 	min-height: 650px;
@@ -2484,9 +2484,13 @@ margin-bottom: 18px;
 
 
 #product-craner .header-index {
-	background-image: url("../pics/craner-background.png");
+	background-image: url("../pics/swan-b(1).png");
 	color: red;
 }
+/*#product-craner .header-swam {
+	background-image: url("../pics/swan-b(1).png");
+	color: red;
+}*/
 #product-craner .header-index img {
 	width: 400px;
 	margin: 160px auto 0 auto;
@@ -2561,6 +2565,11 @@ margin-bottom: 18px;
 }
 #product-craner .scenarios img {
 	height: 60px;
+	margin-top: 40px;
+}
+#product-craner .scenarios .imgbig  img{
+	width: 167px;
+	height: auto;
 	margin-top: 40px;
 }
 #product-craner .scenarios h3 {
@@ -2649,11 +2658,19 @@ margin-bottom: 18px;
 	margin-bottom: 40px;
 }
 #product-craner .index-carousel .carousel-caption {
-	height: auto;
-	width: 70%;
-	margin: 10px auto 10px auto;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	height: 256px;
+	width: 256px;
+	margin: 10px;
 	padding-top: 0;
+	background-color: #FFF;
+	border-radius: 10px;
+	position: relative;
+}
+#product-craner .index-carousel .carousel-caption1 {
+	height: 240px;
+	width: 240px;
+	margin: 10px;
+	padding: 45px;
 	background-color: #FFF;
 	border-radius: 10px;
 	position: relative;
@@ -2706,6 +2723,15 @@ margin-bottom: 18px;
 	#product-craner .header-index img {
 		width: 60%;
 	}
+	#product-craner .index-carousel .carousel-caption1 {
+	height: 256px;
+	width: 256px;
+	margin: 10px;
+	padding-top: 0;
+	background-color: #FFF;
+	border-radius: 10px;
+	position: relative;
+}
 }
 #product-craner .feature-mobile {
 		display: none;
@@ -2749,6 +2775,14 @@ margin-bottom: 18px;
 	}
 	#product-craner .feature-mobile {
 		display: block;
+		margin-top: 20px;
+		width: 80%;
+	}
+}
+@media(max-width: 769px){
+	#product-craner .other-info .btn-bar button{
+		display: block;
+		margin: 20px auto;
 	}
 }
 
