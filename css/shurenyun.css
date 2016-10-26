@@ -371,7 +371,7 @@ ul, li {
 }
 /* 首页样式 --- 头部 */
 .header-index {
-	background-image: url('../pics/swan-b(1).png');
+	background-image: url('../pics/header-background-02.jpg');
 	background-size: cover;
 	color: #FFF;
 	min-height: 650px;
