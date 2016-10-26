@@ -2497,7 +2497,7 @@ margin-bottom: 18px;
 }
 #product-craner .header-index h1 {
 	font-size: 45px;
-	font-weight: bold;
+	font-weight: 400;
 	color: #FFF;
 	text-shadow: none;
 	margin: 50px 10px 0 10px;
@@ -2509,6 +2509,7 @@ margin-bottom: 18px;
 	font-weight: 300;
 	margin: 30px 10px 0 10px;
 	margin-bottom: 0;
+	opacity: .7;
 }
 #product-craner .header-index form {
 	margin: 0 0 120px 0;
