@@ -667,3 +667,34 @@
 		margin: 20px auto;
 	}
 }
+
+@media(max-width: 769px){
+	.button{display:block;}
+	.nav{
+		display: none;
+	}
+	.navbar-toggle{
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		z-index: 999;
+	}
+	.cover{
+		display: none;
+		width: 100%;
+		height: 100%;
+		background: #000000;
+		opacity: 0.8;
+		position: fixed;
+		left: 0;
+		top: 0;
+	}
+	.nav .dropdown,.nav #solution{
+		position: relative;
+	}
+	.nav .dropdown-click~ul,.nav #solution-menu{
+		position: absolute;
+		left: 0;
+		top: 25px;
+	}
+}
