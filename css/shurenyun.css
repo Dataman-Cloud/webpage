@@ -2492,7 +2492,6 @@ margin-bottom: 18px;
 #product-craner .header-swan {
 	background-image: url("../pics/swan-b(1).png");
 	color: red;
-<<<<<<< HEAD
 	text-align: center;
 	background-color: #f3f5f7;
 	padding: 120px 0;
@@ -2526,15 +2525,16 @@ margin-bottom: 18px;
 	font-weight: 300;
 }
 #product-craner .header-swan form button {
-=======
-	background-size: cover;
-color: #FFF;
-min-height: 650px;
-height: 100%;
-overflow: hidden;
-position: relative;
-text-align: center;
-}
+	width: 220px;
+    height: 65px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 24px;
+    background-color: #FFF;
+    color: #000;
+    margin-top: 90px;
+    margin-bottom: 15px;
+	}
 /*swan-header*/
 
 #product-craner .header-swam img {

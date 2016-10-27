@@ -698,3 +698,51 @@
 		top: 25px;
 	}
 }
+
+@media(max-width: 769px){
+	#product-craner .feature-pc {
+		display: none!important;
+	}
+	#product-craner .feature-mobile {
+		display: block;
+		margin-top: 20px;
+		width: 80%;
+	}
+}
+@media(max-width: 769px){
+	#product-craner .other-info .btn-bar button{
+		display: block;
+		margin: 20px auto;
+	}
+}
+
+/*----------------------------------------------
+-Starfields
+@description: styles for the canvas starfield
+-----------------------------------------------  */
+@media screen and (min-width: 48em) {
+	.starfield, .starfields {
+		z-index:4;
+		position:absolute;
+		top:0;
+		left:0;
+		height:100%;
+		width:100%;
+		opacity: 0.6;
+	}
+
+	.starfield--entrance{
+		opacity: 1;
+		will-change: opacity;
+		animation: starfield-entrance 7s ease both;
+	}
+
+	@keyframes starfield-entrance{
+		from{
+			opacity: 1;
+		}
+		to{
+			opacity: 0.5;
+		}
+	}
+}
