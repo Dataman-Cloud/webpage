@@ -2488,6 +2488,10 @@ margin-bottom: 18px;
 	background-image: url("../pics/craner-background.png");
 	color: red;
 }
+#product-craner .header-index img {
+    width: 400px;
+    margin: 160px auto 0 auto;
+}
 
 #product-craner .header-swan {
 	background-image: url("../pics/swan-b(1).png");
