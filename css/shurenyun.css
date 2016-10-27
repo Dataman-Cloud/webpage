@@ -2483,16 +2483,7 @@ margin-bottom: 18px;
 	margin-left: 13px}
 
 
-
-#product-craner .header-index {
-	background-image: url("../pics/craner-background.png");
-	color: red;
-}
-#product-craner .header-index img {
-    width: 400px;
-    margin: 160px auto 0 auto;
-}
-
+/*swan-header*/
 #product-craner .header-swan {
 	background-image: url("../pics/swan-b(1).png");
 	color: red;
@@ -2539,53 +2530,13 @@ margin-bottom: 18px;
     margin-top: 90px;
     margin-bottom: 15px;
 	}
-/*swan-header*/
 
-#product-craner .header-swam img {
-	width: 350px;
-	margin: 200px auto 0 auto;
-}
-#product-craner .header-swam h1 {
-	font-size: 45px;
-	font-weight: 400;
-	color: #FFF;
-	text-shadow: none;
-	margin: 50px 10px 0 10px;
-	margin-bottom: 0;
-}
-#product-craner .header-swam h2 {
-	font-size: 22px;
-	color: #FFF;
-	font-weight: 300;
-	margin: 30px 10px 0 10px;
-	margin-bottom: 0;
-	opacity: .7;
-}
-#product-craner .header-swam form {
-	margin: 0 0 120px 0;
-}
-#product-craner .header-swam form a {
-	color: #FFF;
-	font-weight: 300;
-}
-#product-craner .header-swam form button {
->>>>>>> origin/master
-	width: 220px;
-	height: 65px;
-	border-radius: 5px;
-	border: 0;
-	font-size: 24px;
-	background-color: #FFF;
-	color: #000;
-	margin-top: 90px;
-	margin-bottom: 15px;
-}
-
-<<<<<<< HEAD
-
-=======
 /*crane-header*/
->>>>>>> origin/master
+#product-craner .header-index {
+	background-image: url("../pics/craner-background.png");
+	color: red;
+}
+
 #product-craner .header-index img {
 	width: 400px;
 	margin: 160px auto 0 auto;
