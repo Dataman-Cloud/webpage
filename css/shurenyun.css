@@ -2491,6 +2491,7 @@ margin-bottom: 18px;
 #product-craner .header-swan {
 	background-image: url("../pics/swan-b(1).png");
 	color: red;
+<<<<<<< HEAD
 	text-align: center;
 	background-color: #f3f5f7;
 	padding: 120px 0;
@@ -2524,6 +2525,46 @@ margin-bottom: 18px;
 	font-weight: 300;
 }
 #product-craner .header-swan form button {
+=======
+	background-size: cover;
+color: #FFF;
+min-height: 650px;
+height: 100%;
+overflow: hidden;
+position: relative;
+text-align: center;
+}
+/*swan-header*/
+
+#product-craner .header-swam img {
+	width: 350px;
+	margin: 200px auto 0 auto;
+}
+#product-craner .header-swam h1 {
+	font-size: 45px;
+	font-weight: 400;
+	color: #FFF;
+	text-shadow: none;
+	margin: 50px 10px 0 10px;
+	margin-bottom: 0;
+}
+#product-craner .header-swam h2 {
+	font-size: 22px;
+	color: #FFF;
+	font-weight: 300;
+	margin: 30px 10px 0 10px;
+	margin-bottom: 0;
+	opacity: .7;
+}
+#product-craner .header-swam form {
+	margin: 0 0 120px 0;
+}
+#product-craner .header-swam form a {
+	color: #FFF;
+	font-weight: 300;
+}
+#product-craner .header-swam form button {
+>>>>>>> origin/master
 	width: 220px;
 	height: 65px;
 	border-radius: 5px;
@@ -2535,7 +2576,11 @@ margin-bottom: 18px;
 	margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
 
+=======
+/*crane-header*/
+>>>>>>> origin/master
 #product-craner .header-index img {
 	width: 400px;
 	margin: 160px auto 0 auto;
