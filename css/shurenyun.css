@@ -44,6 +44,9 @@ ul, li {
 	background-color: rgba(0,0,0,0.6);
 	width: 110%;
 }
+.dropdown-menu .container .row{
+	margin-bottom: 20px;
+}
 .dropdown-menu h2 {
 	font-size: 15px;
 	color: rgba(255,255,255,0.8);
@@ -52,7 +55,7 @@ ul, li {
 	font-size: 12px;
 	color: rgba(255,255,255,0.4);
 	display: inline-block;
-	margin: 0 20px 20px 0; 
+	margin: 0 20px 0 0; 
 }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
 	color: #00bdda;
@@ -68,6 +71,22 @@ ul, li {
 .nav-about{
 	float: right;
 	margin-right: -95px;
+}
+.fa-up-down{
+	display: block;
+    position: absolute;
+    z-index: 100;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -16px;
+    width: 34px;
+    height: 34px;
+    font-size: 34px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.701961);
+    /*transform: rotate(-90deg);*/
+    animation: bounce 4s 2s infinite;
 }
 /* 通用头部样式 */
 .nav-main {
@@ -2487,14 +2506,19 @@ margin-bottom: 18px;
 #product-craner .header-swan {
 	background-image: url("../pics/swan-b(1).png");
 	color: red;
+	background-size: cover;
+	color: #FFF;
+	min-height: 650px;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
 	text-align: center;
-	background-color: #f3f5f7;
-	padding: 120px 0;
+	padding: 140px 0;
 }
 
 #product-craner .header-swan img {
 	width: 400px;
-	margin: 160px auto 0 auto;
+	margin: 110px auto 0 auto;
 }
 #product-craner .header-swan h1 {
 	font-size: 45px;
@@ -2535,6 +2559,14 @@ margin-bottom: 18px;
 #product-craner .header-index {
 	background-image: url("../pics/craner-background.png");
 	color: red;
+	background-size: cover;
+	color: #FFF;
+	min-height: 650px;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	padding: 60px 0;
 }
 
 #product-craner .header-index img {
@@ -2771,7 +2803,7 @@ margin-bottom: 18px;
 }
 #product-craner .other-info p {
 	font-size: 12px;
-	margin-bottom: 50px;
+	margin-bottom: 150px;
 }
 @media(max-width: 769px){
 	#product-craner .header-index img {
