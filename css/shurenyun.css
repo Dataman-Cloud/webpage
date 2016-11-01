@@ -47,6 +47,9 @@ ul, li {
 .dropdown-menu .container .row{
 	margin-bottom: 20px;
 }
+.m-r{
+	margin: 0 10%;
+}
 .dropdown-menu h2 {
 	font-size: 15px;
 	color: rgba(255,255,255,0.8);
@@ -363,7 +366,7 @@ ul, li {
 	left: 0;
 	top: 0;
 	right: 0;
-	width: 100%;
+	width: 99%;
 }
 .carousel-caption img {
 	margin-top: 20px;
@@ -2863,7 +2866,7 @@ margin-bottom: 18px;
 	font-size: 14px;
 }
 #product-craner .feature-mobile img {
-	width: 10%;
+	width: 20%;
 	margin: 0 auto;
 }
 @media(max-width: 769px){
@@ -2873,7 +2876,6 @@ margin-bottom: 18px;
 	#product-craner .feature-mobile {
 		display: block;
 		margin-top: 20px;
-		width: 80%;
 	}
 }
 @media(max-width: 769px){
