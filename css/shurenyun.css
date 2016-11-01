@@ -48,7 +48,7 @@ ul, li {
 	margin-bottom: 20px;
 }
 .m-r{
-	margin: 0 10%;
+	margin: 5px 15% 0;
 }
 .dropdown-menu h2 {
 	font-size: 15px;
@@ -58,7 +58,7 @@ ul, li {
 	font-size: 12px;
 	color: rgba(255,255,255,0.4);
 	display: inline-block;
-	margin: 0 20px 0 0; 
+	margin: 0 17px 0 0; 
 }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
 	color: #00bdda;
@@ -1820,7 +1820,7 @@ section.select-app .usable a {
 }
 .nav .dropdown-click~ul,.nav #solution-menu{
 	position: absolute;
-	left: 70px;
+	left: 90px;
 	top: -10px;
 }
 .scroll{
@@ -1834,7 +1834,7 @@ section.select-app .usable a {
 }
 .dropdown-menu {
     background-color: rgba(0,0,0,0.1);
-    width: 110%;
+    width: 70%;
 }
 .nav #solution-menu .nav-about{
 	position: absolute;
@@ -2862,11 +2862,12 @@ margin-bottom: 18px;
 	margin-top: 10px;
 }
 #product-craner .feature-mobile p {
+	line-height: 23px;
 	margin-bottom: 20px;
 	font-size: 14px;
 }
 #product-craner .feature-mobile img {
-	width: 20%;
+	width: 15%;
 	margin: 0 auto;
 }
 @media(max-width: 769px){
