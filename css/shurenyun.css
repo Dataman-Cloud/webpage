@@ -2636,7 +2636,7 @@ margin-bottom: 18px;
 }
 
 #product-craner .header-sre img {
-	width: 30%;
+	width: 28%;
 	margin: 160px auto 0 auto;
 }
 @media(max-width: 768px) {
@@ -2840,7 +2840,7 @@ margin-bottom: 18px;
 	font-weight: 400;
 }
 #product-craner .train p {
-	font-size: 12px;
+	font-size: 14px;
 	color: #55677d;
 	width: 33%;
 	margin: 33px auto 0 auto;
@@ -3050,6 +3050,7 @@ margin-bottom: 18px;
 }
 #product-craner .scenarios .sre-bg dl dd{
 	color: rgba(255,255,255,.7);
+	margin-left: 10px;
 }
 #product-craner .scenarios .sre-bg dl dt img{
 	margin-top: 0;
