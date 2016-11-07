@@ -2503,7 +2503,9 @@ margin-bottom: 18px;
 
 .thumbnail > img.about-people-pic{
 	max-width: 80px;
-	margin-left: 13px}
+	margin-left: 13px;
+	filter: grayscale(100%);
+	}
 
 
 /*swan-header*/
@@ -2636,7 +2638,7 @@ margin-bottom: 18px;
 }
 
 #product-craner .header-sre img {
-	width: 28%;
+	width: 25%;
 	margin: 160px auto 0 auto;
 }
 @media(max-width: 768px) {
