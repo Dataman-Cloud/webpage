@@ -2874,7 +2874,16 @@ margin-bottom: 18px;
 	font-weight: 400;
 	line-height: 1.65;
 }
-
+@media (max-width: 768px) {
+		#product-craner .train p {
+		font-size: 14px;
+		color: #55677d;
+		width: 55%;
+		margin: 33px auto 0 auto;
+		font-weight: 400;
+		line-height: 1.65;
+	}
+}
 #product-craner .sre-td {
 	text-align: center;
 	background-color: #f3f5f7;
@@ -2912,6 +2921,29 @@ margin-bottom: 18px;
 	margin: 0 auto;
 	position: relative
 }
+@media (max-width: 789px) {
+		#product-craner .sre-td .sre-cycle-item1 {
+		width: 83%;
+		background-color: #FFFFFF;
+		border-radius:5px;
+		margin: 0 auto;
+		position: relative;
+		padding: 0 15px;
+	}
+		#product-craner .sre-td table {
+		margin: 70px auto 35px;
+		width: 75%;
+		font-weight: 400;
+	}
+		#product-craner .sre-td p {
+		/*font-size: 12px;
+		color: #55677d;*/
+		width: 70%;
+		/*margin: 33px auto 0 auto;
+		font-weight: 400;
+		line-height: 1.65;*/
+	}
+}
 #product-craner .sre-td .sre-cycle-item1 span{
     border-top: 11px solid #f3f5f7;
     border-right: 11px solid #f3f5f7;
@@ -2919,6 +2951,8 @@ margin-bottom: 18px;
     border-left: 11px solid #f3f5f7;
     position: absolute;
     top: -22px;
+    left: 50%;
+    margin-left: -11px;
 }
 #product-craner .sre-td .sre-cycle-item1 p {
 	width:100%;
@@ -2935,6 +2969,16 @@ margin-bottom: 18px;
 	margin: -12px auto;
 	position: relative;
 }
+@media (max-width: 789px) {
+		#product-craner .sre-td .sre-cycle-item2 {
+		width: 83%;
+		background-color: #00bdda;
+		border-radius:5px;
+		margin: 0 auto;
+		position: relative;
+		padding: 0 15px;
+	}
+}
 #product-craner .sre-td .sre-cycle-item2 span{
     border-top: 11px solid #00bdda;
     border-right: 11px solid #f3f5f7;
@@ -2942,6 +2986,8 @@ margin-bottom: 18px;
     border-left: 11px solid #f3f5f7;
     position: absolute;
     bottom: -22px;
+    left: 50%;
+    margin-left: -11px;
 }
 #product-craner .sre-td .sre-cycle-item2 p {
 	width:100%;
@@ -3175,11 +3221,10 @@ margin-bottom: 18px;
 	color: #191d29;
 }
 @media(max-width: 769px){
-		#product-craner .scenarios .white-box{
-		margin:10px auto;
-	}
-		#product-craner .scenarios .baack-box{
-		margin:10px auto;
+		#product-craner .scenarios .box{
+		width: 75%;
+		margin: 20px auto;
+		min-height: 130px;
 	}
 }
 
@@ -3374,8 +3419,8 @@ margin-bottom: 18px;
 	padding-right: 40px;
 	background: #FFF url('../pics/craner-08.png') no-repeat right 20px;
 	background-size: 35px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 #product-craner .other-info p {
 	font-size: 12px;
@@ -3439,6 +3484,7 @@ margin-bottom: 18px;
 	#product-craner .feature-mobile {
 		display: block;
 		margin-top: 20px;
+		padding: 30px 0;
 	}
 }
 @media(max-width: 769px){
