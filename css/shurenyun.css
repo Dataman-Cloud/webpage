@@ -3038,7 +3038,7 @@ margin-bottom: 18px;
 }
 #product-craner .thumbnail{
 	border: 0;
-    min-height: 220px;
+    min-height: 270px;
     text-align: left;
     border-radius: 0;
     background-color: #ffffff
@@ -3183,6 +3183,9 @@ margin-bottom: 18px;
 	margin-right: 20px;
 	font-size: 14px;
 	font-weight: 400;
+}
+#dre-bg a:hover{
+	text-decoration: none;
 }
 @media (max-width: 769px){
 	#product-craner .scenarios .box p a{
