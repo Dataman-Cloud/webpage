@@ -3140,6 +3140,14 @@ margin-bottom: 18px;
 #product-craner .scenarios .white-box p a{
 	color: #191d29;
 }
+@media(max-width: 769px){
+		#product-craner .scenarios .white-box{
+		margin:10px auto;
+	}
+		#product-craner .scenarios .baack-box{
+		margin:10px auto;
+	}
+}
 
 
 #product-craner .index-carousel  .sre-details{
