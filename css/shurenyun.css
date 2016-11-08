@@ -2683,6 +2683,7 @@ margin-bottom: 18px;
 #product-craner .header-sre .sre-form{
 	margin-top: 75px;
 }
+
 #product-craner .header-sre .sre-form a:first-child {
 	min-width: 174px;
 	min-height: 66px;
@@ -2706,6 +2707,30 @@ margin-bottom: 18px;
 	color: #FFFFFF;
 	font-size: 24px;
 	font-weight: 400;
+}
+@media (max-width: 769px) {
+		#product-craner .header-sre .sre-form a:first-child {
+		min-width: 145px;
+		min-height: 50px;
+		line-height: 33px;
+		border-radius: 5px;
+		border: 1px solid #191d29;
+		background-color: #ffffff;
+		color: #000000;
+		font-size: 24px;
+		font-weight: 400;
+	}
+	#product-craner .header-sre .sre-form a:last-child {
+		min-width: 145px;
+		min-height: 50px;
+		line-height: 33px;
+		border-radius: 5px;
+		border: 1px solid  #ffffff;
+		background-color:#191d29;
+		color: #FFFFFF;
+		font-size: 24px;
+		font-weight: 400;
+	}
 }
 /*sre-header end*/
 
@@ -3112,6 +3137,15 @@ margin-bottom: 18px;
 	margin-right: 20px;
 	font-size: 14px;
 	font-weight: 400;
+}
+@media (max-width: 769px){
+	#product-craner .scenarios .box p a{
+	text-align: right;
+	display: block;
+	margin-right: 6px;
+	font-size: 14px;
+	font-weight: 400;
+}
 }
 #product-craner .scenarios .box p img{
 	width: 15%;
