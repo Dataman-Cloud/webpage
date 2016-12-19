@@ -134,8 +134,8 @@ ul, li {
 	width: 38px;
 }
 .nav-main .btn-default.btn-login {
-	border: 1px solid #CCC;
-	color: #CCC;
+	border: 1px solid rgba(255,255,255,.6);
+        color: rgba(255,255,255,.6);
 }
 .nav-main .dropdown-menu .row > div {
 	margin-bottom: 0;
