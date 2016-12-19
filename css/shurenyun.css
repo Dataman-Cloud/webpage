@@ -124,14 +124,15 @@ ul, li {
 	padding-left: 27px;
 }
 .nav-main .btn-default {
-	background-color:transparent;
-	border: 1px solid #00bdda;
-	border-radius: 19px;
-	color: #00bdda;
-	font-size: 12px;
-	height: 38px;
-	padding: 0;
-	width: 38px;
+	background-color: transparent;
+        border: 1px solid #00bdda;
+        border-radius: 9px;
+        color: #00bdda;
+        font-size: 12px;
+        height: 28px;
+        padding: 0;
+        width: 68px;
+        margin-top: 6px;
 }
 .nav-main .btn-default.btn-login {
 	border: 1px solid rgba(255,255,255,.6);
