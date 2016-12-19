@@ -229,7 +229,7 @@ ul, li {
 }
 .footer-slogan {
 	background-color: #f3f5f7;
-	height: 144px;
+	height: 244px;
 }
 .footer-slogan h1 {
 	color: #5a6879;
@@ -2435,7 +2435,7 @@ top: auto;
 }
 
 .about-content .panel .panel-body.multi-content>.col-md-9,
-.about-content .panel .panel-body.multi-content>.col-xs-9,{
+.about-content .panel .panel-body.multi-content>.col-xs-9{
 	height: auto;
 }
 
@@ -2923,6 +2923,66 @@ margin-bottom: 18px;
 	margin: 0 auto;
 	position: relative
 }
+
+
+#product-craner .offlineActivities {
+	text-align: center;
+	background-color: #f3f5f7;
+	padding: 100px 0;
+}
+#product-craner .offlineActivities h2 {
+	font-size: 36px;
+	margin-top: 15px;
+	color: #55677d;
+	font-weight: 200;
+}
+#product-craner .offlineActivities h5 {
+	font-size: 20px;
+	margin-top: 15px;
+	color: #55677d;
+	font-weight: 200;
+}
+#product-craner .container .row {
+	margin-top:60px;
+}
+#product-craner .activeContent {
+    border: 0;
+    min-height: 250px;
+    text-align: left;
+    border-radius: 0;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 20px;
+    min-height: 371px;
+}
+#product-craner .activeContent a:hover{
+    text-decoration: none;
+}
+#product-craner .activeContent .activeBorder{
+    border-top: none;
+    border-radius: 3px;
+}
+#product-craner .activeContent .activeBorder h3{
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    color: rgba(0,0,0,0.9);
+}
+#product-craner .activeContent .activeBorder p{
+    text-indent: 2em;
+    color: rgba(0,0,0,0.6);
+}
+#product-craner .activeContent .about-activity-pic{
+    display: inline-block;
+	max-height: 150px;
+    width: 100%;
+}
+
+
+
+
+
 @media (max-width: 789px) {
 		#product-craner .sre-td .sre-cycle-item1 {
 		width: 83%;
@@ -3410,7 +3470,6 @@ margin-bottom: 18px;
     font-size: 24px;
     background-color: #000;
     color: #FFF;
-    margin-bottom: 134px;
 }
 #product-craner .other-info .btn-bar {
 	margin-top: 105px;
