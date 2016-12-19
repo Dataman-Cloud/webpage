@@ -2971,7 +2971,9 @@ margin-bottom: 18px;
 }
 #product-craner .activeContent .activeBorder p{
     text-indent: 2em;
-    color: rgba(0,0,0,0.6);
+    color: #55677d;
+	font-weight: 400;
+	font-size: 14px;
 }
 #product-craner .activeContent .about-activity-pic{
     display: inline-block;
