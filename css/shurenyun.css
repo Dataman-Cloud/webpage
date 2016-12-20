@@ -1020,12 +1020,13 @@ footer .news-events a{
 	margin: 100px 0 40px 0;
 }
 #product-price header.main-header {
-	background: url(../pics/bg-price-01.jpg) no-repeat top;
+	background: url(../pics/bg-price-01.jp) no-repeat top;
 	background-size: cover;
 	color: #FFF;
 	height: 80%;
 	margin-bottom: 300px;
 	min-height: 600px;
+	background-color: #3a6b37;
 }
 #product-price .btn {
 	background-color: #62be50;
