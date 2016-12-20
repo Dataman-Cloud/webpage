@@ -2641,7 +2641,7 @@ margin-bottom: 18px;
 }
 
 #product-craner .header-sre img {
-	width: 25%;
+	width: 20%;
 	margin: 160px auto 0 auto;
 }
 @media(max-width: 768px) {
@@ -2652,18 +2652,17 @@ margin-bottom: 18px;
 #product-craner .header-sre h1 {
 	font-size: 45px;
 	font-weight: 400;
-	color: #FFF;
+	color: rgba(255,255,255,.8);
 	text-shadow: none;
 	margin: 50px 10px 0 10px;
 	margin-bottom: 0;
 }
 #product-craner .header-sre h2 {
 	font-size: 22px;
-	color: #FFF;
+	color: rgba(255,255,255,.7);
 	font-weight: 300;
 	margin: 30px 10px 0 10px;
 	margin-bottom: 0;
-	opacity: .7;
 }
 #product-craner .header-sre form {
 	margin: 0 0 100px 0;
