@@ -2943,7 +2943,7 @@ margin-bottom: 18px;
 	font-weight: 200;
 }
 #product-craner .container .row {
-	margin-top:60px;
+	margin-top:0px;
 }
 #product-craner .activeContent {
     border: 0;
@@ -3403,7 +3403,7 @@ margin-bottom: 18px;
 }
 #product-craner .index-carousel .row {
 	width: 80%;
-	margin-bottom: 0px;
+	margin-bottom: 60px;
 	margin: 0 auto;
 	margin-bottom: 40px;
 }
