@@ -163,7 +163,7 @@ ul, li {
 	font-size: 11px;
 }
 .footer-main h1 {
-	color: #FFF;
+	color: rgba(255,255,255,.8);
 	font-size: 14px;
 	margin: 0;
 }
