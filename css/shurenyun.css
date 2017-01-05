@@ -415,7 +415,7 @@ ul, li {
 	z-index: 40;
 }
 .header-index h1 {
-	font-size: 32px;
+	font-size: 22px;
 	font-weight: 100;
 	margin: 200px 0 0 0;
 	text-shadow: 0px 0px 4px rgba(0,0,0,0.0);
@@ -429,7 +429,7 @@ ul, li {
 	font-size: 70px;
 	font-weight: bold;
 	font-weight: 100;
-	letter-spacing: 30px;
+	letter-spacing: 20px;
 	margin: 35px 0 0 0;
 }
 .header-index h3 {
