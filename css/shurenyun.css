@@ -394,7 +394,7 @@ ul, li {
 }
 /* 首页样式 --- 头部 */
 .header-index {
-	background-image: url('../pics/header-background-02.jpg');
+	background-image: url('https://raw.githubusercontent.com/Dataman-Cloud/webpage/master/pics/pic-products-bb.jpg');
 	background-size: cover;
 	color: #FFF;
 	min-height: 650px;
@@ -402,6 +402,7 @@ ul, li {
 	overflow: hidden;
 	position: relative;
 	text-align: center;
+	background-color:#000
 }
 .header-container {
 	color: rgba(255,255,255,.9);
