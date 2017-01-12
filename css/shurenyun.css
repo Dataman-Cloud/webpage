@@ -3641,3 +3641,8 @@ margin-bottom: 18px;
 	font-size: 17.5px;
 	border-left: 0px solid #eee; 
 }
+#hr {
+	border-color: #00bdda;
+	width: 80px;
+	border-top: 2px solid #00bdda
+}
