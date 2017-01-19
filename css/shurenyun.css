@@ -2967,9 +2967,8 @@ margin-bottom: 18px;
     border-radius: 3px;
 }
 #product-craner .activeContent .activeBorder h3{
-    margin-top: 0;
+    margin-top: 16px;
     font-size: 18px;
-    line-height: 50px;
     text-align: center;
     color: rgba(0,0,0,0.9);
 }
