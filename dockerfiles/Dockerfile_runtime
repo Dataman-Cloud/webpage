@@ -1,9 +1,8 @@
 FROM demoregistry.dataman-inc.com/shurenyun/centos7-nginx-1.8.0:omega.v0.2.8
 
-ADD ./webpage.tar.gz  /usr/local/share/
+COPY ./webpage.tar.gz  /usr/local/share/
 
-RUN rm -rf /usr/share/nginx/html/* && \
-    cp -r /usr/local/share/webpage/build /usr/share/nginx/html/www.shurenyun.com && \
+RUN cd /usr/local/share/ && tar xzf webpage.tar.gz  && cp -r /usr/local/share/webpage/build /usr/share/nginx/html/www.shurenyun.com && \
     rm -rf /usr/local/share/webpage*
 
 RUN rm -rf /etc/nginx/certs
