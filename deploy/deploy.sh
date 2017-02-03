@@ -20,6 +20,32 @@ curl -v -X PUT $MARATHON_API_URL/v2/apps/shurenyun-$TASKENV-$SERVICE -H Content-
                                      ]
                                 }
                    },
+      "parameters": [
+                              {
+                                "key": "log-opt",
+                                "value": "syslog-format=rfc5424micro"
+                              },
+                              {
+                                "key": "log-driver",
+                                "value": "syslog"
+                              },
+                              {
+                                "key": "log-opt",
+                                "value": "syslog-address=tcp://10.3.3.3:5011"
+                              },
+                              {
+                                "key": "log-opt",
+                                "value": "tag={{.ID}}/{{ (.ExtraAttributes nil).MARATHON_APP_ID }}/{{ (.ExtraAttributes nil).MESOS_TASK_ID }}"
+                              },
+                              {
+                                "key": "log-opt",
+                                "value": "env=MARATHON_APP_ID,MESOS_TASK_ID"
+                              },
+                              {
+                                "key": "label",
+                                "value": "APP_ID=shurenyun-'$TASKENV'-'$SERVICE'"
+                              }
+                            ],             
       "env": {
                     "BAMBOO_PUBLIC": "'$BAMBOO_PUBLIC'",
                     "BAMBOO_PROXY":"'$BAMBOO_PROXY'",
