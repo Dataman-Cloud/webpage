@@ -14,13 +14,7 @@ curl -v -X PUT $MARATHON_API_URL/v2/apps/shurenyun-$TASKENV-$SERVICE -H Content-
                                      "image": "'$SERVICE_IMAGE'",
                                      "network": "BRIDGE",
                                      "privileged": '$PRIVILEGED',
-                                     "forcePullImage": '$FORCEPULLIMAGE',
-                                     "portMappings": [
-                                             { "containerPort": 80, "hostPort": 0, "protocol": "tcp"}
-                                     ]
-                                }
-                   },
-      "parameters": [
+                                     "parameters": [
                               {
                                 "key": "log-opt",
                                 "value": "syslog-format=rfc5424micro"
@@ -45,7 +39,14 @@ curl -v -X PUT $MARATHON_API_URL/v2/apps/shurenyun-$TASKENV-$SERVICE -H Content-
                                 "key": "label",
                                 "value": "APP_ID=shurenyun-'$TASKENV'-'$SERVICE'"
                               }
-                            ],             
+                            ], 
+                                     "forcePullImage": '$FORCEPULLIMAGE',
+                                     "portMappings": [
+                                             { "containerPort": 80, "hostPort": 0, "protocol": "tcp"}
+                                     ]
+                                }
+                   },
+                  
       "env": {
                     "BAMBOO_PUBLIC": "'$BAMBOO_PUBLIC'",
                     "BAMBOO_PROXY":"'$BAMBOO_PROXY'",
