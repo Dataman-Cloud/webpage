@@ -1093,7 +1093,7 @@ footer .news-events a{
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
 	color: #333;
 	display: inline-block;
-	height: 450px;
+	height: 490px;
 	margin: 0 10px;
 	position: relative;
 	width: 325px;
@@ -1110,7 +1110,7 @@ footer .news-events a{
 	padding-top: 24px;
 }
 #product-price .price-card.pro, #product-price .price-card.company {
-	height: 400px;
+	height: 450px;
 	margin-top: 25px;
 }
 #product-price .price-card.pro {
