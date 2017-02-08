@@ -693,10 +693,11 @@ footer .news-events a{
 	 margin-top: 50px;
 }
 .solution-content h2 {
-	color: #5a6879;
-	font-size: 18px;
-	font-weight: 200;
-	margin: 0 0 25px 0;
+	color: #555;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0 0 25px 0;
+}
 }
 .solution-content h3 {
 	font-size: 16px;
