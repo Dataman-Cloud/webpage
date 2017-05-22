@@ -947,8 +947,16 @@ footer .news-events a{
 }
 #aboutus .partner dd img {
 	height: 45px;
-	margin-right: 67px;
+	margin-right: 55px;
 	margin-bottom: 50px;
+}
+#aboutus .partner dd .logo-coscl{
+	width: 150px;
+	height: auto;
+}
+#aboutus .partner dd .logo-shangtai{
+	width: 150px;
+	height: auto;
 }
 
 #scene-seckill header {
