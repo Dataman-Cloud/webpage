@@ -3119,6 +3119,13 @@ margin-bottom: 18px;
     background-color: #ffffff
 }
 
+#product-craner .feature-thumbnail{
+	border: 0;
+	height: 250px;
+	border-radius: 3px;
+	background-color: #ffffff;
+	padding: 50px 20px;
+}
 
 #product-craner .summary {
 	text-align: center;
