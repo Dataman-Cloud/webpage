@@ -445,6 +445,14 @@ ul, li {
 	margin: 27px auto 0 auto;
 	width: auto;
 }
+.header-container .version-btn{
+	margin-top: 145px;
+}
+.header-container .version-btn .group-btn{
+	display: inline-block;
+	width: 125px;
+	margin: 0 15px;
+}
 .header-index form {
 	margin-top: 145px;
 }
@@ -2581,6 +2589,95 @@ margin-bottom: 18px;
     margin-top: 90px;
     margin-bottom: 15px;
 	}
+
+/*octopus-header*/
+#product-craner .octopus-header {
+	background-image: url("../pics/octopus/octopus-bg.jpg");
+	background-size: cover;
+	color: #FFF;
+	min-height: 650px;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	padding: 60px 0;
+}
+
+#product-craner .octopus-header img {
+	width: 30%;
+	margin: 160px auto 0 auto;
+}
+@media(max-width: 768px) {
+	#product-craner .octopus-header img {
+		width: 70%;
+	}
+}
+#product-craner .octopus-header h1 {
+	font-size: 45px;
+	font-weight: 400;
+	color: #FFF;
+	text-shadow: none;
+	margin: 50px 10px 0 10px;
+	margin-bottom: 0;
+}
+#product-craner .octopus-header h2 {
+	font-size: 22px;
+	color: #FFF;
+	font-weight: 300;
+	margin: 30px 10px 0 10px;
+	margin-bottom: 0;
+	opacity: .7;
+}
+#product-craner .octopus-header form {
+	margin: 0 0 120px 0;
+}
+#product-craner .octopus-header form a {
+	color: #FFF;
+	font-weight: 300;
+}
+#product-craner .octopus-header form button {
+	width: 220px;
+	height: 65px;
+	border-radius: 5px;
+	border: 0;
+	font-size: 24px;
+	background-color: #FFF;
+	color: #000;
+	margin-top: 90px;
+	margin-bottom: 15px;
+}
+
+/*octopus-summary*/
+
+#product-octopus .feature-thumbnail{
+	border: 0;
+	height: 250px;
+	border-radius: 3px;
+	background-color: #ffffff;
+	padding: 50px 20px;
+}
+
+#product-octopus .summary {
+	text-align: center;
+	background-color: #f3f5f7;
+	padding: 120px 0;
+}
+#product-octopus .summary img {
+	width: 88px;
+}
+#product-octopus .summary h2 {
+	font-size: 24px;
+	font-weight: 100;
+	margin-top: 15px;
+}
+#product-octopus .summary p {
+	font-size: 24px;
+	color: #595959;
+	width: 60%;
+	margin: 60px auto 0 auto;
+	font-weight: 300;
+	line-height: 1.5;
+}
 
 /*crane-header*/
 #product-craner .header-index {
