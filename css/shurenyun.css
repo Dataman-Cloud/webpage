@@ -162,6 +162,37 @@ ul, li {
 	color: rgba(255,255,255,0.6);
 	font-size: 11px;
 }
+.footer-main .row{
+	margin: 0;
+}
+.footer-main .footer-consulting{
+	padding: 35px 0;
+	background: #404b59;
+}
+.footer-main .footer-other-info {
+	text-align: center;
+	color: #999;
+}
+.footer-main .footer-consulting-text p{
+	line-height: 50px;
+	color: #fff;
+	font-size: 24px;
+}
+.footer-main .footer-other-info .footer-btn button {
+	height: 50px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	border: 0;
+	text-align: left;
+	min-width: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: #00b9df;
+	background-size: 35px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
 .footer-main h1 {
 	color: rgba(255,255,255,.8);
 	font-size: 14px;
@@ -176,10 +207,9 @@ ul, li {
 	font-size: 14px;
 }
 .footer-main .footer-help {
-	border-bottom: 1px solid rgba(255,255,255,0.1);
 	text-align: center;
 	padding-top: 79px;
-	padding-bottom: 60px;
+	padding-bottom: 110px;
 }
 .footer-main .footer-help i {
 	color: rgba(255,255,255,0.6);
@@ -192,7 +222,27 @@ ul, li {
 .footer-main .footer-help p {
 	height: 55px;
 	margin-bottom: 0px;
-	padding: 0 25px;
+}
+.footer-main .footer-help li .footer-callme li{
+	line-height: 24px;
+}
+.footer-main .footer-help li .foot-ercode dt img{
+	width: 100px;
+	height: auto;
+}
+.footer-main .footer-help li .foot-ercode dd p{
+	height: 25px;
+	margin-top: 15px;
+	line-height: 25px;
+	font-size: 12px;
+	font-weight: 500;
+}
+.footer-main .footer-help li .footer-content{
+	line-height: 25px;
+	height: 25px;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 0;
 }
 /*.footer-help .col-xs-6{
 	margin-top: 50px;
@@ -544,7 +594,7 @@ ul, li {
 	margin: 15px 0 10px 0;
 }
 .tec-com p {
-	color: #00b9df;
+	color: #5a6879;
 	height: 100px;
 }
 .tec-com .logo{
@@ -570,6 +620,9 @@ img.desaturate:hover{
 	filter: grayscale(0%);
 }
 #experience-bot{
+	padding-bottom: 20px;
+}
+#experience-introduce{
 	padding-bottom: 90px;
 }
 .logos {
