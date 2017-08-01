@@ -206,6 +206,9 @@ ul, li {
 	font-style: normal;
 	font-size: 14px;
 }
+.footer-main .footer-help .footer-align{
+	text-align: left;
+}
 .footer-main .footer-help {
 	text-align: center;
 	padding-top: 79px;
@@ -225,6 +228,7 @@ ul, li {
 }
 .footer-main .footer-help li .footer-callme li{
 	line-height: 24px;
+	text-align: left;
 }
 .footer-main .footer-help li .foot-ercode dt img{
 	width: 100px;
