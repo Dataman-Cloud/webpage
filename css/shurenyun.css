@@ -2703,7 +2703,21 @@ margin-bottom: 18px;
 	margin-top: 90px;
 	margin-bottom: 15px;
 }
+#product-craner .octopus-component{
+	margin: 15px 0;
+	text-align: center;
+}
 
+#product-craner .octopus-component .octopus-component-text p{
+	margin: 0 auto;
+	width: 50%;
+	padding: 10px 15px;
+	background: #dedddd;
+	color: rgba(0,0,0,0.5);
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 500;
+}
 /*octopus-summary*/
 
 #product-octopus .feature-thumbnail{
