@@ -1858,6 +1858,16 @@ section.select-app .usable a {
 @media(min-width: 769px){
 	.button{display:none;}
 }
+#enterprise-menu{
+	background: rgba(255,255,255,0.8);
+}
+#enterprise-menu a{
+	color: #000;
+	font-weight: 500;
+}
+#enterprise-menu a:hover{
+	color: #00bdda;
+}
 /*手机端导航*/
 @media(max-width: 414px){
 	.footer-slogan{
