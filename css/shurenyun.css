@@ -158,7 +158,7 @@ ul, li {
 
 /* 通用底部样式 */
 .footer-main {
-	background: #5a6879;
+	background: #242833;
 	color: rgba(255,255,255,0.6);
 	font-size: 11px;
 }
@@ -226,9 +226,20 @@ ul, li {
 	height: 55px;
 	margin-bottom: 0px;
 }
+.footer-main .footer-help li .discription{
+	margin-top: 50px;
+}
 .footer-main .footer-help li .footer-callme li{
 	line-height: 24px;
 	text-align: left;
+}
+.footer-main .footer-help li .foot-ercode{
+	display: inline-block;
+	float: left;
+	margin-top: 20px;
+}
+.footer-main .footer-help li .foot-ercode-end{
+	margin-left: 20px;
 }
 .footer-main .footer-help li .foot-ercode dt img{
 	width: 100px;
@@ -2656,6 +2667,67 @@ margin-bottom: 18px;
     margin-top: 90px;
     margin-bottom: 15px;
 	}
+
+
+/*squid-header*/
+#product-craner .header-squid {
+	background: url("../pics/squid/squid-1.png") no-repeat;
+	background-size: 100% 100%;
+	color: #FFF;
+	min-height: 650px;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	padding: 140px 0;
+}
+#product-craner .header-squid .btn-primary{
+	border-radius: 33px;
+}
+#product-craner .header-squid img {
+	width: 20%;
+	margin: 90px auto 0 auto;
+}
+@media(max-width: 768px) {
+	#product-craner .header-squid img {
+		width: 70%;
+	}
+}
+
+#product-craner .header-squid h1 {
+	font-size: 45px;
+	font-weight: 400;
+	color: #FFF;
+	text-shadow: none;
+	margin: 50px 10px 0 10px;
+	margin-bottom: 0;
+}
+#product-craner .header-squid h2 {
+	font-size: 22px;
+	color: #FFF;
+	font-weight: 300;
+	margin: 30px 10px 0 10px;
+	margin-bottom: 0;
+	opacity: .7;
+}
+#product-craner .header-squid form {
+	margin: 0 0 120px 0;
+}
+#product-craner .header-squid form a {
+	color: #FFF;
+	font-weight: 300;
+}
+#product-craner .header-squid form button {
+	width: 220px;
+	height: 65px;
+	border-radius: 5px;
+	border: 0;
+	font-size: 24px;
+	background-color: #FFF;
+	color: #000;
+	margin-top: 90px;
+	margin-bottom: 15px;
+}
 
 /*octopus-header*/
 #product-craner .octopus-header {
