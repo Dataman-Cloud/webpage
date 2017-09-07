@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top nav-main nav-scroll" id="nav">
+<nav class="navbar navbar-default navbar-fixed-top nav-main" id="nav">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" id="navbar_toggle" data-toggle="collapse"
@@ -8,123 +8,92 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="./index.html"><img src="pics/logo-shurenyun-ico2.svg" height="100%"></a>
+            <a class="navbar-brand nav-white" href="./index.html"><img src="pics/home-logo-b.png" height="100%"></a>
+            <a class="navbar-brand nav-black" style="display: none" href="./index.html"><img src="pics/home-logo-h.png" height="100%"></a>
         </div>
 
         <div class="collapse navbar-collapse in">
-            
-<form  style="display:none" class="navbar-form navbar-right">
-                
+
+            <form style="display:none" class="navbar-form navbar-right">
+
                 <a data-ng-href="{/FRONTEND_URL.demo/}">
                     <button type="button" class="btn btn-default btn-login" id="nav-btn-demo">Demo</button>
                 </a>
 
             </form>
             <div class="scroll">
-            <ul class="nav navbar-nav navbar-right">
-            	<li><a href="./index.html">首页</a></li>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./index.html">首页</a></li>
 
 
-                <li class="dropdown dropdown-product" id="product-dropdown">
-                    <a class="dropdown-click dropdown" href="#" aria-haspopup="true" aria-expanded="false">产品 <span class="caret"></span></a>
-                    <ul class="dropdown-menu " id="product-dropdown-menu">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <h2>企业版</h2>
-                                    <div>
-                                        <a href="./product.html">数人云 DM/OS</a>
-                                        <a href="./octopus.html">分布式任务调度</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <h2>开源项目</h2>
-                                    <div>
-                                        <a href="./product-crane.html">容器管理面板 Crane</a>
-                                        <a href="./product-swan.html" >Mesos 调度器 Swan</a>
-                                    </div>
-                                </div>                               
-                            </div>
-                        </div>
-                    </ul>
+                    <li class="dropdown dropdown-product" id="product-dropdown">
+                        <a class="dropdown-click dropdown" href="#" aria-haspopup="true" aria-expanded="false">产品 <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu " id="product-dropdown-menu">
+                            <li class="dropdown-header">企业版</li>
+                            <li><a href="./product.html">DM/OS</a></li>
+                            <li><a href="./octopus.html">OCTOPUS</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">开源</li>
+                            <li><a href="./product-crane.html">CRANE</a></li>
+                            <li><a href="./product-swan.html">SWAN</a></li>
+                        </ul>
 
-                </li>
+                    </li>
 
+                    <li class="dropdown dropdown-solution" id="dropdown">
+                        <a id="dropdown-click" class="dropdown-click dropdown" href="#" aria-haspopup="true"
+                           aria-expanded="false">解决方案 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" id="dropdown-menu">
+                            <li class="dropdown-header">场景</li>
+                            <li><a href="./scene-seckill.html">高并发 / 秒杀</a></li>
+                            <li><a href="./scene-containercloud.html">容器云</a></li>
+                            <li><a href="./scene-cicd.html">CI / CD</a></li>
+                            <li><a href="./scene-bigdata.html">大数据</a></li>
+                            <li><a href="./companyapp-index.html">企业应用平台</a></li>
+                            <li><a href="./scene-stresstesting.html">性能测试</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">行业</li>
+                            <li><a href="./solution-finance.html">金融</a></li>
+                            <li><a href="./solution-internet.html">互联网</a></li>
+                            <li><a href="./solution-bioinfo.html">生物信息</a></li>
+                            <li><a href="./solution-o2o.html">电商</a></li>
+                            <li><a href="./solution-operator.html">运营商</a></li>
+                            <li><a href="./solution-tradition.html">能源</a></li>
+                        </ul>
+                    </li>
 
-                <li class="dropdown dropdown-solution" id="dropdown">
-                    <a id="dropdown-click" class="dropdown-click dropdown" href="#" aria-haspopup="true" aria-expanded="false">解决方案 <span class="caret"></span></a>
-                    <ul class="dropdown-menu" id="dropdown-menu">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h2>场景</h2>
-                                    <div>
-                                        <a href="./scene-seckill.html">高并发 / 秒杀</a>
-                                        <a href="./scene-containercloud.html">容器云</a>
-                                        <a href="./scene-cicd.html">CI / CD</a>
-                                        <a href="./scene-bigdata.html">大数据</a>
-                                        <a href="./companyapp-index.html">企业应用平台</a>
-                                        <a href="./scene-stresstesting.html">性能测试</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h2>行业</h2>
-                                    <div>
-                                        <a href="./solution-finance.html">金融</a>
-                                        <a href="./solution-internet.html">互联网</a>
-                                        <a href="./solution-bioinfo.html">生物信息</a>
-                                        <a href="./solution-o2o.html">电商</a>
-                                        <a href="./solution-operator.html">运营商</a>
-                                        <a href="./solution-tradition.html">能源</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
-                </li>
+                    <li>
+                        <a href="./product-sre.html">培训</a>
+                    </li>
+                    <li>
+                        <a href="./price.html">价格</a>
+                    </li>
 
-				<li>
-                    <a href="./product-sre.html">培训</a>
-                </li>
-                <li>
-                    <a href="./price.html">价格</a>
-                </li>
-              
-                <li>
-                    <a href="http://blog.shurenyun.com/" target="_blank">博客</a>
-                </li>
-                <li>
-                    <a href="http://open.shurenyun.com/" target="_blank">社区</a>
-                </li>
-                <li class="dropdown dropdown-solution" id="solution">
-                    <a class="dropdown-about dropdown" href="#" aria-haspopup="true" aria-expanded="false">关于 <span class="caret"></span></a>
-                    <ul class="dropdown-menu solution-menu" id="solution-menu">
-                        <div class="container about-us">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h2>关于我们</h2>
-                                    <div>
-                                        <a href="./aboutus.html">公司</a>
-                                        <a href="./aboutus.html#member">核心团队</a>
-                                        <a href="./aboutus.html#partner">合作伙伴</a>
-                                        <a target="_blank" href="http://blog.shurenyun.com/tag/news">新闻</a>
-                                        <a target="_blank" href="http://blog.shurenyun.com/tag/events">活动</a>
-                                        <a target="_blank" href="http://www.lagou.com/gongsi/j37868.html">招聘</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h2>动态</h2>
-                                    <div>
-                                        <a href="./about-activity.html">活动</a>
-                                        <a href="./about-meeting.html">会议</a>
-                                        <a href="./about-news.html">新闻报道</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
-                </li>
-            </ul>
+                    <li>
+                        <a href="http://blog.shurenyun.com/" target="_blank">博客</a>
+                    </li>
+                    <li>
+                        <a href="http://open.shurenyun.com/" target="_blank">社区</a>
+                    </li>
+                    <li class="dropdown dropdown-solution" id="solution">
+                        <a class="dropdown-about dropdown" href="#" aria-haspopup="true" aria-expanded="false">关于 <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu solution-menu" id="solution-menu">
+                            <li class="dropdown-header">关于我们</li>
+                            <li><a href="./aboutus.html">公司</a></li>
+                            <li><a href="./aboutus.html#member">核心团队</a></li>
+                            <li><a target="_blank" href="http://blog.shurenyun.com/tag/news">新闻</a></li>
+                            <li><a target="_blank" href="http://blog.shurenyun.com/tag/events">活动</a></li>
+                            <li><a target="_blank" href="http://www.lagou.com/gongsi/j37868.html">招聘</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">动态</li>
+                            <li><a href="./about-activity.html">活动</a></li>
+                            <li><a href="./about-meeting.html">会议</a></li>
+                            <li><a href="./about-news.html">新闻报道</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

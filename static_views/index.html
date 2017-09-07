@@ -10,36 +10,25 @@
 <div id="index">
     <header class="header-index">
         <div class="header-container">
-            <h1>数人云 - 极轻量化 P a a S 平台</h1>
-            <h2 style="letter-spacing: 20px;">构建灵动新IT</h2>
+            <h1>构建灵动新IT</h1>
+            <h2>数人云 - 极轻量化 P a a S 平台</h2>
             <h3 style="display:none">The Ultimate Flexibility</h3>
             <div class="row version-btn">
                 <div class="dropdown group-btn enterprise" id="enterprise">
-                    <!--<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
-                    <a type="button" class="btn btn-default dropdown-toggle" id="home-btn-register"
+                    <a type="button" class="btn dropdown-toggle btn-index" id="home-btn-register"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
-                       title="数人云 DM/OS 数据中心操作系统">企业版</a>
-                    <!--</button>-->
+                       title="数人云 DM/OS 数据中心操作系统">
+                        企业版
+                    </a>
                     <ul class="dropdown-menu enterprise-menu" id="enterprise-menu" aria-labelledby="dropdownMenu1"
                         style="min-width: 125px;width: 100%;">
-                        <div class="container">
-                            <div class="column">
-                                <div style="margin-bottom: 10px;">
-                                    <div>
-                                        <a href="./product.html">数人云 DM/OS</a>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <a href="./octopus.html">分布式任务调度</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <li><a href="./product.html">DM/OS</a></li>
+                        <li><a href="./octopus.html">OCTOPUS</a></li>
+                        <li><a href="./squid.html">SQUID</a></li>
                     </ul>
                 </div>
                 <div class="group-btn">
-                    <a type="button" class="btn btn-default" href="https://www.shurenyun.com/product-swan.html"
+                    <a type="button" class="btn" href="https://www.shurenyun.com/product-swan.html"
                        id="home-btn-demo" title="数人云 Mesos 调度器 Swan">工具版</a>
                 </div>
             </div>
@@ -47,79 +36,47 @@
         </div>
         <div class="starfield"></div>
     </header>
-    <section class="product-feature" id="product-feature">
+    <section class="scenarios" id="product-feature">
         <div class="container">
-            <ul class="row">
-                <li class="col-md-4 col-sm-4 col-xs-6">
-                    <div class="media">
-                        <div class="media-left">
-                            <img class="media-object" src="pics/ico-feature-01.svg" width="100%">
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">一键伸缩</h4>
-                            <p class="media-content">秒级扩展 1000 个容器实例轻松应对高并发</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-md-4 col-sm-4 col-xs-6">
-                    <div class="media">
-                        <div class="media-left">
-                            <img class="media-object" src="pics/ico-feature-02.svg" width="100%">
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">资源池化</h4>
-                            <p class="media-content">将 Docker 化容器应用与 Spark 等大数据应用混跑在同一集群提高资源利用率</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-md-4 col-sm-4 col-xs-6">
-                    <div class="media">
-                        <div class="media-left">
-                            <img class="media-object" src="pics/ico-feature-03.svg" width="100%">
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">混合云管理</h4>
-                            <p class="media-content">支持公有云、私有云及混合云<br>支持物理机和虚拟机</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-md-4 col-sm-4 col-xs-6">
-                    <div class="media">
-                        <div class="media-left">
-                            <img class="media-object" src="pics/ico-feature-04.svg" width="100%">
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">一键部署</h4>
-                            <p class="media-content">一键部署 Docker 容器化应用，及 Spark、Hadoop 等分布式应用</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-md-4 col-sm-4 col-xs-6">
-                    <div class="media">
-                        <div class="media-left">
-                            <img class="media-object" src="pics/ico-feature-05.svg" width="100%">
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">简化运维</h4>
-                            <p class="media-content">统一监控各种应用和集群资源使用情况，简化运维管理</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-md-4 col-sm-4 col-xs-6">
-                    <div class="media">
-                        <div class="media-left">
-                            <img class="media-object" src="pics/ico-feature-06.svg" width="100%">
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">保障高可用</h4>
-                            <p class="media-content">自动迁移故障服务器上的应用实例，保障服务高可用</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="pics/ico-feature-01.svg">
+                    <h3>一键伸缩</h3>
+                    <p>秒级扩展 1000 个容器实例轻松应对高并发</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="pics/ico-feature-02.svg">
+                    <h3 style="color: #a6d132;">资源池化</h3>
+                    <p>应用隔离，极大提高数据中心资源利用率。</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="pics/crane-scenarios-1.png">
+                    <h3 style="color: #6cdbba;">Scenarios-3</h3>
+                    <p>将 Docker 化容器应用与 Spark 等大数据应用混跑在同一集群提高资源利用率</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="pics/ico-feature-04.svg">
+                    <h3>一键部署</h3>
+                    <p>一键部署 Docker 容器化应用，及 Spark、Hadoop 等分布式应用</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="pics/ico-feature-05.svg">
+                    <h3 style="color: #a6d132;">简化运维</h3>
+                    <p>统一监控各种应用和集群资源使用情况，简化运维管理</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="pics/ico-feature-06.svg">
+                    <h3 style="color: #6cdbba;">保障高可用</h3>
+                    <p>自动迁移故障服务器上的应用实例，保障服务高可用</p>
+                </div>
+            </div>
+
             <div class="text-center">
-                <a href="./product.html" class="btn btn-primary">了解详情 <i class="fa fa-arrow-circle-o-right"></i>
-                </a>
+                <a href="./product.html" class="btn btn-details"><span class="details">了解详情</span><i class="fa fa-arrow-circle-o-right"></i></a>
             </div>
         </div>
     </section>
@@ -244,48 +201,48 @@
     <section class="experience">
         <div class="container">
             <h1 class="title-size">经典案例</h1>
-            <hr>
+            <h6 class="small-title">Classic case</h6>
             <ul class="row" id="experience-bot">
                 <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/guodian@3x.png" class="logos desaturate">
+                    <img src="pics/logo/guodian@3x.png" class="logos">
                 </li>
                 <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/yunnan@3x.png" class="logos desaturate">
+                    <img src="pics/logo/yunnan@3x.png" class="logos">
                 </li>
                 <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/shangjiao@3x.png" class="logos desaturate">
+                    <img src="pics/logo/shangjiao@3x.png" class="logos">
                 </li>
                 <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/guangfa@3x.png" class="logos desaturate">
-                </li>
-                <li class="col-md-2 col-xs-4">
-
-                    <img src="pics/logo/hengfeng@3x.png" class="logos desaturate">
-                </li>
-
-                <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/sifulan@3x.png" class="logos desaturate">
-                </li>
-
-                <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/logo1@3x.png" class="logos desaturate">
-                </li>
-                <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/logo2@3x.png" class="logos desaturate">
-                </li>
-                <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/logo3@3x.png" class="logos desaturate">
-                </li>
-                <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/logo4@3x.png" class="logos desaturate">
+                    <img src="pics/logo/guangfa@3x.png" class="logos">
                 </li>
                 <li class="col-md-2 col-xs-4">
 
-                    <img src="pics/logo/logo5@3x.png" class="logos desaturate">
+                    <img src="pics/logo/hengfeng@3x.png" class="logos">
                 </li>
 
                 <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/logo6@3x.png" class="logos desaturate">
+                    <img src="pics/logo/sifulan@3x.png" class="logos">
+                </li>
+
+                <li class="col-md-2 col-xs-4">
+                    <img src="pics/logo/logo1@3x.png" class="logos">
+                </li>
+                <li class="col-md-2 col-xs-4">
+                    <img src="pics/logo/logo2@3x.png" class="logos">
+                </li>
+                <li class="col-md-2 col-xs-4">
+                    <img src="pics/logo/logo3@3x.png" class="logos">
+                </li>
+                <li class="col-md-2 col-xs-4">
+                    <img src="pics/logo/logo4@3x.png" class="logos">
+                </li>
+                <li class="col-md-2 col-xs-4">
+
+                    <img src="pics/logo/logo5@3x.png" class="logos">
+                </li>
+
+                <li class="col-md-2 col-xs-4">
+                    <img src="pics/logo/logo6@3x.png" class="logos">
                 </li>
             </ul>
             <ul class="row" id="experience-introduce">
@@ -304,8 +261,8 @@
     </section>
     <section>
         <div class="container news-trends">
-            <h1 class="title-size">新闻 & 动态</h1>
-            <hr>
+            <h1 class="title-size">新闻动态</h1>
+            <h6 class="small-title">News</h6>
             <div class="row" id="news-box">
                 <div class="dynamic col-md-5 col-sm-12 col-md-offset-1">
 

@@ -9,6 +9,8 @@
         var nav = document.querySelector(".nav");
         var body = document.querySelector('body');
         var scroll = document.querySelector('.scroll');
+        var navB = document.querySelector('.nav-black');
+        var navW = document.querySelector('.nav-white');
         btn.addEventListener('click', function () {
             scroll.style.display = 'block';
             var isDisplay = getCSSValue(cover, 'display')
@@ -65,9 +67,9 @@
                 $('#product-dropdown-menu').hide();
             });
 
-            // $('#enterprise').on("mouseleave", function () {
-            //     $('#enterprise-menu').hide();
-            // });
+            $('#enterprise').on("mouseleave", function () {
+                $('#enterprise-menu').hide();
+            });
 
             $('#enterprise-menu').bind("mouseleave", null, function () {
                 $('#enterprise-menu').hide();
@@ -88,6 +90,8 @@
                 $('.solution-menu').hide();
                 if ($(document).scrollTop() <= 0) {
                     $('nav').removeClass("nav-scroll")
+                    $('.nav-black').hide();
+                    $('.nav-white').show();
                 }
             });
         }
@@ -96,8 +100,12 @@
         $(document).on("scroll", function () {
             if ($(document).scrollTop() <= 0) {
                 $("#nav").removeClass("nav-scroll");
+                $('.nav-black').hide();
+                $('.nav-white').show();
             } else {
                 $("#nav").addClass("nav-scroll");
+                $('.nav-black').show();
+                $('.nav-white').hide();
             }
         });
 
