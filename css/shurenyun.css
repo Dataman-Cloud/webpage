@@ -72,6 +72,9 @@ ul, li {
     /*transform: rotate(-90deg);*/
     animation: bounce 4s 2s infinite;
 }
+.img-up-down{
+	animation: bounce 4s 2s infinite;
+}
 /* 通用头部样式 */
 .nav-main {
 	transition: all .6s cubic-bezier(.215, .61, .355, 1) 0s;
@@ -785,6 +788,10 @@ ul, li {
 }
 #experience-introduce{
 	padding-bottom: 90px;
+}
+.experience-introduce{
+	min-height: 120px;
+
 }
 .experience-introduce h4{
 	color: #000000;
