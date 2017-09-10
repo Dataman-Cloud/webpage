@@ -236,11 +236,84 @@
             </div>
         </div>
     </section>
+    <section>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <p>Q：是否开源？</p>
+                            <p>A：数人云任务调度基于开源基础构建扩展了企业级功能。目前暂不开源，后续是否开源视社区反馈决定。</p>
 
+                            <p>Q：无中心化设计（由任务执行者获取执行计划，并自己触发执行）和集中式调度设计（由一个调度中心统一通过远程调用的方式触发执行者）有什么考虑，更偏向于哪一个？</p>
+                            <p>A：数人云任务调度包括控制台都在内都基于无中心化设计，中心控制是ZooKeeper集群。此种设计从分布式角度考虑，避免单点故障。</p>
+
+                            <p>Q：能否详细介绍下并行执行、分片、日志，终端处理的设计实现思路？</p>
+                            <p>
+                                A：并行基于分片粒度执行，目前支持几种粒度：多机器节点执行、同个节点多个进程执行、同个进程多个线程执行。进程粒度的并行执行基于ZooKeeper进行分布式协调处理。多线程基于Java Executors做线程池调度处理。
+                                日志支持写入ZK，同时支持对接LogStash将日志放入ELK。由于任务执行控制都在平台侧，所以平台可以获取拦截日志流，并将日志进行查处记录。Java和消息作业是拦截LogBack，Shell作业基于Apache Commons Exec的LogOutputStream进行进程输出流的拦截。
+                            </p>
+                            <p>Q：任务积压如何考虑？如何标记任务执行中或执行完成，具体如何实现？</p>
+                            <p>
+                                A:任务支持超时告警和Kill的配置控制。任务积压时可以对接告警系统，Dashboard也支持显示。当任务开始执行和结束时，会由平台侧将状态写入ZK。
+                            </p>
+                            <p>Q：选择平台独立调度系统主要基于哪些考虑？支持K8S后会考虑自带的Scheduler吗？另“任务结果收集”是如何实现的？</p>
+                            <p>A：任务调度可以立即为容器Scheduler上的另外一层独立调度，而后通过Kubernetes/Marathon等API启动容器，任务结果收集可以考虑ELK方式或对接APM系统。</p>
+
+                            <p>Q：分布式任务系统中，如何根据机器系统负载及当前执行任务列表进行任务动态负载？</p>
+                            <p>A：目前做法是给任务设定一个逻辑的负载，在调度的时尽可能做到各个机器的整体负载均衡。</p>
+
+                            <p>Q：若机器挂掉，如何进行有状态任务的故障转移？</p>
+                            <p>A: 利用Zookeeper特性，当一台机器掉线后，它上面的作业会被调度到其它机器来完成。</p>
+
+                            <p>Q：任务间可能存在一些依赖，如何解决这些任务间的传递问题？</p>
+                            <p>A: 目前通过配置的方式设置任务依赖，当停止、启动作业时会给予提醒。任务间的消息传递可利用消息作业的方式进行。</p>
+
+                            <p>Q：当用户上传的是危险操作，平台如何进行自我保护？</p>
+                            <p>A:目前利用容器做隔离，当然也可以通过Chroot的方式将作业运行目录隔离。</p>
+
+                            <p>Q：若任务堵住了Hang 任务进程会表现正常，但实际业务没有处理，如何解决？</p>
+                            <p>A：需要平台级别超时控制，超过一定阈值时发送告警，再过一定阀值杀掉任务。</p>
+
+                            <p>Q：消息作业支持哪些平台，消息作业的性能表现如何？</p>
+                            <p>A：目前支持Kafka，后续也会支持RabbitMQ。至于性能，内部测试可以达到20W的TPS。机器的配置为Mem:48G，CPU:16C*2.2G。</p>
+
+                            <p>Q：是否支持在容器化的平台运行？</p>
+                            <p>A：支持，目前支持发布到Marathon、数人与SWAN、以及Kubernetes平台。</p>
+
+                            <p>Q：开源版本如EJ和Saturn，不支持认证或提供BASIC认证。企业难以使用，如何处理？</p>
+                            <p>A：数人云调度平台提供基于角色的标准认证，也支持对接LDAP的方式。</p>
+
+                            <p>Q：针对开源版本，数人云调度平台提供哪些企业级功能？</p>
+                            <p>A：提供认证授权、审计、对接Prometheus的Metrics、历史配置与版本恢复。</p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="other-info">
         <div>
-            <button disabled type="button" class="apply" style="width: 196px;background: #00b9df;color: #000;font-size: 16px;height: 50px;" onclick="window.open('https://v.qq.com/x/page/s0520pksvcy.html')">Squid DEMOO 更新中...</button>
+            <button disabled type="button" class="apply"
+                    style="width: 196px;background: #00b9df;color: #000;font-size: 16px;height: 50px;"
+                    onclick="window.open('https://v.qq.com/x/page/s0520pksvcy.html')">Squid DEMO 更新中...
+            </button>
             <p>如有疑问，请拨打咨询电话：<strong>010-64776698</strong></p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                焦点访谈
+            </button>
         </div>
     </section>
     <% include '../common_views/footer.html' %>

@@ -1,5 +1,5 @@
 <% extend "../common.html" %>
-<% block 'keywords': %>数人云，数人科技，容器，Container，容器云，云原生，镜像仓库，容器集群管理，Docker，Docker镜像，Mesos，Marathon，DCOS，PaaS平台，数人云操作系统，灰度发布 ，微服务，服务发现，持续集成，镜像构建，CICD，持续交付 ，DevOps，敏捷开发，自动化，金融容器云，高并发，秒杀，容器编排，docker compose，应用编排，弹性扩缩, 弹性伸缩, swarm, docker 1.12，SRE，serverless，作业云，弹性调度器，elastic，scheduler，high availablity，HA，数人云swan，数人云crane，caas
+<% block 'keywords': %>数人云，数人科技，容器，Container，容器云，云原生，镜像仓库，容器集群管理，Docker，Docker镜像，Mesos，Marathon，DCOS，PaaS平台，数人云操作系统，灰度发布 ，微服务，服务发现，持续集成，镜像构建，CICD，持续交付 ，DevOps，敏捷开发，自动化，金融容器云，高并发，秒杀，容器编排，docker compose，应用编排，弹性扩缩, 弹性伸缩, swarm, docker 1.12，SRE，serverless，作业云，弹性调度器，elastic，scheduler，high availablity，HA，数人云swan，数人云crane，caas，Kubernetes、K8S、持续测试、数据中心操作系统、Octopus、分布式任务调度、Squid
 <% end %>
 <% block 'description': %>数人云是国内领先的容器服务商，致力于打造轻量级PaaS平台，使用户能够在云主机、虚拟机甚至物理机上快速建立并稳定运行一个高扩展性的生产环境，将应用弹性做到极致。数人云为客户提供领先的企业级容器解决方案，帮助传统企业实现IT业务转型，更好地应对业务变化，已先后服务众多金融、能源、广电等行业。
 <% end %>
@@ -8,80 +8,134 @@
 <% block 'bodyContent': %>
 <% include '../common_views/nav.html' %>
 <div id="index">
-    <header class="header-index">
-        <div class="header-container">
-            <h1>构建灵动新IT</h1>
-            <h2>数人云 - 极轻量化 P a a S 平台</h2>
-            <h3 style="display:none">The Ultimate Flexibility</h3>
-            <div class="row version-btn">
-                <div class="dropdown group-btn enterprise" id="enterprise">
-                    <a type="button" class="btn dropdown-toggle btn-index-color" id="home-btn-register"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
-                       title="数人云 DM/OS 数据中心操作系统">
-                        企业版
-                    </a>
-                    <ul class="dropdown-menu enterprise-menu" id="enterprise-menu" aria-labelledby="dropdownMenu1"
-                        style="min-width: 125px;width: 100%;">
-                        <li><a href="./product.html">数人云 DM/OS</a></li>
-                        <li><a href="./octopus.html">分布式任务调度</a></li>
-                    </ul>
+    <header id="header-index">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators carousel-indicators-header">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner carousel-header" role="listbox">
+                <div class="item active">
+                    <div class="carousel-caption">
+                        <header class="header-index">
+                            <div class="header-container">
+                                <h1>构建灵动新IT</h1>
+                                <h2>数人云 - 极轻量化 P a a S 平台</h2>
+                                <h3 style="display:none">The Ultimate Flexibility</h3>
+                                <div class="row version-btn">
+                                    <div class="dropdown group-btn enterprise" id="enterprise">
+                                        <a type="button" class="btn dropdown-toggle btn-index-color"
+                                           id="home-btn-register"
+                                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
+                                           title="数人云 DM/OS 数据中心操作系统">
+                                            企业版
+                                        </a>
+                                        <ul class="dropdown-menu enterprise-menu" id="enterprise-menu"
+                                            aria-labelledby="dropdownMenu1"
+                                            style="min-width: 125px;width: 100%;">
+                                            <li><a href="./product.html">数人云 DM/OS</a></li>
+                                            <li><a href="./octopus.html">分布式任务调度</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="group-btn">
+                                        <a type="button" class="btn btn-index-none"
+                                           href="https://www.shurenyun.com/product-swan.html"
+                                           id="home-btn-demo" title="数人云 Mesos 调度器 Swan">工具版</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                    </div>
                 </div>
-                <div class="group-btn">
-                    <a type="button" class="btn btn-index-none" href="https://www.shurenyun.com/product-swan.html"
-                       id="home-btn-demo" title="数人云 Mesos 调度器 Swan">工具版</a>
+                <div class="item">
+                    <div class="carousel-caption">
+                        <header class="header-index header-index-banner2">
+                            <div class="header-container">
+                            </div>
+                            <div class="starfield"></div>
+                        </header>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-caption">
+                        <header class="header-index header-index-banner3">
+                            <div class="header-container">
+                                <h3 style="display:none">The Ultimate Flexibility</h3>
+                            </div>
+                            <div class="starfield"></div>
+                        </header>
+                    </div>
                 </div>
             </div>
-            <footer><a href="#product-feature"><img class="img-up-down" src="pics/squid/squid-decline.png"
-                                                    width="134px"></a></footer>
+
+            <!-- Controls -->
+            <a class="left carousel-control carousel-control-header" href="#carousel-example-generic" role="button"
+               data-slide="prev">
+                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control carousel-control-header" href="#carousel-example-generic" role="button"
+               data-slide="next">
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <div class="starfield"></div>
+        <footer><a href="#product-feature"><img class="img-up-down" src="pics/squid/squid-decline.png"
+                                                width="134px"></a></footer>
     </header>
-    <section class="scenarios" id="product-feature">
+
+    <section class="scenarios" style="background-color: #FFFFFF;">
         <div class="container">
-            <h1 class="title-size">数人云平台 DM/OS </h1>
-            <h6 class="small-title">Shurenyun platform Dataman OS</h6>
+            <h1>应用场景</h1>
             <div class="row">
-                <div class="col-md-4">
-                    <img src="pics/ico-feature-01.svg">
-                    <h3>一键伸缩</h3>
-                    <p>秒级扩展 1000 个容器实例轻松应对高并发</p>
+                <div class="col-md-2 col-md-offset-1">
+                    <img src="pics/index/yingyongchangjing_03.png">
+                    <h3>互联网业务流量爆发</h3>
                 </div>
-                <div class="col-md-4">
-                    <img src="pics/ico-feature-02.svg">
-                    <h3 style="color: #a6d132;">资源池化</h3>
-                    <p>应用隔离，极大提高数据中心资源利用率。</p>
+                <div class="col-md-2">
+                    <img src="pics/index/yingyongchangjing_05.png">
+                    <h3>自动化运维</h3>
                 </div>
-                <div class="col-md-4">
-                    <img src="pics/crane-scenarios-1.png">
-                    <h3 style="color: #6cdbba;">Scenarios-3</h3>
-                    <p>将 Docker 化容器应用与 Spark 等大数据应用混跑在同一集群提高资源利用率</p>
+                <div class="col-md-2">
+                    <img src="pics/index/yingyongchangjing_07.png">
+                    <h3>在线业务频繁发布</h3>
+                </div>
+                <div class="col-md-2">
+                    <img src="pics/index/yingyongchangjing_09.png">
+                    <h3>监控告警一体化</h3>
+                </div>
+                <div class="col-md-2">
+                    <img src="pics/index/yingyongchangjing_11.png">
+                    <h3>应用配置统一管理</h3>
                 </div>
             </div>
-
             <div class="row">
-                <div class="col-md-4">
-                    <img src="pics/ico-feature-04.svg">
-                    <h3>一键部署</h3>
-                    <p>一键部署 Docker 容器化应用，及 Spark、Hadoop 等分布式应用</p>
+                <div class="col-md-2 col-md-offset-1">
+                    <img src="pics/index/yingyongchangjing_18.png">
+                    <h3>容器集群管理应用</h3>
                 </div>
-                <div class="col-md-4">
-                    <img src="pics/ico-feature-05.svg">
-                    <h3 style="color: #a6d132;">简化运维</h3>
-                    <p>统一监控各种应用和集群资源使用情况，简化运维管理</p>
+                <div class="col-md-2">
+                    <img src="pics/index/yingyongchangjing_19.png">
+                    <h3>批量任务管理</h3>
                 </div>
-                <div class="col-md-4">
-                    <img src="pics/ico-feature-06.svg">
-                    <h3 style="color: #6cdbba;">保障高可用</h3>
-                    <p>自动迁移故障服务器上的应用实例，保障服务高可用</p>
+                <div class="col-md-2">
+                    <img src="pics/index/yingyongchangjing_20.png">
+                    <h3>单体架构到微服务</h3>
                 </div>
-            </div>
-
-            <div class="text-center">
-                <a href="./product.html" class="btn btn-details"><span class="details">了解详情</span><i
-                        class="glyphicon glyphicon-chevron-right"></i></a>
+                <div class="col-md-2">
+                    <img src="pics/index/yingyongchangjing_21.png">
+                    <h3>开发测试一体化</h3>
+                </div>
+                <div class="col-md-2">
+                    <img src="pics/index/yingyongchangjing_22.png">
+                    <h3>Unix to Linux</h3>
+                </div>
             </div>
         </div>
     </section>
+
     <section class="index-eams">
         <div class="container">
             <h1 class="title-size">企业应用管理架构</h1>
@@ -103,6 +157,117 @@
             </div>
         </div>
     </section>
+
+    <section class="index-dmos">
+        <div class="container">
+            <h1 style="font-weight: 300; color: #333">数人云平台 DM/OS </h1>
+            <div id="carousel-about" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img src="pics/index-feature-01.png">
+                                </div>
+                                <div class="dmos-text">
+                                    <h5 class="dmos-title">权限管理</h5>
+                                    <p>根据企业规模、自定义用户组，实现不同 机构成员之间的协作与隔离</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img src="pics/index-feature-02.png">
+                                </div>
+                                <div class="dmos-text">
+                                    <h5>多级监控</h5>
+                                    <p>针对平台、资源、应用的不同需求，提供 多级监控方式，快速查看CPU、内存、IO 等多项指标</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img src="pics/index-feature-03.png">
+                                </div>
+                                <div class="dmos-text">
+                                    <h5>日志收集及展示</h5>
+                                    <p>收集标准输出日志及文件日志，并提供集 中统一的日志查询与展示环境</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img src="pics/index-feature-04.png">
+                                </div>
+                                <div class="dmos-text">
+                                    <h5>弹性扩容</h5>
+                                    <p>定义扩容策略，通过增加或删减容器实例 来实现业务能力的弹性伸缩，快速应对业 务突发增长</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img src="pics/index-feature-05.png">
+                                </div>
+                                <div class="dmos-text">
+                                    <h5 class="dmos-title">权限管理</h5>
+                                    <p>根据企业规模、自定义用户组，实现不同 机构成员之间的协作与隔离</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img src="pics/index-feature-06.png">
+                                </div>
+                                <div class="dmos-text">
+                                    <h5>多级监控</h5>
+                                    <p>针对平台、资源、应用的不同需求，提供 多级监控方式，快速查看CPU、内存、IO 等多项指标</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img src="pics/index-feature-07.png">
+                                </div>
+                                <div class="dmos-text">
+                                    <h5>日志收集及展示</h5>
+                                    <p>收集标准输出日志及文件日志，并提供集 中统一的日志查询与展示环境</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img src="pics/index-feature-08.png">
+                                </div>
+                                <div class="dmos-text">
+                                    <h5>弹性扩容</h5>
+                                    <p>定义扩容策略，通过增加或删减容器实例 来实现业务能力的弹性伸缩，快速应对业 务突发增长</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+
+
+                <a class="left carousel-control carousel-control-dmos" href="#carousel-about" role="button"
+                   data-slide="prev"
+                   style="margin-top: -52px;">
+                    <span></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-about" role="button" data-slide="next"
+                   style="margin-top: -52px;">
+                    <span></span>
+                </a>
+            </div>
+            <div class="text-center">
+                <a href="./product.html" class="btn btn-details"><span class="details">了解详情</span><i
+                        class="glyphicon glyphicon-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    
     <section class="tec-com">
         <div class="container">
             <h1 class="title-size">技术组件</h1>
@@ -226,7 +391,8 @@
                 <li class="col-md-6 experience-introduce">
                     <h4>某大型证券交易所</h4>
                     <p>
-                        完成开发、集成、仿真、预发布生产五大环境建设，实现界面化部署和细粒度的资源分配，构建对进群、主机、进程多层监控体系，一期借助容器云搭建端到端高效软件过程平台，实现 CI/CD，二期着重改进优化各功能模块，新增测试类型。
+                        完成开发、集成、仿真、预发布生产五大环境建设，实现界面化部署和细粒度的资源分配，构建对进群、主机、进程多层监控体系，一期借助容器云搭建端到端高效软件过程平台，实现
+                        CI/CD，二期着重改进优化各功能模块，新增测试类型。
                     </p>
                 </li>
                 <li class="col-md-6 experience-introduce">
