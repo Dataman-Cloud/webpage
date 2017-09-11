@@ -140,6 +140,9 @@ ul, li {
 .nav-scroll .dropdown-header{
 	color: #333333;
 }
+.dropdown-menu li a{
+	text-shadow: none;
+}
 .dropdown-menu>li>a:hover{
 	background: none;
 	color: #30b7d5;
@@ -834,7 +837,6 @@ ul, li {
 	color: #ffffff;
 	background:#3ac2e2;
 	box-shadow: 0 0 10px rgba(58, 194, 226, .2)!important;
-;
 }
 .header-index .version-btn .btn-index-none{
 	border-radius: 20px;
@@ -2246,12 +2248,9 @@ section.select-app .usable a {
 @media(min-width: 769px){
 	.button{display:none;}
 }
-#enterprise-menu{
-	background: rgba(255,255,255,0.8);
-}
 #enterprise-menu a{
 	color: #000;
-	font-weight: 500;
+	font-weight: normal;
 }
 #enterprise-menu a:hover{
 	color: #00bdda;
@@ -3861,7 +3860,7 @@ margin-bottom: 18px;
 }
 #product-craner .scenarios h3 {
 	font-size: 18px;
-	font-weight: 200;
+	font-weight: normal;
 	margin: 35px 0;
 	color: #6e6e6e;
 }
