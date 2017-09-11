@@ -9,7 +9,7 @@
 <% include '../common_views/nav.html' %>
 <div id="index">
     <header id="header-index">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div id="carousel-example-generic" class="carousel slide" style="height: 650px" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators carousel-indicators-header">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -49,25 +49,25 @@
                         </header>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="carousel-caption">
-                        <header class="header-index header-index-banner2">
-                            <div class="header-container">
-                            </div>
-                            <div class="starfield"></div>
-                        </header>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="carousel-caption">
-                        <header class="header-index header-index-banner3">
-                            <div class="header-container">
-                                <h3 style="display:none">The Ultimate Flexibility</h3>
-                            </div>
-                            <div class="starfield"></div>
-                        </header>
-                    </div>
-                </div>
+                <!--<div class="item">-->
+                    <!--<div class="carousel-caption">-->
+                        <!--<header class="header-index header-index-banner2">-->
+                            <!--<div class="header-container">-->
+                            <!--</div>-->
+                            <!--<div class="starfield"></div>-->
+                        <!--</header>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="item">-->
+                    <!--<div class="carousel-caption">-->
+                        <!--<header class="header-index header-index-banner3">-->
+                            <!--<div class="header-container">-->
+                                <!--<h3 style="display:none">The Ultimate Flexibility</h3>-->
+                            <!--</div>-->
+                            <!--<div class="starfield"></div>-->
+                        <!--</header>-->
+                    <!--</div>-->
+                <!--</div>-->
             </div>
 
             <!-- Controls -->
@@ -139,7 +139,6 @@
     <section class="index-eams">
         <div class="container">
             <h1 class="title-size">企业应用管理架构</h1>
-            <h6 class="small-title">Enterprise architecture management</h6>
             <div class="emas-center-round">
                 <div class="emas-text emas-octopus">
                     <h5><a href="#">Octopus</a></h5>
@@ -148,6 +147,21 @@
                 <div class="emas-text emas-squid">
                     <h5><a href="#">Squid</a></h5>
                     <p>灵活高效的一体化微服务平台， 轻松应对高并发。</p>
+                </div>
+                <div class="emas-text emas-container">
+                    <h5><a href="#">容器</a></h5>
+                </div>
+                <div class="emas-text emas-service">
+                    <h5><a href="#">微服务</a></h5>
+                </div>
+                <div class="emas-text emas-devops">
+                    <h5><a href="#">DevOps</a></h5>
+                </div>
+                <div class="emas-text emas-open">
+                    <h5><a href="#">开源</a></h5>
+                </div>
+                <div class="emas-text emas-sre">
+                    <h5><a href="#">SRE</a></h5>
                 </div>
                 <div class="emas-round">
                     <img src="pics/index-emas-logo.png">
@@ -211,8 +225,8 @@
                                     <img src="pics/index-feature-05.png">
                                 </div>
                                 <div class="dmos-text">
-                                    <h5 class="dmos-title">权限管理</h5>
-                                    <p>根据企业规模、自定义用户组，实现不同 机构成员之间的协作与隔离</p>
+                                    <h5 class="dmos-title">混合云管理</h5>
+                                    <p>支持混合云的生产环境，可创建多个逻辑集群，满足企业的复杂资源规划需求</p>
                                 </div>
                             </div>
                             <div class="col-xs-6 col-md-3 index-dmos-item">
@@ -220,8 +234,8 @@
                                     <img src="pics/index-feature-06.png">
                                 </div>
                                 <div class="dmos-text">
-                                    <h5>多级监控</h5>
-                                    <p>针对平台、资源、应用的不同需求，提供 多级监控方式，快速查看CPU、内存、IO 等多项指标</p>
+                                    <h5>高可用，故障恢复</h5>
+                                    <p>平台支持高可用部署，确保平台服务连续性要求；业务应用通过多容器实例部署，确保业务连续性要求</p>
                                 </div>
                             </div>
                             <div class="col-xs-6 col-md-3 index-dmos-item">
@@ -229,8 +243,8 @@
                                     <img src="pics/index-feature-07.png">
                                 </div>
                                 <div class="dmos-text">
-                                    <h5>日志收集及展示</h5>
-                                    <p>收集标准输出日志及文件日志，并提供集 中统一的日志查询与展示环境</p>
+                                    <h5>多应用混合部署</h5>
+                                    <p>采用Mesos技术进行资源调度，支持混合部署容器服务，大数据服务等多种应用</p>
                                 </div>
                             </div>
                             <div class="col-xs-6 col-md-3 index-dmos-item">
@@ -238,8 +252,8 @@
                                     <img src="pics/index-feature-08.png">
                                 </div>
                                 <div class="dmos-text">
-                                    <h5>弹性扩容</h5>
-                                    <p>定义扩容策略，通过增加或删减容器实例 来实现业务能力的弹性伸缩，快速应对业 务突发增长</p>
+                                    <h5>一键部署</h5>
+                                    <p>从代码构建到应用发布上线，大大简化用户的应用发布过程，提高发布效率</p>
                                 </div>
                             </div>
                         </div>
@@ -267,11 +281,10 @@
         </div>
     </section>
 
-    
+
     <section class="tec-com">
         <div class="container">
             <h1 class="title-size">技术组件</h1>
-            <h6 class="small-title">Technology components</h6>
             <ul class="row tec-comtwo">
                 <li class="col-md-4 col-xs-6">
                     <div>
@@ -343,69 +356,72 @@
     <section class="experience">
         <div class="container">
             <h1 class="title-size">经典案例</h1>
-            <h6 class="small-title">Classic case</h6>
-            <ul class="row" id="experience-bot">
-                <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/guodian@3x.png" class="logos">
-                </li>
-                <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/yunnan@3x.png" class="logos">
-                </li>
-                <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/shangjiao@3x.png" class="logos">
-                </li>
-                <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/guangfa@3x.png" class="logos">
-                </li>
-                <li class="col-md-2 col-xs-4">
+            <div class="row" style="width: 100%">
+                <ul class="col-md-6 col-xs-4" id="experience-bot">
+                    <li class="col-md-4 col-xs-4">
+                        <img src="pics/logo/guodian@3x.png" class="logos">
+                    </li>
+                    <li class="col-md-4 col-xs-4">
+                        <img src="pics/logo/yunnan@3x.png" class="logos">
+                    </li>
+                    <li class="col-md-4 col-xs-4">
+                        <img src="pics/logo/shangjiao@3x.png" class="logos">
+                    </li>
+                    <li class="col-md-4 col-xs-4">
+                        <img src="pics/logo/guangfa@3x.png" class="logos">
+                    </li>
+                    <li class="col-md-4 col-xs-4">
 
-                    <img src="pics/logo/hengfeng@3x.png" class="logos">
-                </li>
+                        <img src="pics/logo/hengfeng@3x.png" class="logos">
+                    </li>
 
-                <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/sifulan@3x.png" class="logos">
-                </li>
+                    <li class="col-md-4 col-xs-4">
+                        <img src="pics/logo/sifulan@3x.png" class="logos">
+                    </li>
 
-                <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/logo1@3x.png" class="logos">
-                </li>
-                <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/logo2@3x.png" class="logos">
-                </li>
-                <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/logo3@3x.png" class="logos">
-                </li>
-                <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/logo4@3x.png" class="logos">
-                </li>
-                <li class="col-md-2 col-xs-4">
+                    <li class="col-md-4 col-xs-4">
+                        <img src="pics/logo/logo1@3x.png" class="logos">
+                    </li>
+                    <li class="col-md-4 col-xs-4">
+                        <img src="pics/logo/logo2@3x.png" class="logos">
+                    </li>
+                    <li class="col-md-4 col-xs-4">
+                        <img src="pics/logo/logo3@3x.png" class="logos">
+                    </li>
+                    <li class="col-md-4 col-xs-4">
+                        <img src="pics/logo/logo4@3x.png" class="logos">
+                    </li>
+                    <li class="col-md-4 col-xs-4">
 
-                    <img src="pics/logo/logo5@3x.png" class="logos">
-                </li>
-
-                <li class="col-md-2 col-xs-4">
-                    <img src="pics/logo/logo6@3x.png" class="logos">
-                </li>
-            </ul>
-            <ul class="row" id="experience-introduce">
-                <li class="col-md-6 experience-introduce">
-                    <h4>某大型证券交易所</h4>
-                    <p>
-                        完成开发、集成、仿真、预发布生产五大环境建设，实现界面化部署和细粒度的资源分配，构建对进群、主机、进程多层监控体系，一期借助容器云搭建端到端高效软件过程平台，实现
-                        CI/CD，二期着重改进优化各功能模块，新增测试类型。
-                    </p>
-                </li>
-                <li class="col-md-6 experience-introduce">
-                    <h4>某大型能源国企</h4>
-                    <p>提供 PaaS 平台技术支撑，在容器云产品基础上与 OpenStack 进行深入集成，提供完整的云环境治理管控平台能力，提升信息化项目交付的自动化、标准化水平。</p>
-                </li>
-            </ul>
+                        <img src="pics/logo/logo5@3x.png" class="logos">
+                    </li>
+                    <li class="col-md-4 col-xs-4">
+                        <img src="pics/logo/logo6@3x.png" class="logos">
+                    </li>
+                </ul>
+                <ul class="col-md-6 col-xs-4" id="experience-introduce">
+                    <li class="col-md-12 experience-introduce">
+                        <h4>某大型证券交易所</h4>
+                        <p>完成开发、集成、仿真、预发布生产五大环境建设</p>
+                        <p>实现界面化部署和细粒度的资源分配，</p>
+                        <p>构建对进群、主机、进程多层监控体系</p>
+                        <p>一期借助容器云搭建端到端高效软件过程平台，实现 CI/CD</p>
+                        <p>二期着重改进优化各功能模块，新增测试类型</p>
+                    </li>
+                    <li class="col-md-12 experience-introduce">
+                        <h4>某大型能源国企</h4>
+                        <p>提供 PaaS 平台技术支撑</p>
+                        <p>在容器云产品基础上与 OpenStack 进行深入集成</p>
+                        <p>提供完整的云环境治理管控平台能力</p>
+                        <p>提升信息化项目交付的自动化、标准化水平</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <section>
         <div class="container news-trends">
             <h1 class="title-size">新闻动态</h1>
-            <h6 class="small-title">News</h6>
             <div class="row" id="news-box">
                 <div class="dynamic col-md-5 col-sm-12 col-md-offset-1">
 

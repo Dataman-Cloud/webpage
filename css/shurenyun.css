@@ -174,7 +174,7 @@ ul, li {
 }
 /* 通用底部样式 */
 .footer-main {
-	background: #162038;
+	background: #1d1e20;
 	color: rgba(255,255,255,0.6);
 	font-size: 11px;
 }
@@ -183,7 +183,7 @@ ul, li {
 }
 .footer-main .footer-consulting{
 	padding: 35px 0;
-	background: #404b59;
+	background: #1a1a1a;
 }
 .footer-main .footer-other-info {
 	text-align: center;
@@ -356,7 +356,11 @@ ul, li {
 	padding: 30px;
 	width: 100%;
 	min-height: 666px;
-	background: #f7f9fc;
+	background: #232427;
+}
+#index .index-eams h1{
+	color: #fff;
+	margin-bottom: 50px;
 }
 #index .index-eams .emas-center-round{
 	position: absolute;
@@ -399,11 +403,32 @@ ul, li {
 	left: 500px;
 	top: 0px;
 }
+#index .index-eams .emas-center-round .emas-container{
+	color: #ffffff;
+	left: 180px;
+	top: -80px;
+}
+#index .index-eams .emas-center-round .emas-service{
+	left: 380px;
+	top: -34px;
+}
+#index .index-eams .emas-center-round .emas-devops{
+	left: 29px;
+	top: 21px;
+}
+#index .index-eams .emas-center-round .emas-open{
+	left: 160px;
+	top: 198px;
+}
+#index .index-eams .emas-center-round .emas-sre{
+	left: 400px;
+	top: 110px;
+}
 #index .index-eams .emas-round{
 	padding: 20px;
 	position: relative;
-	top:-67px;
-	left: 100px;
+	top:-196px;
+	left: 103px;
 	width: 300px;
 	height: 300px;
 	border-radius: 150px;
@@ -456,6 +481,11 @@ ul, li {
 	margin-bottom: 50px;
 	margin-left: auto;
 	color: #b3b3b3;
+}
+#index .scenarios h3{
+	font-size: 14px;
+	font-weight: normal;
+	color: #010101;
 }
 #index .index-dmos .text-center{
 	position: relative;
@@ -659,7 +689,8 @@ ul, li {
 	left: 0;
 	top: 0;
 	right: 0;
-	width: 99%;
+	width: 100%;
+	padding-top: 0;
 }
 .carousel-caption img {
 	margin-top: 20px;
@@ -691,9 +722,7 @@ ul, li {
 	top:325px;
 }
 .carousel-header{
-	min-height: 650px;
-	width: 101%;
-	top: -10px;
+	min-height: 700px;
 }
 .header-index h1{
 	text-align: center;
@@ -724,15 +753,13 @@ ul, li {
 	margin: 0 5px;
 }
 .header-index {
-	background: url('../pics/index-banner.png') no-repeat bottom center;
+	background: #243494 url('../pics/index-banner.png') no-repeat bottom center;
 	background-size: cover;
 	color: #FFF;
-	min-height: 750px;
-	height: 100%;
+	height: 700px!important;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
-	background-color:#243494
 }
 .header-index-banner2{
 	background: url('../pics/index-banner2.png') no-repeat bottom center;
@@ -809,6 +836,10 @@ ul, li {
 	margin-left: 10px;
 	margin-right: 10px;
 }
+#header-index{
+	min-height: 650px;
+	width: 100%;
+ }
 #header-index footer {
 	text-align: center;
 	bottom: 100px;
@@ -903,16 +934,18 @@ ul, li {
 
 /* 首页样式 --- 成功经验 */
 .experience {
-	background-color: #ffffff
+	background: #1a1a1a url("../pics/index-experience.png") no-repeat bottom center;
+	background-size: auto 500px;
 }
-.experience h1 {
-	padding-top: 90px;
-}
-.experience hr {
-	margin-bottom: 85px!important;
+#index .experience h1 {
+	line-height: 200px;
+	color: #FFF;
 }
 #experience-bot{
 	padding-bottom: 20px;
+}
+#experience-bot li{
+	padding-bottom: 43px;
 }
 #experience-introduce{
 	padding-bottom: 90px;
@@ -922,22 +955,24 @@ ul, li {
 	min-height: 120px;
 
 }
+.experience-introduce p::before{
+	content: '';
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	border-radius: 2px;
+	background: #3ac2e2;
+	margin: 3px 8px 3px 3px;
+}
+.experience-introduce h4,.experience-introduce p{
+	padding-left: 20px;
+}
 .experience-introduce h4{
-	color: #000000;
+	color: #3ac2e2;
 }
 .experience-introduce p{
 	font-weight: 400;
 	color: #b3b3b3;
-}
-.experience-introduce:hover{
-	background: #fff;
-	box-shadow: 0 0 20px rgba(58, 194, 226, .2);
-}
-.experience-introduce:hover h4{
-	color: #3ac2e2;
-}
-.experience-introduce:hover p{
-	color: #9cdcee;
 }
 .logos {
 	width: 160px;
@@ -2406,6 +2441,7 @@ section.select-app .usable a {
 
 	.title-size {
 		font-size: 24px !important;
+		color: #ffffff;
 	}
 
 	/*.resolve-question h1{*/
@@ -2648,6 +2684,9 @@ section.select-app .usable a {
 		padding-bottom: 40px;
 	}
 	#experience-bot{
+		padding-bottom: 45px;
+	}
+	#experience-bot li{
 		padding-bottom: 45px;
 	}
 	.experience h1{
@@ -3036,7 +3075,6 @@ margin-bottom: 18px;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
-	padding: 140px 0;
 }
 #product-craner .header-squid .btn-primary{
 	border-radius: 33px;
