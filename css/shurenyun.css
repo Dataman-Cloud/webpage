@@ -375,7 +375,9 @@ ul, li {
 	position: relative;
 	width: 170px;
 }
-
+#index .index-eams .emas-center-round .emas-text h5 a{
+	color: #fff;
+}
 #index .index-eams .emas-center-round .emas-text h5:hover a{
 	text-decoration: none;
 	transition: all .5s;
@@ -729,10 +731,10 @@ ul, li {
 	color: #ffffff;
 }
 .header-index h2{
-	color: #b3b3b3;
+	color: #ffffff;
 }
 .carousel-indicators-header{
-	bottom: 130px;
+	bottom: 95px;
 }
 .carousel-indicators-header li{
 	width: 10px;
@@ -765,9 +767,49 @@ ul, li {
 	background: url('../pics/index-banner2.png') no-repeat bottom center;
 	background-size: cover;
 }
+.header-index-banner2 .header-container h1{
+	font-size: 50px;
+}
+.header-index-banner2 .header-container hr{
+	border: 1px solid #3ac2e2;
+	/*color: #3ac2e2;*/
+	width: 80px;
+}
+.header-index-banner2 .header-container p{
+	margin-top: 25px;
+	text-align: center;
+	color: #ffffff;
+	font-weight: normal;
+}
 .header-index-banner3{
 	background: url('../pics/index-banner3.png') no-repeat bottom center;
 	background-size: cover;
+}
+.header-index-banner3 .header-container h1 span{
+	display: inline-block;
+}
+.header-index-banner3 .header-container h1 .bar{
+	border: 3px solid #ffffff;
+	width: 1px;
+	height: 100px;
+	margin: 0 15px;
+}
+.header-index-banner3 .header-container h1 .header-tit{
+	font-size: 150px;
+}
+.header-index-banner3 .header-container h1 .header-text{
+	font-weight: 200;
+	text-align: left;
+	font-size: 40px;
+	line-height: 58px;
+}
+.header-index-banner3 .header-container p{
+	margin: -10px auto;
+	width: 49%;
+	font-size: 37px;
+	text-align: left;
+	color: #ffffff;
+	font-weight: normal;
 }
 .header-container {
 	color: rgba(255,255,255,.9);
@@ -842,7 +884,7 @@ ul, li {
  }
 #header-index footer {
 	text-align: center;
-	bottom: 100px;
+	bottom: 30px;
 	position: relative;
 	width: 100%;
 }

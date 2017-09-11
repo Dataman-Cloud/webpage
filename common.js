@@ -46,6 +46,7 @@
                 $('#solution-menu').hide();
                 $('#product-dropdown-menu').hide();
                 $('#enterprise-menu').hide();
+                $('#open-menu').hide();
             });
             $('#dropdown-menu').bind("mouseleave", null, function () {
                 $('#dropdown-menu').hide();
@@ -73,6 +74,21 @@
 
             $('#enterprise-menu').bind("mouseleave", null, function () {
                 $('#enterprise-menu').hide();
+            });
+
+
+            $('#open').on("mouseover", function () {
+                $('#open-menu').show();
+                $('#dropdown-menu').hide();
+                $('#product-dropdown-menu').hide();
+            });
+
+            $('#open').on("mouseleave", function () {
+                $('#open-menu').hide();
+            });
+
+            $('#open-menu').bind("mouseleave", null, function () {
+                $('#open-menu').hide();
             });
 
             $('#product-dropdown').on("mouseover", function () {

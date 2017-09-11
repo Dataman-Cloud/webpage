@@ -23,28 +23,31 @@
                             <div class="header-container">
                                 <h1>构建灵动新IT</h1>
                                 <h2>数人云 - 极轻量化 P a a S 平台</h2>
-                                <h3 style="display:none">The Ultimate Flexibility</h3>
-                                <div class="row version-btn">
-                                    <div class="dropdown group-btn enterprise" id="enterprise">
+                                <ul class="row version-btn">
+                                    <li class="dropdown group-btn enterprise" id="enterprise">
                                         <a type="button" class="btn dropdown-toggle btn-index-color"
                                            id="home-btn-register"
-                                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
-                                           title="数人云 DM/OS 数据中心操作系统">
+                                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                             企业版
                                         </a>
                                         <ul class="dropdown-menu enterprise-menu" id="enterprise-menu"
-                                            aria-labelledby="dropdownMenu1"
-                                            style="min-width: 125px;width: 100%;">
+                                            aria-labelledby="dropdownMenu1">
                                             <li><a href="./product.html">数人云 DM/OS</a></li>
                                             <li><a href="./octopus.html">分布式任务调度</a></li>
+                                            <li><a href="./squid.html">高并发微服务平台</a></li>
                                         </ul>
-                                    </div>
-                                    <div class="group-btn">
-                                        <a type="button" class="btn btn-index-none"
-                                           href="https://www.shurenyun.com/product-swan.html"
-                                           id="home-btn-demo" title="数人云 Mesos 调度器 Swan">工具版</a>
-                                    </div>
-                                </div>
+                                    </li>
+                                    <li class="dropdown group-btn open" id="open">
+                                        <a type="button" class="btn dropdown-toggle btn-index-none"
+                                           id="home-btn-demo" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">开源版
+                                        </a>
+                                        <ul class="dropdown-menu open-menu" id="open-menu"
+                                            aria-labelledby="dropdownMenu1" style="display: none">
+                                            <li><a href="./product-crane.html">容器管理面板 Crane</a></li>
+                                            <li><a href="./product-swan.html">Mesos 调度器 Swan</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                         </header>
                     </div>
@@ -53,8 +56,11 @@
                     <div class="carousel-caption">
                         <header class="header-index header-index-banner2">
                             <div class="header-container">
+                                <h1>领先的云计算开源技术实践者</h1>
+                                <hr>
+                                <p>丰富深入的行业案例沉淀、成熟可靠的生产系统产品验证、</p>
+                                <p>资深分布式应用研发团队、开放多样的开源技术布道。</p>
                             </div>
-                            <div class="starfield"></div>
                         </header>
                     </div>
                 </div>
@@ -62,9 +68,9 @@
                     <div class="carousel-caption">
                         <header class="header-index header-index-banner3">
                             <div class="header-container">
-                                <h3 style="display:none">The Ultimate Flexibility</h3>
+                                <h1><span class="header-tit">EAMS</span><span class="bar"></span><span class="header-text">企业应用<br>架构管理系统</span></h1>
+                                <p>全面升级为EAMS企业应用架构管理体系，助力企业向新IT架构转型</p>
                             </div>
-                            <div class="starfield"></div>
                         </header>
                     </div>
                 </div>
@@ -84,6 +90,9 @@
         </div>
         <footer><a href="#product-feature"><img class="img-up-down" src="pics/squid/squid-decline.png"
                                                 width="134px"></a></footer>
+        <!--<div class="starfield">-->
+            <!--<canvas class="starfield" width="1400" height="650"></canvas>-->
+        <!--</div>-->
     </header>
 
     <section class="scenarios" style="background-color: #FFFFFF;">
@@ -141,11 +150,11 @@
             <h1 class="title-size">企业应用管理架构</h1>
             <div class="emas-center-round">
                 <div class="emas-text emas-octopus">
-                    <h5><a href="#">Octopus</a></h5>
+                    <h5><a href="./octopus.html">Octopus</a></h5>
                     <p>高效可靠的弹性调度云， 让你的任务更灵活自如。</p>
                 </div>
                 <div class="emas-text emas-squid">
-                    <h5><a href="#">Squid</a></h5>
+                    <h5><a href="./squid.html">Squid</a></h5>
                     <p>灵活高效的一体化微服务平台， 轻松应对高并发。</p>
                 </div>
                 <div class="emas-text emas-container">
@@ -165,8 +174,8 @@
                 </div>
                 <div class="emas-round">
                     <img src="pics/index-emas-logo.png">
-                    <h3>EMAS</h3>
-                    <P>数人云企业应用架构管理（EAMS）体系，旨在 帮助企业保持传统IT优势的同时，赋以 更好的敏捷性和自动化，跨过 两者的鸿沟。</P>
+                    <h3>EAMS</h3>
+                    <P>数人云企业应用架构管理（EAMS）体系，旨在帮助企业保持传统IT优势的同时，赋以更好的敏捷性和自动化，跨过两者的鸿沟。</P>
                 </div>
             </div>
         </div>
@@ -185,7 +194,7 @@
                                 </div>
                                 <div class="dmos-text">
                                     <h5 class="dmos-title">权限管理</h5>
-                                    <p>根据企业规模、自定义用户组，实现不同 机构成员之间的协作与隔离</p>
+                                    <p>根据企业规模、自定义用户组，实现不同机构成员之间的协作与隔离</p>
                                 </div>
                             </div>
                             <div class="col-xs-6 col-md-3 index-dmos-item">
@@ -194,7 +203,7 @@
                                 </div>
                                 <div class="dmos-text">
                                     <h5>多级监控</h5>
-                                    <p>针对平台、资源、应用的不同需求，提供 多级监控方式，快速查看CPU、内存、IO 等多项指标</p>
+                                    <p>针对平台、资源、应用的不同需求，提供多级监控方式，快速查看CPU、内存、IO 等多项指标</p>
                                 </div>
                             </div>
                             <div class="col-xs-6 col-md-3 index-dmos-item">
@@ -203,7 +212,7 @@
                                 </div>
                                 <div class="dmos-text">
                                     <h5>日志收集及展示</h5>
-                                    <p>收集标准输出日志及文件日志，并提供集 中统一的日志查询与展示环境</p>
+                                    <p>收集标准输出日志及文件日志，并提供集中统一的日志查询与展示环境</p>
                                 </div>
                             </div>
                             <div class="col-xs-6 col-md-3 index-dmos-item">
@@ -212,7 +221,7 @@
                                 </div>
                                 <div class="dmos-text">
                                     <h5>弹性扩容</h5>
-                                    <p>定义扩容策略，通过增加或删减容器实例 来实现业务能力的弹性伸缩，快速应对业 务突发增长</p>
+                                    <p>定义扩容策略，通过增加或删减容器实例来实现业务能力的弹性伸缩，快速应对业 务突发增长</p>
                                 </div>
                             </div>
                         </div>
@@ -403,7 +412,7 @@
                     <li class="col-md-12 experience-introduce">
                         <h4>某大型证券交易所</h4>
                         <p>完成开发、集成、仿真、预发布生产五大环境建设</p>
-                        <p>实现界面化部署和细粒度的资源分配，</p>
+                        <p>实现界面化部署和细粒度的资源分配</p>
                         <p>构建对进群、主机、进程多层监控体系</p>
                         <p>一期借助容器云搭建端到端高效软件过程平台，实现 CI/CD</p>
                         <p>二期着重改进优化各功能模块，新增测试类型</p>
