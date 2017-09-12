@@ -56,6 +56,9 @@ ul, li {
 	float: right;
 	/*margin-right: -95px;*/
 }
+.navbar-default .navbar-toggle{
+	background: #ccc;
+}
 .fa-up-down{
 	display: block;
     position: absolute;
@@ -1118,15 +1121,6 @@ ul, li {
 }
 
 /* 首页样式 --- 成功经验 */
-.experience {
-	background: #1a1a1a url("../pics/index-experience.png") no-repeat bottom center;
-	background-size: auto 500px;
-}
-#index .experience h1 {
-	line-height: 200px;
-	margin-bottom: 50px;
-	color: #FFF;
-}
 #experience-bot{
 	padding-bottom: 20px;
 }
@@ -1141,41 +1135,93 @@ ul, li {
 	min-height: 120px;
 
 }
-.experience-introduce p::before{
-	content: '';
-	display: inline-block;
-	width: 4px;
-	height: 4px;
-	border-radius: 2px;
-	background: #3ac2e2;
-	margin: 3px 8px 3px 3px;
+@media(min-width: 768px){
+	.experience-mobile{
+		display: none;
+	}
+	#index .experience h1 {
+		line-height: 200px;
+		margin-bottom: 50px;
+		color: #FFF;
+	}
+	#index .experience {
+		background: #1a1a1a url("../pics/index-experience.png") no-repeat bottom center;
+		background-size: auto 500px;
+	}
+	#index .experience-introduce p::before{
+		content: '';
+		display: inline-block;
+		width: 4px;
+		height: 4px;
+		border-radius: 2px;
+		background: #3ac2e2;
+		margin: 3px 8px 3px 3px;
+	}
+	.experience-introduce h4,.experience-introduce p{
+		padding-left: 20px;
+	}
+	.experience-introduce h4{
+		color: #3ac2e2;
+	}
+	.experience-introduce p{
+		font-weight: 400;
+		color: #b3b3b3;
+	}
+	.logos {
+		width: 160px;
+		text-align: center;
+		cursor: pointer;
+	}
 }
-.experience-introduce h4,.experience-introduce p{
-	padding-left: 20px;
-}
-.experience-introduce h4{
-	color: #3ac2e2;
-}
-.experience-introduce p{
-	font-weight: 400;
-	color: #b3b3b3;
-}
-.logos {
-	width: 160px;
-	text-align: center;
-	cursor: pointer;
-}
-.experience li a:hover {
-	background-color: #7a7a7a;
-}
-.experience li a:hover .logo {
-	display: block;
-}
-.experience li a:hover em {
-	display: none;
-}
-.experience li em {
-	font-style: normal;
+@media (max-width: 768px) {
+	#index .experience{
+		display: none;
+	}
+	#index .experience-mobile{
+		min-height: 850px;
+		background: #1a1a1a url("../pics/index-experience-mobile.png") no-repeat 0 87px;
+		background-size: 100% 342px;
+	}
+	#index .experience-mobile h1{
+		line-height: 100px;
+		color: #ffffff;
+	}
+	#index .experience-mobile .experience-mobile-logos-box{
+		height: 342px;
+	}
+	#index .experience-mobile .experience-mobile-logos{
+		text-align: center;
+	}
+	#index .experience-mobile .experience-mobile-logos li{
+		display: inline-block;
+		margin: 10px;
+	}
+	#index .experience-mobile .logos-mobile{
+		width: 90px;
+	}
+	#index .experience-introduce-mobile-box{
+		margin-top: 50px;
+	}
+	#index .experience-introduce-mobile p::before{
+		content: '';
+		display: inline-block;
+		width: 4px;
+		height: 4px;
+		border-radius: 2px;
+		background: #3ac2e2;
+		margin: 3px 8px 3px 3px;
+	}
+	#index .experience-introduce-mobile h4,.experience-introduce-mobile p{
+		padding-left: 20px;
+	}
+	#index .experience-introduce-mobile h4{
+		text-align: center;
+		color: #3ac2e2;
+	}
+	#index .experience-introduce-mobile p{
+		font-weight: 400;
+		color: #b3b3b3;
+	}
 }
 .col-md-2{
 	margin-bottom: 40px;
