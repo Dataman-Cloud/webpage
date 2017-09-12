@@ -892,7 +892,7 @@ ul, li {
 	background: none;
 	margin: 0 5px;
 }
-.carousel-indicators li.active{
+#index .carousel-indicators li.active{
 	width: 10px;
 	height: 10px;
 	line-height: 10px;
@@ -913,6 +913,11 @@ ul, li {
 .header-index-banner2{
 	background: url('../pics/index-banner2.png') no-repeat bottom center;
 	background-size: cover;
+}
+@media(max-width: 768px) {
+	/*.header-container-mobile h1{*/
+		/*font-size: 16px;*/
+	/*}*/
 }
 .header-index-banner2 .header-container h1{
 	font-size: 50px;
@@ -987,9 +992,22 @@ ul, li {
 	color: #ffffff;
 	border: 1px solid #3ac2e2;
 }
+@media(min-width:769px){
+	.header-container-mobile{
+		display: none;
+	}
+}
 @media(max-width:768px){
+	.header-container-pc{
+		display: none;
+	}
 	.header-index h1{
 		font-size: 24px;
+	}
+	.header-index p{
+		margin-top: 20px;
+		color: #ffffff;
+		text-align: center;
 	}
 }
 .header-index h2 {
@@ -2673,10 +2691,6 @@ section.select-app .usable a {
 		font-size: 24px !important;
 		color: #ffffff;
 	}
-
-	/*.resolve-question h1{*/
-	/*font-size: 24px !important;*/
-	/*}*/
 	.header-container h1 {
 		font-size: 18px;
 		font-weight: 300;
