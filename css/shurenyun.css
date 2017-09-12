@@ -932,12 +932,7 @@ ul, li {
 	background: url('../pics/index-banner2.png') no-repeat bottom center;
 	background-size: cover;
 }
-@media(max-width: 768px) {
-	/*.header-container-mobile h1{*/
-		/*font-size: 16px;*/
-	/*}*/
-}
-.header-index-banner2 .header-container h1{
+.header-container h1{
 	font-size: 50px;
 }
 .header-index-banner2 .header-container hr{
