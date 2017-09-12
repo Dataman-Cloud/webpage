@@ -789,6 +789,15 @@ ul, li {
 	text-indent: 0;
 	width: 167px;
 }
+#index .carousel-indicators li{
+	width: 10px;
+	height: 10px;
+	line-height: 10px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	background: none;
+	margin: 0 5px;
+}
 .carousel-indicators li.active {
 	background-color: #00bdda;
 	border: 0;
@@ -798,19 +807,28 @@ ul, li {
 	width: 167px;
 }
 @media (max-width:992px) {
-.carousel-indicators li {
-	background-color: #737f8d;
-	border: 0;
-	border-radius: 0;
-	color: #FFF;
-	font-size: 18px;
-	height: 50px;
-	line-height: 50px;
-	margin: 0 0 0 1px;
-	text-align: center;
-	text-indent: 0;
-	width: 110px;
-}
+/*.carousel-indicators li {*/
+	/*background-color: #737f8d;*/
+	/*border: 0;*/
+	/*border-radius: 0;*/
+	/*color: #FFF;*/
+	/*font-size: 18px;*/
+	/*height: 50px;*/
+	/*line-height: 50px;*/
+	/*margin: 0 0 0 1px;*/
+	/*text-align: center;*/
+	/*text-indent: 0;*/
+	/*width: 110px;*/
+/*}*/
+	#index .carousel-indicators li{
+		width: 10px;
+		height: 10px;
+		line-height: 10px;
+		border-radius: 5px;
+		border: 1px solid #fff;
+		background: none;
+		margin: 0 5px;
+	}
 .carousel-indicators li.active {
 	background-color: #00bdda;
 	border: 0;
@@ -883,7 +901,7 @@ ul, li {
 .carousel-indicators-header{
 	bottom: 95px;
 }
-.carousel-indicators-header li{
+#index carousel-indicators-header li{
 	width: 10px;
 	height: 10px;
 	line-height: 10px;
@@ -3005,9 +3023,18 @@ section.select-app .usable a {
 	.carousel-indicators li {
 	    color: #FFF;
 	    font-size: 10px;
-	    height: 30px; 
+	    height: 30px;
 	    width: 67px;
 	    line-height: 30px;
+	}
+	#index .carousel-indicators li{
+		width: 10px;
+		height: 10px;
+		line-height: 10px;
+		border-radius: 5px;
+		border: 1px solid #fff;
+		background: none;
+		margin: 0 5px;
 	}
 	.carousel-indicators li.active {
 	    background-color: #00bdda;
