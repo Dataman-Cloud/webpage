@@ -872,7 +872,7 @@ ul, li {
 }
 .carousel-caption p {
 	color: rgba(0, 0, 0, 0.5);
-	font-size: 18px;
+	font-size: 22px;
 	text-align: left;
 	text-shadow: none;
 }
@@ -935,13 +935,15 @@ ul, li {
 .header-container h1{
 	font-size: 50px;
 }
+.header-index-banner2 .header-container h1{
+	font-size: 60px;
+}
 .header-index-banner2 .header-container hr{
 	border: 1px solid #3ac2e2;
-	/*color: #3ac2e2;*/
 	width: 80px;
 }
 .header-index-banner2 .header-container p{
-	margin-top: 25px;
+	margin-top: 10px;
 	text-align: center;
 	color: #ffffff;
 	font-weight: normal;
@@ -956,22 +958,24 @@ ul, li {
 .header-index-banner3 .header-container h1 .bar{
 	border: 3px solid #ffffff;
 	width: 1px;
-	height: 100px;
+	height: 87px;
 	margin: 0 15px;
 }
 .header-index-banner3 .header-container h1 .header-tit{
-	font-size: 150px;
+	font-size: 120px;
 }
 .header-index-banner3 .header-container h1 .header-text{
 	font-weight: 200;
 	text-align: left;
-	font-size: 40px;
-	line-height: 58px;
+	font-size: 34px;
+	line-height: 52px;
+	position: relative;
+	top: -2px;
 }
 .header-index-banner3 .header-container p{
 	margin: -10px auto;
-	width: 49%;
-	font-size: 37px;
+	width: 40%;
+	font-size: 30px;
 	text-align: left;
 	color: #ffffff;
 	font-weight: normal;
@@ -1025,7 +1029,7 @@ ul, li {
 }
 .header-index h2 {
 	font-size: 22px;
-	font-weight: 100;
+	font-weight: normal;
 	letter-spacing: 1px;
 	margin: 35px 0 0 0;
 }
@@ -2704,11 +2708,8 @@ section.select-app .usable a {
 		font-size: 24px !important;
 		color: #ffffff;
 	}
-	.header-container h1 {
-		font-size: 18px;
-		font-weight: 300;
-		margin: 190px 0 0 0;
-		text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+	.header-index-banner2 .header-container h1{
+		font-size: 24px;
 	}
 
 	.header-index-h1 h1 {
