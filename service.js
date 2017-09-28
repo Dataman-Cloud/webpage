@@ -47,7 +47,9 @@ function fetchVersion() {
             versions += value + ':' + data + '\n';
             if (key === 'frontend') {
                 frontendVersion = data;
+                $('#omegaVersion').html(frontendVersion);
             }
+            $('#omegaVersion')[0].title = versions;
         })
     });
 
