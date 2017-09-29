@@ -37,24 +37,6 @@ demo.each(function () {
 });
 
 
-// 获取并设置version
-fetchVersion()
-function fetchVersion() {
-    var versions = '';
-    var frontendVersion = '';
-    $.each(BACKEND_URL.version, function(key, value) {
-        $.get(getUrlTemplate('version.'+ key), function (data) {
-            versions += value + ':' + data + '\n';
-            if (key === 'frontend') {
-                frontendVersion = data;
-                $('#omegaVersion').html(frontendVersion);
-            }
-            $('#omegaVersion')[0].title = versions;
-        })
-    });
-
-}
-
 function getUrlTemplate(name) {
     var confs = name.split('.');
     var categoryKey = confs[0];
