@@ -1015,6 +1015,13 @@ ul, li {
 	border: 1px solid #3ac2e2;
 }
 @media(min-width:769px){
+	.header-index-banner4-mobile{
+		display: none;
+	}
+	.header-index-banner4{
+		background: url('../pics/index-banner4.png') no-repeat bottom center;
+		background-size: cover;
+	}
 	.header-container-mobile{
 		display: none;
 	}
@@ -1068,6 +1075,13 @@ ul, li {
 	}
 }
 @media(max-width:768px){
+	.header-index-banner4-mobile{
+		background: url('../pics/index-banner4-mobile.png') no-repeat bottom center;
+		background-size: cover;
+	}
+	.header-index-banner4{
+		display: none;
+	}
 	.header-container-pc{
 		display: none;
 	}
