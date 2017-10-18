@@ -790,8 +790,8 @@ ul, li {
 	width: 167px;
 }
 #index .carousel-indicators li{
-	width: 10px;
-	height: 10px;
+	width: 6px;
+	height: 6px;
 	line-height: 10px;
 	border-radius: 5px;
 	border: 1px solid #fff;
@@ -821,8 +821,8 @@ ul, li {
 	/*width: 110px;*/
 /*}*/
 	#index .carousel-indicators li{
-		width: 10px;
-		height: 10px;
+		width: 6px;
+		height: 6px;
 		line-height: 10px;
 		border-radius: 5px;
 		border: 1px solid #fff;
@@ -899,7 +899,7 @@ ul, li {
 	color: #ffffff;
 }
 .carousel-indicators-header{
-	bottom: 95px;
+	bottom: 43px;
 }
 #index carousel-indicators-header li{
 	width: 10px;
@@ -911,8 +911,8 @@ ul, li {
 	margin: 0 5px;
 }
 #index .carousel-indicators li.active{
-	width: 10px;
-	height: 10px;
+	width: 6px;
+	height: 6px;
 	line-height: 10px;
 	border-radius: 5px;
 	background: #00bdda;
@@ -1131,7 +1131,7 @@ ul, li {
 	width: auto;
 }
 .header-container .version-btn{
-	margin-top: 70px;
+	margin-top: 463px;
 }
 .header-container .version-btn .group-btn{
 	display: inline-block;
@@ -3609,14 +3609,12 @@ margin-bottom: 18px;
 	color: #FFF;
 	text-shadow: none;
 	margin: 50px 10px 0 10px;
-	margin-bottom: 0;
 }
 #product-craner .header-index h2 {
 	font-size: 22px;
 	color: #FFF;
 	font-weight: 300;
 	margin: 30px 10px 0 10px;
-	margin-bottom: 0;
 	opacity: .7;
 }
 #product-craner .header-index form {
