@@ -859,6 +859,10 @@ ul, li {
 	width: 100%;
 	padding-top: 0;
 }
+.carousel-caption .caption-word{
+	text-shadow: none;
+	color: #000;
+}
 .carousel-caption img {
 	margin-top: 20px;
 }
@@ -1240,7 +1244,9 @@ ul, li {
 .tec-comtwo{
 	padding-bottom: 30px;
 }
-
+.caption-word h3{
+	color: #000;
+}
 /* 首页样式 --- 成功经验 */
 #experience-bot{
 	padding-bottom: 20px;
@@ -1614,7 +1620,7 @@ footer .news-events a{
 }
 #aboutus header {
 	background-image: url(../pics/pic-aboutus-01.png);
-	padding-top: 160px;
+	padding-top: 140px;
 	text-align: left;
 }
 #aboutus header h1 {
@@ -3572,7 +3578,7 @@ margin-bottom: 18px;
 	margin-top: 15px;
 }
 #product-octopus .summary p {
-	font-size: 24px;
+	font-size: 12px;
 	color: #595959;
 	width: 60%;
 	margin: 60px auto 0 auto;
@@ -4144,6 +4150,18 @@ margin-bottom: 18px;
 	font-weight: 300;
 	line-height: 1.5;
 }
+#product-craner .squid-summary p{
+	font-size: 12px;
+}
+#product-craner .squid-summary p strong{
+	font-size: 14px;
+}
+ #product-craner .octopus-summary p{
+	 font-size: 12px;
+ }
+#product-craner .octopus-summary p strong{
+	font-size: 14px;
+}
 #product-craner .scenarios {
 	background-color: #f3f5f7;
 	text-align: center;
@@ -4409,6 +4427,9 @@ margin-bottom: 18px;
 #product-craner .index-carousel img {
 	height: 30px;
 }
+ #product-craner .squid-carousel img {
+	 height: 50px;
+ }
 #product-craner .index-carousel footer img {
 	height: 40px;
 	position: absolute;

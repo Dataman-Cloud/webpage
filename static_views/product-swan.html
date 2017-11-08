@@ -22,11 +22,13 @@
         <footer><i class="fa fa-angle-down fa-up-down"></i></footer>
     </header>
 
-    <section class="summary">
+    <section class="summary squid-summary">
         <div class="container"><img src="pics/aa81.png">
             <h2>Characteristic</h2>
-            <p><strong>关于数人云 Mesos 调度器 Swan </strong><br>Swan 是基于 Mesos
-                实现的应用调度框架，帮助用户轻松发布应用，实现应用的滚动更新，并根据用户指定的策略做应用的健康检测和故障转移。</p>
+            <p>
+                <strong>关于数人云 Mesos 调度器 Swan </strong><br>
+                Swan是数人云主导的应用调度框架，基于Mesos构建。Swan能够代替Marathon实现更多的企业级应用调度特性，包括应用的灰度发布、滚动更新、内置的服务发现和服务网关功能，并根据用户指定的策略做应用的健康检测和故障转移。
+            </p>
         </div>
     </section>
 
@@ -56,7 +58,7 @@
                                 <div class="feature-thumbnail">
                                     <img src="pics/swan-031.png">
                                     <div class="caption">
-                                        <h3>发布应用</h3>
+                                        <h3>应用发布</h3>
                                         <p>支持应用实例名称固定，便于监控和做服务发现。</p>
                                     </div>
                                 </div>
@@ -98,7 +100,7 @@
                                     <img src="pics/swan-035.png">
                                     <div class="caption">
                                         <h3>版本管理</h3>
-                                        <p>支持应用多版本管理。</p>
+                                        <p>支持应用多版本管理，应用可在多个历史版本中部署或回退</p>
                                     </div>
                                 </div>
                             </div>
@@ -152,6 +154,24 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-xs-6 col-md-3">
+                                <div class="feature-thumbnail">
+                                    <img src="pics/swan-041.png">
+                                    <div class="caption">
+                                        <h3>负载均衡</h3>
+                                        <p>自动配置应用负载均衡代理，根据负载均衡策略做流量分发。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <div class="feature-thumbnail">
+                                    <img src="pics/swan-042.png">
+                                    <div class="caption">
+                                        <h3>服务发现</h3>
+                                        <p>自动生成应用对应的A纪录和SRV纪录，可以根据应用名做服务发现。</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -181,7 +201,7 @@
                 <div class="row">
                     <div class="col-md-12" style="padding:0px 40px">
                         <img src="pics/swan-031.png">
-                        <h3>发布应用</h3>
+                        <h3>应用发布</h3>
                         <p>支持应用实例名称固定，便于监控和做服务发现。</p>
                     </div>
                     <div class="col-md-12" style="padding:0px 40px">
@@ -228,6 +248,16 @@
                         <img src="pics/swan-040.png">
                         <h3>访问入口</h3>
                         <p>proxy组件为应用提供统一的一致的访问方式，不需关心容器增删变化。</p>
+                    </div>
+                    <div class="col-md-12" style="padding:0px 40px">
+                        <img src="pics/swan-041.png">
+                        <h3>负载均衡</h3>
+                        <p>自动配置应用负载均衡代理，根据负载均衡策略做流量分发。</p>
+                    </div>
+                    <div class="col-md-12" style="padding:0px 40px">
+                        <img src="pics/swan-042.png">
+                        <h3>服务发现</h3>
+                        <p>自动生成应用对应的A纪录和SRV纪录，可以根据应用名做服务发现。</p>
                     </div>
                 </div>
             </div>
