@@ -378,7 +378,7 @@ ul, li {
 		margin-left: -250px;
 		width: 500px;
 		height: 500px;
-		background: url('../pics/emas-round-bg.png') no-repeat bottom center;
+		background: url('../pics/emas-round-bg.svg') no-repeat bottom center;
 		background-size: 100% auto
 	}
 	#index .index-eams .emas-center-round .emas-text{
@@ -415,6 +415,14 @@ ul, li {
 		left: 500px;
 		top: 0px;
 	}
+	#index .index-eams .emas-center-round .emas-springCloud{
+		left: -111px;
+		top: -237px;
+	}
+	#index .index-eams .emas-center-round .emas-hawk{
+		left: 387px;
+		top: 70px;
+	}
 	#index .index-eams .emas-center-round .emas-container{
 		font-weight: 500;
 		color: #ffffff;
@@ -442,14 +450,11 @@ ul, li {
 	#index .index-eams .emas-round{
 		padding: 20px;
 		position: relative;
-		top:-196px;
-		left: 103px;
-		width: 300px;
+		top:-226px;
+		left: 138px;
+		width: 232px;
 		height: 300px;
-		border-radius: 150px;
 		text-align: center;
-		background: #ffffff;
-		box-shadow: 0 0 20px rgba(58, 194, 226, .2);
 	}
 	#index .index-eams .emas-round img{
 		width: 72px;
@@ -486,7 +491,7 @@ ul, li {
 		margin-left: -100px;
 		width: 200px;
 		height: 200px;
-		background: url('../pics/emas-round-bg.png') no-repeat bottom center;
+		background: url('../pics/emas-round-bg.svg') no-repeat bottom center;
 		background-size: 100% auto
 	}
 	#index .index-eams-mobile .emas-center-round-mobile .emas-text-mobile{
@@ -541,17 +546,13 @@ ul, li {
 		left: 150px;
 		top: -25px;
 	}
-	#index .index-eams-mobile .emas-round-mobile{
-		padding: 20px;
-		position: relative;
-		top:-150px;
-		left: 53px;
-		width: 100px;
-		height: 100px;
-		border-radius: 100px;
-		text-align: center;
-		background: #ffffff;
-		box-shadow: 0 0 20px rgba(58, 194, 226, .2);
+	#index .index-eams-mobile .emas-center-round-mobile .emas-cloud-mobile{
+		left: -54px;
+		top: -176px;
+	}
+	#index .index-eams-mobile .emas-center-round-mobile .emas-hawk-mobile{
+		left: 148px;
+		top: -42px;
 	}
 	#index .index-eams-annotation-mobile{
 		/*margin-top: 300px;*/
