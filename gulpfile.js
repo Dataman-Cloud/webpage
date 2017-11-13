@@ -62,7 +62,7 @@ gulp.task('build',['copy-static']);
 
 gulp.task('ectHtml', function(){
     var rootPath = './build/replace/static_views/';
-    var relativePathArray = ['*.html', 'solution/*.html', 'companyapp/*.html', 'scene/*.html', 'about/*.html'];
+    var relativePathArray = ['*.html', 'solution/*.html', 'companyapp/*.html', 'scene/*.html', 'about/*.html', 'products/*.html'];
 
     var absolutePathArray = [];
     for(var i=0; i < relativePathArray.length; i++) {
@@ -145,7 +145,7 @@ gulp.task('copy-application-dev', ['copy-fontsdev'], function () {
 
 gulp.task('dev',['copy-application-dev'], function(){
     var rootPath = 'static_views/';
-    var relativePathArray = ['*.html', 'solution/*.html', 'companyapp/*.html', 'scene/*.html', 'about/*.html'];
+    var relativePathArray = ['*.html', 'solution/*.html', 'companyapp/*.html', 'scene/*.html', 'about/*.html', 'products/*.html'];
 
     var absolutePathArray = [];
     for(var i=0; i < relativePathArray.length; i++) {

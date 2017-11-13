@@ -3424,6 +3424,62 @@ margin-bottom: 18px;
     margin-bottom: 15px;
 	}
 
+/*hawk-header*/
+#product-craner .header-hawk {
+	background: url("../pics/products/hawk-bg.png") no-repeat;
+	background-size: 100% 100%;
+	color: #FFF;
+	min-height: 750px;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+#product-craner .header-hawk .btn-primary{
+	border-radius: 33px;
+}
+#product-craner .header-hawk img {
+	width: 20%;
+	margin: 90px auto 0 auto;
+}
+@media(max-width: 768px) {
+	#product-craner .header-hawk img {
+		width: 70%;
+	}
+}
+
+#product-craner .header-hawk h1 {
+	font-size: 45px;
+	font-weight: 400;
+	color: #FFF;
+	text-shadow: none;
+	margin: 50px 10px 0 10px;
+}
+#product-craner .header-hawk h2 {
+	font-size: 22px;
+	color: #FFF;
+	font-weight: 300;
+	margin: 30px 10px 0 10px;
+	opacity: .7;
+}
+#product-craner .header-hawk form {
+	margin: 0 0 120px 0;
+}
+#product-craner .header-hawk form a {
+	color: #FFF;
+	font-weight: 300;
+}
+#product-craner .header-hawk form button {
+	width: 220px;
+	height: 65px;
+	border-radius: 5px;
+	border: 0;
+	font-size: 24px;
+	background-color: #FFF;
+	color: #000;
+	margin-top: 90px;
+	margin-bottom: 15px;
+}
 
 /*squid-header*/
 #product-craner .header-squid {
@@ -3455,14 +3511,12 @@ margin-bottom: 18px;
 	color: #FFF;
 	text-shadow: none;
 	margin: 50px 10px 0 10px;
-	margin-bottom: 0;
 }
 #product-craner .header-squid h2 {
 	font-size: 22px;
 	color: #FFF;
 	font-weight: 300;
 	margin: 30px 10px 0 10px;
-	margin-bottom: 0;
 	opacity: .7;
 }
 #product-craner .header-squid form {
@@ -4161,6 +4215,15 @@ margin-bottom: 18px;
 	 font-size: 12px;
  }
 #product-craner .octopus-summary p strong{
+	font-size: 14px;
+}
+#product-craner .hawk-summary{
+	background: #fff;
+}
+#product-craner .hawk-summary p{
+	font-size: 12px;
+}
+#product-craner .hawk-summary p strong{
 	font-size: 14px;
 }
 #product-craner .scenarios {
