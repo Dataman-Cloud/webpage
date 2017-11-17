@@ -987,7 +987,7 @@ ul, li {
 	font-weight: normal;
 }
 .header-index-banner4{
-	background: url('../pics/index-banner4.png') no-repeat bottom center;
+	background: url('../pics/index-banner4.jpg') no-repeat bottom center;
 	background-size: cover;
 }
 .header-container {
@@ -1024,7 +1024,7 @@ ul, li {
 		display: none;
 	}
 	.header-index-banner4{
-		background: url('../pics/index-banner4.png') no-repeat bottom center;
+		background: url('../pics/index-banner4.jpg') no-repeat bottom center;
 		background-size: cover;
 	}
 	.header-container-mobile{
@@ -1081,7 +1081,7 @@ ul, li {
 }
 @media(max-width:768px){
 	.header-index-banner4-mobile{
-		background: url('../pics/index-banner4-mobile.png') no-repeat bottom center;
+		background: url('../pics/index-banner4-mobile.jpg') no-repeat bottom center;
 		background-size: cover;
 	}
 	.header-index-banner4{
