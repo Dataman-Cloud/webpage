@@ -1024,7 +1024,7 @@ ul, li {
 		display: none;
 	}
 	.header-index-banner4{
-		background: url('../pics/index-banner4.jpg') no-repeat bottom center;
+		background: url('../pics/index-banner5.jpeg') no-repeat bottom center;
 		background-size: cover;
 	}
 	.header-container-mobile{
@@ -1081,8 +1081,8 @@ ul, li {
 }
 @media(max-width:768px){
 	.header-index-banner4-mobile{
-		background: url('../pics/index-banner4-mobile.jpg') no-repeat bottom center;
-		background-size: cover;
+		background: url('../pics/index-banner5-mobile.jpg') no-repeat bottom center;
+		background-size: 100% 100%;
 	}
 	.header-index-banner4{
 		display: none;
@@ -3548,17 +3548,10 @@ margin-bottom: 18px;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
-	padding: 60px 0;
 }
-
 #product-craner .octopus-header img {
 	width: 30%;
 	margin: 160px auto 0 auto;
-}
-@media(max-width: 768px) {
-	#product-craner .octopus-header img {
-		width: 70%;
-	}
 }
 #product-craner .octopus-header h1 {
 	font-size: 45px;
@@ -3566,14 +3559,12 @@ margin-bottom: 18px;
 	color: #FFF;
 	text-shadow: none;
 	margin: 50px 10px 0 10px;
-	margin-bottom: 0;
 }
 #product-craner .octopus-header h2 {
 	font-size: 22px;
 	color: #FFF;
 	font-weight: 300;
 	margin: 30px 10px 0 10px;
-	margin-bottom: 0;
 	opacity: .7;
 }
 #product-craner .octopus-header form {
@@ -3608,6 +3599,15 @@ margin-bottom: 18px;
 	border-radius: 4px;
 	font-size: 16px;
 	font-weight: 500;
+}
+@media(max-width: 768px) {
+	#product-craner .octopus-header{
+		background-image: url("../pics/octopus/octopus-bg-mobile.jpg");
+		background-size: cover;
+	}
+	#product-craner .octopus-header img {
+		width: 70%;
+	}
 }
 /*octopus-summary*/
 
