@@ -640,69 +640,69 @@ ul, li {
 	margin-bottom: 40px;
 }
 @media(min-width: 769px){
-	#index .index-dmos-mobile{
+	.index-dmos-mobile{
 		display: none;
 	}
-	#index .index-dmos .text-center{
+	.index-dmos .text-center{
 		position: relative;
 		top: -100px;
 	}
-	#index .index-dmos .carousel-inner{
+	.index-dmos .carousel-inner{
 		min-height: 100px;
 	}
-	#index .index-dmos h1{
+	.index-dmos h1{
 		line-height: 100px;
 	}
-	#index .index-dmos{
+	.index-dmos{
 		background: #f1f4f8;
 		padding-top: 50px;
 	}
-	#index .index-dmos .carousel-control{
+	.index-dmos .carousel-control{
 		height: 44px;
 	}
-	#index .index-dmos .carousel-control.right{
+	.index-dmos .carousel-control.right{
 		right: -60px;
 	}
-	#index .index-dmos .carousel-control.left{
+	.index-dmos .carousel-control.left{
 		left: -30px;
 	}
-	#index .index-dmos .carousel-control span{
+	.index-dmos .carousel-control span{
 		background-size: 22px auto;
 		width: 22px;
 		height: 22px;
 		display: inline-block;
 		transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 	}
-	#index .index-dmos .carousel-control.left span{
+	.index-dmos .carousel-control.left span{
 		background: url('../pics/zuo.png') no-repeat 0 0;
 		background-size: 22px;
 	}
-	#index .index-dmos .carousel-control.left:hover span{
+	.index-dmos .carousel-control.left:hover span{
 		background: url('../pics/zuo.png') no-repeat 0 -22px;
 		background-size: 22px;
 	}
-	#index .index-dmos .carousel-control.right span{
+	.index-dmos .carousel-control.right span{
 		background: url('../pics/you.png') no-repeat;
 		background-size: 22px;
 	}
-	#index .index-dmos .carousel-control.right:hover span{
+	.index-dmos .carousel-control.right:hover span{
 		background: url('../pics/you.png') no-repeat 0 -22px;
 		background-size: 22px;
 	}
-	#index .index-dmos-item .dmos-text{
+	.index-dmos-item .dmos-text{
 		padding-left: 50px;
 	}
-	#index .index-dmos-item .dmos-text p{
+	.index-dmos-item .dmos-text p{
 		color: #b3b3b3;
 		font-weight: normal;
 		font-size: 12px;
 	}
-	#index .index-dmos-item .dmos-text h5{
+	.index-dmos-item .dmos-text h5{
 		height: 46px;
 		line-height: 46px;
 		border-bottom: 1px solid rgb(225, 225, 225);
 	}
-	#index .index-dmos-item .dmos-text::before{
+	.index-dmos-item .dmos-text::before{
 		position: absolute;
 		content: "";
 		width: 10px;
@@ -711,34 +711,37 @@ ul, li {
 		margin-top: 46px;
 		transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 	}
-	#index .index-dmos-item:hover .dmos-text::before{
+	.index-dmos-item:hover .dmos-text::before{
 		width: 213px;
 	}
-	#index .index-dmos-item .index-feature{
+	.index-dmos-item .index-feature{
 		text-align: center;
 	}
-	#index .index-dmos-item img{
+	.index-dmos-item img{
 		width: 70px;
 	}
 }
 @media(max-width: 768px){
-	#index .index-dmos{
+	.index-dmos{
 		display: none;
 	}
-	#index .index-dmos-mobile{
+	.index-dmos-mobile{
 		background: #ffffff;
 		min-height: 200px;
-	}
-	#index .index-dmos-mobile{
 		text-align: center;
+
 	}
 	#index .index-dmos-mobile h1{
 		line-height: 100px;
+		font-size: 24px;
 	}
-	#index .index-dmos-mobile img{
+	.index-dmos-mobile img{
 		width:60px;
 	}
-	#index .index-dmos-mobile h3{
+	.index-dmos-mobile h2{
+		font-size: 24px;
+	}
+	.index-dmos-mobile h3{
 		font-size: 14px;
 	}
 }
@@ -1642,11 +1645,28 @@ footer .news-events a{
 #aboutus section {
 	background-color: #FFF;
 }
-#aboutus .member {
+#aboutus .awards{
+	background: #f1f4f8;
+	padding: 25px 0;
+}
+#aboutus .adjustWidth{
+	width: 110px;
+}
+#aboutus .index-feature{
+	min-height: 100px;
+}
+#aboutus .awards h2{
+	text-align: center;
+	color: #5a6879;
+	font-size: 36px;
+	margin-top: 60px;
+	font-weight: 400;
+}
+#aboutus .member{
 	padding: 25px 0;
 	text-align: center;
 }
-#aboutus .member h1 {
+#aboutus .member h1,#aboutus .awards h1{
 	color: #e4bd23;
 	font-size: 24px;
 	margin-top: 50px;
@@ -1658,7 +1678,7 @@ footer .news-events a{
 	margin-top: 60px;
 	font-weight: 400;
 }
-#aboutus .member hr {
+#aboutus .member hr,#aboutus .awards hr {
 	border-color: #00bdda;
 	margin-bottom: 90px;
 	width: 80px;
@@ -1691,7 +1711,7 @@ footer .news-events a{
 	margin-bottom: 40px;
 }
 #aboutus .partner {
-	background-color: #f3f5f7;
+	background-color: #ffffff;
 }
 #aboutus .partner h1 {
 	color: #5a6879;
