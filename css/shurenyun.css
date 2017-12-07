@@ -1650,10 +1650,15 @@ footer .news-events a{
 	padding: 25px 0;
 }
 #aboutus .adjustWidth{
-	width: 110px;
+	width: 70%;
+	height: auto;
+}
+#aboutus .adjustHeight{
+	width: 120px;
+	height: auto;
 }
 #aboutus .index-feature{
-	min-height: 100px;
+	min-height: 180px;
 }
 #aboutus .awards h2{
 	text-align: center;
