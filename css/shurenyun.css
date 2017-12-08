@@ -711,6 +711,12 @@ ul, li {
 		margin-top: 46px;
 		transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 	}
+	#aboutus .index-dmos-item .dmos-text::before{
+		margin-top: 70px;
+	}
+	#aboutus .index-dmos-item .dmos-text p{
+		padding: 20px 0;
+	}
 	.index-dmos-item:hover .dmos-text::before{
 		width: 213px;
 	}
