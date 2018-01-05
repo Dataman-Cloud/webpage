@@ -996,7 +996,7 @@ ul, li {
 	font-weight: normal;
 }
 .header-index-banner4{
-	background: url('../pics/index-banner4.jpg') no-repeat bottom center;
+	background: url('../pics/about/about-activity-04.jpg') no-repeat bottom center;
 	background-size: cover;
 }
 .header-container {
@@ -1033,7 +1033,7 @@ ul, li {
 		display: none;
 	}
 	.header-index-banner4{
-		background: url('../pics/index-banner5.jpeg') no-repeat bottom center;
+		background: url('../pics/about/about-activity-04.jpg') no-repeat bottom center;
 		background-size: cover;
 	}
 	.header-container-mobile{
