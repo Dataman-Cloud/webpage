@@ -276,6 +276,7 @@ ul, li {
 	height: auto;
 }
 .footer-main .footer-help li .foot-ercode dd p{
+	text-align: center;
 	height: 25px;
 	margin-top: 15px;
 	line-height: 25px;
