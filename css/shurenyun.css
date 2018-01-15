@@ -1000,6 +1000,10 @@ ul, li {
 	background: url('../pics/about/about-activity-04.jpg') no-repeat bottom center;
 	background-size: cover;
 }
+.header-index-banner5{
+	background: url('../pics/banner/head-banner-001.jpg') no-repeat bottom center;
+	background-size: cover;
+}
 .header-container {
 	color: rgba(255,255,255,.9);
 	height: 100%;
@@ -1035,6 +1039,13 @@ ul, li {
 	}
 	.header-index-banner4{
 		background: url('../pics/about/about-activity-04.jpg') no-repeat bottom center;
+		background-size: cover;
+	}
+	.header-index-banner5-mobile{
+		display: none;
+	}
+	.header-index-banner5{
+		background: url('../pics/banner/head-banner-001.jpg') no-repeat bottom center;
 		background-size: cover;
 	}
 	.header-container-mobile{
@@ -1091,10 +1102,17 @@ ul, li {
 }
 @media(max-width:768px){
 	.header-index-banner4-mobile{
-		background: url('../pics/index-banner5-mobile.jpg') no-repeat bottom center;
+		background: url('../pics/banner/about-activity-m-04.jpg') no-repeat bottom center;
 		background-size: 100% 100%;
 	}
 	.header-index-banner4{
+		display: none;
+	}
+	.header-index-banner5-mobile{
+		background: url('../pics/banner/head-banner-m-001.jpg') no-repeat bottom center;
+		background-size: 100% 100%;
+	}
+	.header-index-banner5{
 		display: none;
 	}
 	.header-container-pc{
