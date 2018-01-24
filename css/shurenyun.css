@@ -88,12 +88,11 @@ ul, li {
 	padding: 17px 0;
 }
 .nav-main .navbar-nav > li > a {
-	color: rgba(255,255,255,.6);
+	color: #ffffff;
 	height: 38px;
-	padding-top: 9px;
-	padding-bottom: 0;
-	padding-left: 6px;
-	padding-right: 6px;
+	padding:9px 0 0;
+	font-weight: 500;
+	font-size: 16px;
 }
 .nav-main .navbar-nav > .active > a, .nav-main .navbar-nav > .active > a:focus, .nav-main .navbar-nav > .active > a:hover {
 	background-color: transparent;
@@ -1263,10 +1262,6 @@ ul, li {
 	font-weight: 400;
 	margin: 15px 0 10px 0;
 }
-.tec-com p {
-	color: #5a6879;
-	height: 100px;
-}
 .tec-com .logo{
 	height: 40px;
 }
@@ -1292,6 +1287,10 @@ ul, li {
 
 }
 @media(min-width: 769px){
+	.tec-com p {
+		color: #5a6879;
+		min-height: 144px;
+	}
 	.experience-mobile{
 		display: none;
 	}
@@ -1330,6 +1329,10 @@ ul, li {
 	}
 }
 @media (max-width: 768px) {
+	.tec-com p {
+		color: #5a6879;
+		min-height: 200px;
+	}
 	#index .experience{
 		display: none;
 	}

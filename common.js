@@ -47,6 +47,8 @@
                 $('#product-dropdown-menu').hide();
                 $('#enterprise-menu').hide();
                 $('#open-menu').hide();
+                $('#train-menu').hide();
+                $('#community-menu').hide();
             });
             $('#dropdown-menu').bind("mouseleave", null, function () {
                 $('#dropdown-menu').hide();
@@ -56,6 +58,8 @@
                 $('#solution-menu').show();
                 $('#dropdown-menu').hide();
                 $('#product-dropdown-menu').hide();
+                $('#train-menu').hide();
+                $('#community-menu').hide();
             });
 
             $('#solution-menu').bind("mouseleave", null, function () {
@@ -66,6 +70,8 @@
                 $('#enterprise-menu').show();
                 $('#dropdown-menu').hide();
                 $('#product-dropdown-menu').hide();
+                $('#train-menu').hide();
+                $('#community-menu').hide();
             });
 
             $('#enterprise').on("mouseleave", function () {
@@ -81,6 +87,8 @@
                 $('#open-menu').show();
                 $('#dropdown-menu').hide();
                 $('#product-dropdown-menu').hide();
+                $('#train-menu').hide();
+                $('#community-menu').hide();
             });
 
             $('#open').on("mouseleave", function () {
@@ -95,6 +103,31 @@
                 $('#product-dropdown-menu').show();
                 $('#dropdown-menu').hide();
                 $('#solution-menu').hide();
+                $('#train-menu').hide();
+                $('#community-menu').hide();
+            });
+
+            $('#train-dropdown').on("mouseover", function () {
+                $('#train-menu').show();
+                $('#product-dropdown-menu').hide();
+                $('#dropdown-menu').hide();
+                $('#solution-menu').hide();
+            });
+
+            $('#train-menu').bind("mouseleave", null, function () {
+                $('#train-menu').hide();
+            });
+
+            $('#community-dropdown').on("mouseover", function () {
+                $('#community-menu').show();
+                $('#train-menu').hide();
+                $('#product-dropdown-menu').hide();
+                $('#dropdown-menu').hide();
+                $('#solution-menu').hide();
+            });
+
+            $('#community-menu').bind("mouseleave", null, function () {
+                $('#community-menu').hide();
             });
 
             $('#product-dropdown-menu').bind("mouseleave", null, function () {
