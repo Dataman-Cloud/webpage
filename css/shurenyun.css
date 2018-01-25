@@ -915,6 +915,20 @@ ul, li {
 .carousel-indicators-header{
 	bottom: 43px;
 }
+.banner-btn{
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	background: #00b9df;
+	text-align: center;
+	line-height: 40px;
+	color: #ffffff;
+	border-radius: 10px;
+}
+.banner-btn:hover,.banner-btn:active,.banner-btn:visited,.banner-btn:focus{
+	text-decoration: none;
+	color: #ffffff;
+}
 #index carousel-indicators-header li{
 	width: 10px;
 	height: 10px;
