@@ -3553,7 +3553,7 @@ margin-bottom: 18px;
 	background: url("../pics/recruit/recruit.jpg") no-repeat;
 	background-size: 100% 100%;
 	color: #FFF;
-	min-height: 750px;
+	min-height: 500px;
 	height: 100%;
 	overflow: hidden;
 	position: relative;
@@ -3564,7 +3564,7 @@ margin-bottom: 18px;
 	font-weight: 400;
 	color: #FFF;
 	text-shadow: none;
-	margin: 225px 10px 0 0px;
+	margin: 150px 10px 0 0px;
 }
 #product-craner .header-recruit h5 {
 	width: 82%;
@@ -3579,7 +3579,7 @@ margin-bottom: 18px;
 	padding: 100px 0;
 }
 #product-craner .recruit-container{
-	width: 70%;
+	width: 75%;
 }
 #product-craner .recruit-container h1{
 	color: #334166;
@@ -3589,20 +3589,31 @@ margin-bottom: 18px;
 	margin-left: 20px;
 }
 #product-craner .recruit-container hr{
-	border: 1px solid #d3dce3;
+	border-color: #d3dce3;
 }
 #product-craner .recruit-container .recruit-position{
 	width: 80%;
 	height: 130px;
 	border: 1px solid #dae6f2;
-	padding: 20px 40px;
 	margin: 20px auto;
 }
 #product-craner .recruit-container .recruit-position:hover{
 	-webkit-box-shadow:0 0 15px rgba(218, 230, 242, .5);
 	-moz-box-shadow:0 0 15px rgba(218, 230, 242, .5);
 	box-shadow:0 0 15px rgba(218, 230, 242, .5);
+}
+#product-craner .recruit-container .recruit-position:hover .job-disc{
+	color: #3a79c6;
+}
+#product-craner .recruit-container .recruit-position .recruit-link{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	padding: 20px 30px;
 
+}
+#product-craner .recruit-container .recruit-position .recruit-link:hover{
+	text-decoration: none;
 }
 #product-craner .recruit-container .recruit-position h4{
 	color: #334166;
@@ -3622,8 +3633,8 @@ margin-bottom: 18px;
  }
 #product-craner .recruit-container .recruit-position p .job-disc img{
 	display: inline-block;
-	width: 23px;
-	height: 7px;
+	width: 25px;
+	height: auto;
 }
 #product-craner .recruit-container .recruit-position p .job-disc:hover{
 	color: #3a79c6;
@@ -3633,10 +3644,10 @@ margin-bottom: 18px;
 	padding: 100px 0;
 }
 #product-craner .job-detail hr{
-	border: 1px solid #d3dce3;
+	border-color: #d3dce3;
 }
  #product-craner .job-detail .detail-container{
-	 width: 70%;
+	 width: 75%;
  }
 #product-craner .job-detail .detail-container h2{
 	color: #334166;
@@ -3645,6 +3656,11 @@ margin-bottom: 18px;
 }
 #product-craner .job-detail .detail-container h2 small{
 	color: #334166;
+}
+#product-craner .job-detail .job-top img{
+	display: inline-block;
+	width: 25px;
+	height: auto;
 }
 #product-craner .job-detail .job-top a{
 	font-size: 14px;
