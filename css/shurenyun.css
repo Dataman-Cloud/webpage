@@ -3548,6 +3548,132 @@ margin-bottom: 18px;
 	margin-bottom: 15px;
 }
 
+/*squid-recruit*/
+#product-craner .header-recruit {
+	background: url("../pics/recruit/recruit.jpg") no-repeat;
+	background-size: 100% 100%;
+	color: #FFF;
+	min-height: 750px;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+#product-craner .header-recruit h3 {
+	font-size: 40px;
+	font-weight: 400;
+	color: #FFF;
+	text-shadow: none;
+	margin: 225px 10px 0 0px;
+}
+#product-craner .header-recruit h5 {
+	width: 82%;
+	font-size: 24px;
+	font-weight: 400;
+	color: #FFF;
+	text-shadow: none;
+	text-align: center;
+	margin: 43px auto;
+}
+#product-craner .recruit-jobs{
+	padding: 100px 0;
+}
+#product-craner .recruit-container{
+	width: 70%;
+}
+#product-craner .recruit-container h1{
+	color: #334166;
+}
+#product-craner .recruit-container h2{
+	color: #334166;
+	margin-left: 20px;
+}
+#product-craner .recruit-container hr{
+	border: 1px solid #d3dce3;
+}
+#product-craner .recruit-container .recruit-position{
+	width: 80%;
+	height: 130px;
+	border: 1px solid #dae6f2;
+	padding: 20px 40px;
+	margin: 20px auto;
+}
+#product-craner .recruit-container .recruit-position:hover{
+	-webkit-box-shadow:0 0 15px rgba(218, 230, 242, .5);
+	-moz-box-shadow:0 0 15px rgba(218, 230, 242, .5);
+	box-shadow:0 0 15px rgba(218, 230, 242, .5);
+
+}
+#product-craner .recruit-container .recruit-position h4{
+	color: #334166;
+}
+#product-craner .recruit-container .recruit-position p{
+	padding-top: 20px;
+}
+#product-craner .recruit-container .recruit-position p .address{
+	color: #334166;
+	font-weight: normal;
+	padding: 0;
+}
+#product-craner .recruit-container .recruit-position p .job-disc{
+	 text-align: right;
+	 font-weight: normal;
+	 color: #334166;
+ }
+#product-craner .recruit-container .recruit-position p .job-disc img{
+	display: inline-block;
+	width: 23px;
+	height: 7px;
+}
+#product-craner .recruit-container .recruit-position p .job-disc:hover{
+	color: #3a79c6;
+	text-decoration: none;
+}
+#product-craner .job-detail{
+	padding: 100px 0;
+}
+#product-craner .job-detail hr{
+	border: 1px solid #d3dce3;
+}
+ #product-craner .job-detail .detail-container{
+	 width: 70%;
+ }
+#product-craner .job-detail .detail-container h2{
+	color: #334166;
+	font-size: 24px;
+	padding: 10px 0 35px 0;
+}
+#product-craner .job-detail .detail-container h2 small{
+	color: #334166;
+}
+#product-craner .job-detail .job-top a{
+	font-size: 14px;
+	color: #3b79c6;
+	font-weight: 500;
+}
+#product-craner .job-detail .job-top a:hover{
+	text-decoration: none;
+}
+#product-craner .job-detail .job-asked{
+	margin-top: 30px;
+}
+#product-craner .job-detail .job-asked h4,
+#product-craner .job-detail .job-duty h4{
+	color:#334166;
+	font-size: 14px;
+	font-weight: normal;
+}
+#product-craner .job-detail .job-asked p,
+#product-craner .job-detail .job-duty p{
+	color:#7a8a99;
+	font-size: 12px;
+	font-weight: normal;
+	padding-left: 5px;
+}
+#product-craner .job-detail .job-footer{
+	color: #536190;
+	font-weight: normal;
+}
 /*squid-header*/
 #product-craner .header-squid {
 	background: url("../pics/squid/squid-1.png") no-repeat;
@@ -4325,11 +4451,7 @@ margin-bottom: 18px;
 }
 #product-craner .scenarios p {
 	font-size: 18px;
-	width: 85%;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 50px;
-    margin-left: auto;
+	margin: 0 auto 50px;
 	color: #6e6e6e;
 }
 #product-craner .scenarios .sre-bg{
