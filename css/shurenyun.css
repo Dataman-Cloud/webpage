@@ -990,6 +990,10 @@ ul, li {
 	background: url('../pics/index-banner4.jpg') no-repeat bottom center;
 	background-size: cover;
 }
+.header-index-banner5{
+	background: url('../pics/about-activity-merge.png') no-repeat bottom center;
+	background-size: cover;
+}
 .header-container {
 	color: rgba(255,255,255,.9);
 	height: 100%;
@@ -1020,11 +1024,11 @@ ul, li {
 	border: 1px solid #3ac2e2;
 }
 @media(min-width:769px){
-	.header-index-banner4-mobile{
+	.header-index-banner5-mobile{
 		display: none;
 	}
-	.header-index-banner4{
-		background: url('../pics/index-banner4.jpg') no-repeat bottom center;
+	.header-index-banner5{
+		background: url('../pics/about-activity-merge-mobile.jpg') no-repeat bottom center;
 		background-size: cover;
 	}
 	.header-container-mobile{
