@@ -1,5 +1,5 @@
 <% extend "../common.html" %>
-<% block 'keywords': %>数人云，数人科技，容器，Container，容器云，云原生，镜像仓库，容器集群管理，Docker，Docker镜像，Mesos，Marathon，DCOS，PaaS平台，数人云操作系统，灰度发布 ，微服务，服务发现，持续集成，镜像构建，CICD，持续交付 ，DevOps，敏捷开发，自动化，金融容器云，高并发，秒杀，容器编排，docker compose，应用编排，弹性扩缩, 弹性伸缩, swarm, docker 1.12，SRE，serverless，作业云，弹性调度器，elastic，scheduler，high availablity，HA，数人云swan，数人云crane，caas，Kubernetes、K8S、持续测试、数据中心操作系统、Octopus、分布式任务调度、Squid
+<% block 'keywords': %>数人云,容器,Container,PaaS平台,Docker,SRE,DevOps,微服务,Kubernetes,Squid,Hawk，Swan,Dataman Os,分布式,金融容器云,Octopus,Springcloud,Mesos,容器编排，K8S servicemesh CI/CD 持续集成 持续交付 云原生 CloudNative Microservice 容器云 serverless 应用编排
 <% end %>
 <% block 'description': %>数人云是国内领先的容器服务商，致力于打造轻量级PaaS平台，使用户能够在云主机、虚拟机甚至物理机上快速建立并稳定运行一个高扩展性的生产环境，将应用弹性做到极致。数人云为客户提供领先的企业级容器解决方案，帮助传统企业实现IT业务转型，更好地应对业务变化，已先后服务众多金融、能源、广电等行业。
 <% end %>
@@ -50,7 +50,7 @@
                         <header class="header-index">
                             <div class="header-container">
                                 <h1>构建灵动新IT</h1>
-                                <h2>数人云 - 极轻量化 P a a S 平台</h2>
+                                <h2>数人云微服务 On PaaS - 企业 IT 架构转型领导者</h2>
                                 <ul class="row version-btn">
                                     <li class="dropdown group-btn enterprise" id="enterprise">
                                         <a type="button" class="btn dropdown-toggle btn-index-color"
@@ -60,9 +60,10 @@
                                         </a>
                                         <ul class="dropdown-menu enterprise-menu" id="enterprise-menu"
                                             aria-labelledby="dropdownMenu1">
-                                            <li><a href="./product.html">数人云 DataMan OS 容器云平台</a></li>
-                                            <li><a href="./octopus.html">分布式任务调度</a></li>
-                                            <li><a href="./squid.html">数人云高并发消息处理平台</a></li>
+                                            <li><a href="./product.html">DataMan OS 容器云平台</a></li>
+                                            <li><a href="./octopus.html">分布式调度任务 Octopus</a></li>
+                                            <li><a href="./squid.html">高并发消息处理平台 Squid</a></li>
+                                            <li><a href="./product-hawk.html">分布式统一配置中心 Hawk</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown group-btn open" id="open">
@@ -80,6 +81,32 @@
                             </div>
                         </header>
                     </div>
+                </div>
+                <!--<div class="item">-->
+                    <!--<div class="carousel-caption">-->
+                        <!--<a target="_blank" href="http://www.huodongxing.com/event/2419823143000?qd=%E5%AE%98%E7%BD%91">-->
+                            <!--<header class="header-index header-index-banner4">-->
+                                <!--<div class="header-container"></div>-->
+                            <!--</header>-->
+                        <!--</a>-->
+                        <!--<a target="_blank" href="http://www.huodongxing.com/event/2419823143000?qd=%E5%AE%98%E7%BD%91">-->
+                            <!--<header class="header-index header-index-banner4-mobile"></header>-->
+                        <!--</a>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+                <div class="item">
+                    <div class="carousel-caption">
+                        <a target="_blank" href="http://blog.shurenyun.com/biao-ti-1wei-fu-wu-2017nian-du-bao-gao-chu-lu-4da-ke-hu-hua-xiang-15chuan-tong-qi-ye-yi-ling-pao/">
+                            <header class="header-index header-index-banner5">
+                                <div class="header-container"></div>
+                            </header>
+                        </a>
+                        <a target="_blank" href="http://www.huodongxing.com/event/2419823143000?qd=%E5%AE%98%E7%BD%91">
+                            <header class="header-index header-index-banner5-mobile"></header>
+                        </a>
+                    </div>
+
                 </div>
                 <div class="item">
                     <div class="carousel-caption">
@@ -123,8 +150,12 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <footer><a href="#product-feature"><img class="img-up-down" src="pics/squid/squid-decline.png"
-                                                width="134px"></a></footer>
+        <footer>
+            <a target="_blank" class="banner-btn" href="http://shurenyun.mikecrm.com/IEPkGK">
+                <!--<img class="img-up-down" src="pics/squid/squid-decline.png" width="134px">-->
+                申请试用
+            </a>
+        </footer>
     </header>
 
     <section class="scenarios" style="background-color: #FFFFFF;">
@@ -255,7 +286,7 @@
                     <p><a href="./octopus.html">Octopus: </a><span>高效可靠的弹性调度云， 让你的任务更灵活自如。</span></p>
                     <p><a href="./squid.html">Squid: </a><span>灵活高效的一体化微服务平台， 轻松应对高并发。</span></p>
                     <!--<p><a href="#">Kelisa: </a><span>基于Dataman OS容器云平台的CI/CD环境，支持应用的持续构建、持续部署及可视化管理。</span></p>-->
-                    <p><a href="./products/product-hawk.html">Hawk: </a><span>分布式统一配置中心，配置集中管理、 实时推送，灵活应对灰度与预案。</span></p>
+                    <p><a href="./product-hawk.html">Hawk: </a><span>分布式统一配置中心，配置集中管理、 实时推送，灵活应对灰度与预案。</span></p>
                 </div>
             </div>
         </div>
@@ -422,73 +453,73 @@
         <div class="container">
             <h1 class="title-size">技术组件</h1>
             <ul class="row tec-comtwo">
-                <li class="col-md-4 col-xs-6">
+                <li class="col-md-4 col-xs-12">
+                    <div>
+                        <img src="pics/ico/ico-spring-cloud.svg" class="logo">
+                        <h2>Spring Cloud</h2>
+                        <p>数人云全面支持当前主流的微服务开发框架SpringCloud，包括配置中心，注册中心，服务治理中心，API Gateway等在内的多个产品都无缝对接SpringCloud体系。</p>
+                    </div>
+                </li>
+                <li class="col-md-4 col-xs-12">
+                    <div>
+                        <img src="pics/ico/ico-hawk.svg" class="logo">
+                        <h2>Hawk</h2>
+                        <p>为分布式系统中的基础设施和微服务应用提供集中化的外部配置支持。配置接口完全兼容 Spring Cloud Config，后台管理功能则通过 open API的形式对外开放，满足企业多样化的定制需求。</p>
+                    </div>
+                </li>
+                <li class="col-md-4 col-xs-12">
+                    <div>
+                        <img src="pics/ico/ico-nemo.svg" class="logo">
+                        <h2>Nemo</h2>
+                        <p>提供基于Kubernetes的容器化管理，使用自服务形式，通过一体化管理控制台，提供通用中间件的集群部署、管理和监控，也提供中间件自身特性的管理和监控。</p>
+                    </div>
+                </li>
+                <li class="col-md-4 col-xs-12">
+                    <div>
+                        <img src="pics/ico/ico-octopus.svg" class="logo">
+                        <h2>Octopus</h2>
+                        <p>基于数人云DataMan OS 容器云平台，针对业务类应用和运维类任务，提供分布式定时作业、消息调度作业以及本地作业的统一管理。</p>
+                    </div>
+                </li>
+                <li class="col-md-4 col-xs-12">
+                    <div>
+                        <img src="pics/ico/ico-whale.svg" class="logo">
+                        <h2>API Gateway-Whale</h2>
+                        <p>轻松创建，发布，维护，监控和保护API，只需在控制台轻松操作，即可暴露微服务的API给客户端应用。提供流量管理，授权和访问控制，监控以及版本控制。</p>
+                    </div>
+                </li>
+                <li class="col-md-4 col-xs-12">
+                    <div>
+                        <img src="pics/ico/ico-k8s.png" class="logo logo-sole">
+                        <h2>Kubernetes</h2>
+                        <p>Kubernetes是为生产环境而设计的云原生容器调度管理系统，作为DataMan OS 容器云平台的重要组件，管理跨机器运行容器化的应用，让部署更加简单高效。</p>
+                    </div>
+                </li>
+                <li class="col-md-4 col-xs-12">
                     <div>
                         <img src="pics/ico/ico-mesos.svg" class="logo">
                         <h2>Mesos</h2>
-                        <p>分布式操作系统内核，也是数人云 DataMan OS 容器云平台的核心组件。将整个集群抽象为一个资源池，可像用一台电脑一样管理整个集群资源。</p>
+                        <p>适用于大规模集群的分布式操作系统内核，将整个集群抽象为一个资源池，可像用一台电脑一样管理整个集群资源,是DataMan OS 容器云平台的组件之一。</p>
                     </div>
                 </li>
-                <li class="col-md-4 col-xs-6">
+                <li class="col-md-4 col-xs-12">
                     <div>
                         <img src="pics/ico/ico-docker.svg" class="logo">
                         <h2>Docker</h2>
-                        <p>Docker 容器是数人云 DataMan OS 容器云平台的核心组件。使用数人云可轻松发布和管理 Docker 容器化应用（包括 Docker Hub 及其他第三方平台上的 Docker 镜像）。
-                        </p>
+                        <p>Docker 容器是数人云 DataMan OS 容器云平台的核心组件。使用数人云可轻松发布和管理 Docker 容器化应用（包括 Docker Hub 及其他第三方平台上的 Docker 镜像）。</p>
                     </div>
                 </li>
-                <li class="col-md-4 col-xs-6">
+                <li class="col-md-4 col-xs-12">
                     <div>
                         <img src="pics/ico/ico-swan.png" class="logo logo-sole">
                         <h2>Swan</h2>
                         <p>Swan 是基于 Mesos 实现的应用调度框架，帮助用户轻松发布应用，实现应用的滚动更新，并根据用户指定的策略做应用的健康检测和故障转移。</p>
                     </div>
                 </li>
-                <li class="col-md-4 col-xs-6">
-                    <div>
-                        <img src="pics/ico/ico-k8s.png" class="logo logo-sole">
-                        <h2>Kubernetes</h2>
-                        <p>云原生管理跨多台主机容器化应用的开源系统。</p>
-                    </div>
-                </li>
-                <li class="col-md-4 col-xs-6">
-                    <div>
-                        <img src="pics/ico/ico-jenkins.svg" class="logo">
-                        <h2>Jenkins</h2>
-                        <p>开源的持续集成工具。可帮助企业快速获得持续集成能力，加快产品迭代。</p>
-                    </div>
-                </li>
-                <li class="col-md-4 col-xs-6">
-                    <div>
-                        <img src="pics/ico/ico-dashboard.svg" class="logo">
-                        <h2>云操作系统仪表盘</h2>
-                        <p>通过统一界面，管理应用和集群。可随时监控每一个应用、集群、主机的运行健康状态。</p>
-                    </div>
-                </li>
-                <li class="col-md-4 col-xs-6">
-                    <div>
-                        <img src="pics/ico/ico-log.svg" class="logo">
-                        <h2>云操作系统日志管理</h2>
-                        <p>统一收集应用和集群主机日志，能够快速查询和检索，帮助企业快速定位问题。</p>
-                    </div>
-                </li>
-                <li class="col-md-4 col-xs-6">
-                    <div>
-                        <img src="pics/ico/ico-API.svg" class="logo">
-                        <h2>云操作系统API</h2>
-                        <p>提供 API 接口，可与多种第三方应用，或企业自有管理系统对接整合。 在云操作系统上定制化扩展企业特有功能。</p>
-                    </div>
-                </li>
-                <li class="col-md-4 col-xs-6">
-                    <div>
-                        <img src="pics/ico/ico-companyapp.svg" class="logo">
-                        <h2>企业应用平台</h2>
-                        <p>一键部署常用的 Docker 容器化应用，以及 Spark、Hadoop、Kafka、Cassandra 等分布式应用。</p>
-                    </div>
-                </li>
             </ul>
         </div>
     </section>
+
     <section class="experience">
         <div class="container">
             <h1 class="title-size">经典案例</h1>
@@ -555,6 +586,7 @@
             </div>
         </div>
     </section>
+
     <section class="experience-mobile">
         <div class="container">
             <h1 class="title-size">经典案例</h1>
@@ -627,11 +659,21 @@
             </div>
         </div>
     </section>
+
     <section>
         <div class="container news-trends">
             <h1 class="title-size">新闻动态</h1>
             <div class="row" id="news-box">
                 <div class="dynamic col-md-5 col-sm-12 col-md-offset-1">
+
+                    <dl>
+                        <dt>
+                            <a target="_blank" href="http://blog.shurenyun.com/untitled-125/">
+                                数人云入选创业邦2017中国企业服务创新成长50强
+                            </a>
+                        </dt>
+                        <dd>01 DECEMBER 2017</dd>
+                    </dl>
 
                     <dl>
                         <dt>
@@ -645,12 +687,15 @@
 
                     <dl>
                         <dt>
-                            <a target="_blank" href="http://blog.shurenyun.com/shu-ren-yun-wang-pu-paasdie-bian-bei-hou-shi-san-da-ji-zhu-qu-shi-he-san-da-luo-di-fang-fa/">
-                                数人云王璞：PaaS蝶变背后是三大技术趋势和三大落地方法
+                            <a target="_blank" href="http://blog.shurenyun.com/shu-ren-yun-sheng-tai-jia-su-du-xi-shou-hua-yun-shu-ju-gong-ying-yun-shang-wei-lai/">
+                                数人云生态加速度 携手华云数据共赢云上未来
                             </a>
                         </dt>
-                        <dd>31 AUGUST 2017</dd>
+                        <dd>28 DECEMBER 2017</dd>
                     </dl>
+
+                </div>
+                <div class="news col-md-5 col-sm-12 col-md-offset-1">
 
                     <dl>
                         <dt>
@@ -660,9 +705,6 @@
                         </dt>
                         <dd>17 JANUARY 2017</dd>
                     </dl>
-
-                </div>
-                <div class="news col-md-5 col-sm-12 col-md-offset-1">
 
                     <dl>
                         <dt>
@@ -680,15 +722,6 @@
                             </a>
                         </dt>
                         <dd>25 SEPTEMBER 2017</dd>
-                    </dl>
-
-                    <dl>
-                        <dt>
-                            <a target="_blank" href="http://blog.shurenyun.com/shurenyun-news-315/">
-                                数人云出席双态运维研讨会 分享SRE行业实践应用
-                            </a>
-                        </dt>
-                        <dd>15 MARCH 2017</dd>
                     </dl>
 
                 </div>

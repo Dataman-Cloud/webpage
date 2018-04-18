@@ -1,5 +1,5 @@
 <% extend "../common.html" %>
-<% block 'keywords': %>数人云，数人科技，容器，Container，容器云，云原生，镜像仓库，容器集群管理，Docker，Docker镜像，Mesos，Marathon，DCOS，PaaS平台，数人云 DataMan OS 容器云平台数据中心操作系统，灰度发布 ，微服务，服务发现，持续集成，镜像构建，CICD，持续交付 ，DevOps，敏捷开发，自动化，金融容器云，高并发，秒杀，容器编排，docker compose，应用编排，弹性扩缩 弹性伸缩，Kubernetes 和K8S<% end %>
+<% block 'keywords': %>数人云,容器,Container,PaaS平台,Docker,SRE,DevOps,微服务,Kubernetes,Squid,Hawk，Swan,Dataman Os,分布式,金融容器云,Octopus,Springcloud,Mesos,容器编排，K8S servicemesh CI/CD 持续集成 持续交付 云原生 CloudNative Microservice 容器云 serverless 应用编排<% end %>
 <% block 'description': %>数人云是基于 Mesos 和 Docker 技术的云操作系统，致力于打造最轻量化的PaaS平台，可实现应用的快速发布和弹性扩展。支持混合云管理，实现一站式的微服务架构集群系统，帮助用户快速建立并稳定运维高性能生产环境，解决从客户到云资源的最后一公里。<% end %>
 <% block 'title': %>关于数人云 - 基于容器的最轻量化 PaaS 平台<% end %>
 <% block 'bodyContent': %>
@@ -14,10 +14,10 @@
                 <div class="col-md-7 col-md-offset-1">
                     <p>
 
-                        数人云成立于2015年，创始团队来自谷歌、红帽和惠普，作为领先的云计算开源技术实践者，数人云致力于帮助传统企业提升IT对业务的支持能力，帮助客户统一管理资源和应用，加速应用交付、提升运维效率，建设新一代基于云计算技术的IT架构体系。
+                        数人云成立于2014年，创始团队来自谷歌、红帽和惠普，作为基于开源技术的微服务On PaaS领导者，数人云致力于帮助传统企业提升IT对业务的支持能力，帮助客户统一管理资源和应用，加速应用交付、提升运维效率，建设新一代基于云计算技术的IT架构体系。
                     </p>
                     <p>
-                        数人云重点聚焦打造基于容器的极轻量化PaaS平台，在实现分布式应用的全生命周期管理的同时，管理海量监控，日志等产生的各类数据，自动分配应用资源、对业务运行状态进行自动分析。数人云产品体系创新性地升级为企业应用管理体系架构（EAMS），实现业务、应用、架构和IT管理四者和谐统一，满足企业双态IT需求，实现IT敏捷化自动化，借鉴国外SRE的实践经验支持DevOps落地，提升企业IT工业化程度，构建灵动新IT。
+                        数人云推出的微服务 On PaaS ，基于容器技术，通过企业应用架构管理体系EAMS，完美对接云原生、微服务主流开发框架Spring Cloud，为客户落地生产级可用的微服务架构体系。以创新技术实现企业IT架构云化、开发敏捷化、交付标准化，推动数字化创新，催化传统业务变革。
                     </p>
                     <p>
                         数人云为中国开源云联盟理事单位/联盟容器工作组组长单位、Linux基金会成员，并加入CNCF，携手与国内外云计算伙伴共同推动云计算领域容器等开源技术的落地与发展。
@@ -116,6 +116,187 @@
         </div>
     </section>
 
+    <section class="awards index-dmos">
+        <div class="container">
+            <h2>获得奖项</h2>
+            <hr>
+            <div id="carousel-about" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img class="adjustHeight" src="pics/about/about-awards-08.jpg">
+                                </div>
+                                <div class="dmos-text">
+                                    <p>2017中国开源云联盟理事单位</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img class="adjustHeight" src="pics/about/about-awards-09.jpg">
+                                </div>
+                                <div class="dmos-text">
+                                    <p>创业黑马企业级服务TOP50</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img class="adjustWidth" src="pics/about/about-awards-10.jpg">
+                                </div>
+                                <div class="dmos-text">
+                                    <p>容器工作组组长聘书</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img class="adjustHeight" src="pics/about/about-awards-11.jpg">
+                                </div>
+                                <div class="dmos-text">
+                                    <p>双态运维联盟创始会员单位</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img class="adjustWidth" src="pics/about/about-awards-04.jpg">
+                                </div>
+                                <div class="dmos-text">
+                                    <p>上海证券交易所容器云项目获评《中国信息化》杂志“2016开源云计算-实效应用”</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img class="adjustWidth" src="pics/about/about-awards-05.png">
+                                </div>
+                                <div class="dmos-text">
+                                    <p>数人云入选2016中国企业服务领域最具投资价值公司TOP50</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img class="adjustHeight" src="pics/about/about-awards-06.png">
+                                </div>
+                                <div class="dmos-text">
+                                    <p>优秀云管理平台提供商</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img class="adjustHeight" src="pics/about/about-awards-07.png">
+                                </div>
+                                <div class="dmos-text">
+                                    <p>中国开源云联盟会员单位</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img class="adjustHeight" src="pics/about/about-awards-01.png">
+                                </div>
+                                <div class="dmos-text">
+                                    <p>清科集团-最具投资价值奖</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img class="adjustWidth" src="pics/about/about-awards-02.png">
+                                </div>
+                                <div class="dmos-text">
+                                    <p>智能大会最具潜力创业团队“TOP100”奖</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-3 index-dmos-item">
+                                <div class="index-feature">
+                                    <img class="adjustWidth" src="pics/about/about-awards-03.png">
+                                </div>
+                                <div class="dmos-text">
+                                    <p>中国云体系产业创新战略联盟理事单位</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+
+
+                <a class="left carousel-control carousel-control-dmos" href="#carousel-about" role="button"
+                   data-slide="prev"
+                   style="margin-top: -52px;">
+                    <span></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-about" role="button" data-slide="next"
+                   style="margin-top: -52px;">
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="awards index-dmos-mobile">
+        <div class="container">
+            <h2>获得奖项</h2>
+            <hr>
+            <div class="column index-dmos-text-mobile">
+                <div class="col-md-12">
+                    <img src="pics/about/about-awards-01.png">
+                    <h3>清科集团-最具投资价值奖</h3>
+                </div>
+                <div class="col-md-12">
+                    <img src="pics/about/about-awards-02.png">
+                    <h3>智能大会最具潜力创业团队“TOP100”奖</h3>
+                </div>
+                <div class="col-md-12">
+                    <img src="pics/about/about-awards-03.png">
+                    <h3>中国云体系产业创新战略联盟理事单位</h3>
+                </div>
+                <div class="col-md-12">
+                    <img src="pics/about/about-awards-04.jpg">
+                    <h3>上海证券交易所容器云项目获评《中国信息化》杂志“2016开源云计算-实效应用”</h3>
+                </div>
+                <div class="col-md-12">
+                    <img src="pics/about/about-awards-05.png">
+                    <h3>数人云入选2016中国企业服务领域最具投资价值公司TOP50</h3>
+                </div>
+                <div class="col-md-12">
+                    <img src="pics/about/about-awards-06.png">
+                    <h3>优秀云管理平台提供商</h3>
+                </div>
+                <div class="col-md-12">
+                    <img src="pics/about/about-awards-07.png">
+                    <h3>中国开源云联盟会员单位</h3>
+                </div>
+                <div class="col-md-12">
+                    <img src="pics/about/about-awards-08.jpg">
+                    <h3>2017中国开源云联盟理事单位</h3>
+                </div>
+                <div class="col-md-12">
+                    <img src="pics/about/about-awards-09.jpg">
+                    <h3>创业黑马企业级服务TOP50</h3>
+                </div>
+                <div class="col-md-12">
+                    <img src="pics/about/about-awards-10.jpg">
+                    <h3>容器工作组组长聘书</h3>
+                </div>
+                <div class="col-md-12">
+                    <img src="pics/about/about-awards-11.jpg">
+                    <h3>双态运维联盟创始会员单位</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="partner" id="partner">
         <div class="container">
             <h1>合作伙伴 Cooperative partner</h1>
@@ -138,7 +319,8 @@
                         <img alt="shouduzaixian" src="pics/logo-shouduzaixian.png">
                     </a>
                     <a alt="microsoft" target="_blank" href="https://www.microsoft.com/zh-cn/">
-                        <img alt="microsoft" src="pics/logo/logo-microsoft.png"></a>
+                        <img alt="microsoft" src="pics/logo/logo-microsoft.png">
+                    </a>
                     <a alt="ucloud" target="_blank" href="https://www.ucloud.cn/">
                         <img alt="ucloud" src="pics/logo/logo-ucloud.svg">
                     </a>
@@ -156,6 +338,12 @@
                     </a>
                     <a alt="uyun" target="_blank" href="https://www.uyun.cn">
                         <img alt="uyun" src="pics/logo/logo-uyun.png">
+                    </a>
+                    <a alt="uyun" target="_blank" href="http://www.itdks.com/">
+                        <img alt="uyun" src="pics/logo/logo-dakashuo.png">
+                    </a>
+                    <a alt="youpai" target="_blank" href="https://www.upyun.com/">
+                        <img alt="youpai" style="width: 190px;height: auto;" src="pics/logo/logo-youpai.png">
                     </a>
 
                 </dd>

@@ -47,6 +47,8 @@
                 $('#product-dropdown-menu').hide();
                 $('#enterprise-menu').hide();
                 $('#open-menu').hide();
+                $('#train-menu').hide();
+                $('#community-menu').hide();
             });
             $('#dropdown-menu').bind("mouseleave", null, function () {
                 $('#dropdown-menu').hide();
@@ -56,6 +58,10 @@
                 $('#solution-menu').show();
                 $('#dropdown-menu').hide();
                 $('#product-dropdown-menu').hide();
+                $('#enterprise-menu').hide();
+                $('#open-menu').hide();
+                $('#train-menu').hide();
+                $('#community-menu').hide();
             });
 
             $('#solution-menu').bind("mouseleave", null, function () {
@@ -65,7 +71,11 @@
             $('#enterprise').on("mouseover", function () {
                 $('#enterprise-menu').show();
                 $('#dropdown-menu').hide();
+                $('#solution-menu').hide();
                 $('#product-dropdown-menu').hide();
+                $('#open-menu').hide();
+                $('#train-menu').hide();
+                $('#community-menu').hide();
             });
 
             $('#enterprise').on("mouseleave", function () {
@@ -76,11 +86,58 @@
                 $('#enterprise-menu').hide();
             });
 
+            $('#community-dropdown').on("mouseover", function () {
+                $('#community-menu').show();
+                $('#enterprise-menu').hide();
+                $('#dropdown-menu').hide();
+                $('#solution-menu').hide();
+                $('#product-dropdown-menu').hide();
+                $('#open-menu').hide();
+                $('#train-menu').hide();
+            });
+
+            $('#community-dropdown').on("mouseleave", function () {
+                $('#enterprise-menu').hide();
+            });
+
+            $('#community-menu').bind("mouseleave", null, function () {
+                $('#community-menu').hide();
+            });
+
+            $('#product-dropdown').on("mouseover", function () {
+                $('#product-dropdown-menu').show();
+                $('#community-menu').hide();
+                $('#enterprise-menu').hide();
+                $('#dropdown-menu').hide();
+                $('#solution-menu').hide();
+                $('#open-menu').hide();
+                $('#train-menu').hide();
+            });
+
+            $('#product-dropdown-menu').bind("mouseleave", null, function () {
+                $('#product-dropdown-menu').hide();
+            });
+
+            $('#train-dropdown').on("mouseover", function () {
+                $('#product-dropdown-menu').hide();
+                $('#community-menu').hide();
+                $('#enterprise-menu').hide();
+                $('#dropdown-menu').hide();
+                $('#solution-menu').hide();
+                $('#open-menu').hide();
+                $('#train-menu').show();
+            });
+
+            $('#train-menu').bind("mouseleave", null, function () {
+                $('#train-menu').hide();
+            });
 
             $('#open').on("mouseover", function () {
                 $('#open-menu').show();
                 $('#dropdown-menu').hide();
                 $('#product-dropdown-menu').hide();
+                $('#train-menu').hide();
+                $('#community-menu').hide();
             });
 
             $('#open').on("mouseleave", function () {
@@ -90,17 +147,6 @@
             $('#open-menu').bind("mouseleave", null, function () {
                 $('#open-menu').hide();
             });
-
-            $('#product-dropdown').on("mouseover", function () {
-                $('#product-dropdown-menu').show();
-                $('#dropdown-menu').hide();
-                $('#solution-menu').hide();
-            });
-
-            $('#product-dropdown-menu').bind("mouseleave", null, function () {
-                $('#product-dropdown-menu').hide();
-            });
-
 
             $('.nav > li').not(".dropdown-solution").bind("mouseover", null, function () {
                 $('.solution-menu').hide();
